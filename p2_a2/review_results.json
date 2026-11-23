@@ -1,0 +1,161 @@
+{
+  "schema": "dmwk-p2-a2-independent-review-v1",
+  "status": "passed",
+  "evidence_type": "Finite independent implementation checks; not a universal machine proof",
+  "projection": {
+    "scope": "Independent cofactor/minor oracle against production exact projector and nullspace route",
+    "exhaustive_binary_3x3_matrices": 512,
+    "rank_histogram": {
+      "0": 1,
+      "1": 49,
+      "2": 288,
+      "3": 174
+    },
+    "special_empty_and_rational_matrices": 6,
+    "protected_vs_learning_response_checks": 1,
+    "merged_site_counterexamples": 1
+  },
+  "rounding": [
+    {
+      "format": "BF16",
+      "rounding_values_checked": 21,
+      "overflow_rejections": 2,
+      "zero_dot_ordered_result": "-1",
+      "zero_dot_accumulator_words": [
+        "0x4380",
+        "0x4380",
+        "0x0",
+        "0xbf80"
+      ],
+      "commit_effective_delta": [
+        "0",
+        "-1"
+      ],
+      "thirds_projector_exact_stored_kernel_residual": [
+        "0",
+        "0",
+        "0"
+      ],
+      "unequal_basis_quantized_kernel_residual": [
+        "-1/256",
+        "-1/2048"
+      ],
+      "scope": "Independent exact arithmetic/reference expectations; production RNE is compared on listed values only"
+    },
+    {
+      "format": "FP32",
+      "rounding_values_checked": 21,
+      "overflow_rejections": 2,
+      "zero_dot_ordered_result": "-1",
+      "zero_dot_accumulator_words": [
+        "0x4b800000",
+        "0x4b800000",
+        "0x0",
+        "0xbf800000"
+      ],
+      "commit_effective_delta": [
+        "0",
+        "-1"
+      ],
+      "thirds_projector_exact_stored_kernel_residual": [
+        "0",
+        "0",
+        "0"
+      ],
+      "unequal_basis_quantized_kernel_residual": [
+        "-1/16777216",
+        "-1/134217728"
+      ],
+      "scope": "Independent exact arithmetic/reference expectations; production RNE is compared on listed values only"
+    }
+  ],
+  "structural": [
+    {
+      "format": "BF16",
+      "all_length_five_input_sequences_per_initial_state": 32,
+      "initial_states": 2,
+      "trace_pairs": 64,
+      "protected_tick_pairs": 320,
+      "interleaved_nontrivial_or_zero_theta_commits": 320,
+      "expected_refusals_with_unchanged_snapshot": 14,
+      "audit_callbacks_invoked": false,
+      "prior_snapshot_remained_immutable": true,
+      "scope": "Finite independent Boolean oracle traces and public API boundary checks; not a universal/concurrent proof"
+    },
+    {
+      "format": "FP32",
+      "all_length_five_input_sequences_per_initial_state": 32,
+      "initial_states": 2,
+      "trace_pairs": 64,
+      "protected_tick_pairs": 320,
+      "interleaved_nontrivial_or_zero_theta_commits": 320,
+      "expected_refusals_with_unchanged_snapshot": 14,
+      "audit_callbacks_invoked": false,
+      "prior_snapshot_remained_immutable": true,
+      "scope": "Finite independent Boolean oracle traces and public API boundary checks; not a universal/concurrent proof"
+    }
+  ],
+  "numerical_certificates": {
+    "pointwise_certificates": [
+      {
+        "format": "BF16",
+        "independent_T3_output_difference": [
+          "-1",
+          "0"
+        ],
+        "reported_output_norm_upper": "4438581203289767414339175591698529914022621046959442208845/3138550867693340381917894711603833208051177722232017256448",
+        "finite_sum_with_unstorable_ideal_increment_accepted": true,
+        "subnormal_tie_local_error": "1/21778071482940061661655974875633165533184",
+        "invalid_gamma_bound_absent": true,
+        "nonzero_subnormal_results_retained": 2,
+        "basis_residual_zero_does_not_certify_all_legal_activations": true,
+        "tiny_activation_ordered_output_words": [
+          "0x1",
+          "0x1",
+          "0x1"
+        ]
+      },
+      {
+        "format": "FP32",
+        "independent_T3_output_difference": [
+          "-1",
+          "0"
+        ],
+        "reported_output_norm_upper": "4438581203289767414339175591698529914022621046959442208845/3138550867693340381917894711603833208051177722232017256448",
+        "finite_sum_with_unstorable_ideal_increment_accepted": true,
+        "subnormal_tie_local_error": "1/1427247692705959881058285969449495136382746624",
+        "invalid_gamma_bound_absent": true,
+        "nonzero_subnormal_results_retained": 2,
+        "basis_residual_zero_does_not_certify_all_legal_activations": true,
+        "tiny_activation_ordered_output_words": [
+          "0x1",
+          "0x1",
+          "0x1"
+        ]
+      }
+    ],
+    "near_rank_exact_rank": 2,
+    "FP64_default_effective_rank": 2,
+    "FP32_default_effective_rank": 1,
+    "FP32_solver_dispatch": "numpy.linalg._umath_linalg.svd_f signature f->fff",
+    "threshold_overflow_rejected": true,
+    "binary64_cutoff_comparison_boundary_verified": true,
+    "scope": "Independent finite T3 output/RNE and exact-rank comparisons; not a universal or interval-certified SVD result"
+  },
+  "elapsed_seconds": 0.4104198740024003,
+  "source_sha256": {
+    "verify_review_checks.py": "64e4cbf0c71a00178f1c67699eb1531899b63871419bd74cd2fca443c77d58c1",
+    "exact_projection.py": "5c9c2bf00bd18c7cbc2a45da32f87f47793c7d87d6e9803101081246b1aa91ae",
+    "safe_update.py": "d0a279bbfeeb89b96053e51b67ceea73c4da3e82399d12031db36aafb4fbb662",
+    "p1_runtime.py": "71aea8dab22e4e824c52e9b977e5c6c6edfe4fe2afa649846a1a93efd32cf106",
+    "numerical_projection.py": "6b5bfaf375ce09942eae353f007bbf71d3302b178325df787ae1e5789cb30525"
+  },
+  "p1_rounding_sha256": "8644fa96d2c72b51efa6c4b94cf502dca6f3782140cb23d636d05d3f65f6aede",
+  "not_proved": [
+    "All arbitrary rational matrices",
+    "General GPU/native BF16 behavior",
+    "Full compiler refinement",
+    "General weight patch safety",
+    "Any P2-A3 result"
+  ]
+}

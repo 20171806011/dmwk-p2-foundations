@@ -1,0 +1,29 @@
+{
+  "schema": "dmwk-p2-c1-layout-search-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 104,
+  "compile_requests_accepted": 28,
+  "expected_refusals": 76,
+  "unexpected_failures": 0,
+  "samples": [
+    {
+      "fmt": "BF16",
+      "two_output_anchor_shape": [
+        4,
+        4
+      ],
+      "physical_word_cost": 16
+    },
+    {
+      "fmt": "FP32",
+      "two_output_anchor_shape": [
+        4,
+        4
+      ],
+      "physical_word_cost": 16
+    }
+  ],
+  "elapsed_seconds": 0.16326491300003454,
+  "scope": "Complete named budget grid and anchor probes on the parity source; four supported shapes"
+}

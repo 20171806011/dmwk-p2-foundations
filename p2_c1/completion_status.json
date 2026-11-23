@@ -1,0 +1,98 @@
+{
+  "schema": "dmwk-p2-c1-delivery-v1",
+  "status": "passed",
+  "scoped_stage": "P2-C1",
+  "general_theorems": "T1\u2013T9 conditional handwritten proofs",
+  "general_machine_proof": false,
+  "SMT_queries": 0,
+  "seed": 20261114,
+  "primary": {
+    "sections": 4,
+    "assertions": 321198,
+    "expected_refusals": 310,
+    "unexpected_failures": 0,
+    "seconds": 85.18828854700001
+  },
+  "independent": {
+    "checks": 212851,
+    "expected_refusals": 95,
+    "unexpected_failures": 0,
+    "total_seconds": 18.67738792899999
+  },
+  "reproduction": {
+    "cwd": "/tmp",
+    "host": "same host",
+    "semantic_comparisons": 6,
+    "preserved_primary_artifacts": 6,
+    "optimized_preflight": [
+      {
+        "flag": "-O",
+        "rejected_before_tests": true
+      },
+      {
+        "flag": "-OO",
+        "rejected_before_tests": true
+      }
+    ]
+  },
+  "direct_compiler_requests": {
+    "accepted_compile_requests": 1400,
+    "accepted_artifact_reconstructions": 1368,
+    "rejected_compile_requests": 69
+  },
+  "automatic_layout_search": {
+    "budget_cases": 104,
+    "accepted": 28,
+    "refused": 76
+  },
+  "toy_training": {
+    "initial_loss": "1",
+    "BF16_final_loss": "1/16384",
+    "FP32_final_loss": "2839225/281474976710656",
+    "accepted_updates_per_format": 32,
+    "nonzero_BF16": 16,
+    "nonzero_FP32": 32,
+    "paired_feedback_ticks": 64,
+    "D_word_mismatches": 0
+  },
+  "previous_artifacts_verified": 782,
+  "old_suites_rerun": false,
+  "published": false,
+  "P2_C2_started": false,
+  "limits": [
+    "Closed Boolean state machine, fixed sparse graph and numeric policy.",
+    "A legal inputs zero and coordinate basis; no A feedback into D.",
+    "Non-axis geometric comparisons are read-only.",
+    "Software BF16 and local CPU FP32. GPU, native BF16, compiler transformations/FMA, general concurrency, crash recovery, universal learning and whole-host proof remain open."
+  ],
+  "source_sha256": {
+    "c1_compiler.py": "76b9e7fceaa7898a397ed3b1d8cec8341fa36afb03036bae38ba3aa511b60802",
+    "c1_runtime.py": "eca6efc93cafa55d30c475d419fa9e36eee3340385a2c9b1a22b8f9b720a47a9",
+    "compile_ir.py": "b30c711eee60a75cc520df4e509b13eb53f88c9815ff5e3e660b175c8d62dc91",
+    "compiled_owner.py": "b1289ed7b22a9bcd15dccc4c40bb096d24208d3a9859cd018b7404fab3742e9c",
+    "verify_c1.py": "098c94cd4ee14cc4b7dcd7643444883946695e51afa431f8a3410c77382758a1",
+    "verify_compiler.py": "4a1bbe59d696a9f13d298eb21176d4e166fe5c41d55415c062361641fc82fa89",
+    "verify_geometry.py": "a843a0b4fa7634bcc34bee3c3e5f5020aedad4fa41ae6d164bc0652aca0c725f",
+    "verify_independent.py": "5e3374b0c1e1b8c63424aae7047bc7f53afe25c0e267686596417dd8e7288fae",
+    "verify_layout.py": "4a625aff436cf656953200c9872a02fb68b239479f4e7e67e7405b32698c9491",
+    "verify_reproduction.py": "4a01e47e71023943810aa5ecb485c9aaea07c5b719cd2f2961492ff9bc09f382",
+    "verify_transactions.py": "24b4ad5727bf481c5f4ff18a1a7d85c902b6d882c0cccaa976588af9e221dd80",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "dependency_baseline.json": "10dcbd339773caf79d49baa3bff83a850f0f57eaa4bf7fa93ecb6a8d23951bb0",
+    "example_request.json": "9df7d5513d564ca61084963d97632ce2f4b177f43a545ddda5b3d512900b5288"
+  },
+  "evidence_sha256": {
+    "compiler_results.json": "d0eb9782940fc34edb47ba13c19524665d5e2d0d49924c643dc9ae11a7c1fc8b",
+    "geometric_results.json": "bb128a6be882568d26a1e25726be9c439cdd814318e69e5e2b03e4b1a0d6185b",
+    "layout_results.json": "7ba7f4d3a8bb6f4f6f8ebe600da75af02fd14673fb26a8f85caf9eeec9b79cf7",
+    "transaction_results.json": "67c27b6ae79db130c9d0f88561ccf99c3f187995c7ff350d65b6e6ec813ebde4",
+    "verification_results.json": "1f04b98b0d1d70acc7af6efd5e7c9fdb482b41bc542903e78a23af35144fa0e1",
+    "independent_results.json": "713cde7ddca99359ed5ed974bca7b3a946bbc83ec5bd5e62cb2c4c08555363a4",
+    "reproduction_results.json": "5d11c1d81e318bdb18afdacd54230907e3d84b9559732e40a0d7f0f027cfea53",
+    "independent_reproduction_results.json": "837d5bf9b16afee24e016ee127a2b04d95e65f80822bb0704c5fe93d5eb0e378",
+    "reproduction_driver_results.json": "f5545484d9c93f679f9f01f658dbc7f55a46f21cc0220d1ae9a41f537e1b16a7",
+    "example_run.json": "6d5078dcd11d34af4b42de5579b49703fcc0c26675403c1693538429a50d6983",
+    "dependency_inspection.json": "97e71c2ab8502c7fd659a09c00e22afd3d093a79318c10bdc54cdeb588b37224"
+  },
+  "next_stage_handoff": "P2_C2_Handoff.md"
+}

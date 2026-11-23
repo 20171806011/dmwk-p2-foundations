@@ -1,0 +1,2729 @@
+{
+  "status": "passed",
+  "seed": 20261114,
+  "check_count": 3377,
+  "check_unit": "Explicit algebra/property/refusal assertions in this stage",
+  "failures": 0,
+  "seconds": 0.20740674499757006,
+  "named_examples": [
+    {
+      "name": "no_activation_columns",
+      "dimension": 3,
+      "protected_rank": 0,
+      "complement_dimension": 3,
+      "square_update_space_dimension": 9,
+      "H": {
+        "shape": [
+          3,
+          0
+        ],
+        "rows": [
+          [],
+          [],
+          []
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          0
+        ],
+        "rows": [
+          [],
+          [],
+          []
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 9,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "zero_rank_with_zero_columns",
+      "dimension": 3,
+      "protected_rank": 0,
+      "complement_dimension": 3,
+      "square_update_space_dimension": 9,
+      "H": {
+        "shape": [
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          0
+        ],
+        "rows": [
+          [],
+          [],
+          []
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 9,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "zero_ambient_dimension",
+      "dimension": 0,
+      "protected_rank": 0,
+      "complement_dimension": 0,
+      "square_update_space_dimension": 0,
+      "H": {
+        "shape": [
+          0,
+          3
+        ],
+        "rows": []
+      },
+      "B": {
+        "shape": [
+          0,
+          0
+        ],
+        "rows": []
+      },
+      "N": {
+        "shape": [
+          0,
+          0
+        ],
+        "rows": []
+      },
+      "P_D": {
+        "shape": [
+          0,
+          0
+        ],
+        "rows": []
+      },
+      "P_perp": {
+        "shape": [
+          0,
+          0
+        ],
+        "rows": []
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 0,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "partial_repeated_and_zero_columns",
+      "dimension": 3,
+      "protected_rank": 1,
+      "complement_dimension": 2,
+      "square_update_space_dimension": 6,
+      "H": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 15,
+          "subtract": 15,
+          "multiply": 21,
+          "divide": 8
+        },
+        "max_observed_numerator_bits": 2,
+        "max_observed_denominator_bits": 2,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "full_rank",
+      "dimension": 3,
+      "protected_rank": 3,
+      "complement_dimension": 0,
+      "square_update_space_dimension": 0,
+      "H": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          0
+        ],
+        "rows": [
+          [],
+          [],
+          []
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 9,
+          "multiply": 81,
+          "divide": 36
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "thirds_projector",
+      "dimension": 3,
+      "protected_rank": 1,
+      "complement_dimension": 2,
+      "square_update_space_dimension": 6,
+      "H": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "-1",
+            "-1"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "1/3",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "1/3",
+            "1/3"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "2/3",
+            "-1/3",
+            "-1/3"
+          ],
+          [
+            "-1/3",
+            "2/3",
+            "-1/3"
+          ],
+          [
+            "-1/3",
+            "-1/3",
+            "2/3"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 15,
+          "subtract": 11,
+          "multiply": 17,
+          "divide": 6
+        },
+        "max_observed_numerator_bits": 2,
+        "max_observed_denominator_bits": 2,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "name": "two_protected_coordinates",
+      "dimension": 3,
+      "protected_rank": 2,
+      "complement_dimension": 1,
+      "square_update_space_dimension": 3,
+      "H": {
+        "shape": [
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "B": {
+        "shape": [
+          3,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "N": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "0"
+          ],
+          [
+            "0"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "P_D": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 42,
+          "subtract": 9,
+          "multiply": 42,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    }
+  ],
+  "exhaustive_input_families": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "cases": 81,
+      "rank_histogram": {
+        "1": 32,
+        "2": 48,
+        "0": 1
+      },
+      "failures": 0
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "alphabet": [
+        0,
+        1
+      ],
+      "cases": 64,
+      "rank_histogram": {
+        "0": 1,
+        "1": 21,
+        "2": 42
+      },
+      "failures": 0
+    }
+  ],
+  "random_matrix_cases": [
+    {
+      "case": 0,
+      "dimension": 1,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.00018075999832944945,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 1,
+          "multiply": 3,
+          "divide": 4
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 1,
+      "dimension": 4,
+      "columns": 6,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0026882219972321764,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 236,
+          "multiply": 412,
+          "divide": 72
+        },
+        "max_observed_numerator_bits": 26,
+        "max_observed_denominator_bits": 30,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 2,
+      "dimension": 2,
+      "columns": 4,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0007053130029817112,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 28,
+          "multiply": 48,
+          "divide": 20
+        },
+        "max_observed_numerator_bits": 6,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 3,
+      "dimension": 2,
+      "columns": 3,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0006468550018325914,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 26,
+          "multiply": 46,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 8,
+        "max_observed_denominator_bits": 10,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 4,
+      "dimension": 1,
+      "columns": 6,
+      "protected_rank": 1,
+      "candidate_rank": 0,
+      "update_rank": 0,
+      "seconds": 0.00024587599909864366,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 5,
+          "multiply": 7,
+          "divide": 9
+        },
+        "max_observed_numerator_bits": 4,
+        "max_observed_denominator_bits": 4,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 5,
+      "dimension": 3,
+      "columns": 5,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0016810179986350704,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 97,
+          "multiply": 169,
+          "divide": 42
+        },
+        "max_observed_numerator_bits": 16,
+        "max_observed_denominator_bits": 13,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 6,
+      "dimension": 4,
+      "columns": 4,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0023720499993942212,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 168,
+          "multiply": 344,
+          "divide": 64
+        },
+        "max_observed_numerator_bits": 29,
+        "max_observed_denominator_bits": 29,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 7,
+      "dimension": 4,
+      "columns": 6,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0027503739984240383,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 264,
+          "multiply": 440,
+          "divide": 72
+        },
+        "max_observed_numerator_bits": 17,
+        "max_observed_denominator_bits": 14,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 8,
+      "dimension": 2,
+      "columns": 3,
+      "protected_rank": 2,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0006387430003087502,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 26,
+          "multiply": 46,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 7,
+        "max_observed_denominator_bits": 11,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 9,
+      "dimension": 5,
+      "columns": 4,
+      "protected_rank": 4,
+      "candidate_rank": 5,
+      "update_rank": 1,
+      "seconds": 0.003678729000966996,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 260,
+          "subtract": 231,
+          "multiply": 466,
+          "divide": 68
+        },
+        "max_observed_numerator_bits": 40,
+        "max_observed_denominator_bits": 42,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 10,
+      "dimension": 2,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 2,
+      "update_rank": 1,
+      "seconds": 0.00042835899876081385,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 8,
+          "subtract": 4,
+          "multiply": 8,
+          "divide": 5
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 11,
+      "dimension": 3,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 3,
+      "update_rank": 1,
+      "seconds": 0.0012167349996161647,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 42,
+          "subtract": 24,
+          "multiply": 57,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 6,
+        "max_observed_denominator_bits": 6,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 12,
+      "dimension": 4,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 4,
+      "update_rank": 1,
+      "seconds": 0.001729911000438733,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 120,
+          "subtract": 87,
+          "multiply": 191,
+          "divide": 39
+        },
+        "max_observed_numerator_bits": 21,
+        "max_observed_denominator_bits": 24,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 13,
+      "dimension": 3,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 3,
+      "update_rank": 1,
+      "seconds": 0.0013271609968796838,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 42,
+          "subtract": 26,
+          "multiply": 59,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 11,
+        "max_observed_denominator_bits": 13,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 14,
+      "dimension": 4,
+      "columns": 5,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0025003509981615935,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 213,
+          "multiply": 389,
+          "divide": 68
+        },
+        "max_observed_numerator_bits": 29,
+        "max_observed_denominator_bits": 21,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 15,
+      "dimension": 1,
+      "columns": 5,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0002790359976643231,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 4,
+          "multiply": 6,
+          "divide": 8
+        },
+        "max_observed_numerator_bits": 2,
+        "max_observed_denominator_bits": 2,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 16,
+      "dimension": 1,
+      "columns": 5,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.00023515099746873602,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 5,
+          "multiply": 7,
+          "divide": 8
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 17,
+      "dimension": 4,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 4,
+      "update_rank": 2,
+      "seconds": 0.001384646002406953,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 64,
+          "subtract": 44,
+          "multiply": 92,
+          "divide": 20
+        },
+        "max_observed_numerator_bits": 8,
+        "max_observed_denominator_bits": 10,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 18,
+      "dimension": 3,
+      "columns": 6,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0019032099989999551,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 126,
+          "multiply": 198,
+          "divide": 45
+        },
+        "max_observed_numerator_bits": 15,
+        "max_observed_denominator_bits": 22,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 19,
+      "dimension": 5,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 5,
+      "update_rank": 3,
+      "seconds": 0.0021894670026085805,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 90,
+          "subtract": 57,
+          "multiply": 122,
+          "divide": 22
+        },
+        "max_observed_numerator_bits": 19,
+        "max_observed_denominator_bits": 22,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 20,
+      "dimension": 3,
+      "columns": 4,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0017144880002888385,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 96,
+          "multiply": 168,
+          "divide": 39
+        },
+        "max_observed_numerator_bits": 14,
+        "max_observed_denominator_bits": 18,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 21,
+      "dimension": 3,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 3,
+      "update_rank": 2,
+      "seconds": 0.0011757649990613572,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 15,
+          "subtract": 11,
+          "multiply": 17,
+          "divide": 6
+        },
+        "max_observed_numerator_bits": 6,
+        "max_observed_denominator_bits": 6,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 22,
+      "dimension": 1,
+      "columns": 2,
+      "protected_rank": 1,
+      "candidate_rank": 0,
+      "update_rank": 0,
+      "seconds": 0.00019969800268881954,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 2,
+          "multiply": 4,
+          "divide": 5
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 23,
+      "dimension": 4,
+      "columns": 4,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0024709370009077247,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 200,
+          "multiply": 376,
+          "divide": 64
+        },
+        "max_observed_numerator_bits": 25,
+        "max_observed_denominator_bits": 28,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 24,
+      "dimension": 2,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 2,
+      "update_rank": 2,
+      "seconds": 0.00030963199969846755,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 4,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 25,
+      "dimension": 1,
+      "columns": 4,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0002193870022892952,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 3,
+          "multiply": 5,
+          "divide": 7
+        },
+        "max_observed_numerator_bits": 2,
+        "max_observed_denominator_bits": 2,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 26,
+      "dimension": 3,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 3,
+      "update_rank": 1,
+      "seconds": 0.0013373059991863556,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 42,
+          "subtract": 29,
+          "multiply": 62,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 10,
+        "max_observed_denominator_bits": 10,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 27,
+      "dimension": 3,
+      "columns": 6,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0018081180023727939,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 123,
+          "multiply": 195,
+          "divide": 45
+        },
+        "max_observed_numerator_bits": 22,
+        "max_observed_denominator_bits": 17,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 28,
+      "dimension": 2,
+      "columns": 5,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0006675160002487246,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 36,
+          "multiply": 56,
+          "divide": 22
+        },
+        "max_observed_numerator_bits": 11,
+        "max_observed_denominator_bits": 7,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 29,
+      "dimension": 2,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.00040206999983638525,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 8,
+          "subtract": 4,
+          "multiply": 8,
+          "divide": 5
+        },
+        "max_observed_numerator_bits": 3,
+        "max_observed_denominator_bits": 3,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 30,
+      "dimension": 4,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 4,
+      "update_rank": 1,
+      "seconds": 0.0019078160003118683,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 120,
+          "subtract": 89,
+          "multiply": 193,
+          "divide": 39
+        },
+        "max_observed_numerator_bits": 26,
+        "max_observed_denominator_bits": 26,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 31,
+      "dimension": 4,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 4,
+      "update_rank": 1,
+      "seconds": 0.0020538349999696948,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 120,
+          "subtract": 96,
+          "multiply": 200,
+          "divide": 39
+        },
+        "max_observed_numerator_bits": 21,
+        "max_observed_denominator_bits": 28,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 32,
+      "dimension": 4,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 4,
+      "update_rank": 2,
+      "seconds": 0.0013984970028104726,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 64,
+          "subtract": 44,
+          "multiply": 92,
+          "divide": 20
+        },
+        "max_observed_numerator_bits": 9,
+        "max_observed_denominator_bits": 14,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 33,
+      "dimension": 3,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 3,
+      "update_rank": 3,
+      "seconds": 0.0009432369988644496,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 9,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 34,
+      "dimension": 5,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 5,
+      "update_rank": 2,
+      "seconds": 0.0029552300002251286,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 165,
+          "subtract": 127,
+          "multiply": 267,
+          "divide": 42
+        },
+        "max_observed_numerator_bits": 33,
+        "max_observed_denominator_bits": 37,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 35,
+      "dimension": 2,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 2,
+      "update_rank": 1,
+      "seconds": 0.0004574730010062922,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 8,
+          "subtract": 5,
+          "multiply": 9,
+          "divide": 5
+        },
+        "max_observed_numerator_bits": 4,
+        "max_observed_denominator_bits": 4,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 36,
+      "dimension": 5,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 5,
+      "update_rank": 3,
+      "seconds": 0.00233056800061604,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 90,
+          "subtract": 57,
+          "multiply": 122,
+          "divide": 22
+        },
+        "max_observed_numerator_bits": 22,
+        "max_observed_denominator_bits": 21,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 37,
+      "dimension": 2,
+      "columns": 4,
+      "protected_rank": 2,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0006578210013685748,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 32,
+          "multiply": 52,
+          "divide": 20
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 4,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 38,
+      "dimension": 3,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0016373430007661227,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 81,
+          "multiply": 153,
+          "divide": 36
+        },
+        "max_observed_numerator_bits": 17,
+        "max_observed_denominator_bits": 21,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 39,
+      "dimension": 1,
+      "columns": 6,
+      "protected_rank": 1,
+      "candidate_rank": 0,
+      "update_rank": 0,
+      "seconds": 0.0002723760007938836,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 5,
+          "multiply": 7,
+          "divide": 9
+        },
+        "max_observed_numerator_bits": 4,
+        "max_observed_denominator_bits": 4,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 40,
+      "dimension": 1,
+      "columns": 4,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0002178049981012009,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 4,
+          "multiply": 6,
+          "divide": 7
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 41,
+      "dimension": 1,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 1,
+      "update_rank": 1,
+      "seconds": 0.00011279799946350977,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 1,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 42,
+      "dimension": 2,
+      "columns": 5,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0006821379975008313,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 36,
+          "multiply": 56,
+          "divide": 22
+        },
+        "max_observed_numerator_bits": 7,
+        "max_observed_denominator_bits": 7,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 43,
+      "dimension": 2,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 2,
+      "update_rank": 2,
+      "seconds": 0.00034188000063295476,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 4,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 44,
+      "dimension": 5,
+      "columns": 5,
+      "protected_rank": 5,
+      "candidate_rank": 5,
+      "update_rank": 0,
+      "seconds": 0.004572764002659824,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 375,
+          "subtract": 410,
+          "multiply": 760,
+          "divide": 100
+        },
+        "max_observed_numerator_bits": 50,
+        "max_observed_denominator_bits": 49,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 45,
+      "dimension": 5,
+      "columns": 6,
+      "protected_rank": 5,
+      "candidate_rank": 5,
+      "update_rank": 0,
+      "seconds": 0.004897097998764366,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 375,
+          "subtract": 465,
+          "multiply": 815,
+          "divide": 105
+        },
+        "max_observed_numerator_bits": 49,
+        "max_observed_denominator_bits": 50,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 46,
+      "dimension": 3,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 3,
+      "update_rank": 3,
+      "seconds": 0.0008571489997848403,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 9,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 47,
+      "dimension": 5,
+      "columns": 5,
+      "protected_rank": 5,
+      "candidate_rank": 5,
+      "update_rank": 0,
+      "seconds": 0.00457436500073527,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 375,
+          "subtract": 425,
+          "multiply": 775,
+          "divide": 100
+        },
+        "max_observed_numerator_bits": 54,
+        "max_observed_denominator_bits": 53,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 48,
+      "dimension": 5,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 5,
+      "update_rank": 4,
+      "seconds": 0.0017917839977599215,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 35,
+          "subtract": 28,
+          "multiply": 38,
+          "divide": 8
+        },
+        "max_observed_numerator_bits": 9,
+        "max_observed_denominator_bits": 9,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 49,
+      "dimension": 3,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 3,
+      "update_rank": 3,
+      "seconds": 0.000901084000361152,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 9,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 50,
+      "dimension": 1,
+      "columns": 0,
+      "protected_rank": 0,
+      "candidate_rank": 0,
+      "update_rank": 0,
+      "seconds": 0.00011960900155827403,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 0,
+          "subtract": 1,
+          "multiply": 0,
+          "divide": 0
+        },
+        "max_observed_numerator_bits": 1,
+        "max_observed_denominator_bits": 1,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 51,
+      "dimension": 1,
+      "columns": 6,
+      "protected_rank": 1,
+      "candidate_rank": 1,
+      "update_rank": 0,
+      "seconds": 0.0002461769981891848,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 3,
+          "subtract": 6,
+          "multiply": 8,
+          "divide": 9
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 5,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 52,
+      "dimension": 4,
+      "columns": 6,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.002701610999793047,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 230,
+          "multiply": 406,
+          "divide": 72
+        },
+        "max_observed_numerator_bits": 29,
+        "max_observed_denominator_bits": 32,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 53,
+      "dimension": 4,
+      "columns": 6,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0026628630002960563,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 210,
+          "multiply": 386,
+          "divide": 72
+        },
+        "max_observed_numerator_bits": 39,
+        "max_observed_denominator_bits": 35,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 54,
+      "dimension": 2,
+      "columns": 3,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0006125740001152735,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 21,
+          "multiply": 41,
+          "divide": 18
+        },
+        "max_observed_numerator_bits": 4,
+        "max_observed_denominator_bits": 6,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 55,
+      "dimension": 4,
+      "columns": 6,
+      "protected_rank": 4,
+      "candidate_rank": 4,
+      "update_rank": 0,
+      "seconds": 0.0028028630003973376,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 192,
+          "subtract": 264,
+          "multiply": 440,
+          "divide": 72
+        },
+        "max_observed_numerator_bits": 27,
+        "max_observed_denominator_bits": 26,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 56,
+      "dimension": 2,
+      "columns": 2,
+      "protected_rank": 2,
+      "candidate_rank": 2,
+      "update_rank": 0,
+      "seconds": 0.0005948079997324385,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 20,
+          "multiply": 40,
+          "divide": 16
+        },
+        "max_observed_numerator_bits": 5,
+        "max_observed_denominator_bits": 6,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 57,
+      "dimension": 3,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0016555709989916068,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 75,
+          "multiply": 147,
+          "divide": 36
+        },
+        "max_observed_numerator_bits": 22,
+        "max_observed_denominator_bits": 23,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 58,
+      "dimension": 4,
+      "columns": 1,
+      "protected_rank": 1,
+      "candidate_rank": 4,
+      "update_rank": 3,
+      "seconds": 0.0010949540010187775,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 24,
+          "subtract": 18,
+          "multiply": 26,
+          "divide": 7
+        },
+        "max_observed_numerator_bits": 8,
+        "max_observed_denominator_bits": 8,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    },
+    {
+      "case": 59,
+      "dimension": 3,
+      "columns": 3,
+      "protected_rank": 3,
+      "candidate_rank": 3,
+      "update_rank": 0,
+      "seconds": 0.0016789549990789965,
+      "construction_cost": {
+        "instrumented_rational_operations": {
+          "add": 81,
+          "subtract": 81,
+          "multiply": 153,
+          "divide": 36
+        },
+        "max_observed_numerator_bits": 17,
+        "max_observed_denominator_bits": 19,
+        "scope": "Explicit rational operations and their Fraction results, not Python bigint/gcd internals or peak memory"
+      }
+    }
+  ],
+  "random_matrix_case_count": 60,
+  "permutation_covariance_cases": 60,
+  "exhaustive_three_coordinate_covariance": {
+    "cases": 6,
+    "H": {
+      "shape": [
+        3,
+        2
+      ],
+      "rows": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "2",
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "G": {
+      "shape": [
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "1",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "3"
+        ],
+        [
+          "2",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "records": [
+      {
+        "permutation": [
+          0,
+          1,
+          2
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "2/3",
+              "-1/3",
+              "1/3"
+            ],
+            [
+              "-1/3",
+              "1/6",
+              "-1/6"
+            ],
+            [
+              "1/3",
+              "-1/6",
+              "1/6"
+            ]
+          ]
+        }
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          1
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "2/3",
+              "1/3",
+              "-1/3"
+            ],
+            [
+              "1/3",
+              "1/6",
+              "-1/6"
+            ],
+            [
+              "-1/3",
+              "-1/6",
+              "1/6"
+            ]
+          ]
+        }
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          2
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "1/6",
+              "-1/3",
+              "-1/6"
+            ],
+            [
+              "-1/3",
+              "2/3",
+              "1/3"
+            ],
+            [
+              "-1/6",
+              "1/3",
+              "1/6"
+            ]
+          ]
+        }
+      },
+      {
+        "permutation": [
+          1,
+          2,
+          0
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "1/6",
+              "-1/6",
+              "-1/3"
+            ],
+            [
+              "-1/6",
+              "1/6",
+              "1/3"
+            ],
+            [
+              "-1/3",
+              "1/3",
+              "2/3"
+            ]
+          ]
+        }
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          1
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "1/6",
+              "1/3",
+              "-1/6"
+            ],
+            [
+              "1/3",
+              "2/3",
+              "-1/3"
+            ],
+            [
+              "-1/6",
+              "-1/3",
+              "1/6"
+            ]
+          ]
+        }
+      },
+      {
+        "permutation": [
+          2,
+          1,
+          0
+        ],
+        "projector": {
+          "shape": [
+            3,
+            3
+          ],
+          "rows": [
+            [
+              "1/6",
+              "-1/6",
+              "1/3"
+            ],
+            [
+              "-1/6",
+              "1/6",
+              "-1/3"
+            ],
+            [
+              "1/3",
+              "-1/3",
+              "2/3"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "negative_input_cases": 7,
+  "learning_response": {
+    "protected_H": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "AI_input": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    "complement_component": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "2/3"
+        ],
+        [
+          "-1/3"
+        ],
+        [
+          "-1/3"
+        ]
+      ]
+    },
+    "delta": {
+      "shape": [
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "1",
+          "-1/2",
+          "-1/2"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "response": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    "safe_but_useless_AI_input": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "1"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "safe_but_useless_nonzero_delta": {
+      "shape": [
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "2/3",
+          "-1/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "2/3",
+          "-1/3"
+        ],
+        [
+          "-1/3",
+          "-1/3",
+          "2/3"
+        ]
+      ]
+    },
+    "outside_but_ignored_input": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "outside_but_ignored_delta": {
+      "shape": [
+        3,
+        3
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "scope": "Exact rational algebra, not stored-word or bit-execution authorization"
+  },
+  "shared_call_counterexample": {
+    "local_left": {
+      "shape": [
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "local_right": {
+      "shape": [
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "global": {
+      "shape": [
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    },
+    "local_patch_response_at_other_site": {
+      "shape": [
+        2,
+        1
+      ],
+      "rows": [
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    }
+  },
+  "counterexamples": {
+    "C1_full_rank_no_nonzero_update": {
+      "H": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "P_perp": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "square_update_space_dimension": 0,
+      "reason": "The exact annihilator of the full input space contains only zero."
+    },
+    "C2_merged_calls_full_rank_local_projection_unsound": {
+      "local_left_P_perp": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "local_right_P_perp": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "global_P_perp": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "other_site_response_to_left_update": {
+        "shape": [
+          2,
+          1
+        ],
+        "rows": [
+          [
+            "0"
+          ],
+          [
+            "1"
+          ]
+        ]
+      }
+    },
+    "C7_safe_but_no_learning_response": {
+      "nonzero_update_for_AI_input_in_V": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "2/3",
+            "-1/3",
+            "-1/3"
+          ],
+          [
+            "-1/3",
+            "2/3",
+            "-1/3"
+          ],
+          [
+            "-1/3",
+            "-1/3",
+            "2/3"
+          ]
+        ]
+      },
+      "AI_input_in_V": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "response_in_V": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "0"
+          ],
+          [
+            "0"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "nonzero_update_missing_an_outside_input": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "AI_input_outside_V": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "0"
+          ],
+          [
+            "0"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "response_outside_V": {
+        "shape": [
+          3,
+          1
+        ],
+        "rows": [
+          [
+            "0"
+          ],
+          [
+            "0"
+          ],
+          [
+            "0"
+          ]
+        ]
+      }
+    }
+  },
+  "conservative_superspace": {
+    "actual_rank": 1,
+    "upper_bound_rank": 2,
+    "actual_complement_rank": 2,
+    "conservative_complement_rank": 1
+  },
+  "matrix_free": {
+    "formula": "X-B(B^T B)^(-1)B^T X",
+    "dense_projector_built_by_application": false,
+    "factor_storage_entries_excluding_X_and_output": "d*r+r*r if Gram inverse cached",
+    "dense_projector_entries": "d*d",
+    "scope": "Exact equality checked; no speed or memory benchmark claim"
+  },
+  "evidence_scope": "Finite exact-rational cases; T1/T2 universal proofs are separate handwritten arguments",
+  "SMT_queries": 0
+}

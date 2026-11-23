@@ -1,0 +1,26 @@
+{
+  "purpose": "Read-only A2 dependency snapshot, not a repeat audit of prior stages",
+  "request_sha256": "991a758893900542f4001050d87c54053fa38b785a0dbafd419a4f8f79de8510",
+  "files": {
+    "dmwk-p1-foundations/p1_a4/compiler.py": "aab5fd2e6fe82c7ea548e2d1776b8781906d343d8d54c96e81007acb7feb804b",
+    "dmwk-p1-foundations/p1_b2/canonicalize.py": "3f0d9e86e80d3206cc2d43aecd677e981a6a3f36b1f17d35d4569a9dcf5d687a",
+    "dmwk-p1-foundations/p1_c3/execution.py": "8644fa96d2c72b51efa6c4b94cf502dca6f3782140cb23d636d05d3f65f6aede",
+    "p2_a1/P2_A1_Definitions.md": "feea46abe0b39a78f57987c8587da4e0e35c2f5ba1c68d2ed29dafd1dc21768f",
+    "p2_a1/P2_A1_Evidence_Map.md": "db9c52d16c79770656113103e6a40a39b55e17e46b611d0f08800e82332c308c",
+    "p2_a1/P2_A1_Plan.md": "1249f6092e531ab0cc98f4826e8c03718b54a550ef8c3029b81d35d1e5709483",
+    "p2_a1/P2_A1_Report.md": "eed112e6c72e450566eace6cc6f1f3bbbf0dd0038d995c65982bb6970db7fd94",
+    "p2_a1/P2_A1_Review.md": "4511bfaa1cd94ed8600ff51a8dd2a1f003a2ae35ecdda744aa1252d0d4f1ae45",
+    "p2_a1/P2_A1_Theorems.md": "1777044ed9189c84ff96cec1d67587ba39f2a60c24f46bf0b259113cf0f72607",
+    "p2_a1/README.md": "17a4a252b8b60ae4dedf8f672f2407de9f7437051b9fccdf45084d27862be481",
+    "p2_a1/activation_spaces.py": "5ef2e11edd5c6768e3ab52812d424d7983650539bf70079c39d1ff1467b46c55",
+    "p2_a1/completion_status.json": "1afcdd9da702f838a30f8d6594055ffcf936bb570fa06bd7df187c116c5903be",
+    "p2_a1/final_integrity.json": "4d22abd21015f40901fe04d71a234a54af0c6c89db99722dd335832cdd4d168e",
+    "p2_a1/p1_dependency_baseline.json": "00d1477c23c9e0e08e7ff0bb0025beab9583d35866713f621ef9e270e44e0f10",
+    "p2_a1/reproduction_results.json": "9374a94b4d2f26991c5090c66ad6c517cc8dc901a2c962280459a69df2098623",
+    "p2_a1/requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "p2_a1/review_checks.json": "20196bb6d16c13bec642ca41085504b481339a76387be1a63882aeb918d70cbb",
+    "p2_a1/verification_results.json": "c737b29bfef7867c77c54b63709b4c4904e3c1323b50b70db6056f0e34c81e2d",
+    "p2_a1/verify_activation_spaces.py": "e219d901e3bab631c5623902637cae77f1007328068ef3d8cfd672bd7b0cad98",
+    "p2_a1/verify_review_checks.py": "d253b9e4cc9426b165e5fa7d236d04880d5f52f6d9baa5440b061d83363dd687"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "verified_utc": "2026-11-14T05:16:40.888255+00:00",
+  "purpose": "Verify original sources behind truncated request citations; not experimental evidence for this implementation",
+  "sources": [
+    {
+      "name": "NumPy SVD official documentation",
+      "requested_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.svd.html",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "LAPACK DGELSD original routine",
+      "requested_url": "https://www.netlib.org/lapack/double/dgelsd.f",
+      "resolved_url": "https://netlib.org/lapack/double/dgelsd.f",
+      "http_status": 200,
+      "sha256_of_retrieved_source": "7f1b0122fedeed1d58649042f6a22c5cc80b1421b8d7405f5ac1b40a160fdf70",
+      "excerpts": [
+        {
+          "term": "RCOND*S(1)",
+          "found": true,
+          "excerpt": "n)). * * RCOND (input) DOUBLE PRECISION * RCOND is used to determine the effective rank of A. * Singular values S(i) <= RCOND*S(1) are treated as zero. * If RCOND < 0, machine precision is used instead. * * RANK (output) INTEGER * The effective rank of A, i.e., the number of singular values * which are greater than RCOND*S(1). * * WORK (workspace/output) DOUBLE PRECISION array, dimension (MAX(1,LWORK)) * On exit, if INFO = 0, WORK(1) returns the optimal LWORK. * * LWORK (input) INTEGER * The dimension of the array WORK. LWORK must be at least 1. * The exact minimu"
+        },
+        {
+          "term": "effective rank",
+          "found": true,
+          "excerpt": "er approach. * (3) Apply back all the Householder tranformations to solve * the original least squares problem. * * The effective rank of A is determined by treating as zero those * singular values which are less than RCOND times the largest singular * value. * * The divide and conquer algorithm makes very mild assumptions about * floating point arithmetic. It will work on machines with a guard * digit in add/subtract, or on those binary machines without guard * digits which subtract like the Cray X-MP, Cray Y-MP, Cray C-90, or * Cray-2. It could conceivably fail "
+        }
+      ]
+    },
+    {
+      "name": "PyTorch SVD official documentation",
+      "requested_url": "https://docs.pytorch.org/docs/stable/generated/torch.linalg.svd.html",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "NumPy v2.3.5 original implementation/docstring",
+      "requested_url": "https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/linalg/_linalg.py",
+      "resolved_url": "https://raw.githubusercontent.com/numpy/numpy/v2.3.5/numpy/linalg/_linalg.py",
+      "http_status": 200,
+      "sha256_of_retrieved_source": "eab0bbee9c8758d387934dc32849f01deceb50261d02e22d41f03ad6ff2562cc",
+      "excerpts": [
+        {
+          "term": "The decomposition is performed using LAPACK routine",
+          "found": true,
+          "excerpt": "unction in SciPy. scipy.linalg.svdvals : Compute singular values of a matrix. Notes ----- The decomposition is performed using LAPACK routine ``_gesdd``. SVD is usually described for the factorization of a 2D matrix :math:`A`. The higher-dimensional case will be discussed below. In the 2D case, SVD is written as :math:`A = U S V^H`, where :math:`A = a`, :math:`U= u`, :math:`S= \\\\mathtt{np.diag}(s)` and :math:`V^H = vh`. The 1D array `s` contains the singular values of `a` and `u` and `vh` are unitary. The rows of `vh` are the eigenvectors of :math:`A^H A` and the columns of `u` are t"
+        },
+        {
+          "term": "_gesdd",
+          "found": true,
+          "excerpt": "lar values of a matrix. Notes ----- The decomposition is performed using LAPACK routine ``_gesdd``. SVD is usually described for the factorization of a 2D matrix :math:`A`. The higher-dimensional case will be discussed below. In the 2D case, SVD is written as :math:`A = U S V^H`, where :math:`A = a`, :math:`U= u`, :math:`S= \\\\mathtt{np.diag}(s)` and :math:`V^H = vh`. The 1D array `s` contains the singular values of `a` and `u` and `vh` are unitary. The rows of `vh` are the eigenvectors of :math:`A^H A` and the columns of `u` are the eigenvectors of :math:`A A^H`. In both cases the co"
+        }
+      ]
+    },
+    {
+      "name": "PyTorch original SVD documentation source",
+      "requested_url": "https://raw.githubusercontent.com/pytorch/pytorch/main/torch/linalg/__init__.py",
+      "resolved_url": "https://raw.githubusercontent.com/pytorch/pytorch/main/torch/linalg/__init__.py",
+      "http_status": 200,
+      "sha256_of_retrieved_source": "0353940830ac59f3d36dbb10e8f29f478eef0097e6fd5a4fa62e4fd31614c99c",
+      "excerpts": [
+        {
+          "term": "not unique",
+          "found": true,
+          "excerpt": "..., min(m, n):, :]` will be ignored, as those vectors can be arbitrary bases of the corresponding subspaces. .. warning:: The returned tensors `U` and `V` are not unique, nor are they continuous with respect to :attr:`A`. Due to this lack of uniqueness, different hardware and software may compute different singular vectors. This non-uniqueness is caused by the fact that multiplying any pair of singular vectors :math:`u_k, v_k` by `-1` in the real case or by :math:`e^{i \\phi}, \\phi \\in \\mathbb{R}` in the complex case produces another two valid singular vectors of the matrix. For this reason, the loss function shall not depend on thi"
+        },
+        {
+          "term": "different hardware",
+          "found": true,
+          "excerpt": "ing subspaces. .. warning:: The returned tensors `U` and `V` are not unique, nor are they continuous with respect to :attr:`A`. Due to this lack of uniqueness, different hardware and software may compute different singular vectors. This non-uniqueness is caused by the fact that multiplying any pair of singular vectors :math:`u_k, v_k` by `-1` in the real case or by :math:`e^{i \\phi}, \\phi \\in \\mathbb{R}` in the complex case produces another two valid singular vectors of the matrix. For this reason, the loss function shall not depend on this :math:`e^{i \\phi}` quantity, as it is not well-defined. This is checked for complex inputs wh"
+        },
+        {
+          "term": "multiplying",
+          "found": true,
+          "excerpt": "ttr:`A`. Due to this lack of uniqueness, different hardware and software may compute different singular vectors. This non-uniqueness is caused by the fact that multiplying any pair of singular vectors :math:`u_k, v_k` by `-1` in the real case or by :math:`e^{i \\phi}, \\phi \\in \\mathbb{R}` in the complex case produces another two valid singular vectors of the matrix. For this reason, the loss function shall not depend on this :math:`e^{i \\phi}` quantity, as it is not well-defined. This is checked for complex inputs when computing the gradients of this function. As such, when inputs are complex and are on a CUDA device, the computation"
+        }
+      ],
+      "section": "svd docstring only, not eig/eigh"
+    }
+  ],
+  "unresolved_citations": [
+    "The request text Debian Manpages +1 is not a complete bibliographic reference; original LAPACK routine is checked instead.",
+    "The bare tuhh.de domain does not identify a paper; no theorem is attributed to an unidentified source. The error inequalities in this stage are derived explicitly."
+  ],
+  "PyTorch_executed": false,
+  "installed_numpy_dispatch_observation": {
+    "version": "2.3.5",
+    "public_float32_common_computation_type": "<class 'numpy.float64'>",
+    "public_float32_result_type": "<class 'numpy.float32'>",
+    "public_svd_lines": [
+      "t, result_t = _commonType(a)",
+      "gufunc = _umath_linalg.svd_f",
+      "gufunc = _umath_linalg.svd_s",
+      "signature = 'D->DdD' if isComplexType(t) else 'd->ddd'",
+      "u, s, vh = gufunc(a, signature=signature)",
+      "u = u.astype(result_t, copy=False)",
+      "s = s.astype(_realType(result_t), copy=False)",
+      "vh = vh.astype(result_t, copy=False)",
+      "signature = 'D->d' if isComplexType(t) else 'd->d'",
+      "s = _umath_linalg.svd(a, signature=signature)",
+      "s = s.astype(_realType(result_t), copy=False)"
+    ],
+    "native_gufunc_signatures": [
+      "f->fff",
+      "d->ddd",
+      "F->FfF",
+      "D->DdD"
+    ],
+    "scope": "Installed Python dispatch inspection, not a proof of compiled numerical library internals"
+  }
+}

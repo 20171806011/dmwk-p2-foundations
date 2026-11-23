@@ -1,0 +1,38 @@
+{
+  "schema": "dmwk-p2-b1-verification-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T08:03:56.898548+00:00",
+  "planned_sections": [
+    "constraints_and_regressions",
+    "optimization_experiments"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "P2_B2_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "constraints_and_regressions",
+    "optimization_experiments"
+  ],
+  "completed_utc": "2026-11-14T08:03:56.898559+00:00",
+  "total_seconds": 1.5874000382609665e-05,
+  "evidence_scope": {
+    "exact": "Finite checks corroborate handwritten conditional projection/parameterization/transaction proofs.",
+    "optimization": "Toy declared A objectives, actual stored endpoints and complete local D domains; no universal learning or long-term guarantee.",
+    "optimizer": "Declared host proposal arithmetic is separate from protected BF16/FP32 execution.",
+    "BF16": "Software RNE, not native BF16 certification.",
+    "FP32": "Local scalar CPU operations audited against exact rational RNE.",
+    "transactions": "Trusted serial combined-state publication and refusal rollback; no cryptographic caller authentication or general concurrency.",
+    "excluded": "GPU, arbitrary compiler optimization, process-failure atomicity, full machine proof and later P2 stages."
+  }
+}

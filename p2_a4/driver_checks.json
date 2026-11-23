@@ -1,0 +1,147 @@
+{
+  "schema": "dmwk-p2-a4-driver-checks-v1",
+  "status": "passed",
+  "recorded_utc": "2026-11-14T07:35:21.919454+00:00",
+  "seed": 20261114,
+  "primary": {
+    "file": "verification_results.json",
+    "sha256": "1b5f4e3aa8ac62f4cb0bb5521abfc14d6cb7e52c407206395f1e3e30acf39c80",
+    "elapsed_seconds": 34.889410307001526,
+    "cwd": "/workspace/p2_a4",
+    "completed_sections": 4
+  },
+  "foreign_cwd_reproduction": {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/p2_a4/verify_capacity.py",
+      "--output",
+      "/workspace/p2_a4/reproduction_results.json"
+    ],
+    "cwd": "/tmp",
+    "file": "reproduction_results.json",
+    "sha256": "2b313d66d25e7562b0afaafcc70f4f64d942204bf28871f284098afcc01d10cd",
+    "status": "passed",
+    "elapsed_seconds": 35.897710092001944,
+    "completed_sections": 4,
+    "non_timing_identical_including_sources": true
+  },
+  "comparison_policy": {
+    "omitted_key_rule": "Keys containing seconds, or exactly started_utc/completed_utc; all other metadata and results compared recursively.",
+    "actual_omitted_paths": [
+      "/completed_utc",
+      "/elapsed_seconds",
+      "/families/0/elapsed_seconds",
+      "/families/1/elapsed_seconds",
+      "/families/10/elapsed_seconds",
+      "/families/11/elapsed_seconds",
+      "/families/2/elapsed_seconds",
+      "/families/3/elapsed_seconds",
+      "/families/4/elapsed_seconds",
+      "/families/5/elapsed_seconds",
+      "/families/6/elapsed_seconds",
+      "/families/7/elapsed_seconds",
+      "/families/8/elapsed_seconds",
+      "/families/9/elapsed_seconds",
+      "/formats/0/stored_scalar_word_coverage/elapsed_seconds",
+      "/formats/1/stored_scalar_word_coverage/elapsed_seconds",
+      "/runtime_seconds",
+      "/section_seconds",
+      "/sections/capacity_boundaries/elapsed_seconds",
+      "/sections/discrete_endpoints/elapsed_seconds",
+      "/sections/discrete_endpoints/families/0/elapsed_seconds",
+      "/sections/discrete_endpoints/families/1/elapsed_seconds",
+      "/sections/discrete_endpoints/families/10/elapsed_seconds",
+      "/sections/discrete_endpoints/families/11/elapsed_seconds",
+      "/sections/discrete_endpoints/families/2/elapsed_seconds",
+      "/sections/discrete_endpoints/families/3/elapsed_seconds",
+      "/sections/discrete_endpoints/families/4/elapsed_seconds",
+      "/sections/discrete_endpoints/families/5/elapsed_seconds",
+      "/sections/discrete_endpoints/families/6/elapsed_seconds",
+      "/sections/discrete_endpoints/families/7/elapsed_seconds",
+      "/sections/discrete_endpoints/families/8/elapsed_seconds",
+      "/sections/discrete_endpoints/families/9/elapsed_seconds",
+      "/sections/exact_algebra/elapsed_seconds",
+      "/sections/structural_budget/formats/0/stored_scalar_word_coverage/elapsed_seconds",
+      "/sections/structural_budget/formats/1/stored_scalar_word_coverage/elapsed_seconds",
+      "/sections/structural_budget/runtime_seconds",
+      "/started_utc",
+      "/total_seconds"
+    ]
+  },
+  "component_comparisons": {
+    "exact_algebra": {
+      "standalone_file": "algebra_results.json",
+      "non_timing_identical": true,
+      "checks": 45199,
+      "sha256": "7185ea3c4a3c879745f0926de4bd7a64b85bec551655f3267854696a53d0211b"
+    },
+    "discrete_endpoints": {
+      "standalone_file": "discrete_results.json",
+      "non_timing_identical": true,
+      "checks": 6864,
+      "sha256": "dc39339c64f2638fc96d7f5102ba87aecf4596ad5d91d566f8c79cfe401d1575"
+    },
+    "structural_budget": {
+      "standalone_file": "structural_results.json",
+      "non_timing_identical": true,
+      "checks": 74911,
+      "sha256": "1414031c65ed8b2baaf9bd57ba585513ced0afc6cba3acbe7f4862084e21d448"
+    },
+    "capacity_boundaries": {
+      "standalone_file": "boundary_results.json",
+      "non_timing_identical": true,
+      "checks": 50,
+      "sha256": "75e6edf843f0953a7d77f9bd7c480835935785fc6023248823f9d338595a6aa3"
+    }
+  },
+  "optimized_mode_refusals": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/p2_a4/verify_capacity.py",
+        "--output",
+        "/workspace/p2_a4/optimized_O_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 1,
+      "status": "expected_refusal",
+      "output": "optimized_O_refusal.json",
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output_sha256": "c0fbc1ee9e9b43be7025bd0e4f83ea43a2829a01b31dd4e8c53b8a2625abf566",
+      "stderr_empty": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/p2_a4/verify_capacity.py",
+        "--output",
+        "/workspace/p2_a4/optimized_OO_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 1,
+      "status": "expected_refusal",
+      "output": "optimized_OO_refusal.json",
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output_sha256": "009a542d138c4e89188e9721a35a6e6806002b6d88ce58bd6c5cc01716662c6b",
+      "stderr_empty": true
+    }
+  ],
+  "primary_unchanged_after_refusal_checks": true,
+  "elapsed_seconds": 0.6256958020021557,
+  "scope": "Driver reproducibility and refusal checks, not additional universal mathematics or machine proofs."
+}

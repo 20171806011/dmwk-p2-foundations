@@ -1,0 +1,491 @@
+{
+  "schema": "dmwk-p2-a4-structural-verification-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 74911,
+  "unexpected_failures": 0,
+  "exhaustive_row_mask_cases": 1728,
+  "seeded_rectangular_mask_cases": 60,
+  "layouts": [
+    {
+      "schema": "dmwk-p2-a4-row-mask-budget-v1",
+      "input_dimension": 3,
+      "output_dimension": 2,
+      "protected_rank": 2,
+      "geometric_update_space_dimension": 2,
+      "masked_update_space_dimension": 2,
+      "mask_dimension_loss": 0,
+      "allocated_cells": 2,
+      "rows": [
+        {
+          "row": 0,
+          "allowed_columns": [
+            2
+          ],
+          "allocated_cells": 1,
+          "restricted_protected_rank": 0,
+          "exact_free_dimension": 1,
+          "every_allowed_cell_independently_safe": true,
+          "target_response_dimension": 1
+        },
+        {
+          "row": 1,
+          "allowed_columns": [
+            2
+          ],
+          "allocated_cells": 1,
+          "restricted_protected_rank": 0,
+          "exact_free_dimension": 1,
+          "every_allowed_cell_independently_safe": true,
+          "target_response_dimension": 1
+        }
+      ],
+      "masked_target_response_dimension": 2,
+      "global_provenance_verified": false,
+      "authorizes_live_commit": false,
+      "scope": "Exact rational supplied-span algebra; not stored or executable capacity",
+      "model_id": "axis_reserve_v1",
+      "protected_generators": {
+        "shape": [
+          3,
+          4
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "complete_activation_domain": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "initial_states": [
+        0,
+        1
+      ],
+      "external_inputs": [
+        0,
+        1
+      ],
+      "state_recurrence": "q_next = q XOR u, using first protected output and old input",
+      "fixed_bias": [
+        0,
+        0
+      ],
+      "D_read_columns": [
+        0,
+        1
+      ],
+      "A_target": "e3",
+      "layout_domain_provenance": "Declared complete Boolean domain and separate closure proof",
+      "provenance_scope": "The generic mask helper does not certify reachability; this fixed layout has a separately proved complete domain"
+    },
+    {
+      "schema": "dmwk-p2-a4-row-mask-budget-v1",
+      "input_dimension": 3,
+      "output_dimension": 2,
+      "protected_rank": 1,
+      "geometric_update_space_dimension": 4,
+      "masked_update_space_dimension": 2,
+      "mask_dimension_loss": 2,
+      "allocated_cells": 2,
+      "rows": [
+        {
+          "row": 0,
+          "allowed_columns": [
+            2
+          ],
+          "allocated_cells": 1,
+          "restricted_protected_rank": 0,
+          "exact_free_dimension": 1,
+          "every_allowed_cell_independently_safe": true,
+          "target_response_dimension": 1
+        },
+        {
+          "row": 1,
+          "allowed_columns": [
+            2
+          ],
+          "allocated_cells": 1,
+          "restricted_protected_rank": 0,
+          "exact_free_dimension": 1,
+          "every_allowed_cell_independently_safe": true,
+          "target_response_dimension": 1
+        }
+      ],
+      "masked_target_response_dimension": 2,
+      "global_provenance_verified": false,
+      "authorizes_live_commit": false,
+      "scope": "Exact rational supplied-span algebra; not stored or executable capacity",
+      "model_id": "correlated_reserve_v1",
+      "protected_generators": {
+        "shape": [
+          3,
+          4
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "complete_activation_domain": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "initial_states": [
+        0,
+        1
+      ],
+      "external_inputs": [
+        0,
+        1
+      ],
+      "state_recurrence": "q_next = q XOR u, using first protected output and old input",
+      "fixed_bias": [
+        0,
+        0
+      ],
+      "D_read_columns": [
+        0,
+        1
+      ],
+      "A_target": "e3",
+      "layout_domain_provenance": "Declared complete Boolean domain and separate closure proof",
+      "provenance_scope": "The generic mask helper does not certify reachability; this fixed layout has a separately proved complete domain"
+    }
+  ],
+  "no_independent_coordinate_example": {
+    "schema": "dmwk-p2-a4-row-mask-budget-v1",
+    "input_dimension": 3,
+    "output_dimension": 2,
+    "protected_rank": 1,
+    "geometric_update_space_dimension": 4,
+    "masked_update_space_dimension": 0,
+    "mask_dimension_loss": 4,
+    "allocated_cells": 0,
+    "rows": [
+      {
+        "row": 0,
+        "allowed_columns": [],
+        "allocated_cells": 0,
+        "restricted_protected_rank": 0,
+        "exact_free_dimension": 0,
+        "every_allowed_cell_independently_safe": true,
+        "target_response_dimension": null
+      },
+      {
+        "row": 1,
+        "allowed_columns": [],
+        "allocated_cells": 0,
+        "restricted_protected_rank": 0,
+        "exact_free_dimension": 0,
+        "every_allowed_cell_independently_safe": true,
+        "target_response_dimension": null
+      }
+    ],
+    "masked_target_response_dimension": null,
+    "global_provenance_verified": false,
+    "authorizes_live_commit": false,
+    "scope": "Exact rational supplied-span algebra; not stored or executable capacity"
+  },
+  "formats": [
+    {
+      "format": "BF16",
+      "small_endpoint_pair_cases": 25,
+      "small_endpoint_distinct_A_e3_responses": 25,
+      "small_endpoint_distinct_A_e1_responses": 1,
+      "protected_model_input_cases": 200,
+      "stored_scalar_word_coverage": {
+        "scope": "all 65536 BF16 raw words",
+        "words": 65536,
+        "accepted": 65279,
+        "rejected": 257,
+        "output_identity_digest": "cfc8544e8a828cda3834844e11e3a3ee46c2e707b4efb68d8459cf26b2e23aca",
+        "arithmetic_counts": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 65279,
+          "software_add": 65279,
+          "exact_sums": 0,
+          "native_oracle_checks": 0
+        },
+        "elapsed_seconds": 16.152063457000622
+      },
+      "theorem_counts": {
+        "format": "BF16",
+        "canonical_finite_words": 65279,
+        "reserved_endpoint_count": 4261347841,
+        "changed_endpoint_count": 4261347840,
+        "A_e3_response_count": 4261347841,
+        "A_e3_changed_response_count": 4261347840,
+        "A_e1_response_count": 1,
+        "scope": "Theorem count for the two independently reserved words; not an exhaustive pair-space experiment",
+        "vector_space_dimension_claim": false
+      },
+      "paired_trace_count": 128,
+      "paired_ticks": 640,
+      "pure_bank_replacements": 640,
+      "nonzero_A_response": {
+        "old_words": [
+          0,
+          0
+        ],
+        "new_words": [
+          16256,
+          16384
+        ],
+        "target": "e3",
+        "audit": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 2,
+          "software_add": 2,
+          "exact_sums": 0,
+          "native_oracle_checks": 0
+        }
+      },
+      "transaction_scope": "Pure immutable endpoint substitutions only; A3 live certificate/rollback tests are separate"
+    },
+    {
+      "format": "FP32",
+      "small_endpoint_pair_cases": 25,
+      "small_endpoint_distinct_A_e3_responses": 25,
+      "small_endpoint_distinct_A_e1_responses": 1,
+      "protected_model_input_cases": 200,
+      "stored_scalar_word_coverage": {
+        "scope": "512 seeded FP32 draws plus deduplicated boundary words",
+        "words": 524,
+        "accepted": 521,
+        "rejected": 3,
+        "output_identity_digest": "291d2e1002713a267890e7a9c5c03a5e63ee50915aacb47bdb15d71fd8477a84",
+        "arithmetic_counts": {
+          "native_multiply": 521,
+          "native_add": 521,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 1042
+        },
+        "elapsed_seconds": 0.14864437699725386
+      },
+      "theorem_counts": {
+        "format": "FP32",
+        "canonical_finite_words": 4278190079,
+        "reserved_endpoint_count": 18302910352054026241,
+        "changed_endpoint_count": 18302910352054026240,
+        "A_e3_response_count": 18302910352054026241,
+        "A_e3_changed_response_count": 18302910352054026240,
+        "A_e1_response_count": 1,
+        "scope": "Theorem count for the two independently reserved words; not an exhaustive pair-space experiment",
+        "vector_space_dimension_claim": false
+      },
+      "paired_trace_count": 128,
+      "paired_ticks": 640,
+      "pure_bank_replacements": 640,
+      "nonzero_A_response": {
+        "old_words": [
+          0,
+          0
+        ],
+        "new_words": [
+          1065353216,
+          1073741824
+        ],
+        "target": "e3",
+        "audit": {
+          "native_multiply": 2,
+          "native_add": 2,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 4
+        }
+      },
+      "transaction_scope": "Pure immutable endpoint substitutions only; A3 live certificate/rollback tests are separate"
+    }
+  ],
+  "explicit_refusals": 29,
+  "refusals": [
+    {
+      "format": "BF16",
+      "case": "protected_coordinate_edit",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "negative_zero",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "nonfinite",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "boolean_word",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "mutable_bank_rows",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "invalid_input_bit",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "unknown_model",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "unknown_A_target",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "dense_gemm",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "fma",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "fused",
+      "exception": "ValueError"
+    },
+    {
+      "format": "BF16",
+      "case": "pairwise",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "protected_coordinate_edit",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "negative_zero",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "nonfinite",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "boolean_word",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "mutable_bank_rows",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "invalid_input_bit",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "unknown_model",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "unknown_A_target",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "dense_gemm",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "fma",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "fused",
+      "exception": "ValueError"
+    },
+    {
+      "format": "FP32",
+      "case": "pairwise",
+      "exception": "ValueError"
+    }
+  ],
+  "runtime_seconds": 22.520313457000157,
+  "SMT_queries": 0,
+  "scope": "Finite mask/layout implementation evidence; general budget and full-format pair counts are separately proved by hand"
+}

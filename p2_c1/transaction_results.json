@@ -1,0 +1,1788 @@
+{
+  "schema": "dmwk-p2-c1-transactions-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 1156,
+  "expected_refusals": 54,
+  "unexpected_failures": 0,
+  "training_runs": [
+    {
+      "format": "BF16",
+      "attempts": 32,
+      "accepted": 32,
+      "nonzero_stored_updates": 16,
+      "first_accepted_noop": 17,
+      "accepted_noops": 16,
+      "refused": 0,
+      "paired_D_ticks": 32,
+      "full_state_input_comparisons": 128,
+      "D_site_trace_comparisons": 896,
+      "D_word_mismatches": 0,
+      "initial_A": {
+        "output_words": [
+          0,
+          0
+        ],
+        "decoded_output": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "loss": [
+          1,
+          1
+        ],
+        "arithmetic_counts": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 2,
+          "software_add": 2,
+          "exact_sums": 0,
+          "native_oracle_checks": 0,
+          "native_dtype_signatures": []
+        }
+      },
+      "final_A": {
+        "output_words": [
+          16254,
+          49022
+        ],
+        "decoded_output": [
+          [
+            127,
+            128
+          ],
+          [
+            -127,
+            128
+          ]
+        ],
+        "loss": [
+          1,
+          16384
+        ],
+        "arithmetic_counts": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 2,
+          "software_add": 2,
+          "exact_sums": 0,
+          "native_oracle_checks": 0,
+          "native_dtype_signatures": []
+        }
+      },
+      "history": [
+        {
+          "update_index": 1,
+          "tick": 1,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16000,
+            48768
+          ],
+          "A_loss": [
+            9,
+            16
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 2,
+          "tick": 2,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16096,
+            48864
+          ],
+          "A_loss": [
+            81,
+            256
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 3,
+          "tick": 3,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16148,
+            48916
+          ],
+          "A_loss": [
+            729,
+            4096
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 4,
+          "tick": 4,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16175,
+            48943
+          ],
+          "A_loss": [
+            6561,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 5,
+          "tick": 5,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16195,
+            48963
+          ],
+          "A_loss": [
+            3721,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 6,
+          "tick": 6,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16210,
+            48978
+          ],
+          "A_loss": [
+            529,
+            16384
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 7,
+          "tick": 7,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16222,
+            48990
+          ],
+          "A_loss": [
+            289,
+            16384
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 8,
+          "tick": 8,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16230,
+            48998
+          ],
+          "A_loss": [
+            169,
+            16384
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 9,
+          "tick": 9,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16236,
+            49004
+          ],
+          "A_loss": [
+            25,
+            4096
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 10,
+          "tick": 10,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16241,
+            49009
+          ],
+          "A_loss": [
+            225,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 11,
+          "tick": 11,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16245,
+            49013
+          ],
+          "A_loss": [
+            121,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 12,
+          "tick": 12,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16248,
+            49016
+          ],
+          "A_loss": [
+            1,
+            1024
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 13,
+          "tick": 13,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16250,
+            49018
+          ],
+          "A_loss": [
+            9,
+            16384
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 14,
+          "tick": 14,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16252,
+            49020
+          ],
+          "A_loss": [
+            1,
+            4096
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 15,
+          "tick": 15,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16253,
+            49021
+          ],
+          "A_loss": [
+            9,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 16,
+          "tick": 16,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 17,
+          "tick": 17,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 18,
+          "tick": 18,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 19,
+          "tick": 19,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 20,
+          "tick": 20,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 21,
+          "tick": 21,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 22,
+          "tick": 22,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 23,
+          "tick": 23,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 24,
+          "tick": 24,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 25,
+          "tick": 25,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 26,
+          "tick": 26,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 27,
+          "tick": 27,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 28,
+          "tick": 28,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 29,
+          "tick": 29,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 30,
+          "tick": 30,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 31,
+          "tick": 31,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        },
+        {
+          "update_index": 32,
+          "tick": 32,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            16254,
+            49022
+          ],
+          "A_loss": [
+            1,
+            16384
+          ],
+          "changed": false,
+          "effective_rank": 0
+        }
+      ],
+      "source": {
+        "schema": "dmwk-p2-c1-bool-fsm-v1",
+        "state_ports": [
+          "q"
+        ],
+        "input_ports": [
+          "u"
+        ],
+        "output_ports": [
+          "out"
+        ],
+        "initial_states": [
+          [
+            0
+          ]
+        ],
+        "next_state": [
+          [
+            "xor",
+            [
+              "state",
+              0
+            ],
+            [
+              "input",
+              0
+            ]
+          ]
+        ],
+        "outputs": [
+          [
+            "state",
+            0
+          ]
+        ]
+      },
+      "capacity": {
+        "A_full_basis_response_dimension": 2,
+        "D_rows_only_linear_preactivation_constraint_dimension": 10,
+        "D_rows_only_scope": "external linear-preactivation family, not structural authorization or full BIT-class dimension",
+        "all_state_call_span_rank": 3,
+        "canonical_word_alphabet_size": 65279,
+        "finite_cardinality_theorem_not_exhaustive_enumeration": true,
+        "fixed_capacity_not_consumed_by_update_count": true,
+        "full_basis_stored_response_signature_count_decimal": "4261347841",
+        "full_output_annihilator_dimension": 4,
+        "input_dimension": 4,
+        "maximum_structural_update_rank": 1,
+        "output_dimension": 4,
+        "protected_containing_rank": 3,
+        "protected_generators_columns": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "rank_budget_semantics": "requested minimum attainable rank, not a per-update rank cap",
+        "rank_capped_family_is_not_a_vector_space": true,
+        "structural_endpoint_count_decimal": "4261347841",
+        "structural_update_dimension": 2
+      },
+      "cost": {
+        "A_binary_float_operations_per_call": 4,
+        "D_binary_float_operations_per_tick": 84,
+        "D_relu_word_operations_per_tick": 14,
+        "compile_complete_envelope_contexts": 4,
+        "current_plus_next_state_slots": 2,
+        "declared_A_call_sites": 2,
+        "dense_matrix_word_slots": 16,
+        "diagnostic_site_trace_records_per_tick": 7,
+        "editable_word_slots": 2,
+        "fixed_nonzero_D_coefficients": 5,
+        "graph_json_bytes": 2315,
+        "host_ledger_optimizer_python_object_memory_included": false,
+        "initial_nonzero_coefficients": 5,
+        "input_word_slots": 1,
+        "maximum_expression_depth": 2,
+        "maximum_structural_nonzero_coefficients": 7,
+        "output_word_slots": 1,
+        "physical_shared_banks": 1,
+        "primitive_D_calls_per_tick": 7,
+        "program_representation": "source/ordered graph/wires plus shared bank; graph size is not constant",
+        "selected_gate_wire_slots": 7,
+        "source_json_bytes": 192,
+        "source_node_occurrences": 4,
+        "stored_bias_word_slots": 4
+      },
+      "objective": "half squared error on decoded A output at e1, target (1,-1), SGD rate 1/4"
+    },
+    {
+      "format": "FP32",
+      "attempts": 32,
+      "accepted": 32,
+      "nonzero_stored_updates": 32,
+      "first_accepted_noop": null,
+      "accepted_noops": 0,
+      "refused": 0,
+      "paired_D_ticks": 32,
+      "full_state_input_comparisons": 128,
+      "D_site_trace_comparisons": 896,
+      "D_word_mismatches": 0,
+      "initial_A": {
+        "output_words": [
+          0,
+          0
+        ],
+        "decoded_output": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "loss": [
+          1,
+          1
+        ],
+        "arithmetic_counts": {
+          "native_multiply": 2,
+          "native_add": 2,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 4,
+          "native_dtype_signatures": [
+            [
+              "float32",
+              "float32",
+              "float32"
+            ]
+          ]
+        }
+      },
+      "final_A": {
+        "output_words": [
+          1065351531,
+          3212835179
+        ],
+        "decoded_output": [
+          [
+            16775531,
+            16777216
+          ],
+          [
+            -16775531,
+            16777216
+          ]
+        ],
+        "loss": [
+          2839225,
+          281474976710656
+        ],
+        "arithmetic_counts": {
+          "native_multiply": 2,
+          "native_add": 2,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 4,
+          "native_dtype_signatures": [
+            [
+              "float32",
+              "float32",
+              "float32"
+            ]
+          ]
+        }
+      },
+      "history": [
+        {
+          "update_index": 1,
+          "tick": 1,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1048576000,
+            3196059648
+          ],
+          "A_loss": [
+            9,
+            16
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 2,
+          "tick": 2,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1054867456,
+            3202351104
+          ],
+          "A_loss": [
+            81,
+            256
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 3,
+          "tick": 3,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1058275328,
+            3205758976
+          ],
+          "A_loss": [
+            729,
+            4096
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 4,
+          "tick": 4,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1060044800,
+            3207528448
+          ],
+          "A_loss": [
+            6561,
+            65536
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 5,
+          "tick": 5,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1061371904,
+            3208855552
+          ],
+          "A_loss": [
+            59049,
+            1048576
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 6,
+          "tick": 6,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1062367232,
+            3209850880
+          ],
+          "A_loss": [
+            531441,
+            16777216
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 7,
+          "tick": 7,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1063113728,
+            3210597376
+          ],
+          "A_loss": [
+            4782969,
+            268435456
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 8,
+          "tick": 8,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1063673600,
+            3211157248
+          ],
+          "A_loss": [
+            43046721,
+            4294967296
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 9,
+          "tick": 9,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1064093504,
+            3211577152
+          ],
+          "A_loss": [
+            387420489,
+            68719476736
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 10,
+          "tick": 10,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1064408432,
+            3211892080
+          ],
+          "A_loss": [
+            3486784401,
+            1099511627776
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 11,
+          "tick": 11,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1064644628,
+            3212128276
+          ],
+          "A_loss": [
+            31381059609,
+            17592186044416
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 12,
+          "tick": 12,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1064821775,
+            3212305423
+          ],
+          "A_loss": [
+            282429536481,
+            281474976710656
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 13,
+          "tick": 13,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1064954635,
+            3212438283
+          ],
+          "A_loss": [
+            158866813561,
+            281474976710656
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 14,
+          "tick": 14,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1065054280,
+            3212537928
+          ],
+          "A_loss": [
+            1396292689,
+            4398046511104
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 15,
+          "tick": 15,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1065129014,
+            3212612662
+          ],
+          "A_loss": [
+            12566634201,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 16,
+          "tick": 16,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1065185064,
+            3212668712
+          ],
+          "A_loss": [
+            441798361,
+            4398046511104
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 17,
+          "tick": 17,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1065227102,
+            3212710750
+          ],
+          "A_loss": [
+            3976185249,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 18,
+          "tick": 18,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1065258630,
+            3212742278
+          ],
+          "A_loss": [
+            2236627849,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 19,
+          "tick": 19,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1065282276,
+            3212765924
+          ],
+          "A_loss": [
+            314530225,
+            17592186044416
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 20,
+          "tick": 20,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1065300011,
+            3212783659
+          ],
+          "A_loss": [
+            2830772025,
+            281474976710656
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 21,
+          "tick": 21,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1065313312,
+            3212796960
+          ],
+          "A_loss": [
+            1555009,
+            274877906944
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 22,
+          "tick": 22,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1065323288,
+            3212806936
+          ],
+          "A_loss": [
+            13995081,
+            4398046511104
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 23,
+          "tick": 23,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1065330770,
+            3212814418
+          ],
+          "A_loss": [
+            125955729,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 24,
+          "tick": 24,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1065336382,
+            3212820030
+          ],
+          "A_loss": [
+            70845889,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 25,
+          "tick": 25,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1065340590,
+            3212824238
+          ],
+          "A_loss": [
+            39853969,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 26,
+          "tick": 26,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1065343746,
+            3212827394
+          ],
+          "A_loss": [
+            22420225,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 27,
+          "tick": 27,
+          "input_bit": 0,
+          "state_bit": 1,
+          "A_output_words": [
+            1065346114,
+            3212829762
+          ],
+          "A_loss": [
+            12609601,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 28,
+          "tick": 28,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1065347890,
+            3212831538
+          ],
+          "A_loss": [
+            7091569,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 29,
+          "tick": 29,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1065349222,
+            3212832870
+          ],
+          "A_loss": [
+            3988009,
+            70368744177664
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 30,
+          "tick": 30,
+          "input_bit": 1,
+          "state_bit": 1,
+          "A_output_words": [
+            1065350220,
+            3212833868
+          ],
+          "A_loss": [
+            561001,
+            17592186044416
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 31,
+          "tick": 31,
+          "input_bit": 1,
+          "state_bit": 0,
+          "A_output_words": [
+            1065350969,
+            3212834617
+          ],
+          "A_loss": [
+            5049009,
+            281474976710656
+          ],
+          "changed": true,
+          "effective_rank": 1
+        },
+        {
+          "update_index": 32,
+          "tick": 32,
+          "input_bit": 0,
+          "state_bit": 0,
+          "A_output_words": [
+            1065351531,
+            3212835179
+          ],
+          "A_loss": [
+            2839225,
+            281474976710656
+          ],
+          "changed": true,
+          "effective_rank": 1
+        }
+      ],
+      "source": {
+        "schema": "dmwk-p2-c1-bool-fsm-v1",
+        "state_ports": [
+          "q"
+        ],
+        "input_ports": [
+          "u"
+        ],
+        "output_ports": [
+          "out"
+        ],
+        "initial_states": [
+          [
+            0
+          ]
+        ],
+        "next_state": [
+          [
+            "xor",
+            [
+              "state",
+              0
+            ],
+            [
+              "input",
+              0
+            ]
+          ]
+        ],
+        "outputs": [
+          [
+            "state",
+            0
+          ]
+        ]
+      },
+      "capacity": {
+        "A_full_basis_response_dimension": 2,
+        "D_rows_only_linear_preactivation_constraint_dimension": 10,
+        "D_rows_only_scope": "external linear-preactivation family, not structural authorization or full BIT-class dimension",
+        "all_state_call_span_rank": 3,
+        "canonical_word_alphabet_size": 4278190079,
+        "finite_cardinality_theorem_not_exhaustive_enumeration": true,
+        "fixed_capacity_not_consumed_by_update_count": true,
+        "full_basis_stored_response_signature_count_decimal": "18302910352054026241",
+        "full_output_annihilator_dimension": 4,
+        "input_dimension": 4,
+        "maximum_structural_update_rank": 1,
+        "output_dimension": 4,
+        "protected_containing_rank": 3,
+        "protected_generators_columns": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "rank_budget_semantics": "requested minimum attainable rank, not a per-update rank cap",
+        "rank_capped_family_is_not_a_vector_space": true,
+        "structural_endpoint_count_decimal": "18302910352054026241",
+        "structural_update_dimension": 2
+      },
+      "cost": {
+        "A_binary_float_operations_per_call": 4,
+        "D_binary_float_operations_per_tick": 84,
+        "D_relu_word_operations_per_tick": 14,
+        "compile_complete_envelope_contexts": 4,
+        "current_plus_next_state_slots": 2,
+        "declared_A_call_sites": 2,
+        "dense_matrix_word_slots": 16,
+        "diagnostic_site_trace_records_per_tick": 7,
+        "editable_word_slots": 2,
+        "fixed_nonzero_D_coefficients": 5,
+        "graph_json_bytes": 2315,
+        "host_ledger_optimizer_python_object_memory_included": false,
+        "initial_nonzero_coefficients": 5,
+        "input_word_slots": 1,
+        "maximum_expression_depth": 2,
+        "maximum_structural_nonzero_coefficients": 7,
+        "output_word_slots": 1,
+        "physical_shared_banks": 1,
+        "primitive_D_calls_per_tick": 7,
+        "program_representation": "source/ordered graph/wires plus shared bank; graph size is not constant",
+        "selected_gate_wire_slots": 7,
+        "source_json_bytes": 192,
+        "source_node_occurrences": 4,
+        "stored_bias_word_slots": 4
+      },
+      "objective": "half squared error on decoded A output at e1, target (1,-1), SGD rate 1/4"
+    }
+  ],
+  "rollback_cases": [
+    {
+      "format": "BF16",
+      "mutated_paths": 17,
+      "nonzero_fixed_moment": [
+        1,
+        2
+      ],
+      "nonzero_editable_moment": [
+        -1,
+        2
+      ],
+      "fixed_actual_delta": [
+        0,
+        1
+      ]
+    },
+    {
+      "format": "FP32",
+      "mutated_paths": 17,
+      "nonzero_fixed_moment": [
+        1,
+        2
+      ],
+      "nonzero_editable_moment": [
+        -1,
+        2
+      ],
+      "fixed_actual_delta": [
+        0,
+        1
+      ]
+    }
+  ],
+  "endpoint_cases": [
+    {
+      "format": "BF16",
+      "rank_one_prefix_rank": 2,
+      "saturated_word": 32639,
+      "saturated_response_words": [
+        32639,
+        1
+      ],
+      "after_inward_response": [
+        0,
+        1
+      ]
+    },
+    {
+      "format": "FP32",
+      "rank_one_prefix_rank": 2,
+      "saturated_word": 2139095039,
+      "saturated_response_words": [
+        2139095039,
+        1
+      ],
+      "after_inward_response": [
+        0,
+        1
+      ]
+    }
+  ],
+  "refusal_records": [
+    {
+      "format": "BF16",
+      "case": "late_update_limit",
+      "reason": "Preparation refused without publication: Administrative accepted-update budget exhausted after staging",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "late_tick_limit",
+      "reason": "Tick refused without publication: Administrative execution-tick budget exhausted after staging",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_claim",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_source_sha256",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_graph_sha256",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_schedule",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_new_weight_version",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.initial_relation.initial_state_index",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.artifact.graph.D_calls",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.artifact.domain.A_to_D_feedback",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.artifact.layout.fixed_bias_words.0",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.artifact.graph.nonlinearities.D",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.artifact.numerical_policy",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.expected_source.next_state",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.state_words.0",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_old_snapshot.accepted_ledger",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_new_optimizer_state.step",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_new_weight_words.0.3",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "rehashed_new_accepted_event.effective_rank",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "read_only_receipt",
+      "reason": "Commit refused without publication: Not an exact compiled update candidate",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "fixed_cell_0_0",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "fixed_cell_0_3",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "fixed_cell_2_0",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "nonboolean_input",
+      "reason": "Tick refused without publication: D input is outside the canonical Boolean domain",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "stale_tick",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "stale_version",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "BF16",
+      "case": "nonrepresentable_large_proposal",
+      "reason": "Preparation refused without publication: BF16 RNE overflow",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "late_update_limit",
+      "reason": "Preparation refused without publication: Administrative accepted-update budget exhausted after staging",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "late_tick_limit",
+      "reason": "Tick refused without publication: Administrative execution-tick budget exhausted after staging",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_claim",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_source_sha256",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_graph_sha256",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_schedule",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_new_weight_version",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.initial_relation.initial_state_index",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.artifact.graph.D_calls",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.artifact.domain.A_to_D_feedback",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.artifact.layout.fixed_bias_words.0",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.artifact.graph.nonlinearities.D",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.artifact.numerical_policy",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.expected_source.next_state",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.state_words.0",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_old_snapshot.accepted_ledger",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_new_optimizer_state.step",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_new_weight_words.0.3",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "rehashed_new_accepted_event.effective_rank",
+      "reason": "Commit refused without publication: Candidate differs from complete semantic and snapshot recomputation",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "read_only_receipt",
+      "reason": "Commit refused without publication: Not an exact compiled update candidate",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "fixed_cell_0_0",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "fixed_cell_0_3",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "fixed_cell_2_0",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "nonboolean_input",
+      "reason": "Tick refused without publication: D input is outside the canonical Boolean domain",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "stale_tick",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "stale_version",
+      "reason": "Commit refused without publication: Stale complete owned snapshot",
+      "whole_snapshot_preserved": true
+    },
+    {
+      "format": "FP32",
+      "case": "nonrepresentable_large_proposal",
+      "reason": "Preparation refused without publication: FP32 RNE overflow",
+      "whole_snapshot_preserved": true
+    }
+  ],
+  "runtime_seconds": 14.890687274000015,
+  "scope": "Finite compiled XOR feedback and zero/basis A domain, trusted serial owner",
+  "prior_suites_rerun": false,
+  "P2_C2_started": false
+}

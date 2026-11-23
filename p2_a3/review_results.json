@@ -1,0 +1,328 @@
+{
+  "schema": "dmwk-p2-a3-independent-review-v1",
+  "status": "passed",
+  "evidence_type": "Finite independent implementation checks, not a universal machine proof",
+  "started_utc": "2026-11-14T06:47:08.339595+00:00",
+  "algebra": {
+    "exhaustive_binary_2x2_H_ternary_2x2_delta_pairs": 1296,
+    "H_rank_histogram": {
+      "0": 1,
+      "1": 9,
+      "2": 6
+    },
+    "exhaustive_binary_2x3_H_ternary_1x2_delta_pairs": 576,
+    "affine_all_subsets_0_1_2_and_ternary_changes": 72,
+    "affine_basis_before_augmentation_counterexample": true,
+    "conservative_superspace_not_necessary_counterexample": true,
+    "scope": "Independent determinant/minor basis and direct rational outputs; finite instances only"
+  },
+  "rounding_and_bounds": [
+    {
+      "format": "BF16",
+      "RNE_values": 17,
+      "overflow_refusals": 2,
+      "pointwise_cases": [
+        {
+          "fixture": "affine_bias_first",
+          "old_words": [
+            "0x3f80"
+          ],
+          "new_words": [
+            "0xbf80"
+          ],
+          "differences": [
+            "-2"
+          ],
+          "absolute_bounds": [
+            "2"
+          ]
+        },
+        {
+          "fixture": "commit_effective_delta",
+          "old_words": [
+            "0x4380"
+          ],
+          "new_words": [
+            "0x437f"
+          ],
+          "differences": [
+            "-1"
+          ],
+          "absolute_bounds": [
+            "1"
+          ]
+        },
+        {
+          "fixture": "subnormal_thirds",
+          "old_words": [
+            "0x0"
+          ],
+          "new_words": [
+            "0x1"
+          ],
+          "differences": [
+            "1/10889035741470030830827987437816582766592"
+          ],
+          "absolute_bounds": [
+            "1/10889035741470030830827987437816582766592"
+          ]
+        }
+      ],
+      "zero_dot_result": "-1",
+      "zero_dot_trace_words": [
+        "0x4380",
+        "0x4380",
+        "0x0",
+        "0xbf80"
+      ],
+      "scope": "Independent word-search RNE and exact affine expressions; finite values only"
+    },
+    {
+      "format": "FP32",
+      "RNE_values": 17,
+      "overflow_refusals": 2,
+      "pointwise_cases": [
+        {
+          "fixture": "affine_bias_first",
+          "old_words": [
+            "0x3f800000"
+          ],
+          "new_words": [
+            "0xbf800000"
+          ],
+          "differences": [
+            "-2"
+          ],
+          "absolute_bounds": [
+            "2"
+          ]
+        },
+        {
+          "fixture": "commit_effective_delta",
+          "old_words": [
+            "0x4b800000"
+          ],
+          "new_words": [
+            "0x4b7fffff"
+          ],
+          "differences": [
+            "-1"
+          ],
+          "absolute_bounds": [
+            "1"
+          ]
+        },
+        {
+          "fixture": "subnormal_thirds",
+          "old_words": [
+            "0x0"
+          ],
+          "new_words": [
+            "0x1"
+          ],
+          "differences": [
+            "1/713623846352979940529142984724747568191373312"
+          ],
+          "absolute_bounds": [
+            "1/713623846352979940529142984724747568191373312"
+          ]
+        }
+      ],
+      "zero_dot_result": "-1",
+      "zero_dot_trace_words": [
+        "0x4b800000",
+        "0x4b800000",
+        "0x0",
+        "0xbf800000"
+      ],
+      "scope": "Independent word-search RNE and exact affine expressions; finite values only"
+    }
+  ],
+  "certificates": [
+    {
+      "format": "BF16",
+      "exhaustive_small_candidate_matrices": 625,
+      "independent_safe_candidates": 16,
+      "independent_unsafe_refusals": 609,
+      "trace_pairs": 64,
+      "paired_ticks": 320,
+      "interleaved_commits": 320,
+      "A_response_before_words": [
+        16256,
+        0
+      ],
+      "A_response_after_words": [
+        0,
+        16384
+      ],
+      "resigned_tampering_and_public_API_refusals": [
+        "claim_algebra",
+        "claim_pointwise",
+        "version",
+        "old_endpoint",
+        "unsafe_new_endpoint",
+        "fake_effective_delta",
+        "model_id",
+        "wrong_format",
+        "missing_site",
+        "missing_activation",
+        "missing_initial_state",
+        "sample_only",
+        "changed_domain",
+        "changed_invariant",
+        "changed_shared_matrix",
+        "graph_reduction",
+        "graph_fma",
+        "graph_fusion",
+        "site_order",
+        "policy",
+        "schedule",
+        "forged_proof",
+        "forged_code_digest",
+        "noncanonical_json",
+        "duplicate_key",
+        "nonfinite_JSON",
+        "oversized_JSON",
+        "invalid_bit",
+        "reordered_tick",
+        "fused_tick",
+        "reinitialize",
+        "invalid_A_domain",
+        "callback_string",
+        "callback_candidate"
+      ],
+      "refusal_count": 34,
+      "callbacks_invoked": [],
+      "stale_replay_refused": true,
+      "global_certificate_survives_legal_state_advance": true,
+      "bitwise_without_algebra_examples": [
+        {
+          "model": "duplicate_feedback_v1",
+          "bitwise_accepted": true,
+          "exact_annihilation": false
+        },
+        {
+          "model": "split_feedback_v1",
+          "bitwise_accepted": true,
+          "exact_annihilation": false
+        }
+      ],
+      "shared_axis_exposes_tiny_update": true,
+      "subnormal_complete_domain_counterexample_refused": true,
+      "effective_commit_counterexample_refused": true,
+      "additional_shared_site_counterexample_refused": true,
+      "equal_endpoints_with_wrong_stateful_invariant_refused": true
+    },
+    {
+      "format": "FP32",
+      "exhaustive_small_candidate_matrices": 625,
+      "independent_safe_candidates": 16,
+      "independent_unsafe_refusals": 609,
+      "trace_pairs": 64,
+      "paired_ticks": 320,
+      "interleaved_commits": 320,
+      "A_response_before_words": [
+        1065353216,
+        0
+      ],
+      "A_response_after_words": [
+        0,
+        1073741824
+      ],
+      "resigned_tampering_and_public_API_refusals": [
+        "claim_algebra",
+        "claim_pointwise",
+        "version",
+        "old_endpoint",
+        "unsafe_new_endpoint",
+        "fake_effective_delta",
+        "model_id",
+        "wrong_format",
+        "missing_site",
+        "missing_activation",
+        "missing_initial_state",
+        "sample_only",
+        "changed_domain",
+        "changed_invariant",
+        "changed_shared_matrix",
+        "graph_reduction",
+        "graph_fma",
+        "graph_fusion",
+        "site_order",
+        "policy",
+        "schedule",
+        "forged_proof",
+        "forged_code_digest",
+        "noncanonical_json",
+        "duplicate_key",
+        "nonfinite_JSON",
+        "oversized_JSON",
+        "invalid_bit",
+        "reordered_tick",
+        "fused_tick",
+        "reinitialize",
+        "invalid_A_domain",
+        "callback_string",
+        "callback_candidate"
+      ],
+      "refusal_count": 34,
+      "callbacks_invoked": [],
+      "stale_replay_refused": true,
+      "global_certificate_survives_legal_state_advance": true,
+      "bitwise_without_algebra_examples": [
+        {
+          "model": "duplicate_feedback_v1",
+          "bitwise_accepted": true,
+          "exact_annihilation": false
+        },
+        {
+          "model": "split_feedback_v1",
+          "bitwise_accepted": true,
+          "exact_annihilation": false
+        }
+      ],
+      "shared_axis_exposes_tiny_update": true,
+      "subnormal_complete_domain_counterexample_refused": true,
+      "effective_commit_counterexample_refused": true,
+      "additional_shared_site_counterexample_refused": true,
+      "equal_endpoints_with_wrong_stateful_invariant_refused": true
+    }
+  ],
+  "sampling": "None in this verifier; exhaustive declared small sets and deterministic adversarial fixtures",
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false
+  },
+  "elapsed_seconds": 12.165741551998508,
+  "source_sha256": {
+    "verify_review_checks.py": "061f1edcbffc7d41168621b7e75b8603fced036fbdb0b7bd671a47bc77ef61e4",
+    "linear_contracts.py": "b51345886cf2022c150f4b92a91a8d5676ccba03ffc696a654aaf270afcf4607",
+    "bounded_contracts.py": "45296621ef6793d1a34d589edfff5653a18aca47f9224d72487b6a22fd04a203",
+    "certificate_kernel.py": "78bf6ed7bc92c5529b722fc29ffdb467bac808ffd00c9de7fed8e4af4d7a5a0c",
+    "a3_runtime.py": "ca1cc8a919b83bc8b8fa0192aa41320d61f1fe1fc49e6b627e5045120e3b3fd0"
+  },
+  "not_proved": [
+    "Universal correctness of Python/NumPy/hardware",
+    "GPU/native BF16 execution",
+    "General concurrent or adversarial host-runtime safety",
+    "Arbitrary compiler optimization",
+    "All global-domain claims for arbitrary programs",
+    "Any P2-A4 result"
+  ]
+}

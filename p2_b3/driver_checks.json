@@ -1,0 +1,194 @@
+{
+  "schema": "dmwk-p2-b3-driver-checks-v1",
+  "status": "passed",
+  "runs": [
+    {
+      "record": "verification_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b3/verify_b3.py",
+        "--output",
+        "/workspace/p2_b3/verification_results.json"
+      ],
+      "cwd": "/workspace/p2_b3",
+      "status": "passed",
+      "elapsed_seconds": 27.69921603900002,
+      "record_sha256": "179fa6ca2a2a1989aba323e319d2178639bdc2ea587294a9a26a2229c19442ee"
+    },
+    {
+      "record": "reproduction_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b3/verify_b3.py",
+        "--output",
+        "/workspace/p2_b3/reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "status": "passed",
+      "elapsed_seconds": 26.186360290994344,
+      "record_sha256": "ac56a864ec208ce7b4c80423563c58507577b2814b5ed8981f5f4d2ef091ff5e"
+    },
+    {
+      "record": "independent_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b3/verify_independent.py",
+        "--output",
+        "/workspace/p2_b3/independent_results.json"
+      ],
+      "cwd": "/workspace/p2_b3",
+      "status": "passed",
+      "elapsed_seconds": 39.41587975400034,
+      "record_sha256": "7220b19d78f727fcdfcb4f8e968d9c9e155ee54737acc7299d294b8de6148385"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b3/verify_independent.py",
+        "--output",
+        "/workspace/p2_b3/independent_reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "status": "passed",
+      "elapsed_seconds": 38.071814596005424,
+      "record_sha256": "41a92b40021ce20cb91540d129d62a72e9b2d688a919f0d93be527110502aa78"
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "main_foreign_cwd",
+      "left": "verification_results.json",
+      "right": "reproduction_results.json",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/completed_utc",
+        "/section_seconds",
+        "/sections/control_flow_and_rounding/elapsed_seconds",
+        "/sections/control_flow_and_rounding/formats/0/elapsed_seconds",
+        "/sections/control_flow_and_rounding/formats/1/elapsed_seconds",
+        "/sections/propagation_and_domains/elapsed_seconds",
+        "/sections/read_only_receipts_and_rollback/runtime_seconds",
+        "/started_utc",
+        "/total_seconds"
+      ]
+    },
+    {
+      "name": "independent_foreign_cwd",
+      "left": "independent_results.json",
+      "right": "independent_reproduction_results.json",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/elapsed_seconds",
+        "/section_seconds",
+        "/started_utc"
+      ]
+    },
+    {
+      "name": "standalone_to_aggregate_propagation_and_domains",
+      "left": "propagation_results.json",
+      "right": "verification_results.json#/sections/propagation_and_domains",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/elapsed_seconds"
+      ]
+    },
+    {
+      "name": "standalone_to_aggregate_read_only_receipts_and_rollback",
+      "left": "certificate_results.json",
+      "right": "verification_results.json#/sections/read_only_receipts_and_rollback",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/runtime_seconds"
+      ]
+    },
+    {
+      "name": "standalone_to_aggregate_control_flow_and_rounding",
+      "left": "control_results.json",
+      "right": "verification_results.json#/sections/control_flow_and_rounding",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/elapsed_seconds",
+        "/formats/0/elapsed_seconds",
+        "/formats/1/elapsed_seconds"
+      ]
+    }
+  ],
+  "optimization_guard_checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/p2_b3/verify_b3.py",
+        "--output",
+        "/workspace/p2_b3/optimized_O_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 1,
+      "elapsed_seconds": 0.11298662299668649,
+      "expected_refusal": true,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output": "optimized_O_refusal.json",
+      "output_sha256": "9971ede36e96fae356e012cd78d9a058766337f5ad0c6f641e9a0fbf1aa9c7e1"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/p2_b3/verify_b3.py",
+        "--output",
+        "/workspace/p2_b3/optimized_OO_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 1,
+      "elapsed_seconds": 0.10025026600487763,
+      "expected_refusal": true,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output": "optimized_OO_refusal.json",
+      "output_sha256": "c4750f6abd8aec0c7709da3057e28b3886a633ea0ef282202b2f78fc8791a4ea"
+    }
+  ],
+  "primary_evidence_unchanged_by_guard_checks": true,
+  "evidence_sha256": {
+    "propagation_results.json": "40a766c908c7599acec29b91d97b6014fb44827dbab1fcf9dd0327449ed6c0be",
+    "certificate_results.json": "1868306f819e34c8215a2d2e1ce2470ccedaa29087b290cb9e5e93b483c2229b",
+    "control_results.json": "4b5fe59bdfb9c203a65137562fd42364eb1ed7d8c6668016c614262335a45224",
+    "verification_results.json": "179fa6ca2a2a1989aba323e319d2178639bdc2ea587294a9a26a2229c19442ee",
+    "reproduction_results.json": "ac56a864ec208ce7b4c80423563c58507577b2814b5ed8981f5f4d2ef091ff5e",
+    "independent_results.json": "7220b19d78f727fcdfcb4f8e968d9c9e155ee54737acc7299d294b8de6148385",
+    "independent_reproduction_results.json": "41a92b40021ce20cb91540d129d62a72e9b2d688a919f0d93be527110502aa78"
+  },
+  "prior_artifacts_unchanged": 699,
+  "prior_nonexcluded_inventory_unchanged": true,
+  "current_source_and_producer_bindings_verified": true,
+  "source_sha256": {
+    "b3_runtime.py": "74c7dfcf0e4ffb50c57ef0104986bf15c6e32241f5a3950cdeb958039a07736b",
+    "control_flow.py": "4cfdffaed067eecb3845dd56729921196c8ef65208642bfdeb4e1b3684be5e14",
+    "propagation_bounds.py": "48f22b8fe9e352b4277f2b406ee4b4818ca556d9b6fa7f3472de38a26bfb6c2d",
+    "propagation_certificate.py": "b755d54f91fa73c5f4241100e4a6442c3cd3963fe19d3e782343d99254fe1ecb",
+    "verify_b3.py": "137ee66d760bb3c9386e38a76bcbf5b6ad2da442490e8afa7c7f784549682ed7",
+    "verify_certificates.py": "8c6e400b82dae5980259f7e0dc0a0e1827547a09bc5399356902f19528610088",
+    "verify_control.py": "9d546acc3d2b0db512e6e1aad9cb516cffef36a4fe86f9e9e51abffbda698b4e",
+    "verify_independent.py": "950e6ae33611494bc377b956b039dc353c437ba06f953a4a282d7166df5a7854",
+    "verify_propagation.py": "b1322cdac2afdad57486356647443569a08218e7f7c8230d1207f5fe8626b56f",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "dependency_baseline.json": "051274a80465a86efb6a74c81488246b38a241a85adf09eb604d0a5eafdacd8f"
+  },
+  "scope": "Only enumerated timestamps/seconds excluded; all scientific values, refusal reasons, source/producer identities and environment metadata compared. Old suites and optimizer trajectories not rerun."
+}

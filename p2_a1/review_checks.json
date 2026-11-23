@@ -1,0 +1,20 @@
+{
+  "schema": "p2-a1-independent-review-checks-v1",
+  "status": "passed",
+  "scope": "Exact rank library only; independent determinant/minor reference and argument rejection; no P1 suites or P2-A2 actions",
+  "exhaustive_binary_3x3_matrices": 512,
+  "row_order_invariance_cases": 512,
+  "additional_exact_rational_cases": 4,
+  "relu_basis_only_closure_counterexamples": 1,
+  "declared_uncalled_matrix_and_site_checks": 1,
+  "negative_argument_cases": 4,
+  "elapsed_seconds": 0.046422363997407956,
+  "implementation_sha256": "5ef2e11edd5c6768e3ab52812d424d7983650539bf70079c39d1ff1467b46c55",
+  "review_script_sha256": "d253b9e4cc9426b165e5fa7d236d04880d5f52f6d9baa5440b061d83363dd687",
+  "not_tested": [
+    "All arbitrary rational matrices",
+    "Floating-point backend certification",
+    "BFS monitor faithfulness for arbitrary user-supplied callbacks",
+    "Whole proof-assistant verification"
+  ]
+}

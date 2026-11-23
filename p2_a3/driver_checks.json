@@ -1,0 +1,80 @@
+{
+  "schema": "dmwk-p2-a3-driver-checks-v1",
+  "status": "passed",
+  "reproduction": {
+    "foreign_cwd": "/tmp",
+    "primary": "verification_results.json",
+    "secondary": "reproduction_results.json",
+    "all_non_timing_fields_equal": true,
+    "ignored_rule": "Only timestamp keys started_utc/completed_utc and keys containing seconds; no source hash, residual, count, format or backend omitted",
+    "excluded_paths": [
+      "/completed_utc",
+      "/elapsed_seconds",
+      "/formats/0/seconds",
+      "/formats/1/seconds",
+      "/runtime_seconds",
+      "/seconds",
+      "/section_seconds",
+      "/sections/bitwise_certificates/formats/0/seconds",
+      "/sections/bitwise_certificates/formats/1/seconds",
+      "/sections/bitwise_certificates/seconds",
+      "/sections/counterexamples/runtime_seconds",
+      "/sections/exact_linear/runtime_seconds",
+      "/sections/pointwise_bounded/elapsed_seconds",
+      "/started_utc",
+      "/total_seconds"
+    ]
+  },
+  "component_scientific_results_match_aggregate_except_timing": {
+    "algebra_results.json": true,
+    "bounded_results.json": true,
+    "counterexample_results.json": true,
+    "certificate_results.json": true
+  },
+  "standalone_counterexample_source_hashes_verified": {
+    "verify_counterexample_cases.py": true,
+    "certificate_kernel.py": true,
+    "a3_runtime.py": true
+  },
+  "component_wrapper_difference": "Initial strict comparison found the standalone CLI adds source_sha256 whereas run_checks returns the scientific payload without it. All those hashes were verified separately against frozen files; every remaining non-timing field matches. No numeric/result field omitted.",
+  "expected_preflight_refusals": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/p2_a3/verify_noninterference.py",
+        "--output",
+        "/workspace/p2_a3/optimized_O_refusal.json"
+      ],
+      "exit_code": 1,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Verification must run without Python -O/-OO"
+      },
+      "attempted_sections": [],
+      "result_file": "optimized_O_refusal.json"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/p2_a3/verify_noninterference.py",
+        "--output",
+        "/workspace/p2_a3/optimized_OO_refusal.json"
+      ],
+      "exit_code": 1,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Verification must run without Python -O/-OO"
+      },
+      "attempted_sections": [],
+      "result_file": "optimized_OO_refusal.json"
+    }
+  ],
+  "primary_result_preserved_sha256": "1a4aac4a84108f3759ccf9593f83f98b2dcb4d07364b8fb499d53aabda1c75e8",
+  "scope": "Executed driver and evidence-identity checks, not mathematical proof"
+}

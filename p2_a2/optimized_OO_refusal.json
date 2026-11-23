@@ -1,0 +1,40 @@
+{
+  "schema": "dmwk-p2-a2-verification-v1",
+  "status": "failed",
+  "started_utc": "2026-11-14T05:32:52.402667+00:00",
+  "seed": 20261114,
+  "planned_sections": [
+    "exact_algebra",
+    "numerical_bounds",
+    "structural_bit_exact"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "P2_A3_started": false,
+  "failure": {
+    "type": "ValueError",
+    "message": "Run verification without Python -O/-OO",
+    "phase": "preflight"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "exact_algebra",
+    "numerical_bounds",
+    "structural_bit_exact"
+  ],
+  "completed_utc": "2026-11-14T05:32:52.402678+00:00",
+  "total_seconds": 1.657499888096936e-05,
+  "evidence_scope": {
+    "theorems": "Four separate handwritten conditional proofs, not machine proofs inferred from this run.",
+    "exact": "Explicit finite rational cases, exhaustive small matrices, and seeded properties.",
+    "numeric": "Exact residual accounting for actual stored values; pointwise bounds, not automatic all-time bitwise safety.",
+    "structural": "Finite tests of the fixed sparse 2x2 trusted local reference; all-finite-time conclusion is the separate T4 induction.",
+    "BF16": "Software RNE, not native BF16 hardware.",
+    "FP32": "Local scalar CPU execution audited against exact rounding; local explicit single-precision SVD dispatch, not a certified library/toolchain.",
+    "excluded": "GPU, arbitrary dense/FMA/reassociated kernels, concurrent or hostile runtime, universal nonlinear learning, later P2 stages."
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema": "dmwk-p2-c1-original-source-check-v1",
+  "status": "two_primary_papers_verified_one_auxiliary_challenge",
+  "recorded_utc": "2026-11-14T11:21:47.203906+00:00",
+  "scope": "Original bibliographic and limited method/assumption inspection; not a novelty survey, scientific experiment, benchmark or machine proof.",
+  "retrievals": [
+    {
+      "key": "ogd_page",
+      "url": "https://proceedings.mlr.press/v108/farajtabar20a.html",
+      "final_url": "https://proceedings.mlr.press/v108/farajtabar20a.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 15946,
+      "sha256": "09b61f2bba5df657800422f1b0d1e8a060e5f370b8c7815771a9dc7f81c2c7b4",
+      "usable_original_paper_source": true
+    },
+    {
+      "key": "ogd_pdf",
+      "url": "https://proceedings.mlr.press/v108/farajtabar20a/farajtabar20a.pdf",
+      "final_url": "https://proceedings.mlr.press/v108/farajtabar20a/farajtabar20a.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 838966,
+      "sha256": "d148f051634d1839ff77635b3be79422f03e4a68325ce75b65f57d89fc6b18d5",
+      "usable_original_paper_source": true
+    },
+    {
+      "key": "gpm_arxiv",
+      "url": "https://arxiv.org/abs/2103.09762",
+      "final_url": "https://arxiv.org/abs/2103.09762",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 41995,
+      "sha256": "9568963cdbcef91d5d5e86541edda5bda3d99a1d0641d5f7e61fb392b1dda6d9",
+      "usable_original_paper_source": true
+    },
+    {
+      "key": "gpm_pdf",
+      "url": "https://arxiv.org/pdf/2103.09762",
+      "final_url": "https://arxiv.org/pdf/2103.09762",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 602736,
+      "sha256": "8824b492c6d65485dcd157b37b83c26ddb12183ae1562a423ca3acf72cdf768d",
+      "usable_original_paper_source": true
+    },
+    {
+      "key": "gpm_openreview",
+      "url": "https://openreview.net/forum?id=3AOj0RCNC2",
+      "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3D3AOj0RCNC2",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 4787,
+      "sha256": "d527075a7dab45633ed46976546bd05d407a0c9f744bb31622944ca73dfcfcf3",
+      "usable_original_paper_source": false,
+      "access_note": "HTTP 200 was a challenge redirect, not paper content; not used to verify publication or method."
+    }
+  ],
+  "references": [
+    {
+      "key": "OGD",
+      "title": "Orthogonal Gradient Descent for Continual Learning",
+      "authors": [
+        "Mehrdad Farajtabar",
+        "Navid Azizan",
+        "Alex Mott",
+        "Ang Li"
+      ],
+      "year": 2020,
+      "venue": "Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": 108,
+      "pages": "3762-3773",
+      "primary_url": "https://proceedings.mlr.press/v108/farajtabar20a.html",
+      "pdf_url": "https://proceedings.mlr.press/v108/farajtabar20a/farajtabar20a.pdf",
+      "inspected_locations": [
+        "Section 3, PDF pp. 2-4, equations (7)-(9), Algorithm 1, Lemma 3.1",
+        "Section 4, PDF p. 4, locality/learning-rate discussion"
+      ],
+      "short_source_excerpts": [
+        {
+          "pdf_page": 3,
+          "text": "we store only a subset of gradients from each task in our experiments"
+        },
+        {
+          "pdf_page": 4,
+          "text": "the larger the learning rate, the more likely a gradient update violates the locality assumption"
+        }
+      ],
+      "verified_method": "Project gradients away from a span of stored output-logit gradients, with local substitution of earlier model gradients and practical subset/target-logit variants.",
+      "scope_limits": [
+        "The current-to-stored model-gradient substitution is explicitly approximate/local.",
+        "Stored subsets do not certify every legal input or every program execution.",
+        "Lemma 3.1 concerns projected descent for the new-task loss; no fixed-graph BF16/FP32 bitwise or serial-publication theorem is supplied by that inspected result."
+      ]
+    },
+    {
+      "key": "GPM",
+      "title": "Gradient Projection Memory for Continual Learning",
+      "authors": [
+        "Gobinda Saha",
+        "Isha Garg",
+        "Kaushik Roy"
+      ],
+      "year": 2021,
+      "venue": "International Conference on Learning Representations",
+      "arxiv_id": "2103.09762",
+      "arxiv_version_from_metadata": "v1",
+      "arxiv_initial_submission_date": "2021-03-17",
+      "primary_url": "https://arxiv.org/abs/2103.09762",
+      "pdf_url": "https://arxiv.org/pdf/2103.09762",
+      "doi_url": "https://doi.org/10.48550/arXiv.2103.09762",
+      "conference_verification": "ArXiv metadata identifies ICLR 2021; PDF is headed Published as a conference paper at ICLR 2021. OpenReview challenge was not used as paper evidence.",
+      "inspected_locations": [
+        "Sections 4-5, PDF pp. 4-5, gradient-input relationship and equations (5)-(9)",
+        "Section 6, PDF p. 6, architecture and training choices",
+        "Section 7, PDF p. 9, threshold-controlled interference and equation (11)"
+      ],
+      "short_source_excerpts": [
+        {
+          "pdf_page": 5,
+          "text": "representations along the column obtained from forward pass of ns random samples from the current training dataset through the network"
+        },
+        {
+          "pdf_page": 6,
+          "text": "No bias units are used"
+        }
+      ],
+      "verified_method": "Build representation matrices from sampled layer activations, retain SVD directions by a Frobenius-energy threshold, project later gradients away, and append new orthogonal task directions.",
+      "scope_limits": [
+        "A sampled, threshold-truncated representation span is not a proof of all-legal-activation containment.",
+        "Exact Delta W x = 0 preserves exact linear action at that input; finite stored endpoints and execution order need separate checks.",
+        "Architecture, bias, normalization, optimizer and classifier choices have explicit experimental scope."
+      ]
+    }
+  ],
+  "c1_relation": {
+    "projection_is_not_claimed_new": true,
+    "additional_local_contract_obligations": [
+      "closed source and complete reconstructed shared-call graph",
+      "all-legal-domain activation/invariant proof",
+      "separate structural/algebraic/stored/BIT/response capacities",
+      "actual stored endpoint and fixed graph/numerical policy verification",
+      "versioned trusted serial snapshot and refusal rollback"
+    ],
+    "claim_of_priority_over_all_literature": false,
+    "comparative_benchmark_run": false,
+    "prior_suites_rerun": false,
+    "previous_research_modified": false
+  },
+  "preservation_note": "Full fetched HTML/PDF bytes were inspected in temporary cache; delivered evidence records actual response hashes, URLs, locations and bounded excerpts, not a claim that upstream pages are immutable.",
+  "inspection_checks": {
+    "response_hashes_checked": 5,
+    "short_excerpts_checked_on_stated_pdf_pages": 4,
+    "excerpt_method": "pdftotext reading-order extraction, whitespace normalized; layout-mode interleaves OGD columns and was not used as the final contiguous-quote check",
+    "scientific_test_count": 0,
+    "scope": "bibliographic and source-location checks only"
+  }
+}

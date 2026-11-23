@@ -1,0 +1,132 @@
+{
+  "schema": "dmwk-p2-b3-completion-v1",
+  "recorded_utc": "2026-11-14T09:52:18.843723+00:00",
+  "stage": "P2-B3",
+  "completion_status": "completed_scoped_delivery",
+  "scope": "Fixed-endpoint nonlinear/layer and finite-time bounds with joint domain proofs and read-only numerical evidence; B4 excluded",
+  "required_artifacts": [
+    "B3_Certificate_Design.md",
+    "B3_Interface.md",
+    "P2_B3_Certificate_Spec.md",
+    "P2_B3_Control_Flow.md",
+    "P2_B3_Counterexamples.md",
+    "P2_B3_Definitions.md",
+    "P2_B3_Errata.md",
+    "P2_B3_Evidence_Map.md",
+    "P2_B3_Mathematical_Checkpoint.md",
+    "P2_B3_Numerical_Analysis.md",
+    "P2_B3_Plan.md",
+    "P2_B3_Report.md",
+    "P2_B3_Review.md",
+    "P2_B3_Theorems.md",
+    "P2_B4_Handoff.md",
+    "README.md",
+    "b3_runtime.py",
+    "certificate_results.json",
+    "control_flow.py",
+    "control_results.json",
+    "dependency_baseline.json",
+    "dependency_inspection.json",
+    "driver_checks.json",
+    "independent_reproduction_results.json",
+    "independent_results.json",
+    "optimized_OO_refusal.json",
+    "optimized_O_refusal.json",
+    "propagation_bounds.py",
+    "propagation_certificate.py",
+    "propagation_results.json",
+    "reproduction_results.json",
+    "requirements.txt",
+    "verification_results.json",
+    "verify_b3.py",
+    "verify_certificates.py",
+    "verify_control.py",
+    "verify_independent.py",
+    "verify_propagation.py"
+  ],
+  "handwritten_proofs": {
+    "labels": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "T8"
+    ],
+    "control_flow_proof": "P2_B3_Control_Flow.md",
+    "machine_checked": false,
+    "scope": "Initial-error product-sum; constant regimes; two-execution rounding; joint tubes/common invariants; ReLU and repeated sharing; strict guards; observations and conditional output separation; read-only receipts"
+  },
+  "verification": {
+    "main_status": "passed",
+    "completed_sections": 3,
+    "producer_checks": {
+      "propagation_and_domains": 2103,
+      "read_only_receipts_and_rollback": 498,
+      "control_flow_and_rounding": 1578
+    },
+    "expected_refusals": {
+      "propagation_and_domains": 6,
+      "read_only_receipts_and_rollback": 128,
+      "control_flow_and_rounding": 28
+    },
+    "independent_status": "passed",
+    "independent_complete_initial_pair_history_cases": 1944,
+    "independent_distinct_word_trajectory_runs": 972,
+    "independent_common_invariants": 2,
+    "root_seed": 20261114,
+    "independent_control_subseed": 20261115,
+    "main_foreign_cwd_passed": true,
+    "independent_foreign_cwd_passed": true,
+    "scientific_comparisons_equal_except_recorded_timing": 5,
+    "optimized_main_interpreters_refused_before_testing": true,
+    "SMT_queries": 0,
+    "Lean_Coq_checked": false
+  },
+  "preservation": {
+    "prior_hashes_and_nonexcluded_inventory_unchanged": 699,
+    "baseline_scope": "Published P1 worktree, original loose P1 directories, publication worktree, root P1 summaries and preceding P2 stages",
+    "old_suites_rerun": false,
+    "old_optimizer_trajectories_regenerated": false,
+    "publication_operations": false
+  },
+  "B1_facts_preserved": {
+    "joint_refusals": 21,
+    "all_remain_BIT_equal_on_original_registered_domains": true,
+    "all_fail_exact_ALG": true,
+    "FP32_dense_AdamW_accepted": 0,
+    "FP32_dense_AdamW_refused": 8,
+    "FP32_dense_AdamW_final_loss": "5/2"
+  },
+  "execution_boundary": {
+    "BF16": "Software RNE with exact rational reference",
+    "FP32": "Available local scalar float32 operations independently checked",
+    "norm": "linf",
+    "activation_graph": "Affine/ReLU/identity, bias-first ascending separate operations, canonical zero, gradual underflow",
+    "generic_graph_call_limit": 32,
+    "registered_recurrent_horizon_limit": 64,
+    "general_finite_time_theorem_has_fixed_implementation_cap": false,
+    "hard_branch_analysis": "Separate guard diagnostic; not an arbitrary branched-program engine",
+    "numeric_receipt_authorizes_commit": false,
+    "original_BIT_and_ALG_AND_BIT_unchanged": true,
+    "domain_guarantee": "Two endpoint domains at every layer/time; uniform claims only with an all-time common invariant and uniform constants",
+    "source_and_producer_bindings_verified": true
+  },
+  "review": "P2_B3_Review.md: no remaining blocker within the conditional scope; development tooling/scope corrections disclosed",
+  "known_limits": [
+    "Generic supplied graph consistency is not external complete-call provenance",
+    "Box ranges lose correlations and may conservatively reject safe programs",
+    "Finite tests do not machine-check arbitrary horizons or all raw states",
+    "Hard-branch margins require complete domain inclusion and covered effects",
+    "GPU/native BF16/general concurrency/arbitrary compiler or FMA changes uncertified",
+    "No universal learning gain, whole-host machine proof or evolving-endpoint capacity theorem"
+  ],
+  "handoff": {
+    "file": "P2_B4_Handoff.md",
+    "P2_B4_started": false,
+    "next_action": "Coordinator review, then the original B4 task with new changing-endpoint/domain/capacity obligations"
+  },
+  "artifact_integrity_record": "final_integrity.json"
+}

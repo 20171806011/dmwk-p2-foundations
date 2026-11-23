@@ -1,0 +1,115 @@
+{
+  "schema": "dmwk-p2-a3-completion-v1",
+  "completed_utc": "2026-11-14T06:54:52.121801+00:00",
+  "stage": "P2-A3",
+  "status": "complete_with_explicit_conditional_boundaries",
+  "required_deliverables": [
+    "P2_A3_Plan.md",
+    "P2_A3_Definitions.md",
+    "P2_A3_Theorems.md",
+    "P2_A3_Execution_Spec.md",
+    "P2_A3_Counterexamples.md",
+    "linear_contracts.py",
+    "bounded_contracts.py",
+    "certificate_kernel.py",
+    "verify_noninterference.py",
+    "verify_review_checks.py",
+    "verification_results.json",
+    "review_results.json",
+    "P2_A3_Evidence_Map.md",
+    "P2_A3_Review.md",
+    "P2_A3_Report.md",
+    "README.md"
+  ],
+  "all_required_files_exist": true,
+  "proof_status": {
+    "T1": "Handwritten exact endpoint/generator/span equivalence",
+    "T2": "Handwritten sharing, containing-space, rank-edge and affine statements",
+    "T3": "Handwritten pointwise difference/bounds and strict output-separation corollary",
+    "T4": "Handwritten local-to-protected-program induction and serialized version transitivity",
+    "T5": "Handwritten trusted complete-finite-checker soundness/refusal",
+    "independent_review": "No unresolved blocker within stated contracts",
+    "machine_proof": false
+  },
+  "contracts": [
+    "ALG: exact supplied-span diagnostic, no implicit global provenance/commit permission",
+    "BOUND: actual pointwise arithmetic bound, no implicit global or live permission",
+    "BIT: complete registered finite-domain raw equality, recomputed before publication"
+  ],
+  "actual_checks": {
+    "exact_linear": 39590,
+    "pointwise_bounded": 1008,
+    "counterexamples": 126,
+    "bitwise_certificates": 4676
+  },
+  "check_units_not_pooled": true,
+  "fixed_seed": 20261114,
+  "primary_status": "passed",
+  "reproduction_status": "passed",
+  "all_non_timing_fields_equal": true,
+  "independent_status": "passed",
+  "nonzero_dense_witness": {
+    "old": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "new": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        -1
+      ]
+    ],
+    "protected_domain": "all duplicated Boolean activations at both registered sites plus all Boolean state/input transitions",
+    "A_input": [
+      1,
+      0
+    ],
+    "old_A_output": [
+      1,
+      0
+    ],
+    "new_A_output": [
+      0,
+      2
+    ],
+    "learning_performance_proved": false
+  },
+  "counterexample_highlights": [
+    "Actual commit difference can violate ideal annihilation",
+    "Exact null and zero basis FP result can fail at another legal subnormal input",
+    "Full protected linear rank can coexist with finite-domain BIT but not ALG for a nonzero stored edit"
+  ],
+  "baseline_prior_files": 341,
+  "all_prior_hashes_unchanged": true,
+  "prior_stage_suites_rerun": false,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "uncertified": [
+    "GPU",
+    "native BF16",
+    "general concurrency",
+    "arbitrary compiler/reduction/FMA transformations",
+    "arbitrary invariant proof languages",
+    "adversarial private runtime",
+    "complete Python/library/hardware verification",
+    "general P2-C composition"
+  ],
+  "continuation": {
+    "P2_A4_started": false,
+    "next_actor": "coordinator review and continuation",
+    "handoff": "P2_A4_Handoff.md",
+    "new_per_stage_user_confirmation_required": false
+  },
+  "publication_performed": false,
+  "previous_repository_operations": false
+}

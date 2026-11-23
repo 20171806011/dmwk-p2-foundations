@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-11-14T04:48:29.453616+00:00",
+  "main_and_reproduction_semantic_records_identical": true,
+  "source_hashes_current": true,
+  "independent_check_hashes_current": true,
+  "p1_read_only_dependency_hashes_unchanged": true,
+  "markdown_files": 7,
+  "local_links_checked": 20,
+  "missing_links": [],
+  "primary_document_language": "English",
+  "scope": "File/source/evidence alignment only, not a mathematical or hardware proof",
+  "sha256": {
+    "P2_A1_Definitions.md": "feea46abe0b39a78f57987c8587da4e0e35c2f5ba1c68d2ed29dafd1dc21768f",
+    "P2_A1_Evidence_Map.md": "db9c52d16c79770656113103e6a40a39b55e17e46b611d0f08800e82332c308c",
+    "P2_A1_Plan.md": "1249f6092e531ab0cc98f4826e8c03718b54a550ef8c3029b81d35d1e5709483",
+    "P2_A1_Report.md": "eed112e6c72e450566eace6cc6f1f3bbbf0dd0038d995c65982bb6970db7fd94",
+    "P2_A1_Review.md": "4511bfaa1cd94ed8600ff51a8dd2a1f003a2ae35ecdda744aa1252d0d4f1ae45",
+    "P2_A1_Theorems.md": "1777044ed9189c84ff96cec1d67587ba39f2a60c24f46bf0b259113cf0f72607",
+    "README.md": "17a4a252b8b60ae4dedf8f672f2407de9f7437051b9fccdf45084d27862be481",
+    "activation_spaces.py": "5ef2e11edd5c6768e3ab52812d424d7983650539bf70079c39d1ff1467b46c55",
+    "completion_status.json": "1afcdd9da702f838a30f8d6594055ffcf936bb570fa06bd7df187c116c5903be",
+    "p1_dependency_baseline.json": "00d1477c23c9e0e08e7ff0bb0025beab9583d35866713f621ef9e270e44e0f10",
+    "reproduction_results.json": "9374a94b4d2f26991c5090c66ad6c517cc8dc901a2c962280459a69df2098623",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "review_checks.json": "20196bb6d16c13bec642ca41085504b481339a76387be1a63882aeb918d70cbb",
+    "verification_results.json": "c737b29bfef7867c77c54b63709b4c4904e3c1323b50b70db6056f0e34c81e2d",
+    "verify_activation_spaces.py": "e219d901e3bab631c5623902637cae77f1007328068ef3d8cfd672bd7b0cad98",
+    "verify_review_checks.py": "d253b9e4cc9426b165e5fa7d236d04880d5f52f6d9baa5440b061d83363dd687"
+  }
+}

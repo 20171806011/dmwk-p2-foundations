@@ -1,0 +1,1068 @@
+{
+  "schema": "dmwk-p2-b4-independent-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T10:24:57.751260+00:00",
+  "sections": {
+    "algebra": {
+      "minor_rank_budget_cases": 486,
+      "response_relation_and_rank_cases": 512,
+      "three_task_anchor_cases": 27,
+      "pairwise_anchor_subchecks": 81,
+      "scope": "named exact small rational matrices; generic span coverage is not inferred",
+      "checks": 2466
+    },
+    "stored_histories": {
+      "stored_history_mode_cases": 486,
+      "witnesses": [
+        {
+          "format": "BF16",
+          "rank_one_step_sum_rank": 2,
+          "final_cancellation_is_not_prefix_safe": true,
+          "cumulative_arrival_anchor_preserved_but_not_W0": true,
+          "moving_space_loses_old_anchor": true
+        },
+        {
+          "format": "FP32",
+          "rank_one_step_sum_rank": 2,
+          "final_cancellation_is_not_prefix_safe": true,
+          "cumulative_arrival_anchor_preserved_but_not_W0": true,
+          "moving_space_loses_old_anchor": true
+        }
+      ],
+      "scope": "all named 1x2 two-step endpoints in {-1,0,1}; separate higher-dimensional constructions",
+      "checks": 3892
+    },
+    "finite_endpoint_families": {
+      "named_families": 16,
+      "enumerated_endpoints": 1136,
+      "records": [
+        {
+          "format": "BF16",
+          "model": "duplicate_feedback_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 4,
+            "BIT": 4,
+            "ALG_AND_BIT": 4,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "BF16",
+          "model": "split_feedback_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "BF16",
+          "model": "shared_axis_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "BF16",
+          "model": "duplicate_feedback_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 4,
+            "BIT": 16,
+            "ALG_AND_BIT": 4,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 12
+          }
+        },
+        {
+          "format": "BF16",
+          "model": "split_feedback_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 2,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 1
+          }
+        },
+        {
+          "format": "BF16",
+          "model": "shared_axis_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "duplicate_feedback_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 4,
+            "BIT": 4,
+            "ALG_AND_BIT": 4,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "split_feedback_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "shared_axis_v1",
+          "palette": "integer",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "duplicate_feedback_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 4,
+            "BIT": 16,
+            "ALG_AND_BIT": 4,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 12
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "split_feedback_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 2,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 1
+          }
+        },
+        {
+          "format": "FP32",
+          "model": "shared_axis_v1",
+          "palette": "tiny",
+          "counts": {
+            "storable": 81,
+            "ALG": 1,
+            "BIT": 1,
+            "ALG_AND_BIT": 1,
+            "ALG_NOT_BIT": 0,
+            "BIT_NOT_ALG": 0
+          }
+        }
+      ],
+      "scope": "complete named finite palettes only; raw BIT and E_CERT explicitly separated",
+      "checks": 11402
+    },
+    "exact_D_transactions": {
+      "accepted_repeated_and_noop_updates": 34,
+      "learning_steps": 32,
+      "paired_feedback_ticks": 32,
+      "complete_D_call_observations": 128,
+      "seed": 20261114,
+      "records": [
+        {
+          "format": "BF16",
+          "accepted_index": 1,
+          "tick": 1,
+          "theta_words": [
+            16256,
+            48768
+          ],
+          "loss": "9/32",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 2,
+          "tick": 2,
+          "theta_words": [
+            16256,
+            48864
+          ],
+          "loss": "81/512",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 3,
+          "tick": 3,
+          "theta_words": [
+            16256,
+            48916
+          ],
+          "loss": "729/8192",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 4,
+          "tick": 4,
+          "theta_words": [
+            16256,
+            48943
+          ],
+          "loss": "6561/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 5,
+          "tick": 5,
+          "theta_words": [
+            16256,
+            48963
+          ],
+          "loss": "3721/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 6,
+          "tick": 6,
+          "theta_words": [
+            16256,
+            48978
+          ],
+          "loss": "529/32768",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 7,
+          "tick": 7,
+          "theta_words": [
+            16256,
+            48990
+          ],
+          "loss": "289/32768",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 8,
+          "tick": 8,
+          "theta_words": [
+            16256,
+            48998
+          ],
+          "loss": "169/32768",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 9,
+          "tick": 9,
+          "theta_words": [
+            16256,
+            49004
+          ],
+          "loss": "25/8192",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 10,
+          "tick": 10,
+          "theta_words": [
+            16256,
+            49009
+          ],
+          "loss": "225/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 11,
+          "tick": 11,
+          "theta_words": [
+            16256,
+            49013
+          ],
+          "loss": "121/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 12,
+          "tick": 12,
+          "theta_words": [
+            16256,
+            49016
+          ],
+          "loss": "1/2048",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 13,
+          "tick": 13,
+          "theta_words": [
+            16256,
+            49018
+          ],
+          "loss": "9/32768",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 14,
+          "tick": 14,
+          "theta_words": [
+            16256,
+            49020
+          ],
+          "loss": "1/8192",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 15,
+          "tick": 15,
+          "theta_words": [
+            16256,
+            49021
+          ],
+          "loss": "9/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "BF16",
+          "accepted_index": 16,
+          "tick": 16,
+          "theta_words": [
+            16256,
+            49022
+          ],
+          "loss": "1/32768",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 1,
+          "tick": 1,
+          "theta_words": [
+            1065353216,
+            3196059648
+          ],
+          "loss": "9/32",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 2,
+          "tick": 2,
+          "theta_words": [
+            1065353216,
+            3202351104
+          ],
+          "loss": "81/512",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 3,
+          "tick": 3,
+          "theta_words": [
+            1065353216,
+            3205758976
+          ],
+          "loss": "729/8192",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 4,
+          "tick": 4,
+          "theta_words": [
+            1065353216,
+            3207528448
+          ],
+          "loss": "6561/131072",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 5,
+          "tick": 5,
+          "theta_words": [
+            1065353216,
+            3208855552
+          ],
+          "loss": "59049/2097152",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 6,
+          "tick": 6,
+          "theta_words": [
+            1065353216,
+            3209850880
+          ],
+          "loss": "531441/33554432",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 7,
+          "tick": 7,
+          "theta_words": [
+            1065353216,
+            3210597376
+          ],
+          "loss": "4782969/536870912",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 8,
+          "tick": 8,
+          "theta_words": [
+            1065353216,
+            3211157248
+          ],
+          "loss": "43046721/8589934592",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 9,
+          "tick": 9,
+          "theta_words": [
+            1065353216,
+            3211577152
+          ],
+          "loss": "387420489/137438953472",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 10,
+          "tick": 10,
+          "theta_words": [
+            1065353216,
+            3211892080
+          ],
+          "loss": "3486784401/2199023255552",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 11,
+          "tick": 11,
+          "theta_words": [
+            1065353216,
+            3212128276
+          ],
+          "loss": "31381059609/35184372088832",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 12,
+          "tick": 12,
+          "theta_words": [
+            1065353216,
+            3212305423
+          ],
+          "loss": "282429536481/562949953421312",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 13,
+          "tick": 13,
+          "theta_words": [
+            1065353216,
+            3212438283
+          ],
+          "loss": "158866813561/562949953421312",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 14,
+          "tick": 14,
+          "theta_words": [
+            1065353216,
+            3212537928
+          ],
+          "loss": "1396292689/8796093022208",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 15,
+          "tick": 15,
+          "theta_words": [
+            1065353216,
+            3212612662
+          ],
+          "loss": "12566634201/140737488355328",
+          "delta_rank": 1
+        },
+        {
+          "format": "FP32",
+          "accepted_index": 16,
+          "tick": 16,
+          "theta_words": [
+            1065353216,
+            3212668712
+          ],
+          "loss": "441798361/8796093022208",
+          "delta_rank": 1
+        }
+      ],
+      "expected_refusals": [
+        {
+          "case": "BF16:late_ledger_limit_after_inner_commit",
+          "type": "SequenceRejected",
+          "reason": "Preparation refused without publication: Administrative accepted-ledger limit exhausted after staging"
+        },
+        {
+          "case": "BF16:illegal_tick",
+          "type": "SequenceRejected",
+          "reason": "Tick refused without publication: Protected tick rejected: Canonical Boolean q/u required"
+        },
+        {
+          "case": "BF16:event_loss",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:staged_moment",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:event_effective_rank",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:omitted_shared_call",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_schedule",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_task",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:old_accepted_ledger",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "BF16:stale_tick_snapshot",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Stale combined endpoint/state/ledger context"
+        },
+        {
+          "case": "BF16:changed_protected_fixed_column",
+          "type": "SequenceRejected",
+          "reason": "Preparation refused without publication: Candidate preparation rejected: Structural immutable columns changed"
+        },
+        {
+          "case": "FP32:late_ledger_limit_after_inner_commit",
+          "type": "SequenceRejected",
+          "reason": "Preparation refused without publication: Administrative accepted-ledger limit exhausted after staging"
+        },
+        {
+          "case": "FP32:illegal_tick",
+          "type": "SequenceRejected",
+          "reason": "Tick refused without publication: Protected tick rejected: Canonical Boolean q/u required"
+        },
+        {
+          "case": "FP32:event_loss",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:staged_moment",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:event_effective_rank",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:omitted_shared_call",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_schedule",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_task",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:old_accepted_ledger",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Candidate differs from complete staged semantic recomputation"
+        },
+        {
+          "case": "FP32:stale_tick_snapshot",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Stale combined endpoint/state/ledger context"
+        },
+        {
+          "case": "FP32:changed_protected_fixed_column",
+          "type": "SequenceRejected",
+          "reason": "Preparation refused without publication: Candidate preparation rejected: Structural immutable columns changed"
+        }
+      ],
+      "nonzero_moment_late_rollback_fixtures": 2,
+      "scope": "fixed registered D and toy target; no universal learning benefit or newly admitted task",
+      "checks": 1956
+    },
+    "switching": {
+      "analyses": 28,
+      "complete_named_schedule_input_initial_pairs": 1142,
+      "common_family_ordered_pair_oracles": 18,
+      "expected_refusals": [
+        {
+          "case": "BF16:unused_family_version_omitted",
+          "type": "SwitchingRefused",
+          "reason": "Common family omits a declared history version, including unused versions"
+        },
+        {
+          "case": "BF16:decreasing_version",
+          "type": "SwitchingRefused",
+          "reason": "Version schedule must be nondecreasing; mode revisits need new stored versions"
+        },
+        {
+          "case": "BF16:wrong_adjacent_reference",
+          "type": "SwitchingRefused",
+          "reason": "Adjacent comparison requires the same complete stored version history"
+        },
+        {
+          "case": "BF16:initial_time_budget_excess",
+          "type": "BudgetExceeded",
+          "reason": "Read-only prefix budget exhausted at time 0"
+        },
+        {
+          "case": "BF16:separate_stability_not_common_box",
+          "type": "SwitchingRefused",
+          "reason": "A common-family mode image exits the proposed invariant box"
+        },
+        {
+          "case": "FP32:unused_family_version_omitted",
+          "type": "SwitchingRefused",
+          "reason": "Common family omits a declared history version, including unused versions"
+        },
+        {
+          "case": "FP32:decreasing_version",
+          "type": "SwitchingRefused",
+          "reason": "Version schedule must be nondecreasing; mode revisits need new stored versions"
+        },
+        {
+          "case": "FP32:wrong_adjacent_reference",
+          "type": "SwitchingRefused",
+          "reason": "Adjacent comparison requires the same complete stored version history"
+        },
+        {
+          "case": "FP32:initial_time_budget_excess",
+          "type": "BudgetExceeded",
+          "reason": "Read-only prefix budget exhausted at time 0"
+        },
+        {
+          "case": "FP32:separate_stability_not_common_box",
+          "type": "SwitchingRefused",
+          "reason": "A common-family mode image exits the proposed invariant box"
+        }
+      ],
+      "witnesses": [
+        {
+          "format": "BF16",
+          "nilpotent_six_tick_state": [
+            "0",
+            "8"
+          ],
+          "prefix_budget_first_violation": 1,
+          "unused_versions_bound": true
+        },
+        {
+          "format": "FP32",
+          "nilpotent_six_tick_state": [
+            "0",
+            "8"
+          ],
+          "prefix_budget_first_violation": 1,
+          "unused_versions_bound": true
+        }
+      ],
+      "scope": "all named monotone three-tick schedules and ternary inputs plus finite switching witnesses",
+      "checks": 13254
+    },
+    "readonly_receipts": {
+      "accepted_readonly_receipts": 12,
+      "records": [
+        {
+          "model": "scalar_switching_v1",
+          "format": "BF16",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "766214044264527313951848978657581062498017067861761/23945242826029513411849172299223580994042798784118784",
+          "budget": "24711456870294040725801021277881162056540815851980545/23945242826029513411849172299223580994042798784118784"
+        },
+        {
+          "model": "scalar_switching_v1",
+          "format": "BF16",
+          "method": "common_invariant",
+          "horizon": 2,
+          "bound": "766214044264527313951848978657581062498017067861761/23945242826029513411849172299223580994042798784118784",
+          "budget": "24711456870294040725801021277881162056540815851980545/23945242826029513411849172299223580994042798784118784"
+        },
+        {
+          "model": "relu_scalar_switching_v1",
+          "format": "BF16",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "766214044264527313951848978657581062498017067861761/23945242826029513411849172299223580994042798784118784",
+          "budget": "24711456870294040725801021277881162056540815851980545/23945242826029513411849172299223580994042798784118784"
+        },
+        {
+          "model": "nilpotent_switching_v1",
+          "format": "BF16",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "551279996493976636714548339629435658544217949697/23384026197294446691258957323460528314494920687616",
+          "budget": "23935306193788423327973505663089963973039138637313/23384026197294446691258957323460528314494920687616"
+        },
+        {
+          "model": "shared_relu_switching_v1",
+          "format": "BF16",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "682166238398672980610181354152862792431255784078377778572889427201/26959946667150639794667015087019630673637144422540572481103610249216",
+          "budget": "27642112905549312775277196441172493466068400206618950259676499676417/26959946667150639794667015087019630673637144422540572481103610249216"
+        },
+        {
+          "model": "scalar_switching_v1",
+          "format": "BF16",
+          "method": "tube",
+          "horizon": 0,
+          "bound": "1/2",
+          "budget": "1/2"
+        },
+        {
+          "model": "scalar_switching_v1",
+          "format": "FP32",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "29643244826132942275478112260117513300336467072710944849045318728751591110737921/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "budget": "1926780834890321488095265130642460195568311895834565946071518375114400307131449345/1897137590064188545819787018382342682267975428761855001222473056385648716020711424"
+        },
+        {
+          "model": "scalar_switching_v1",
+          "format": "FP32",
+          "method": "common_invariant",
+          "horizon": 2,
+          "bound": "29643244826132942275478112260117513300336467072710944849045318728751591110737921/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "budget": "1926780834890321488095265130642460195568311895834565946071518375114400307131449345/1897137590064188545819787018382342682267975428761855001222473056385648716020711424"
+        },
+        {
+          "model": "relu_scalar_switching_v1",
+          "format": "FP32",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "29643244826132942275478112260117513300336467072710944849045318728751591110737921/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "budget": "1926780834890321488095265130642460195568311895834565946071518375114400307131449345/1897137590064188545819787018382342682267975428761855001222473056385648716020711424"
+        },
+        {
+          "model": "nilpotent_switching_v1",
+          "format": "FP32",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "441715188844177313407592091084041679824048938257808119373075504573710337/28269553036454149273332760011886696253239742350009903329945699220681916416",
+          "budget": "28711268225298326586740352102970737933063791288267711449318774725255626753/28269553036454149273332760011886696253239742350009903329945699220681916416"
+        },
+        {
+          "model": "shared_relu_switching_v1",
+          "format": "FP32",
+          "method": "tube",
+          "horizon": 2,
+          "bound": "3966340540983573830573149723324264835944405559276045322189316786429895354735653940362305551512825343029754691710128509419521/169230328010303641331690318856389386196071598838855992136870091590247882556495704531248437872567112920983350278405979725889536",
+          "budget": "173196668551287215162263468579713651032016004398132037459059408376677777911231358471610743424079938264013104970116108235309057/169230328010303641331690318856389386196071598838855992136870091590247882556495704531248437872567112920983350278405979725889536"
+        },
+        {
+          "model": "scalar_switching_v1",
+          "format": "FP32",
+          "method": "tube",
+          "horizon": 0,
+          "bound": "1/2",
+          "budget": "1/2"
+        }
+      ],
+      "expected_refusals": [
+        {
+          "case": "BF16:numeric_unused_history",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_schedule",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_domain_samples",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_reference",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_first_state",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_proof_bound",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_live_authority",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_external_moment",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_stale_version",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "BF16:numeric_receipt_not_B4_commit",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Not an exact B4 update candidate"
+        },
+        {
+          "case": "BF16:positive_bound_zero_budget",
+          "type": "NumericalRejected",
+          "reason": "Switching evidence refused: Read-only prefix budget exhausted at time 1"
+        },
+        {
+          "case": "BF16:initial_pair_outside_zero_relation",
+          "type": "NumericalRejected",
+          "reason": "Switching evidence refused: Actual initial pair violates the declared initial difference relation"
+        },
+        {
+          "case": "FP32:numeric_unused_history",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_schedule",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_domain_samples",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_reference",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_first_state",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_proof_bound",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_live_authority",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_external_moment",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_stale_version",
+          "type": "NumericalRejected",
+          "reason": "Evidence differs from complete canonical recomputation"
+        },
+        {
+          "case": "FP32:numeric_receipt_not_B4_commit",
+          "type": "SequenceRejected",
+          "reason": "Commit refused without publication: Not an exact B4 update candidate"
+        },
+        {
+          "case": "FP32:positive_bound_zero_budget",
+          "type": "NumericalRejected",
+          "reason": "Switching evidence refused: Read-only prefix budget exhausted at time 1"
+        },
+        {
+          "case": "FP32:initial_pair_outside_zero_relation",
+          "type": "NumericalRejected",
+          "reason": "Switching evidence refused: Actual initial pair violates the declared initial difference relation"
+        }
+      ],
+      "nonzero_moment_full_B4_rollback_fixtures": 2,
+      "scope": "complete registered-domain proofs; external exact-D snapshot is identity only, not a state mapping",
+      "checks": 160
+    },
+    "frozen_B1": {
+      "source": "/workspace/p2_b1/training_results.json",
+      "sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+      "refused_pairs_redecoded": 21,
+      "complete_state_input_pairs": 84,
+      "all_BIT_equal_but_ALG_false": true,
+      "FP32_AdamW_accepted": 0,
+      "FP32_AdamW_refused": 8,
+      "FP32_AdamW_final_loss": "5/2",
+      "optimizer_reexecuted": false,
+      "prior_verifier_imported": false,
+      "checks": 761
+    }
+  },
+  "section_seconds": {
+    "algebra": 0.23261206000461243,
+    "stored_histories": 0.8791750310047064,
+    "finite_endpoint_families": 5.693312850002258,
+    "exact_D_transactions": 12.744876504002605,
+    "switching": 55.84165111999755,
+    "readonly_receipts": 4.3743618139997125,
+    "frozen_B1": 0.07723621199693298
+  },
+  "prior_stage_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "P2_C1_started": false,
+  "source_sha256": {
+    "b4_runtime.py": "61c4437d679ffa8402cafb4d64487032ba4513ae73755bedd51220df4ecffddd",
+    "capacity_history.py": "f21a37cb55b33be891b04abf7a0cae41a0a2761ffa51c181b0ab82b696332d39",
+    "sequence_certificate.py": "acdd65b263f3661c267aed3c566ed7ce13a6fb122bdfec9f3126cd4f71335b90",
+    "switching_bounds.py": "118ce2261f2a546980de9c5ae900695deca7046c7b7da4e5f171f94ae1842349",
+    "update_sequence.py": "e28386c370e4f523fea4d6d6cea6b1ab4741209251c54662b8c6708d255019bb",
+    "verify_b4.py": "e6bb619b7eeeb4053508e437db2eb9a4c8273a8d5b3620592cb907f3c37ae14c",
+    "verify_capacity.py": "0603907aa2a56a767f9e74b06661e177f735a819d807cf34ce72f2b6ded9d1f9",
+    "verify_independent.py": "c7f6666325e9a48ae39d53ee4f734716279c604e126121809a9bddbff2f20f6f",
+    "verify_reproduction.py": "a1b76dc2b1ebf933b46366933bfbcb0f28acfdc63fdc2df105cf9e0b8a01e359",
+    "verify_switching.py": "671f195aeed3e1d1feee69b31381eaab3d75f9a905bfae2bba023484708e1ca0",
+    "verify_transactions.py": "f871711c6913b411b7e6cc079bd50c5a928165c23db3364178f2672f9e585953"
+  },
+  "producer_sha256": {
+    "capacity_results.json": "b2c6752fc7d7adb49288cc50037afcb700efd0db9fcd3d3241617f87b141471a",
+    "switching_results.json": "234b41d1519571dfd877d76af59b9bf5c3bc591bcee58570e4ed09be9b5f877d",
+    "transaction_results.json": "a89cddea3108570ab4e74c5f4178cd6456e79be1e188ce0ae7524f41e4c81bdd"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false,
+    "p2_a3_root": "/workspace/p2_a3",
+    "p2_a4_root": "/workspace/p2_a4",
+    "p2_b1_root": "/workspace/p2_b1",
+    "prior_stage_suites_rerun": false,
+    "bounds": "Exact rational data and outward rational norm bounds; no SVD estimate is treated as certified.",
+    "p2_b2_root": "/workspace/p2_b2",
+    "B3_bounds": "Exact rational infinity-norm envelopes for fixed endpoints and fixed affine/ReLU/identity graphs.",
+    "p2_b3_root": "/workspace/p2_b3",
+    "B4_bounds": "Exact rational full-state infinity-norm envelopes for explicit stored endpoint histories and schedules; read-only."
+  },
+  "verification_module_paths": [
+    "/workspace/p2_b4/verify_independent.py"
+  ],
+  "pure_P1_backend_exception": "/workspace/p1_a1/verify_gates.py",
+  "checks": 33901,
+  "expected_refusals": 56,
+  "unexpected_failures": 0,
+  "completed_utc": "2026-11-14T10:26:17.750188+00:00",
+  "total_seconds": 79.99895199899765,
+  "evidence_scope": {
+    "oracles": "Own exact minors/direct equations, word RNE search, interval recurrences and weighted product sums.",
+    "counts": "Checks include reference-domain guards; named case counts are recorded per section.",
+    "finite": "Named small families and histories only; no exhaustive all-format or all-program verification.",
+    "excluded": "GPU, native BF16, general concurrency/crash safety, arbitrary compiler optimizations and universal learning."
+  }
+}

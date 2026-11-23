@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "checks": 135773,
+  "seed": 20261114,
+  "explicit_transaction_refusals": 74,
+  "seconds": 0.6871831940006814,
+  "formats": [
+    {
+      "format": "BF16",
+      "mask": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "p2-a2-sparse-separate-rne-canonical-zero-v1",
+      "local_state_input_theta_cases": 40,
+      "theta_boundary_words": [
+        "0x0",
+        "0x3f80",
+        "0x4000",
+        "0xc000",
+        "0x1",
+        "0x8001",
+        "0x7f",
+        "0x80",
+        "0x7f7f",
+        "0xff7f"
+      ],
+      "exhaustive_length_five_input_traces": 64,
+      "trace_ticks": 320,
+      "trace_updates": 320,
+      "seeded_long_feedback_ticks": 256,
+      "seeded_long_updates": 86,
+      "nonzero_learning_witness": {
+        "old_theta": "1",
+        "new_theta": "2",
+        "effective_change": "1",
+        "A_input": "1",
+        "old_output": "1",
+        "new_output": "2"
+      },
+      "safe_but_unresponsive_target": {
+        "A_input": "0",
+        "output_before_after": "0"
+      },
+      "nonzero_ideal_change_quantized_away": {
+        "ideal_theta": "1025/1024",
+        "stored_theta": "1",
+        "effective_change": "0"
+      },
+      "explicit_refusals_with_unchanged_snapshot": 37,
+      "storage_word_validation": {
+        "scope": "all 65536 BF16 words",
+        "words_checked": 65536,
+        "accepted": 65279,
+        "rejected": 257,
+        "seconds": 0.44383861999813234
+      },
+      "arithmetic_counts": {
+        "native_multiply": 0,
+        "native_add": 0,
+        "software_multiply": 5254,
+        "software_add": 4062,
+        "exact_sums": 0,
+        "native_oracle_checks": 0
+      },
+      "native_event_count": 0,
+      "arithmetic_scope": "software BF16 RNE",
+      "structural_free_coordinates": 1,
+      "unrestricted_algebraic_update_dimension_for_V_span_e1": 2
+    },
+    {
+      "format": "FP32",
+      "mask": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "policy": "p2-a2-sparse-separate-rne-canonical-zero-v1",
+      "local_state_input_theta_cases": 40,
+      "theta_boundary_words": [
+        "0x0",
+        "0x3f800000",
+        "0x40000000",
+        "0xc0000000",
+        "0x1",
+        "0x80000001",
+        "0x7fffff",
+        "0x800000",
+        "0x7f7fffff",
+        "0xff7fffff"
+      ],
+      "exhaustive_length_five_input_traces": 64,
+      "trace_ticks": 320,
+      "trace_updates": 320,
+      "seeded_long_feedback_ticks": 256,
+      "seeded_long_updates": 86,
+      "nonzero_learning_witness": {
+        "old_theta": "1",
+        "new_theta": "2",
+        "effective_change": "1",
+        "A_input": "1",
+        "old_output": "1",
+        "new_output": "2"
+      },
+      "safe_but_unresponsive_target": {
+        "A_input": "0",
+        "output_before_after": "0"
+      },
+      "nonzero_ideal_change_quantized_away": {
+        "ideal_theta": "67108865/67108864",
+        "stored_theta": "1",
+        "effective_change": "0"
+      },
+      "explicit_refusals_with_unchanged_snapshot": 37,
+      "storage_word_validation": {
+        "scope": "boundary words plus 512 seeded FP32 word draws (deduplicated)",
+        "words_checked": 526,
+        "accepted": 520,
+        "rejected": 6,
+        "seconds": 0.0062083239972707815
+      },
+      "arithmetic_counts": {
+        "native_multiply": 5254,
+        "native_add": 4062,
+        "software_multiply": 0,
+        "software_add": 0,
+        "exact_sums": 0,
+        "native_oracle_checks": 9316
+      },
+      "native_event_count": 9316,
+      "arithmetic_scope": "local native NumPy float32 scalar operations with exact-rational bit audit",
+      "structural_free_coordinates": 1,
+      "unrestricted_algebraic_update_dimension_for_V_span_e1": 2
+    }
+  ],
+  "theorem_scope": "The all-finite-time conclusion is the separate T4 induction under the fixed sparse graph/trusted API contract, not an inference from these finite runs.",
+  "limitations": [
+    "No arbitrary dense GEMM/FMA/reassociation substitution",
+    "No arbitrary private-memory/module mutation or concurrent API calls",
+    "No GPU/native BF16/full proof-assistant certification",
+    "Only a strict one-dimensional structural subset of the two-dimensional algebraic update space"
+  ]
+}

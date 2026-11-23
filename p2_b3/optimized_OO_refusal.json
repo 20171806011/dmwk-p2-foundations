@@ -1,0 +1,39 @@
+{
+  "schema": "dmwk-p2-b3-main-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T09:50:14.728635+00:00",
+  "planned_sections": [
+    "propagation_and_domains",
+    "read_only_receipts_and_rollback",
+    "control_flow_and_rounding"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "prior_stage_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "P2_B4_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "propagation_and_domains",
+    "read_only_receipts_and_rollback",
+    "control_flow_and_rounding"
+  ],
+  "completed_utc": "2026-11-14T09:50:14.728648+00:00",
+  "total_seconds": 1.9058003090322018e-05,
+  "evidence_scope": {
+    "mathematics": "Conditional handwritten nonlinear/layer/time bounds with joint domain closure.",
+    "execution": "Software BF16 and available scalar CPU FP32, fixed separate arithmetic and canonical zeros.",
+    "quantifiers": "Universal conditional box/tube proofs, finite complete fixtures and seeds remain distinct.",
+    "receipts": "Read-only bounded-output evidence; no BIT/ALG_AND_BIT authority or live budget commits.",
+    "excluded": "GPU, native BF16, general concurrency, arbitrary compiler changes, universal learning and B4."
+  }
+}

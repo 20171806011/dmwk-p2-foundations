@@ -1,0 +1,859 @@
+{
+  "schema": "dmwk-p2-b2-independent-review-v1",
+  "status": "passed",
+  "started_utc": "2026-11-14T08:34:43.954971+00:00",
+  "seed": 20261114,
+  "norm_geometry": {
+    "sqrt_intervals": 32,
+    "spectral_PSD_certificates": 72,
+    "two_dimensional_geometry_cases": 450,
+    "approximate_basis_cases": [
+      {
+        "basis": [
+          [
+            "3/4"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "gram_error_upper": "7/16",
+        "gap_upper": "0",
+        "bound": "2"
+      },
+      {
+        "basis": [
+          [
+            "0"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "gram_error_upper": "0",
+        "gap_upper": "1",
+        "bound": "2"
+      },
+      {
+        "basis": [
+          [
+            "3/5"
+          ],
+          [
+            "4/5"
+          ]
+        ],
+        "gram_error_upper": "0",
+        "gap_upper": "28/25",
+        "bound": "68/25"
+      }
+    ],
+    "basis_refusals": 3,
+    "seeded_three_dimensional_cases": 48,
+    "zero_full_space_cases": 8,
+    "seed": 20261114,
+    "sharp_joint_example": {
+      "exact_response": 7,
+      "split_bound": 8,
+      "uniform_bound_squared": 50
+    },
+    "method": "Exact interval containment, all principal minors, adjugate projector and direct products"
+  },
+  "point_box": {
+    "exhaustive_point_pairs": 1458,
+    "seeded_affine_point_pairs": 128,
+    "seed": 20261115,
+    "analytic_box_certificates": 24,
+    "exhausted_named_box_inputs": 384,
+    "mixed_budget_cases": 81,
+    "boundaries": [
+      {
+        "format": "BF16",
+        "eta": "1/10889035741470030830827987437816582766592",
+        "relative_only_underflow_fails": true,
+        "non_strict_eta_bound_equal_but_words_differ": true,
+        "strict_zero_bound_words_equal": true,
+        "both_old_and_new_rounding_errors_necessary": true,
+        "two_sided_exact_change": "171/5575186299632655785383929568162090376495104",
+        "old_error": "171/5575186299632655785383929568162090376495104",
+        "new_error": "85/2787593149816327892691964784081045188247552",
+        "zero_reference_relative_bound": null,
+        "bias_only_error": "0",
+        "finite_probe_with_conservative_box_refusal": true
+      },
+      {
+        "format": "FP32",
+        "eta": "1/713623846352979940529142984724747568191373312",
+        "relative_only_underflow_fails": true,
+        "non_strict_eta_bound_equal_but_words_differ": true,
+        "strict_zero_bound_words_equal": true,
+        "both_old_and_new_rounding_errors_necessary": true,
+        "two_sided_exact_change": "11184811/23945242826029513411849172299223580994042798784118784",
+        "old_error": "11184811/23945242826029513411849172299223580994042798784118784",
+        "new_error": "5592405/11972621413014756705924586149611790497021399392059392",
+        "zero_reference_relative_bound": null,
+        "bias_only_error": "0",
+        "finite_probe_with_conservative_box_refusal": true
+      }
+    ],
+    "expected_refusals": [
+      {
+        "format": "BF16",
+        "case": "negative_zero"
+      },
+      {
+        "format": "BF16",
+        "case": "actual_overflow"
+      },
+      {
+        "format": "BF16",
+        "case": "conservative_range_refusal"
+      },
+      {
+        "format": "FP32",
+        "case": "negative_zero"
+      },
+      {
+        "format": "FP32",
+        "case": "actual_overflow"
+      },
+      {
+        "format": "FP32",
+        "case": "conservative_range_refusal"
+      }
+    ],
+    "scope": "Complete specified small sets and seeded pairs; box universality comes from the separate range-induction proof"
+  },
+  "ledger": {
+    "all_four_errors_nonzero": true,
+    "distinct_ledger_modes": 3,
+    "duplicate_label_refused": true,
+    "method": "Independent successive exact differences; direct products/principal minors",
+    "scope": "Accounting only; no invented ideal optimizer provenance"
+  },
+  "receipts": {
+    "registered_receipts": [
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "43316771193807086913042591/154742504910672534362390528",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "196593458606027034362092058042851897356059649/713623846352979940529142984724747568191373312",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "43316771193807086913042591/154742504910672534362390528",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "196593458606027034362092058042851897356059649/713623846352979940529142984724747568191373312",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "thirds_two_inputs_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "thirds_two_inputs_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "thirds_two_inputs_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "207298146260277438885295029135949575343883025902614136505102367/822752278660603021077484591278675252491367932816789931674304512",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "thirds_two_inputs_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "46029434988054660246102895505942238409741894913/182687704666362864775460604089535377456991567872",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "commit_rounding_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/2",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "commit_rounding_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/2",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "commit_rounding_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "1896630814976062720573441/302231454903657293676544",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "commit_rounding_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "4478292895510349067179010788597934182231180289/713623846352979940529142984724747568191373312",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "43316771193807086913042591/154742504910672534362390528",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "196593458606027034362092058042851897356059649/713623846352979940529142984724747568191373312",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "1267652908273296382739848389369/5070602400912917605986812821504",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "50216891705137090855729680611829845564977448644867436576769/200867255532373784442745261542645325315275374222849104412672",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "1267652908273296382739848389369/5070602400912917605986812821504",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "50216891705137090855729680611829845564977448644867436576769/200867255532373784442745261542645325315275374222849104412672",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "thirds_two_inputs_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "thirds_two_inputs_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "thirds_two_inputs_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "53919899762053648187237740578000242417286233956473534688144297987423/215679573337205118357336120696157045389097155380324579848828881993728",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "thirds_two_inputs_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "842498433782088252925589696531170711020360852123905687301633605633/3369993333393829974333376885877453834204643052817571560137951281152",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "commit_rounding_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/2",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "commit_rounding_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/2",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "commit_rounding_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "1888946710241450813030401/302231454903657293676544",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "commit_rounding_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "1255420424899376943016730767356209446268824951339831355506689/200867255532373784442745261542645325315275374222849104412672",
+        "actual_supremum_l2_squared": "0",
+        "actual_supremum_linf": "0",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "method": "complete_point_trace",
+        "norm": "l2",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "method": "complete_point_trace",
+        "norm": "linf",
+        "bound": "1/4",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "method": "analytic_box",
+        "norm": "l2",
+        "bound": "1267652908273296382739848389369/5070602400912917605986812821504",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "method": "analytic_box",
+        "norm": "linf",
+        "bound": "50216891705137090855729680611829845564977448644867436576769/200867255532373784442745261542645325315275374222849104412672",
+        "actual_supremum_l2_squared": "1/16",
+        "actual_supremum_linf": "1/4",
+        "authorizes_commit": false
+      }
+    ],
+    "receipt_count": 40,
+    "distinct_complete_call_checks": 26,
+    "expected_refusals": [
+      "BF16:omitted_shared_site",
+      "BF16:sample_only",
+      "BF16:omitted_activation",
+      "BF16:FMA_graph",
+      "BF16:changed_policy",
+      "BF16:changed_schedule",
+      "BF16:omitted_output",
+      "BF16:false_BIT",
+      "BF16:false_live_authority",
+      "BF16:false_candidate_invariant",
+      "BF16:lowered_proof_bound",
+      "BF16:changed_old_endpoint",
+      "BF16:under_budget",
+      "BF16:external_version",
+      "BF16:sample_registry",
+      "BF16:shrunk_box",
+      "BF16:B1_rejects_numeric_receipt",
+      "BF16:missing_snapshot_schedule",
+      "BF16:later_snapshot_context",
+      "FP32:omitted_shared_site",
+      "FP32:sample_only",
+      "FP32:omitted_activation",
+      "FP32:FMA_graph",
+      "FP32:changed_policy",
+      "FP32:changed_schedule",
+      "FP32:omitted_output",
+      "FP32:false_BIT",
+      "FP32:false_live_authority",
+      "FP32:false_candidate_invariant",
+      "FP32:lowered_proof_bound",
+      "FP32:changed_old_endpoint",
+      "FP32:under_budget",
+      "FP32:external_version",
+      "FP32:sample_registry",
+      "FP32:shrunk_box",
+      "FP32:B1_rejects_numeric_receipt",
+      "FP32:missing_snapshot_schedule",
+      "FP32:later_snapshot_context"
+    ],
+    "full_nonzero_moment_B1_rollback_fixtures": 2,
+    "scope": "Read-only fixed-domain evidence, not candidate feedback closure or publication authority"
+  },
+  "frozen_B1": {
+    "source_sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+    "endpoint_pairs": [
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 3,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 4,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 5,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 6,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 7,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "momentum",
+        "attempt": 8,
+        "point_l2_bound": "1/256",
+        "box_l2_bound": "31196765807202286089972921/38685626227668133590597632",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 2,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 3,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 4,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 5,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 6,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 7,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "BF16",
+        "optimizer": "adamw",
+        "attempt": 8,
+        "point_l2_bound": "427419822500504607534271/77371252455336267181195264",
+        "box_l2_bound": "31652614262079938997224009/77371252455336267181195264",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 1,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 2,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 3,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 4,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 5,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 6,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 7,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      },
+      {
+        "format": "FP32",
+        "optimizer": "adamw",
+        "attempt": 8,
+        "point_l2_bound": "1/16777216",
+        "box_l2_bound": "251938737464358874845211118979/633825300114114700748351602688",
+        "actual_l2_difference_squared": "0",
+        "exact_ALG_residual_nonzero": true,
+        "registered_call_count": 4,
+        "optimizer_rerun": false
+      }
+    ],
+    "pair_count": 21,
+    "registered_call_checks": 84,
+    "original_FP32_Adam_joint_fact": {
+      "accepted": 0,
+      "refused": 8,
+      "final_loss": "5/2"
+    },
+    "scope": "New single-layer bounds on saved endpoints only; no old optimization suite or trajectory rerun"
+  },
+  "elapsed_seconds": 16.060792099000537,
+  "source_sha256": {
+    "verify_independent.py": "03d7ec26133728c8703df524f81d9faad524554e02e2ada963c3ae5b2b386b66",
+    "certified_bounds.py": "4f2b682258861846f8eae26c38083fbfbc24553a6e75f9f88eacafc5f759492e",
+    "bounded_certificate.py": "9f887f85a8abb23ce348689ee29ee21ea981f3a8aaf5a197f3d7752b2dfa7247",
+    "b2_runtime.py": "2ddb30731d2b3400182cee464b4c207c267fa76f4969e96f09d4236e174690b8"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false,
+    "p2_a3_root": "/workspace/p2_a3",
+    "p2_a4_root": "/workspace/p2_a4",
+    "p2_b1_root": "/workspace/p2_b1",
+    "prior_stage_suites_rerun": false,
+    "bounds": "Exact rational data and outward rational norm bounds; no SVD estimate is treated as certified."
+  },
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "scope": "Independent finite exact, word-rounding, range and read-only receipt checks; general results remain handwritten proofs"
+}

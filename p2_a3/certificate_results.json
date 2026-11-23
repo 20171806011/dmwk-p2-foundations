@@ -1,0 +1,228 @@
+{
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 4676,
+  "check_unit": "Explicit production assertions; exhaustive endpoint refusals counted separately",
+  "explicit_refusals": 108,
+  "unexpected_failures": 0,
+  "formats": [
+    {
+      "format": "BF16",
+      "exhaustive_endpoint_families": [
+        {
+          "model": "duplicate_feedback_v1",
+          "alphabet": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "matrices": 625,
+          "accepted": 16,
+          "refused": 609,
+          "oracle": "Integer row-sum and (for split) first-column identities"
+        },
+        {
+          "model": "split_feedback_v1",
+          "alphabet": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "matrices": 625,
+          "accepted": 1,
+          "refused": 624,
+          "oracle": "Integer row-sum and (for split) first-column identities"
+        }
+      ],
+      "stateful_trace_count": 64,
+      "stateful_ticks": 320,
+      "stateful_commits": 320,
+      "seeded_feedback_cases": 48,
+      "rehashed_tampering_cases": 27,
+      "malformed_serialization_cases": 6,
+      "callback_invocations": [],
+      "nonzero_learning_witness": {
+        "old_weights": [
+          [
+            16256,
+            0
+          ],
+          [
+            0,
+            16256
+          ]
+        ],
+        "new_weights": [
+          [
+            0,
+            16256
+          ],
+          [
+            16384,
+            49024
+          ]
+        ],
+        "A_input": [
+          16256,
+          0
+        ],
+        "old_output": [
+          16256,
+          0
+        ],
+        "new_output": [
+          0,
+          16384
+        ],
+        "protected_exact_annihilation": true
+      },
+      "bitwise_without_algebra_witness": {
+        "candidate": [
+          [
+            16256,
+            1
+          ],
+          [
+            0,
+            16256
+          ]
+        ],
+        "exact_annihilation": false,
+        "A_input": [
+          0,
+          16256
+        ],
+        "A_output": [
+          1,
+          16256
+        ],
+        "scope": "Complete finite registered bit domain, not every real combination"
+      },
+      "certificate_proof_arithmetic_counts": {
+        "exact_sums": 0,
+        "native_add": 0,
+        "native_multiply": 0,
+        "native_oracle_checks": 0,
+        "software_add": 112,
+        "software_multiply": 120
+      },
+      "certificate_proof_count_scope": "One complete strong-witness issuance only; not total suite operations",
+      "seconds": 5.928678213000239
+    },
+    {
+      "format": "FP32",
+      "exhaustive_endpoint_families": [
+        {
+          "model": "duplicate_feedback_v1",
+          "alphabet": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "matrices": 625,
+          "accepted": 16,
+          "refused": 609,
+          "oracle": "Integer row-sum and (for split) first-column identities"
+        },
+        {
+          "model": "split_feedback_v1",
+          "alphabet": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "matrices": 625,
+          "accepted": 1,
+          "refused": 624,
+          "oracle": "Integer row-sum and (for split) first-column identities"
+        }
+      ],
+      "stateful_trace_count": 64,
+      "stateful_ticks": 320,
+      "stateful_commits": 320,
+      "seeded_feedback_cases": 48,
+      "rehashed_tampering_cases": 27,
+      "malformed_serialization_cases": 6,
+      "callback_invocations": [],
+      "nonzero_learning_witness": {
+        "old_weights": [
+          [
+            1065353216,
+            0
+          ],
+          [
+            0,
+            1065353216
+          ]
+        ],
+        "new_weights": [
+          [
+            0,
+            1065353216
+          ],
+          [
+            1073741824,
+            3212836864
+          ]
+        ],
+        "A_input": [
+          1065353216,
+          0
+        ],
+        "old_output": [
+          1065353216,
+          0
+        ],
+        "new_output": [
+          0,
+          1073741824
+        ],
+        "protected_exact_annihilation": true
+      },
+      "bitwise_without_algebra_witness": {
+        "candidate": [
+          [
+            1065353216,
+            1
+          ],
+          [
+            0,
+            1065353216
+          ]
+        ],
+        "exact_annihilation": false,
+        "A_input": [
+          0,
+          1065353216
+        ],
+        "A_output": [
+          1,
+          1065353216
+        ],
+        "scope": "Complete finite registered bit domain, not every real combination"
+      },
+      "certificate_proof_arithmetic_counts": {
+        "exact_sums": 0,
+        "native_add": 112,
+        "native_multiply": 120,
+        "native_oracle_checks": 232,
+        "software_add": 0,
+        "software_multiply": 0
+      },
+      "certificate_proof_count_scope": "One complete strong-witness issuance only; not total suite operations",
+      "seconds": 8.265825730999495
+    }
+  ],
+  "seconds": 14.24476665900147,
+  "scope": "Finite executable checker tests. All-finite-time program theorem is a separate handwritten induction.",
+  "SMT_queries": 0,
+  "prior_stage_suites_rerun": false
+}

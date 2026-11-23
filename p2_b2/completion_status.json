@@ -1,0 +1,116 @@
+{
+  "schema": "dmwk-p2-b2-completion-v1",
+  "recorded_utc": "2026-11-14T08:42:27.119978+00:00",
+  "stage": "P2-B2",
+  "completion_status": "completed_scoped_delivery",
+  "scope": "Conditional strict single-layer perturbation bounds, executable exact-rational references and read-only numerical receipts; no later-stage execution",
+  "required_artifacts": [
+    "P2_B2_Plan.md",
+    "P2_B2_Mathematical_Checkpoint.md",
+    "P2_B2_Definitions.md",
+    "P2_B2_Theorems.md",
+    "P2_B2_Numerical_Analysis.md",
+    "P2_B2_Counterexamples.md",
+    "P2_B2_Certificate_Spec.md",
+    "B2_Interface.md",
+    "P2_B2_Evidence_Map.md",
+    "P2_B2_Review.md",
+    "P2_B2_Report.md",
+    "P2_B2_Errata.md",
+    "README.md",
+    "P2_B3_Handoff.md",
+    "certified_bounds.py",
+    "bounded_certificate.py",
+    "b2_runtime.py",
+    "verify_b2.py",
+    "verify_bounds.py",
+    "verify_certificates.py",
+    "verify_independent.py",
+    "requirements.txt",
+    "bound_results.json",
+    "certificate_results.json",
+    "verification_results.json",
+    "independent_results.json",
+    "reproduction_results.json",
+    "independent_reproduction_results.json",
+    "driver_checks.json",
+    "optimized_O_refusal.json",
+    "optimized_OO_refusal.json",
+    "dependency_baseline.json",
+    "dependency_inspection.json"
+  ],
+  "handwritten_proofs": {
+    "labels": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7"
+    ],
+    "machine_checked": false,
+    "scope": "Core and sharp class bounds; separately certified Gram/subspace defects; disjoint error ledger; both rounded executions; universal conditional box recurrence; absolute/relative/mixed/separation conditions; readonly receipts"
+  },
+  "verification": {
+    "main_status": "passed",
+    "completed_sections": 2,
+    "producer_checks": {
+      "geometry_numerics_and_boundaries": 3419,
+      "bounded_certificates_and_B1_boundary": 421
+    },
+    "expected_refusals": {
+      "geometry_numerics_and_boundaries": 26,
+      "bounded_certificates_and_B1_boundary": 108
+    },
+    "independent_status": "passed",
+    "independent_exhaustive_affine_pairs": 1458,
+    "independent_seeded_affine_pairs": 128,
+    "main_seed": 20261114,
+    "independent_point_subseed": 20261115,
+    "foreign_cwd_main_passed": true,
+    "foreign_cwd_independent_passed": true,
+    "scientific_reproduction_equal_except_recorded_timing": true,
+    "optimized_interpreters_refused_before_testing": true,
+    "SMT_queries": 0,
+    "Lean_Coq_checked": false
+  },
+  "preservation": {
+    "prior_hashes_and_nonexcluded_inventory_unchanged": 447,
+    "old_suites_rerun": false,
+    "old_optimizer_trajectories_regenerated": false,
+    "publication_operations": false
+  },
+  "B1_facts_preserved": {
+    "joint_refusals": 21,
+    "all_remain_BIT_equal_on_original_registered_domains": true,
+    "all_fail_exact_ALG": true,
+    "FP32_dense_AdamW_accepted": 0,
+    "FP32_dense_AdamW_refused": 8,
+    "FP32_dense_AdamW_final_loss": "5/2"
+  },
+  "execution_boundary": {
+    "BF16": "software RNE with exact rational reference",
+    "FP32": "available CPU scalar float32 primitives, independently decoded and checked",
+    "graph": "bias-first ascending-column separate multiply/add, canonical zero, gradual underflow",
+    "receipt_authorizes_commit": false,
+    "original_BIT_and_ALG_AND_BIT_unchanged": true,
+    "candidate_feedback_invariant_certified": false,
+    "source_bindings_verified": true
+  },
+  "review": "P2_B2_Review.md; no remaining blocking issue in the specified conditional scope",
+  "known_limits": [
+    "Global activation coverage and candidate feedback closure require separate proofs",
+    "Conservative norm and box bounds can be loose or refuse safe cases",
+    "General theorems are handwritten, not proof-assistant checked",
+    "GPU and native BF16 untested/uncertified",
+    "General concurrency and arbitrary compiler/FMA/reassociation changes uncertified",
+    "No universal learning-performance or multilayer/long-term guarantee"
+  ],
+  "handoff": {
+    "file": "P2_B3_Handoff.md",
+    "P2_B3_started": false,
+    "next_action": "Coordinator review and adoption of the original B3 objective; do not infer a later-stage result from B2"
+  },
+  "artifact_integrity_record": "final_integrity.json"
+}

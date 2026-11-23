@@ -1,0 +1,40 @@
+{
+  "schema": "dmwk-p2-b4-main-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T10:28:50.086580+00:00",
+  "planned_sections": [
+    "capacity_and_history",
+    "switching_and_budgets",
+    "transactions_and_learning"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "prior_stage_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "P2_C1_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "capacity_and_history",
+    "switching_and_budgets",
+    "transactions_and_learning"
+  ],
+  "completed_utc": "2026-11-14T10:28:50.086599+00:00",
+  "total_seconds": 2.578899875516072e-05,
+  "evidence_scope": {
+    "mathematics": "Conditional repeated-update capacity and switched-system proofs; not machine-checked.",
+    "execution": "Software BF16 and local audited CPU FP32 under fixed graphs and canonical zeros.",
+    "exact_D": "New serial integration keeps existing complete-domain BIT/ALG_AND_BIT authorization.",
+    "numerical_A": "Recomputed history/domain/rounding budgets are read-only evidence, not commit authority.",
+    "finite": "Named finite families/histories and seeds remain separate from all-time hypotheses.",
+    "excluded": "GPU, native BF16, general concurrency, arbitrary compiler/FMA changes, universal learning and C1."
+  }
+}

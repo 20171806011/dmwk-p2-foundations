@@ -1,0 +1,34 @@
+# P2-A3 execution plan
+
+Status: **completed under the stated A3 contracts**. This plan was saved before A3 mathematical derivation, implementation or experiments; the completion record below was added after actual runs. Scope: this A3 invocation only, followed by coordinator review and A4 handoff. No publication or prior-stage edits.
+
+## Objective and preserved starting point
+
+Prove exact linear noninterference using the **actual decoded endpoint difference** Delta_eff=W'-W and a globally justified activation span. Separate this algebraic contract from pointwise finite-arithmetic bounds and fixed-graph bitwise equality. Establish sufficient conditions for lifting local bitwise guarantees to a protected program trace, without claiming a general P2-C composition solution.
+
+Read only the necessary A1/A2 definitions, proofs, execution contracts, independent review and saved A3 handoff. Preserve existing P1/A1/A2 files and publication state. `dependency_baseline.json` captures prior files before work. If a prior error is discovered, document it in a new A3 erratum and correct an A3 copy only; never overwrite earlier evidence or rerun old stage suites.
+
+## Sequence and acceptance obligations
+
+1. **Definitions and mathematics first.** Fix rational/real scalar domains, physical sharing and all protected call sites, legal inputs and initial states, affine bias treatment, graph and arithmetic policy, state snapshot and schedule. Prove exact basis/span equivalence, exact versus conservative domain consequences, edge ranks, and the distinction between unchanged activation inputs and changed subsequent trajectories. Prove a conditional local-to-program induction with explicit closure and synchronization premises. Save a mathematical checkpoint before implementation.
+2. **Executable certificate specification.** Design a bounded trusted checker whose accepted proof modes are explicit, not arbitrary caller assertions. Bind old/new raw weights, derived Delta_eff, complete legal-domain/invariant identity, all call sites, graph, numerical policy, version and scheduling contract. Numerical/algebraic evidence cannot authorize a bitwise commit. Define deterministic refusal and no-partial-publication semantics. Checksums identify evidence; they are not proof of its truth or cryptographic authority.
+3. **Reference implementation.** Implement exact linear checks, pointwise bounded reports, and a fixed-graph finite-domain or structural certificate checker. Include a stateful example with a nonzero storable edit and an actual changed A response. Provide an independent artifact/registry of the declared complete domain, rather than trusting a request to label samples global. No concurrency or arbitrary host-code security claim.
+4. **Verification and adversarial cases.** Fixed seed 20261114. Exhaust small matrices/domains and legal state/input pairs, run seeded properties and feedback traces. Reproduce A2's commit-rounding and basis-versus-subnormal counterexamples as A3 acceptance/refusal tests. Add shared-site union, missing legal inputs, missing sites, state feedback, wrong initial/input/scheduling assumptions, changed graph/reduction/FMA/fusion policy, stale/tampered certificates and rollback checks. Record actual checks, formats, native/software scope, residuals and costs.
+5. **Independent review.** A separate agent must use a distinct algebra/rounding/state oracle and must not import the main verifier's assertions. Review proofs and certificate trust assumptions, especially who establishes global coverage and how accepted transactions preserve the invariant. Any defect gets an A3 correction and affected-check rerun. No finite evidence is described as a universal machine proof.
+6. **Synthesis and reproducibility.** Run the main and independent A3 suites, bind results to sources, reproduce from a foreign working directory, verify prior-file hashes, and save English Definitions, Theorems, Counterexamples, Evidence_Map, Review, Report and README plus code/results. State assumptions, failures, backend limits and exact A4 rank/capacity starting questions. Stop after A3 delivery.
+
+## Intended deliverables
+
+`P2_A3_Plan.md`, `P2_A3_Definitions.md`, `P2_A3_Theorems.md`, `P2_A3_Execution_Spec.md`, `P2_A3_Counterexamples.md`, `P2_A3_Evidence_Map.md`, `P2_A3_Review.md`, `P2_A3_Report.md`, `P2_A3_Errata.md`, `README.md`, exact and certificate implementations, main/independent verification scripts, actual result JSON, environment/dependency specification, integrity/completion records, and `P2_A4_Handoff.md`.
+
+## Non-negotiable boundaries
+
+Annihilation on an exact generating basis is equivalent to exact annihilation on its span; **floating basis probes are not** equivalent to safe execution on every legal activation. Conservative superspace safety is sufficient, not necessary for the smaller true span. A stored effective difference is not the ideal proposed delta. Program lifting requires equal local inputs at corresponding calls, identical protected outputs/side effects, invariant closure, fixed D/control and trusted schedule, and no unmodeled A-to-D influence. Fixed graph and canonical-zero RNE policy remain explicit. GPU, native BF16, general concurrency, arbitrary compiler optimization and full machine proof are not presumed available or certified. A nonzero changed A output is not a learning-performance result.
+
+## Completion record
+
+The mathematical checkpoint preceded implementation. Definitions and five conditional theorem groups, exact and pointwise reporters, a complete finite-model certificate interface, dense nonzero witnesses, counterexamples, independent review and English synthesis are delivered. All four main sections passed: 39,590 exact checks, 1,008 pointwise checks, 126 counterexample checks and 4,676 certificate checks. Units and finite domains are kept distinct. The independent verifier used different algebra, rounding and state oracles and passed its recorded cases.
+
+The main run and a foreign-directory reproduction completed all four sections, with all non-timing fields equal. Component scientific outputs match the aggregate apart from timing; the standalone counterexample wrapper additionally records its own source hashes, which were verified separately. Both optimized Python modes were refused before any verification section. All 341 baseline prior artifacts remained unchanged; no old-stage suite, publication or A4 implementation was performed.
+
+The report and handoff preserve the discovered non-nesting boundary: finite protected output equality can hold even when exact annihilation fails at full protected rank. A separate mathematical separation corollary qualifies when a sufficiently small certified bound can imply raw equality; the BOUND interface does not automatically authorize that route. `P2_A4_Handoff.md` records the next questions without executing them.

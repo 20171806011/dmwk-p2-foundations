@@ -1,0 +1,218 @@
+{
+  "schema": "dmwk-p2-b2-driver-checks-v1",
+  "status": "passed",
+  "runs": [
+    {
+      "record": "verification_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b2/verify_b2.py",
+        "--output",
+        "/workspace/p2_b2/verification_results.json"
+      ],
+      "cwd": "/workspace/p2_b2",
+      "status": "passed",
+      "elapsed_seconds": 11.860618054000952,
+      "record_sha256": "ccad80505e243e051c666f1b9cdcdcdf5b940e298d8ee7e93de0df123d1761f8"
+    },
+    {
+      "record": "reproduction_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b2/verify_b2.py",
+        "--output",
+        "/workspace/p2_b2/reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "status": "passed",
+      "elapsed_seconds": 12.18990572400071,
+      "record_sha256": "198acd5c0c38cd2b59ef848470bb4f799e3a3776e89dd7edc5143d456e903bc2"
+    },
+    {
+      "record": "independent_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b2/verify_independent.py",
+        "--output",
+        "/workspace/p2_b2/independent_results.json"
+      ],
+      "cwd": "/workspace/p2_b2",
+      "status": "passed",
+      "elapsed_seconds": 16.060792099000537,
+      "record_sha256": "a6bd6bc4d67a5dc974416901909ac432408fd3bdcc533019df479f0412ac7eb3"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "command": [
+        "python",
+        "-B",
+        "/workspace/p2_b2/verify_independent.py",
+        "--output",
+        "/workspace/p2_b2/independent_reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "status": "passed",
+      "elapsed_seconds": 16.707115788998635,
+      "record_sha256": "10a457225917aed7260462b4db3ecd6656e0b5605892f329053567d11a03405c"
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "main_foreign_cwd",
+      "left": "verification_results.json",
+      "right": "reproduction_results.json",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/completed_utc",
+        "/section_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/0/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/1/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/10/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/11/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/12/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/13/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/14/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/15/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/16/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/17/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/18/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/19/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/2/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/20/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/3/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/4/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/5/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/6/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/7/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/8/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/frozen_B1_analysis/9/runtime_seconds",
+        "/sections/bounded_certificates_and_B1_boundary/runtime_seconds",
+        "/sections/geometry_numerics_and_boundaries/elapsed_seconds",
+        "/started_utc",
+        "/total_seconds"
+      ]
+    },
+    {
+      "name": "independent_foreign_cwd",
+      "left": "independent_results.json",
+      "right": "independent_reproduction_results.json",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/elapsed_seconds",
+        "/started_utc"
+      ]
+    },
+    {
+      "name": "standalone_to_aggregate_geometry_numerics_and_boundaries",
+      "left": "bound_results.json",
+      "right": "verification_results.json#/sections/geometry_numerics_and_boundaries",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/elapsed_seconds"
+      ]
+    },
+    {
+      "name": "standalone_to_aggregate_bounded_certificates_and_B1_boundary",
+      "left": "certificate_results.json",
+      "right": "verification_results.json#/sections/bounded_certificates_and_B1_boundary",
+      "equal_except_timing": true,
+      "excluded_timing_paths": [
+        "/frozen_B1_analysis/0/runtime_seconds",
+        "/frozen_B1_analysis/1/runtime_seconds",
+        "/frozen_B1_analysis/10/runtime_seconds",
+        "/frozen_B1_analysis/11/runtime_seconds",
+        "/frozen_B1_analysis/12/runtime_seconds",
+        "/frozen_B1_analysis/13/runtime_seconds",
+        "/frozen_B1_analysis/14/runtime_seconds",
+        "/frozen_B1_analysis/15/runtime_seconds",
+        "/frozen_B1_analysis/16/runtime_seconds",
+        "/frozen_B1_analysis/17/runtime_seconds",
+        "/frozen_B1_analysis/18/runtime_seconds",
+        "/frozen_B1_analysis/19/runtime_seconds",
+        "/frozen_B1_analysis/2/runtime_seconds",
+        "/frozen_B1_analysis/20/runtime_seconds",
+        "/frozen_B1_analysis/3/runtime_seconds",
+        "/frozen_B1_analysis/4/runtime_seconds",
+        "/frozen_B1_analysis/5/runtime_seconds",
+        "/frozen_B1_analysis/6/runtime_seconds",
+        "/frozen_B1_analysis/7/runtime_seconds",
+        "/frozen_B1_analysis/8/runtime_seconds",
+        "/frozen_B1_analysis/9/runtime_seconds",
+        "/runtime_seconds"
+      ]
+    }
+  ],
+  "optimization_guard_checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/p2_b2/verify_b2.py",
+        "--output",
+        "/workspace/p2_b2/optimized_O_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 1,
+      "elapsed_seconds": 0.1036994930000219,
+      "expected_refusal": true,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output": "optimized_O_refusal.json",
+      "output_sha256": "9e36c2b9f32482f94d55f1328d6546481621230cf9b5642902b3c8867bacd1c7"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/p2_b2/verify_b2.py",
+        "--output",
+        "/workspace/p2_b2/optimized_OO_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "returncode": 1,
+      "elapsed_seconds": 0.0971015899995109,
+      "expected_refusal": true,
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "output": "optimized_OO_refusal.json",
+      "output_sha256": "b75c72d7bb5c35b2796734c4d06799158a593da50f813cc53003d6df31293fb8"
+    }
+  ],
+  "primary_evidence_unchanged_by_guard_checks": true,
+  "evidence_sha256": {
+    "bound_results.json": "2b7c7ba562a1bd299cabe10bd81f8f58dbc87b28dafeeff0a722ccd69c9c9e2e",
+    "certificate_results.json": "154387d17e77f7f240ea0a9e376734dec66225df7631ddf11d4cdc3e78765f9a",
+    "verification_results.json": "ccad80505e243e051c666f1b9cdcdcdf5b940e298d8ee7e93de0df123d1761f8",
+    "reproduction_results.json": "198acd5c0c38cd2b59ef848470bb4f799e3a3776e89dd7edc5143d456e903bc2",
+    "independent_results.json": "a6bd6bc4d67a5dc974416901909ac432408fd3bdcc533019df479f0412ac7eb3",
+    "independent_reproduction_results.json": "10a457225917aed7260462b4db3ecd6656e0b5605892f329053567d11a03405c"
+  },
+  "prior_artifacts_unchanged": 447,
+  "prior_nonexcluded_inventory_unchanged": true,
+  "current_source_bindings_verified": true,
+  "source_sha256": {
+    "b2_runtime.py": "2ddb30731d2b3400182cee464b4c207c267fa76f4969e96f09d4236e174690b8",
+    "bounded_certificate.py": "9f887f85a8abb23ce348689ee29ee21ea981f3a8aaf5a197f3d7752b2dfa7247",
+    "certified_bounds.py": "4f2b682258861846f8eae26c38083fbfbc24553a6e75f9f88eacafc5f759492e",
+    "verify_b2.py": "6615d0d18312157b1bb5f99334d0f18e5bdedf2a61c55c971589380b4fccdb22",
+    "verify_bounds.py": "5cd6b7a7cd3fffdc2c8565de80b08fab669518832a5ab0a5106f990dc080747e",
+    "verify_certificates.py": "56908e9f7795fe5f44856880af842d06158a8ee158b82ef92f0627852585d6c5",
+    "verify_independent.py": "03d7ec26133728c8703df524f81d9faad524554e02e2ada963c3ae5b2b386b66",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "dependency_baseline.json": "e34ca2f90106668f1dff7bea4f547b9a2f028973d7679e0a7449b8666e4e2ab3"
+  },
+  "scope": "Reproduction omits only timestamp and seconds fields; all scientific values, refusal reasons, source identities and environment metadata compared. No old-stage suite rerun."
+}

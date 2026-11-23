@@ -1,0 +1,38 @@
+{
+  "schema": "dmwk-p2-c1-dependency-inspection-v1",
+  "status": "passed",
+  "B4_manifest_sha256": "2289d62fa6223193bceee706779a5c92d52fcdcbd95d9b2cdab5159309e2ee31",
+  "B4_manifest_entries": 42,
+  "B4_actual_files": 43,
+  "B4_predecessor_hashes": 739,
+  "C1_predecessor_baseline_files": 782,
+  "actual_records": {
+    "verification_results.json": {
+      "sha256": "03f4b03fc32a717a7a15287b063e438732d6c9b930f07f5445ef0915e9270236",
+      "status": "passed"
+    },
+    "independent_results.json": {
+      "sha256": "c8c1da86f02f68961aefe0b5fd853698e1f2f6948d83e76a3dd4cbe46c14931a",
+      "status": "passed"
+    },
+    "reproduction_results.json": {
+      "sha256": "e4d5787af8abb3b2ea796f5de330a0215934b603affc1aa19f2a4a3c28cd6976",
+      "status": "passed"
+    },
+    "independent_reproduction_results.json": {
+      "sha256": "7aed995fc5adf2de2b44aac49e1535e3fb655e6d14a69515a69c6cc9018d26ed",
+      "status": "passed"
+    },
+    "reproduction_driver_results.json": {
+      "sha256": "8ee766777658a3c4ebd708aa58e643ef7f3dd699082a5e9141e0aad3466a8c2b",
+      "status": "passed"
+    },
+    "completion_status.json": {
+      "sha256": "5d03bfd5bd9ec555fc98660b76ea6f6ba9758bcd529a78eaf0e65ebe6d8f3a25",
+      "status": "passed"
+    }
+  },
+  "prior_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "scope": "Artifact identity/status/source bindings, plus scoped text/interface review; not renewed scientific validation of predecessor claims"
+}

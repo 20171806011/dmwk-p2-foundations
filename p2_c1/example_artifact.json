@@ -1,0 +1,823 @@
+{
+  "budget": {
+    "a_cols": 1,
+    "a_rows": 2,
+    "call_budget": 7,
+    "d_col_budget": 3,
+    "d_row_budget": 2,
+    "min_A_response_dimension": 2,
+    "parameter_budget": 16,
+    "required_update_rank": 1
+  },
+  "capacity": {
+    "A_full_basis_response_dimension": 2,
+    "D_rows_only_linear_preactivation_constraint_dimension": 10,
+    "D_rows_only_scope": "external linear-preactivation family, not structural authorization or full BIT-class dimension",
+    "all_state_call_span_rank": 3,
+    "canonical_word_alphabet_size": 65279,
+    "finite_cardinality_theorem_not_exhaustive_enumeration": true,
+    "fixed_capacity_not_consumed_by_update_count": true,
+    "full_basis_stored_response_signature_count_decimal": "4261347841",
+    "full_output_annihilator_dimension": 4,
+    "input_dimension": 4,
+    "maximum_structural_update_rank": 1,
+    "output_dimension": 4,
+    "protected_containing_rank": 3,
+    "protected_generators_columns": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "rank_budget_semantics": "requested minimum attainable rank, not a per-update rank cap",
+    "rank_capped_family_is_not_a_vector_space": true,
+    "structural_endpoint_count_decimal": "4261347841",
+    "structural_update_dimension": 2
+  },
+  "cost": {
+    "A_binary_float_operations_per_call": 4,
+    "D_binary_float_operations_per_tick": 84,
+    "D_relu_word_operations_per_tick": 14,
+    "compile_complete_envelope_contexts": 4,
+    "current_plus_next_state_slots": 2,
+    "declared_A_call_sites": 2,
+    "dense_matrix_word_slots": 16,
+    "diagnostic_site_trace_records_per_tick": 7,
+    "editable_word_slots": 2,
+    "fixed_nonzero_D_coefficients": 5,
+    "graph_json_bytes": 2334,
+    "host_ledger_optimizer_python_object_memory_included": false,
+    "initial_nonzero_coefficients": 5,
+    "input_word_slots": 1,
+    "maximum_expression_depth": 2,
+    "maximum_structural_nonzero_coefficients": 7,
+    "output_word_slots": 1,
+    "physical_shared_banks": 1,
+    "primitive_D_calls_per_tick": 7,
+    "program_representation": "source/ordered graph/wires plus shared bank; graph size is not constant",
+    "selected_gate_wire_slots": 7,
+    "source_json_bytes": 211,
+    "source_node_occurrences": 4,
+    "stored_bias_word_slots": 4
+  },
+  "domain": {
+    "A_input_words": [
+      [
+        0
+      ],
+      [
+        16256
+      ]
+    ],
+    "A_to_D_feedback": false,
+    "D_input_domain": "every canonical Boolean input tuple",
+    "D_state_invariant": "every canonical Boolean state tuple",
+    "canonical_bit_words": [
+      0,
+      16256
+    ],
+    "initial_state_words": [
+      [
+        0
+      ]
+    ],
+    "input_count": 1,
+    "output_count": 1,
+    "source_domains_owned_by_closed_frontend": true,
+    "state_count": 1
+  },
+  "format": "BF16",
+  "graph": {
+    "A_calls": [
+      {
+        "activation": "identity",
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          3
+        ],
+        "id": "a_zero",
+        "input_bits": [
+          0
+        ],
+        "physical_activation_bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "rows": [
+          2,
+          3
+        ]
+      },
+      {
+        "activation": "identity",
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          3
+        ],
+        "id": "a_basis_0",
+        "input_bits": [
+          1
+        ],
+        "physical_activation_bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "rows": [
+          2,
+          3
+        ]
+      }
+    ],
+    "A_to_D_feedback": false,
+    "D_calls": [
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "state",
+            0
+          ],
+          [
+            "const",
+            0
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0000",
+        "op": "not",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 1,
+        "source_path": "next[0].xor.or.not_left"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "input",
+            0
+          ],
+          [
+            "const",
+            0
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0001",
+        "op": "not",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 1,
+        "source_path": "next[0].xor.or.not_right"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "gate",
+            0
+          ],
+          [
+            "gate",
+            1
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0002",
+        "op": "and",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 0,
+        "source_path": "next[0].xor.or.and"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "gate",
+            2
+          ],
+          [
+            "const",
+            0
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0003",
+        "op": "not",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 1,
+        "source_path": "next[0].xor.or.not_result"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "state",
+            0
+          ],
+          [
+            "input",
+            0
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0004",
+        "op": "and",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 0,
+        "source_path": "next[0].xor.and"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "gate",
+            4
+          ],
+          [
+            "const",
+            0
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0005",
+        "op": "not",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 1,
+        "source_path": "next[0].xor.not"
+      },
+      {
+        "activation": "coordinate_relu",
+        "args": [
+          [
+            "gate",
+            3
+          ],
+          [
+            "gate",
+            5
+          ]
+        ],
+        "bank_id": "shared_weights",
+        "bias_words": [
+          0,
+          0
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ],
+        "id": "d_gate_0006",
+        "op": "and",
+        "rows": [
+          0,
+          1
+        ],
+        "selected_row": 0,
+        "source_path": "next[0].xor.result"
+      }
+    ],
+    "bank_id": "shared_weights",
+    "effects": "D next state and declared old-snapshot outputs only",
+    "input_ports": [
+      "bit"
+    ],
+    "next_state_wires": [
+      [
+        "gate",
+        6
+      ]
+    ],
+    "nonlinearities": {
+      "A": "identity",
+      "D": "coordinate_relu"
+    },
+    "output_ports": [
+      "previous_parity"
+    ],
+    "output_wires": [
+      [
+        "state",
+        0
+      ]
+    ],
+    "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+    "state_ports": [
+      "parity"
+    ]
+  },
+  "graph_sha256": "6283f61785e44847c2bd72e42315fc6f66145abef6d3e750280a66b76d414605",
+  "implementation_sha256": {
+    "/workspace/dmwk-p1-foundations/p1_c3/execution.py": "8644fa96d2c72b51efa6c4b94cf502dca6f3782140cb23d636d05d3f65f6aede",
+    "/workspace/p2_c1/c1_compiler.py": "76b9e7fceaa7898a397ed3b1d8cec8341fa36afb03036bae38ba3aa511b60802",
+    "/workspace/p2_c1/c1_runtime.py": "eca6efc93cafa55d30c475d419fa9e36eee3340385a2c9b1a22b8f9b720a47a9"
+  },
+  "initial_weight_words": [
+    [
+      16256,
+      16256,
+      49024,
+      0
+    ],
+    [
+      49024,
+      0,
+      16256,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "layout": {
+    "A_columns": [
+      3
+    ],
+    "A_rows": [
+      2,
+      3
+    ],
+    "D_columns": [
+      0,
+      1,
+      2
+    ],
+    "D_rows": [
+      0,
+      1
+    ],
+    "a_cols": 1,
+    "a_rows": 2,
+    "bank_id": "shared_weights",
+    "fixed_bias_words": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "fixed_cells": [
+      [
+        0,
+        0,
+        16256
+      ],
+      [
+        0,
+        1,
+        16256
+      ],
+      [
+        0,
+        2,
+        49024
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        49024
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        2,
+        16256
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ]
+    ],
+    "full_shape": [
+      4,
+      4
+    ],
+    "parameter_ids": [
+      [
+        "shared_weights[0,0]",
+        "shared_weights[0,1]",
+        "shared_weights[0,2]",
+        "shared_weights[0,3]"
+      ],
+      [
+        "shared_weights[1,0]",
+        "shared_weights[1,1]",
+        "shared_weights[1,2]",
+        "shared_weights[1,3]"
+      ],
+      [
+        "shared_weights[2,0]",
+        "shared_weights[2,1]",
+        "shared_weights[2,2]",
+        "shared_weights[2,3]"
+      ],
+      [
+        "shared_weights[3,0]",
+        "shared_weights[3,1]",
+        "shared_weights[3,2]",
+        "shared_weights[3,3]"
+      ]
+    ],
+    "writable_cells": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ]
+  },
+  "mode": "structural",
+  "numerical_policy": "c1-sparse-fixed-views-separate-rne-canonical-zero-gradual-underflow-v1",
+  "proof": {
+    "A_totality_scope": "all canonical finite A endpoints on zero/basis inputs",
+    "D_exactness_scope": "fixed small-integer primitive graph under the explicit numerical contract",
+    "all_shared_sites_derived": true,
+    "coverage": {
+      "D_call_observations": 28,
+      "all_shared_D_sites_covered": true,
+      "all_state_activation_bits": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "all_state_call_span_rank": 3,
+      "closure": "all next-state wires Boolean; selected initial subset is contained in the all-Boolean invariant",
+      "exact_reachable_span_claimed": false,
+      "method": "structural Boolean induction; complete all-Boolean-state/input step envelope as additional evidence",
+      "per_site": [
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0000"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0001"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0002"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0003"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0004"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0005"
+        },
+        {
+          "activation_bits": [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ]
+          ],
+          "id": "d_gate_0006"
+        }
+      ],
+      "samples_used": false,
+      "state_input_contexts": 4
+    },
+    "external_arbitrary_program_discovery": false,
+    "general_proof_machine_checked": false,
+    "global_containment_source": "every D wire Boolean by structural and tick induction; no samples",
+    "initial_A_anchors": {
+      "BIT_execution_checked_on_declared_inputs": true,
+      "all_relations_checked_in_zero_basis_domain": true,
+      "distinct_input_constraints": 0,
+      "exact_storage_checked": true,
+      "future_learning_may_change_these_A_anchors": true,
+      "initial_only": true
+    },
+    "method": "closed-source reconstruction plus conditional handwritten Boolean/structural induction"
+  },
+  "response_request": null,
+  "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+  "schema": "dmwk-p2-c1-compiled-reserve-v1",
+  "source": {
+    "initial_states": [
+      [
+        0
+      ]
+    ],
+    "input_ports": [
+      "bit"
+    ],
+    "next_state": [
+      [
+        "xor",
+        [
+          "state",
+          0
+        ],
+        [
+          "input",
+          0
+        ]
+      ]
+    ],
+    "output_ports": [
+      "previous_parity"
+    ],
+    "outputs": [
+      [
+        "state",
+        0
+      ]
+    ],
+    "schema": "dmwk-p2-c1-bool-fsm-v1",
+    "state_ports": [
+      "parity"
+    ]
+  },
+  "source_sha256": "c61a5f4ed19fb9a911aa4d9f317d6205b884e98f27fe5c74c917fde19a1e68c2"
+}

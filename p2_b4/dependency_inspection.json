@@ -1,0 +1,25 @@
+{
+  "schema": "dmwk-p2-b4-dependency-inspection-v1",
+  "status": "passed",
+  "B3_manifest_entries_verified": 39,
+  "B3_manifest_sha256": "b4a6b9498c2400f0e53aba016fa9b90d773c0977461063cd9126206a175ff32f",
+  "B3_prior_entries_verified": 699,
+  "current_prior_files": 739,
+  "B3_main_status": "passed",
+  "B3_independent_status": "passed",
+  "B3_reproduction_statuses": [
+    "passed",
+    "passed"
+  ],
+  "B3_completion": "completed_scoped_delivery",
+  "B1_facts": {
+    "joint_refusals": 21,
+    "all_remain_BIT_equal_on_original_registered_domains": true,
+    "all_fail_exact_ALG": true,
+    "FP32_dense_AdamW_accepted": 0,
+    "FP32_dense_AdamW_refused": 8,
+    "FP32_dense_AdamW_final_loss": "5/2"
+  },
+  "prior_stage_suites_rerun": false,
+  "publication_operations": false
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "dmwk-p2-b2-verification-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T08:39:35.692560+00:00",
+  "planned_sections": [
+    "geometry_numerics_and_boundaries",
+    "bounded_certificates_and_B1_boundary"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "P2_B3_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "geometry_numerics_and_boundaries",
+    "bounded_certificates_and_B1_boundary"
+  ],
+  "completed_utc": "2026-11-14T08:39:35.692575+00:00",
+  "total_seconds": 1.9598999642767012e-05,
+  "evidence_scope": {
+    "exact": "Conditional handwritten bounds; finite exact checks are separate.",
+    "execution": "Independent old/new fixed-order separate-RNE affine executions with actual endpoint differences.",
+    "domains": "Point, complete registered finite envelope and analytic box claims retain separate coverage/totality premises.",
+    "receipts": "Read-only numeric budget evidence; no BIT/ALG_AND_BIT or live commit authority.",
+    "B1": "Frozen recorded endpoints receive new B2 analysis; earlier optimizer experiments are not rerun.",
+    "backends": "Software BF16 and audited local scalar CPU FP32 only.",
+    "excluded": "GPU, native BF16, general concurrency, arbitrary compiler changes, general learning and later-stage composition."
+  }
+}

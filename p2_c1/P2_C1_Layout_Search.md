@@ -1,0 +1,7 @@
+# Selecting a layout from capacity minima
+
+The optional request field `layout_limits` leaves both A dimensions to the compiler driver. It replaces `budget` and supplies the six budget fields other than `a_rows` and `a_cols`. The source, numerical format and optional anchors retain their fixed meanings. Each of the four permitted shapes has m,c in {1,2}.
+
+**Finite planning result.** Sort these four shapes by the tuple ((2+m)(3+c),m,c). For each candidate, instantiate the full budget and apply the same checked compiler, including shape-dependent initial-anchor and physical-word requirements. Return the first accepted shape. If one exists, this procedure returns a feasible layout of minimum dense matrix word cost in this four-shape family, breaking ties by m then c. If every candidate fails, the constraints have no solution under this emitter. The proof follows by exhaustive coverage of the four shapes and the sorted order. T4(b) and T5 give the construction and anchor conditions checked for each candidate. This search assumes the trusted fixed compiler. It optimizes the matrix word count and makes no global optimality claim for gate count, latency or alternative encodings.
+
+The output is the ordinary source-bound artifact with its concrete selected budget. Recompiling the original request also checks the search decision. The live owner takes that concrete budget and the external expected source. A layout choice alone grants no endpoint authority.

@@ -1,0 +1,42 @@
+{
+  "schema": "dmwk-p2-a4-verification-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T07:35:21.827656+00:00",
+  "planned_sections": [
+    "exact_algebra",
+    "discrete_endpoints",
+    "structural_budget",
+    "capacity_boundaries"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "P2_B1_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "exact_algebra",
+    "discrete_endpoints",
+    "structural_budget",
+    "capacity_boundaries"
+  ],
+  "completed_utc": "2026-11-14T07:35:21.827669+00:00",
+  "total_seconds": 1.7696002032607794e-05,
+  "evidence_scope": {
+    "exact": "Finite checks of exact rational constructions; universal algebra theorems are separate handwritten proofs.",
+    "discrete": "Counts of explicit endpoint families, not all FP32 banks unless a separate full-format proof is given.",
+    "structural": "Small fixed layout and protected arithmetic graph, not a completed compiler/backend project.",
+    "response": "Distinct attainable outputs and exact quotient response dimensions, not learning-performance evidence.",
+    "BF16": "Software RNE; no native BF16 certification.",
+    "FP32": "Local scalar CPU execution audited against exact rational RNE.",
+    "excluded": "GPU, general concurrency, arbitrary compiler optimization, full host-stack machine proof and later stages."
+  }
+}

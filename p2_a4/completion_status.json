@@ -1,0 +1,109 @@
+{
+  "schema": "dmwk-p2-a4-completion-v1",
+  "recorded_utc": "2026-11-14T07:36:52.882779+00:00",
+  "stage": "P2-A4",
+  "status": "completed_with_explicit_scope_limits",
+  "language": "English research artifacts; Chinese user summary",
+  "seed": 20261114,
+  "mathematics": {
+    "theorems": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "T8"
+    ],
+    "evidence": "Handwritten conditional proofs with independent human-readable review; not proof-assistant checked.",
+    "square_dimension": "d(d-r)",
+    "square_update_rank_bound": "d-r for exact annihilators only",
+    "square_generator_bound": "min(k,d-r) for freely chosen exact generator of rank at most k",
+    "target_response_dimension": "n s, s=rank[H X]-rank(H)",
+    "target_feasibility": "X alpha in V implies R alpha=0; then minimum implementing update rank is rank(R)",
+    "four_capacities_separated": [
+      "exact algebraic freedom",
+      "stored endpoint feasibility at fixed old bank",
+      "fixed-domain/graph/policy bitwise observational edits",
+      "responses on specified legal A targets"
+    ],
+    "not_claimed": [
+      "ALG/BIT nesting",
+      "a vector-space dimension for finite endpoint sets",
+      "universal learning performance",
+      "complete finite-format capacity classification"
+    ]
+  },
+  "main_verification": {
+    "file": "verification_results.json",
+    "status": "passed",
+    "completed_sections": 4,
+    "section_checks": {
+      "exact_algebra": 45199,
+      "discrete_endpoints": 6864,
+      "structural_budget": 74911,
+      "capacity_boundaries": 50
+    },
+    "elapsed_seconds": 34.889410307001526,
+    "unexpected_failures": 0
+  },
+  "independent_verification": {
+    "file": "review_results.json",
+    "status": "passed",
+    "elapsed_seconds": 12.67862760799835,
+    "independent_endpoint_comparisons": 2022,
+    "logic": "Independent determinant/minor/direct-constraint algebra and IEEE decoding/word-search RNE; no reuse of main assertion logic."
+  },
+  "reproduction": {
+    "file": "reproduction_results.json",
+    "driver_checks": "driver_checks.json",
+    "foreign_cwd": "/tmp",
+    "non_timing_results_and_sources_identical": true,
+    "component_records_match_aggregate": true,
+    "optimized_modes_refused_before_sections": [
+      "-O",
+      "-OO"
+    ]
+  },
+  "finite_precision_evidence": {
+    "BF16": "Software RNE; all 65536 raw words checked for the scalar structural fixture, not all endpoint pairs.",
+    "FP32": "Local CPU NumPy float32 separate scalar operations audited against exact/independent rounding; 524 scalar structural probe words.",
+    "full_format_counts": "The N^2 reserve counts and saturated ALG singleton are separate mathematical proofs, not bank enumeration.",
+    "canonical_policy": "Finite words, stored +0 only; NaN/infinity/-0 proposals refused; arithmetic zero canonicalized; gradual underflow; no implicit FMA."
+  },
+  "transaction_scope": "Reused unchanged A3 trusted serial API for supported complete registries. Endpoint/domain/graph/policy/version/snapshot refusal leaves protected state unchanged. New structural evaluator is pure, not a live commit route.",
+  "prior_artifacts": {
+    "baseline": "dependency_baseline.json",
+    "checked_files": 377,
+    "all_unchanged": true,
+    "prior_stage_suites_rerun": false,
+    "excluded_directories": [
+      ".git",
+      "__pycache__",
+      ".venv",
+      "venv",
+      ".pytest_cache"
+    ],
+    "repository_operations_performed": false
+  },
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "unresolved": [
+    "GPU execution",
+    "native BF16 certification",
+    "general concurrent publication",
+    "arbitrary compiler optimizations and changed fusion/reduction graphs",
+    "full host-stack formal verification",
+    "arbitrary program invariant generation",
+    "robust/useful learning-performance guarantees",
+    "general finite-format equivalence-class classification"
+  ],
+  "next_stage": {
+    "name": "P2-B1",
+    "handoff": "P2_B1_Handoff.md",
+    "started": false,
+    "requires": "Coordinator review and adoption of strict handoff; no additional per-stage user permission is requested."
+  },
+  "scope_boundary": "A4 delivery only; no B1, long-term B4, general C1 compiler or arbitrary C4 hardware certification."
+}

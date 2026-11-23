@@ -1,0 +1,684 @@
+{
+  "schema": "dmwk-p2-a4-final-integrity-v1",
+  "status": "passed",
+  "recorded_utc": "2026-11-14T07:37:35.546309+00:00",
+  "required_artifacts": [
+    "P2_A4_Plan.md",
+    "P2_A4_Mathematical_Checkpoint.md",
+    "P2_A4_Definitions.md",
+    "P2_A4_Theorems.md",
+    "P2_A4_Counterexamples.md",
+    "P2_A4_Evidence_Map.md",
+    "P2_A4_Review.md",
+    "P2_A4_Report.md",
+    "P2_A4_Structural_Budget.md",
+    "P2_A4_Errata.md",
+    "README.md",
+    "P2_B1_Handoff.md",
+    "capacity_algebra.py",
+    "capacity_discrete.py",
+    "structural_budget.py",
+    "a4_runtime.py",
+    "verify_capacity.py",
+    "verify_algebra_cases.py",
+    "verify_discrete_cases.py",
+    "verify_structural_cases.py",
+    "verify_boundary_cases.py",
+    "verify_review_checks.py",
+    "requirements.txt",
+    "verification_results.json",
+    "algebra_results.json",
+    "discrete_results.json",
+    "structural_results.json",
+    "boundary_results.json",
+    "review_results.json",
+    "reproduction_results.json",
+    "driver_checks.json",
+    "dependency_baseline.json",
+    "completion_status.json",
+    "optimized_O_refusal.json",
+    "optimized_OO_refusal.json"
+  ],
+  "required_artifact_count": 35,
+  "prior_artifacts": {
+    "baseline": "dependency_baseline.json",
+    "checked_file_count": 377,
+    "contents_unchanged": true,
+    "nonexcluded_inventory_unchanged": true,
+    "roots": [
+      "dmwk-p1-foundations",
+      "p2_a1",
+      "p2_a2",
+      "p2_a3"
+    ],
+    "excluded_directories": [
+      ".git",
+      ".pytest_cache",
+      ".venv",
+      "__pycache__",
+      "venv"
+    ]
+  },
+  "source_result_bindings": [
+    {
+      "record": "verification_results.json",
+      "source": "a4_runtime.py",
+      "sha256": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "capacity_algebra.py",
+      "sha256": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "capacity_discrete.py",
+      "sha256": "97cbe1f749295e851d2809ae5316a7b9d6261bda0956cfd525ae3c626bff34ee"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "structural_budget.py",
+      "sha256": "6131cc3ec4bbc34cd303fac15580985f5d62cbfebec300346950decb609be205"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_algebra_cases.py",
+      "sha256": "c03e579ac82a531d66f25e8d8e3c4bd8d56dc730ccd7c479132a64e5193c4b76"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_boundary_cases.py",
+      "sha256": "2ed6fe8c7a16ca7ff19aab2d6b4e49f005d3b69351148ae846e8b3e54399be12"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_capacity.py",
+      "sha256": "65e5b1722bb03c3fa362aeceb9f5acaded2832e8a0e08001dbcc1adb4cffcbff"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_discrete_cases.py",
+      "sha256": "102f7f2fc898ee3e5dd9d9404657ee2e3ba96cb31b7ded40adc458cb3aebad36"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_review_checks.py",
+      "sha256": "e9e0d5ce119d8f32344509b6ad23564739b04cec80db520a5c31a1e639455805"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "verify_structural_cases.py",
+      "sha256": "fea16c11459352027636f459faac3ad65ce9f8b0616b75251ffcc7cf5c4d0434"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "requirements.txt",
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "record": "verification_results.json",
+      "source": "dependency_baseline.json",
+      "sha256": "25f076f964663b518a5653d8e25ca4d0b87dcc942408057c62e1b80817905824"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "a4_runtime.py",
+      "sha256": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "capacity_algebra.py",
+      "sha256": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "capacity_discrete.py",
+      "sha256": "97cbe1f749295e851d2809ae5316a7b9d6261bda0956cfd525ae3c626bff34ee"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "structural_budget.py",
+      "sha256": "6131cc3ec4bbc34cd303fac15580985f5d62cbfebec300346950decb609be205"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_algebra_cases.py",
+      "sha256": "c03e579ac82a531d66f25e8d8e3c4bd8d56dc730ccd7c479132a64e5193c4b76"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_boundary_cases.py",
+      "sha256": "2ed6fe8c7a16ca7ff19aab2d6b4e49f005d3b69351148ae846e8b3e54399be12"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_capacity.py",
+      "sha256": "65e5b1722bb03c3fa362aeceb9f5acaded2832e8a0e08001dbcc1adb4cffcbff"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_discrete_cases.py",
+      "sha256": "102f7f2fc898ee3e5dd9d9404657ee2e3ba96cb31b7ded40adc458cb3aebad36"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_review_checks.py",
+      "sha256": "e9e0d5ce119d8f32344509b6ad23564739b04cec80db520a5c31a1e639455805"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "verify_structural_cases.py",
+      "sha256": "fea16c11459352027636f459faac3ad65ce9f8b0616b75251ffcc7cf5c4d0434"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "requirements.txt",
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source": "dependency_baseline.json",
+      "sha256": "25f076f964663b518a5653d8e25ca4d0b87dcc942408057c62e1b80817905824"
+    },
+    {
+      "record": "review_results.json",
+      "source": "verify_review_checks.py",
+      "sha256": "e9e0d5ce119d8f32344509b6ad23564739b04cec80db520a5c31a1e639455805"
+    },
+    {
+      "record": "review_results.json",
+      "source": "capacity_algebra.py",
+      "sha256": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb"
+    },
+    {
+      "record": "review_results.json",
+      "source": "capacity_discrete.py",
+      "sha256": "97cbe1f749295e851d2809ae5316a7b9d6261bda0956cfd525ae3c626bff34ee"
+    },
+    {
+      "record": "review_results.json",
+      "source": "structural_budget.py",
+      "sha256": "6131cc3ec4bbc34cd303fac15580985f5d62cbfebec300346950decb609be205"
+    },
+    {
+      "record": "review_results.json",
+      "source": "a4_runtime.py",
+      "sha256": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14"
+    },
+    {
+      "record": "algebra_results.json",
+      "source": "capacity_algebra.py",
+      "sha256": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb"
+    },
+    {
+      "record": "algebra_results.json",
+      "source": "verify_algebra_cases.py",
+      "sha256": "c03e579ac82a531d66f25e8d8e3c4bd8d56dc730ccd7c479132a64e5193c4b76"
+    },
+    {
+      "record": "algebra_results.json",
+      "source": "a4_runtime.py",
+      "sha256": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14"
+    }
+  ],
+  "driver_record_hash_bindings_valid": true,
+  "strict_json_files_checked": [
+    "algebra_results.json",
+    "boundary_results.json",
+    "completion_status.json",
+    "dependency_baseline.json",
+    "discrete_results.json",
+    "driver_checks.json",
+    "optimized_OO_refusal.json",
+    "optimized_O_refusal.json",
+    "reproduction_results.json",
+    "review_results.json",
+    "structural_results.json",
+    "verification_results.json"
+  ],
+  "english_markdown_files_checked": [
+    "P2_A4_Counterexamples.md",
+    "P2_A4_Definitions.md",
+    "P2_A4_Errata.md",
+    "P2_A4_Evidence_Map.md",
+    "P2_A4_Mathematical_Checkpoint.md",
+    "P2_A4_Plan.md",
+    "P2_A4_Report.md",
+    "P2_A4_Review.md",
+    "P2_A4_Structural_Budget.md",
+    "P2_A4_Theorems.md",
+    "P2_B1_Handoff.md",
+    "README.md"
+  ],
+  "local_markdown_links_checked": [
+    {
+      "document": "P2_A4_Counterexamples.md",
+      "target": "P2_A4_Theorems.md"
+    },
+    {
+      "document": "P2_A4_Definitions.md",
+      "target": "P2_A4_Mathematical_Checkpoint.md"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "P2_A4_Definitions.md"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "P2_A4_Theorems.md"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "algebra_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_algebra_cases.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "discrete_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_discrete_cases.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "structural_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_structural_cases.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "boundary_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_boundary_cases.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "review_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_review_checks.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verification_results.json"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "verify_capacity.py"
+    },
+    {
+      "document": "P2_A4_Evidence_Map.md",
+      "target": "reproduction_results.json"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "P2_A4_Definitions.md"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "P2_A4_Theorems.md"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "P2_A4_Counterexamples.md"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "P2_A4_Errata.md"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "verification_results.json"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "final_integrity.json"
+    },
+    {
+      "document": "P2_A4_Report.md",
+      "target": "P2_B1_Handoff.md"
+    },
+    {
+      "document": "P2_A4_Review.md",
+      "target": "review_results.json"
+    },
+    {
+      "document": "P2_A4_Review.md",
+      "target": "verify_boundary_cases.py"
+    },
+    {
+      "document": "P2_A4_Review.md",
+      "target": "verify_review_checks.py"
+    },
+    {
+      "document": "P2_A4_Structural_Budget.md",
+      "target": "structural_budget.py"
+    },
+    {
+      "document": "P2_A4_Structural_Budget.md",
+      "target": "verify_structural_cases.py"
+    },
+    {
+      "document": "P2_A4_Structural_Budget.md",
+      "target": "structural_results.json"
+    },
+    {
+      "document": "P2_A4_Theorems.md",
+      "target": "P2_A4_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Theorems.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Evidence_Map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Counterexamples.md"
+    },
+    {
+      "document": "README.md",
+      "target": "requirements.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "README.md",
+      "target": "capacity_algebra.py"
+    },
+    {
+      "document": "README.md",
+      "target": "capacity_discrete.py"
+    },
+    {
+      "document": "README.md",
+      "target": "structural_budget.py"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Plan.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Mathematical_Checkpoint.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Theorems.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Errata.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Structural_Budget.md"
+    },
+    {
+      "document": "README.md",
+      "target": "structural_budget.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_algebra_cases.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_discrete_cases.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_structural_cases.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_boundary_cases.py"
+    },
+    {
+      "document": "README.md",
+      "target": "algebra_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "discrete_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "structural_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "boundary_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_capacity.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verification_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "reproduction_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Review.md"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_review_checks.py"
+    },
+    {
+      "document": "README.md",
+      "target": "review_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Evidence_Map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_A4_Counterexamples.md"
+    },
+    {
+      "document": "README.md",
+      "target": "a4_runtime.py"
+    },
+    {
+      "document": "README.md",
+      "target": "dependency_baseline.json"
+    },
+    {
+      "document": "README.md",
+      "target": "final_integrity.json"
+    },
+    {
+      "document": "README.md",
+      "target": "completion_status.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Handoff.md"
+    }
+  ],
+  "manifest": {
+    "P2_A4_Counterexamples.md": {
+      "sha256": "048d0e2b10a1d03a4085df730b63c08624cf458b7cba246040b406894deb722c",
+      "bytes": 15865
+    },
+    "P2_A4_Definitions.md": {
+      "sha256": "ffd31470a0410c721b22ef464ba3cf7a5463b254ac94461455601a0789f56878",
+      "bytes": 12780
+    },
+    "P2_A4_Errata.md": {
+      "sha256": "0403f4e9ea787801a6828e2e560fd56da952b3b5b6a8bbe18e54a171ff297cb9",
+      "bytes": 1904
+    },
+    "P2_A4_Evidence_Map.md": {
+      "sha256": "00c2288a6610cab0e8617f36f105ba760c0ff4e82561d0f665b96a7604e1c0b4",
+      "bytes": 13753
+    },
+    "P2_A4_Mathematical_Checkpoint.md": {
+      "sha256": "fd1f5259881f7060ccb72893752392605bcca83f3030b27422fc4c0222956d63",
+      "bytes": 4385
+    },
+    "P2_A4_Plan.md": {
+      "sha256": "629131c7d8b97cc4727cd7696d018b3d12d6920f6dce4216929bcf55d865ea7a",
+      "bytes": 7249
+    },
+    "P2_A4_Report.md": {
+      "sha256": "b2d09c46bcb83c3aee754c93764e4f65e836e9243b76dc2eff907c0186a113d7",
+      "bytes": 21335
+    },
+    "P2_A4_Review.md": {
+      "sha256": "2401407fd109736f07825f0aa1cff750e2fa644fecdfb3b74cc3a73002450290",
+      "bytes": 14336
+    },
+    "P2_A4_Structural_Budget.md": {
+      "sha256": "24ff231bb03f2315a55f533de0ba341602fa4f0afd1cedc1c5ffdc873e813be9",
+      "bytes": 13071
+    },
+    "P2_A4_Theorems.md": {
+      "sha256": "a6252c9537bed319083690aed525376343c963981190ab18c973ed729796ac6a",
+      "bytes": 24922
+    },
+    "P2_B1_Handoff.md": {
+      "sha256": "ecec5247c0f17bb6f17402c56a6d58f1d1487d474d92ec03b6b58d86ecb4bfce",
+      "bytes": 3578
+    },
+    "README.md": {
+      "sha256": "58cf3192ed4b739a4315058a0e7cb28b62e01e2f04b8a76d62006730e9fdbca6",
+      "bytes": 5436
+    },
+    "a4_runtime.py": {
+      "sha256": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14",
+      "bytes": 1471
+    },
+    "algebra_results.json": {
+      "sha256": "7185ea3c4a3c879745f0926de4bd7a64b85bec551655f3267854696a53d0211b",
+      "bytes": 305823
+    },
+    "boundary_results.json": {
+      "sha256": "75e6edf843f0953a7d77f9bd7c480835935785fc6023248823f9d338595a6aa3",
+      "bytes": 10815
+    },
+    "capacity_algebra.py": {
+      "sha256": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb",
+      "bytes": 10171
+    },
+    "capacity_discrete.py": {
+      "sha256": "97cbe1f749295e851d2809ae5316a7b9d6261bda0956cfd525ae3c626bff34ee",
+      "bytes": 13032
+    },
+    "completion_status.json": {
+      "sha256": "6b409930a984777bbd67f7a321d5431516b2d4f9966f394fdb3c8a335d3276d0",
+      "bytes": 4297
+    },
+    "dependency_baseline.json": {
+      "sha256": "25f076f964663b518a5653d8e25ca4d0b87dcc942408057c62e1b80817905824",
+      "bytes": 48683
+    },
+    "discrete_results.json": {
+      "sha256": "dc39339c64f2638fc96d7f5102ba87aecf4596ad5d91d566f8c79cfe401d1575",
+      "bytes": 5426590
+    },
+    "driver_checks.json": {
+      "sha256": "3578927c3f9b75dd3a969ba71e700d9d834fdf937c2c70bf89cc79697d4242b1",
+      "bytes": 5531
+    },
+    "optimized_OO_refusal.json": {
+      "sha256": "009a542d138c4e89188e9721a35a6e6806002b6d88ce58bd6c5cc01716662c6b",
+      "bytes": 1603
+    },
+    "optimized_O_refusal.json": {
+      "sha256": "c0fbc1ee9e9b43be7025bd0e4f83ea43a2829a01b31dd4e8c53b8a2625abf566",
+      "bytes": 1603
+    },
+    "reproduction_results.json": {
+      "sha256": "2b313d66d25e7562b0afaafcc70f4f64d942204bf28871f284098afcc01d10cd",
+      "bytes": 6798051
+    },
+    "requirements.txt": {
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "bytes": 13
+    },
+    "review_results.json": {
+      "sha256": "3fd3b67ae830b2bebeb2eba5fd2441a28a0955fd650fa62f8386bb4d46d2b31d",
+      "bytes": 9212
+    },
+    "structural_budget.py": {
+      "sha256": "6131cc3ec4bbc34cd303fac15580985f5d62cbfebec300346950decb609be205",
+      "bytes": 10752
+    },
+    "structural_results.json": {
+      "sha256": "1414031c65ed8b2baaf9bd57ba585513ced0afc6cba3acbe7f4862084e21d448",
+      "bytes": 12566
+    },
+    "verification_results.json": {
+      "sha256": "1b5f4e3aa8ac62f4cb0bb5521abfc14d6cb7e52c407206395f1e3e30acf39c80",
+      "bytes": 6798059
+    },
+    "verify_algebra_cases.py": {
+      "sha256": "c03e579ac82a531d66f25e8d8e3c4bd8d56dc730ccd7c479132a64e5193c4b76",
+      "bytes": 13916
+    },
+    "verify_boundary_cases.py": {
+      "sha256": "2ed6fe8c7a16ca7ff19aab2d6b4e49f005d3b69351148ae846e8b3e54399be12",
+      "bytes": 8864
+    },
+    "verify_capacity.py": {
+      "sha256": "65e5b1722bb03c3fa362aeceb9f5acaded2832e8a0e08001dbcc1adb4cffcbff",
+      "bytes": 4921
+    },
+    "verify_discrete_cases.py": {
+      "sha256": "102f7f2fc898ee3e5dd9d9404657ee2e3ba96cb31b7ded40adc458cb3aebad36",
+      "bytes": 14240
+    },
+    "verify_review_checks.py": {
+      "sha256": "e9e0d5ce119d8f32344509b6ad23564739b04cec80db520a5c31a1e639455805",
+      "bytes": 23939
+    },
+    "verify_structural_cases.py": {
+      "sha256": "fea16c11459352027636f459faac3ad65ce9f8b0616b75251ffcc7cf5c4d0434",
+      "bytes": 10968
+    }
+  },
+  "manifest_file_count": 35,
+  "self_hash_policy": "This final manifest excludes itself to avoid recursive hashing. All other current A4 files are included.",
+  "scope": "Artifact integrity and internal documentary consistency, not a formal proof, secret scan or backend certification. No previous-stage suites or repository operations were performed."
+}

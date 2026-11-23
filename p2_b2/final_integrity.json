@@ -1,0 +1,175 @@
+{
+  "schema": "dmwk-p2-b2-final-integrity-v1",
+  "status": "passed",
+  "recorded_utc": "2026-11-14T08:43:03.609493+00:00",
+  "scope": "Content identity, source/result correspondence, strict JSON, local links and preserved prior artifacts; not proof of theorem truth",
+  "file_count_excluding_this_record": 34,
+  "total_bytes_excluding_this_record": 28973074,
+  "files": {
+    "B2_Interface.md": {
+      "sha256": "e29d61ab8d873c432905379626934af87440b9a49249330dc4b4646d982d2ddd",
+      "bytes": 7144
+    },
+    "P2_B2_Certificate_Spec.md": {
+      "sha256": "6ec092e6ce5ba5688d0e78bcc1bb3842a17b9dd426f0107e4faf31c6d4ed287f",
+      "bytes": 11281
+    },
+    "P2_B2_Counterexamples.md": {
+      "sha256": "323638e4644aaca64e445de69c7200660424216c0d16014960c31b8470b4ec51",
+      "bytes": 11800
+    },
+    "P2_B2_Definitions.md": {
+      "sha256": "ca4ea5a65e2ef24a0893d701302f274b61dfa3aff24e685264b14f0df334cddd",
+      "bytes": 9908
+    },
+    "P2_B2_Errata.md": {
+      "sha256": "aae9a54b0a277a7cb73dc94fdc6ccd34bea5482615a34229d04a18e36b42eca0",
+      "bytes": 2175
+    },
+    "P2_B2_Evidence_Map.md": {
+      "sha256": "31df39509a682265d71fb224342d91cdde58e73df047c406d4f2a3c1d8f5de20",
+      "bytes": 13175
+    },
+    "P2_B2_Mathematical_Checkpoint.md": {
+      "sha256": "3f7d5f8a5b931d429f472791a6fbc5069942f38728f340795bc87fc0d8f0fcb1",
+      "bytes": 3599
+    },
+    "P2_B2_Numerical_Analysis.md": {
+      "sha256": "3620065d6d7103c29413dd61d3ff295fc25d563028682322b15d9d3a25988b33",
+      "bytes": 13798
+    },
+    "P2_B2_Plan.md": {
+      "sha256": "a530e0645d24baebd77e7c2968d3d25ea5e8da95c06dbaa177bec40883d873a3",
+      "bytes": 7347
+    },
+    "P2_B2_Report.md": {
+      "sha256": "1a6eebca7207a9cb6dfef04090079ee62400064ea7ab70f1c35ba179d2234bf3",
+      "bytes": 18456
+    },
+    "P2_B2_Review.md": {
+      "sha256": "4afe601233937af7fb95099af52048f988aacfb1213d9c2fe3876cfff72b05f3",
+      "bytes": 16635
+    },
+    "P2_B2_Theorems.md": {
+      "sha256": "d0a9cd3f84a864b7eb964dcf7f9257f1837ccfcaad14c3c2e7cf69875be97d5e",
+      "bytes": 21965
+    },
+    "P2_B3_Handoff.md": {
+      "sha256": "78beaa6a1f48cccbe77a7279fd3b9d6063c36ab2cde08cfcb5fd3613a7fb916e",
+      "bytes": 3751
+    },
+    "README.md": {
+      "sha256": "3fb8b965c7febd79216a5993f8e8184af7985271a10103bf9ebeb1d48d0afec5",
+      "bytes": 9279
+    },
+    "b2_runtime.py": {
+      "sha256": "2ddb30731d2b3400182cee464b4c207c267fa76f4969e96f09d4236e174690b8",
+      "bytes": 2061
+    },
+    "bound_results.json": {
+      "sha256": "2b7c7ba562a1bd299cabe10bd81f8f58dbc87b28dafeeff0a722ccd69c9c9e2e",
+      "bytes": 4271406
+    },
+    "bounded_certificate.py": {
+      "sha256": "9f887f85a8abb23ce348689ee29ee21ea981f3a8aaf5a197f3d7752b2dfa7247",
+      "bytes": 9556
+    },
+    "certificate_results.json": {
+      "sha256": "154387d17e77f7f240ea0a9e376734dec66225df7631ddf11d4cdc3e78765f9a",
+      "bytes": 4566440
+    },
+    "certified_bounds.py": {
+      "sha256": "4f2b682258861846f8eae26c38083fbfbc24553a6e75f9f88eacafc5f759492e",
+      "bytes": 21042
+    },
+    "completion_status.json": {
+      "sha256": "0d8bfb01743f7cf8bd3fcd39b5cafe97860b8e7b1f3fbec1cdbf07e070dd600c",
+      "bytes": 4263
+    },
+    "dependency_baseline.json": {
+      "sha256": "e34ca2f90106668f1dff7bea4f547b9a2f028973d7679e0a7449b8666e4e2ab3",
+      "bytes": 55858
+    },
+    "dependency_inspection.json": {
+      "sha256": "8ba181f7b19a46fb9558416ef5c59c0cbeab46b6ff7d037fa1d10bedc9579550",
+      "bytes": 502
+    },
+    "driver_checks.json": {
+      "sha256": "cd8aeb99d1f63de7a4ea5dd9e55441b2d1b056a652016f03f3fefa0f86618841",
+      "bytes": 9556
+    },
+    "independent_reproduction_results.json": {
+      "sha256": "10a457225917aed7260462b4db3ecd6656e0b5605892f329053567d11a03405c",
+      "bytes": 28869
+    },
+    "independent_results.json": {
+      "sha256": "a6bd6bc4d67a5dc974416901909ac432408fd3bdcc533019df479f0412ac7eb3",
+      "bytes": 28869
+    },
+    "optimized_OO_refusal.json": {
+      "sha256": "b75c72d7bb5c35b2796734c4d06799158a593da50f813cc53003d6df31293fb8",
+      "bytes": 1570
+    },
+    "optimized_O_refusal.json": {
+      "sha256": "9e36c2b9f32482f94d55f1328d6546481621230cf9b5642902b3c8867bacd1c7",
+      "bytes": 1570
+    },
+    "reproduction_results.json": {
+      "sha256": "198acd5c0c38cd2b59ef848470bb4f799e3a3776e89dd7edc5143d456e903bc2",
+      "bytes": 9870298
+    },
+    "requirements.txt": {
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "bytes": 13
+    },
+    "verification_results.json": {
+      "sha256": "ccad80505e243e051c666f1b9cdcdcdf5b940e298d8ee7e93de0df123d1761f8",
+      "bytes": 9870300
+    },
+    "verify_b2.py": {
+      "sha256": "6615d0d18312157b1bb5f99334d0f18e5bdedf2a61c55c971589380b4fccdb22",
+      "bytes": 5413
+    },
+    "verify_bounds.py": {
+      "sha256": "5cd6b7a7cd3fffdc2c8565de80b08fab669518832a5ab0a5106f990dc080747e",
+      "bytes": 19378
+    },
+    "verify_certificates.py": {
+      "sha256": "56908e9f7795fe5f44856880af842d06158a8ee158b82ef92f0627852585d6c5",
+      "bytes": 15212
+    },
+    "verify_independent.py": {
+      "sha256": "03d7ec26133728c8703df524f81d9faad524554e02e2ada963c3ae5b2b386b66",
+      "bytes": 40585
+    }
+  },
+  "self_excluded": "final_integrity.json",
+  "prior_artifacts": {
+    "count": 447,
+    "hashes_verified": true,
+    "nonexcluded_inventory_verified": true,
+    "baseline_sha256": "e34ca2f90106668f1dff7bea4f547b9a2f028973d7679e0a7449b8666e4e2ab3",
+    "excluded_directories": [
+      ".git",
+      "__pycache__",
+      ".venv",
+      "venv",
+      ".pytest_cache"
+    ],
+    "previous_suites_rerun": false
+  },
+  "validation": {
+    "required_artifacts_present": 33,
+    "strict_JSON_records_checked_excluding_self": 12,
+    "English_markdown_files_checked": 14,
+    "relative_markdown_links_checked": 77,
+    "aggregate_and_independent_source_bindings_verified": true,
+    "driver_evidence_bindings_verified": true,
+    "frozen_B1_training_hash_verified": true,
+    "only_new_local_bytecode_cache_removed": true,
+    "no_extra_scientific_run_for_packaging": true
+  },
+  "completion_status": "completed_scoped_delivery",
+  "P2_B3_started": false,
+  "publication_operations": false
+}

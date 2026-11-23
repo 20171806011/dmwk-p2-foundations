@@ -1,0 +1,99 @@
+{
+  "schema": "dmwk-p2-b4-reproduction-v1",
+  "status": "passed",
+  "foreign_cwd": "/tmp",
+  "comparisons": [
+    {
+      "left": "verification_results.json",
+      "right": "reproduction_results.json",
+      "equal_except_time": true
+    },
+    {
+      "left": "independent_results.json",
+      "right": "independent_reproduction_results.json",
+      "equal_except_time": true
+    },
+    {
+      "left": "capacity_results.json",
+      "right": "verification_results.json#/sections/capacity_and_history",
+      "equal_except_time": true
+    },
+    {
+      "left": "switching_results.json",
+      "right": "verification_results.json#/sections/switching_and_budgets",
+      "equal_except_time": true
+    },
+    {
+      "left": "transaction_results.json",
+      "right": "verification_results.json#/sections/transactions_and_learning",
+      "equal_except_time": true
+    }
+  ],
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/p2_b4/verify_b4.py",
+        "--output",
+        "/workspace/p2_b4/reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "elapsed_seconds": 75.0643269209977,
+      "stdout": "{\"status\": \"passed\", \"completed_sections\": 3, \"seconds\": 74.40055205599492, \"failure\": null, \"output\": \"/workspace/p2_b4/reproduction_results.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/p2_b4/verify_independent.py",
+        "--output",
+        "/workspace/p2_b4/independent_reproduction_results.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 0,
+      "elapsed_seconds": 85.56438762800099,
+      "stdout": "{\"status\": \"passed\", \"checks\": 33901, \"seconds\": 85.49884573199961, \"failure\": null, \"output\": \"/workspace/p2_b4/independent_reproduction_results.json\"}\n",
+      "stderr": ""
+    }
+  ],
+  "prior_suites_rerun": false,
+  "P2_C1_started": false,
+  "unchanged_prior_artifacts": 739,
+  "producer_sha256": {
+    "verification_results.json": "03f4b03fc32a717a7a15287b063e438732d6c9b930f07f5445ef0915e9270236",
+    "independent_results.json": "c8c1da86f02f68961aefe0b5fd853698e1f2f6948d83e76a3dd4cbe46c14931a",
+    "capacity_results.json": "b2c6752fc7d7adb49288cc50037afcb700efd0db9fcd3d3241617f87b141471a",
+    "switching_results.json": "234b41d1519571dfd877d76af59b9bf5c3bc591bcee58570e4ed09be9b5f877d",
+    "transaction_results.json": "a89cddea3108570ab4e74c5f4178cd6456e79be1e188ce0ae7524f41e4c81bdd"
+  },
+  "source_sha256": {
+    "b4_runtime.py": "61c4437d679ffa8402cafb4d64487032ba4513ae73755bedd51220df4ecffddd",
+    "capacity_history.py": "f21a37cb55b33be891b04abf7a0cae41a0a2761ffa51c181b0ab82b696332d39",
+    "sequence_certificate.py": "acdd65b263f3661c267aed3c566ed7ce13a6fb122bdfec9f3126cd4f71335b90",
+    "switching_bounds.py": "118ce2261f2a546980de9c5ae900695deca7046c7b7da4e5f171f94ae1842349",
+    "update_sequence.py": "e28386c370e4f523fea4d6d6cea6b1ab4741209251c54662b8c6708d255019bb",
+    "verify_b4.py": "e6bb619b7eeeb4053508e437db2eb9a4c8273a8d5b3620592cb907f3c37ae14c",
+    "verify_capacity.py": "0603907aa2a56a767f9e74b06661e177f735a819d807cf34ce72f2b6ded9d1f9",
+    "verify_independent.py": "c7f6666325e9a48ae39d53ee4f734716279c604e126121809a9bddbff2f20f6f",
+    "verify_reproduction.py": "a1b76dc2b1ebf933b46366933bfbcb0f28acfdc63fdc2df105cf9e0b8a01e359",
+    "verify_switching.py": "671f195aeed3e1d1feee69b31381eaab3d75f9a905bfae2bba023484708e1ca0",
+    "verify_transactions.py": "f871711c6913b411b7e6cc079bd50c5a928165c23db3364178f2672f9e585953",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "dependency_baseline.json": "de20e4f8cdc8242b30ec881cc32d3a5de3d0a72136adff9e7c8fadcdd1f4f627"
+  },
+  "optimized_preflight": [
+    {
+      "flag": "-O",
+      "rejected_before_tests": true
+    },
+    {
+      "flag": "-OO",
+      "rejected_before_tests": true
+    }
+  ],
+  "total_seconds": 88.58834464499523,
+  "scope": "B4 finite reproduction and provenance only; no new general theorem or prior-stage replay"
+}

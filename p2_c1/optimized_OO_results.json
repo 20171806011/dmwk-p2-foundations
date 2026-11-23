@@ -1,0 +1,42 @@
+{
+  "schema": "dmwk-p2-c1-main-v1",
+  "status": "failed",
+  "seed": 20261114,
+  "started_utc": "2026-11-23T00:06:23.367313+00:00",
+  "planned_sections": [
+    "compiler_and_semantics",
+    "geometric_comparison",
+    "layout_selection",
+    "publication_and_learning"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "prior_stage_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "SMT_queries": 0,
+  "general_proofs_machine_checked": false,
+  "P2_C2_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Run verification without -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "compiler_and_semantics",
+    "geometric_comparison",
+    "layout_selection",
+    "publication_and_learning"
+  ],
+  "completed_utc": "2026-11-23T00:06:23.367325+00:00",
+  "total_seconds": 1.6023000000586762e-05,
+  "evidence_scope": {
+    "theory": "Conditional handwritten proofs for a closed source-to-graph-and-bank compiler.",
+    "finite": "Named complete small source families/domains and separately seeded cases; not all-program machine proof.",
+    "execution": "Software BF16 and audited local CPU FP32 with fixed separate multiply/add and canonical zeros.",
+    "publication": "New compiled-source structural ALG_AND_BIT gate and trusted serial whole-owner rollback.",
+    "geometry": "Axis-aligned structural projection certified; general rotations/projections do not gain BIT authority.",
+    "excluded": "GPU/native BF16/general concurrency/crashes/arbitrary compiler/FMA/universal learning/C2-C4."
+  }
+}

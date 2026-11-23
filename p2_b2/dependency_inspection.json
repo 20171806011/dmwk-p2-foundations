@@ -1,0 +1,18 @@
+{
+  "schema": "dmwk-p2-b2-dependency-inspection-v1",
+  "status": "passed",
+  "B1_manifest_entries_verified": 33,
+  "prior_entries_verified": 413,
+  "current_prior_files": 447,
+  "B1_main_status": "passed",
+  "B1_independent_status": "passed",
+  "B1_refusal_fact": {
+    "joint_refusals": 21,
+    "all_pass_registered_BIT": true,
+    "FP32_dense_AdamW_accepted": 0,
+    "FP32_dense_AdamW_refused": 8,
+    "final_loss": "5/2"
+  },
+  "prior_stage_suites_rerun": false,
+  "publication_operations": false
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "dmwk-p2-b4-completion-v1",
+  "status": "passed",
+  "stage": "P2-B4",
+  "scoped_stage_delivered": true,
+  "scope": "Conditional repeated-update capacity and switched-stability theory plus finite serial reference validation",
+  "definitions_and_T1_T9_handwritten": true,
+  "general_proofs_machine_checked": false,
+  "SMT_queries": 0,
+  "seed": 20261114,
+  "primary": {
+    "checks": 19493,
+    "expected_refusals": 118,
+    "unexpected_failures": 0,
+    "sections": 3,
+    "seconds": 70.28695287900337
+  },
+  "independent": {
+    "checks": 33901,
+    "expected_refusals": 56,
+    "unexpected_failures": 0,
+    "total_seconds": 79.99895199899765
+  },
+  "reproduction": {
+    "foreign_cwd": "/tmp",
+    "comparisons": 5,
+    "all_equal_except_wall_clock": true,
+    "optimized_preflight": [
+      {
+        "flag": "-O",
+        "rejected_before_tests": true
+      },
+      {
+        "flag": "-OO",
+        "rejected_before_tests": true
+      }
+    ],
+    "total_seconds": 88.58834464499523
+  },
+  "unchanged_prior_artifacts": 739,
+  "prior_suites_rerun": false,
+  "prior_optimizer_trajectories_regenerated": false,
+  "source_sha256": {
+    "b4_runtime.py": "61c4437d679ffa8402cafb4d64487032ba4513ae73755bedd51220df4ecffddd",
+    "capacity_history.py": "f21a37cb55b33be891b04abf7a0cae41a0a2761ffa51c181b0ab82b696332d39",
+    "sequence_certificate.py": "acdd65b263f3661c267aed3c566ed7ce13a6fb122bdfec9f3126cd4f71335b90",
+    "switching_bounds.py": "118ce2261f2a546980de9c5ae900695deca7046c7b7da4e5f171f94ae1842349",
+    "update_sequence.py": "e28386c370e4f523fea4d6d6cea6b1ab4741209251c54662b8c6708d255019bb",
+    "verify_b4.py": "e6bb619b7eeeb4053508e437db2eb9a4c8273a8d5b3620592cb907f3c37ae14c",
+    "verify_capacity.py": "0603907aa2a56a767f9e74b06661e177f735a819d807cf34ce72f2b6ded9d1f9",
+    "verify_independent.py": "c7f6666325e9a48ae39d53ee4f734716279c604e126121809a9bddbff2f20f6f",
+    "verify_reproduction.py": "a1b76dc2b1ebf933b46366933bfbcb0f28acfdc63fdc2df105cf9e0b8a01e359",
+    "verify_switching.py": "671f195aeed3e1d1feee69b31381eaab3d75f9a905bfae2bba023484708e1ca0",
+    "verify_transactions.py": "f871711c6913b411b7e6cc079bd50c5a928165c23db3364178f2672f9e585953",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "dependency_baseline.json": "de20e4f8cdc8242b30ec881cc32d3a5de3d0a72136adff9e7c8fadcdd1f4f627"
+  },
+  "record_sha256": {
+    "capacity_results.json": "b2c6752fc7d7adb49288cc50037afcb700efd0db9fcd3d3241617f87b141471a",
+    "switching_results.json": "234b41d1519571dfd877d76af59b9bf5c3bc591bcee58570e4ed09be9b5f877d",
+    "transaction_results.json": "a89cddea3108570ab4e74c5f4178cd6456e79be1e188ce0ae7524f41e4c81bdd",
+    "verification_results.json": "03f4b03fc32a717a7a15287b063e438732d6c9b930f07f5445ef0915e9270236",
+    "independent_results.json": "c8c1da86f02f68961aefe0b5fd853698e1f2f6948d83e76a3dd4cbe46c14931a",
+    "reproduction_results.json": "e4d5787af8abb3b2ea796f5de330a0215934b603affc1aa19f2a4a3c28cd6976",
+    "independent_reproduction_results.json": "7aed995fc5adf2de2b44aac49e1535e3fb655e6d14a69515a69c6cc9018d26ed",
+    "reproduction_driver_results.json": "8ee766777658a3c4ebd708aa58e643ef7f3dd699082a5e9141e0aad3466a8c2b"
+  },
+  "training": {
+    "accepted_updates": 64,
+    "paired_D_ticks": 64,
+    "nonzero_stored_updates": 48,
+    "BF16": {
+      "accepted": 32,
+      "nonzero": 16,
+      "accepted_noops": 16,
+      "initial_loss": "1/2",
+      "final_loss": "1/32768"
+    },
+    "FP32": {
+      "accepted": 32,
+      "nonzero": 32,
+      "accepted_noops": 0,
+      "initial_loss": "1/2",
+      "final_loss": "2839225/562949953421312"
+    },
+    "claim": "Fixed toy target improvement and registered D bitwise preservation; no universal or indefinite learning benefit"
+  },
+  "documents": [
+    "P2_B4_Plan.md",
+    "P2_B4_Definitions.md",
+    "P2_B4_Theorems.md",
+    "P2_B4_Analysis.md",
+    "P2_B4_Capacity_Analysis.md",
+    "P2_B4_Counterexamples.md",
+    "P2_B4_Evidence_Map.md",
+    "P2_B4_Review.md",
+    "P2_B4_Report.md",
+    "P2_B4_Errata.md",
+    "P2_B4_Transaction_Spec.md",
+    "P2_C1_Handoff.md",
+    "README.md"
+  ],
+  "integrity_manifest": "final_integrity.json",
+  "next_stage": "P2-C1 coordinator review and original specification first",
+  "P2_C1_started": false,
+  "published_or_account_changed": false,
+  "limitations": [
+    "Global activation coverage is a premise or fixed-registry proof, never inferred from samples.",
+    "General theorems are handwritten; finite tests and exact references do not constitute overall machine proof.",
+    "Software BF16 and local audited CPU FP32 only; GPU and native BF16 uncertified.",
+    "No general concurrency, crash safety, hardware fault, arbitrary compiler, reassociation or FMA certification.",
+    "Numerical receipts are read-only; external identity data does not prove live freshness or numerical-state correspondence.",
+    "No universal learning benefit, endless progress, unrestricted all-program coverage, or C-series completion."
+  ]
+}

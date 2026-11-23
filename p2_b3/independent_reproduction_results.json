@@ -1,0 +1,1053 @@
+{
+  "schema": "dmwk-p2-b3-independent-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "started_utc": "2026-11-14T09:48:40.797651+00:00",
+  "elapsed_seconds": 38.071814596005424,
+  "section_seconds": {
+    "recurrences": 0.2003011080014403,
+    "networks": 11.701255610998487,
+    "recurrent_execution": 19.657139230999746,
+    "control": 2.3660177030033083,
+    "receipts": 3.851544488003128,
+    "frozen_B1": 0.04742894200171577,
+    "adversaries": 0.243080562002433
+  },
+  "sections": {
+    "recurrences": {
+      "exhaustive_sequences_and_initial_values": 5655,
+      "constant_envelopes": 180,
+      "scope": "all named rational coefficient sequences through length three; named constant horizons"
+    },
+    "networks": {
+      "registered_endpoint_pairs": 24,
+      "registered_point_pairs": 288,
+      "seeded_rectangular_networks": 24,
+      "seed": 20261114,
+      "records": [
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 0,
+          "bound": "2045696948474102792735653031789344695656437091862273/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 1,
+          "bound": "1315014726900882013830593979300609852188463216133889/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "1/32"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 2,
+          "bound": "566725888587459719710307344949872946124625754130177/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "0"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 3,
+          "bound": "1315014726900882013830593979300609852188463216133889/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "1/32"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 4,
+          "bound": "2116537684547535257699441449908078813920353102006017/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "BF16",
+          "variant": 5,
+          "bound": "4355373803394572274153728846715315968423944369932033/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "5/32"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 0,
+          "bound": "26069636370007234552557068661444152806310100441837831/191561942608236107294793378393788647952342390272950272",
+          "finite_max": "7/64"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 1,
+          "bound": "1899886650820054507683604143263255492349239557818113/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 2,
+          "bound": "283362944293729859855153672474936473068961713555201/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "0"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 3,
+          "bound": "1991209049836354953611872287947044893353966588593921/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "17/256"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 4,
+          "bound": "33295452823243367840334220007992532190508033856192265/191561942608236107294793378393788647952342390272950272",
+          "finite_max": "9/64"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "BF16",
+          "variant": 5,
+          "bound": "11389645462913272884428256228301841420398598606227201/23945242826029513411849172299223580994042798784118784",
+          "finite_max": "9/32"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 0,
+          "bound": "118571756646219717733218668022088375906263897430303322171747031907652251965980673/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 1,
+          "bound": "59286228158879866764487409790392097739799402414182773297781462365988052971552769/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "1/32"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 2,
+          "bound": "678469373974707619065465943888918925170265374804509579179353936530595905537/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "0"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 3,
+          "bound": "59286228158879866764487409790392097739799402414182773297781462365988052971552769/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "1/32"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 4,
+          "bound": "118571841454891464571671051205331362021129541719632941373567139190622759101136897/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "two_layer_relu_v1",
+          "format": "FP32",
+          "variant": 5,
+          "bound": "296428483456017511634928312253690709972574067066262915630236368776068675521216513/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "5/32"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 0,
+          "bound": "1897140134324325786001550436255161738719491498847397854661731099859374757227003911/15177100720513508366558296147058741458143803430094840009779784451085189728165691392",
+          "finite_max": "7/64"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 1,
+          "bound": "125982164128136069606860393561552284185434943120225447508393347648069000602058753/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "1/16"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 2,
+          "bound": "339234686987353809532732971944459462593108056327702298750222054502055280641/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "0"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 3,
+          "bound": "133392855189053314025286130934241168619534963054632987104050239072110007224893441/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "17/256"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 4,
+          "bound": "2371426015992124700886461877151382034548020793855666472807528172731159211552014345/15177100720513508366558296147058741458143803430094840009779784451085189728165691392",
+          "finite_max": "9/64"
+        },
+        {
+          "model": "shared_relu_v1",
+          "format": "FP32",
+          "variant": 5,
+          "bound": "867051699122035904663613062501877782061871928773668408176707903303621843794001921/1897137590064188545819787018382342682267975428761855001222473056385648716020711424",
+          "finite_max": "9/32"
+        }
+      ],
+      "scope": "complete named ternary inputs plus subnormal/thirds probes; seeded rectangular graphs"
+    },
+    "recurrent_execution": {
+      "analyses": 36,
+      "complete_initial_pair_history_cases": 1944,
+      "independent_word_trajectory_runs": 972,
+      "common_invariants": 2,
+      "refusals": [
+        {
+          "case": "BF16:conservative_identity_invariant",
+          "type": "PropagationRefused",
+          "reason": "Common invariant not certified: an endpoint image enclosure exits the proposed box"
+        },
+        {
+          "case": "BF16:new_endpoint_exits_old_cap",
+          "type": "PropagationRefused",
+          "reason": "Finite tube exits supplied cap; no clamping or original-domain reuse is allowed"
+        },
+        {
+          "case": "FP32:conservative_identity_invariant",
+          "type": "PropagationRefused",
+          "reason": "Common invariant not certified: an endpoint image enclosure exits the proposed box"
+        },
+        {
+          "case": "FP32:new_endpoint_exits_old_cap",
+          "type": "PropagationRefused",
+          "reason": "Finite tube exits supplied cap; no clamping or original-domain reuse is allowed"
+        }
+      ],
+      "families": [
+        {
+          "model": "contractive_scalar_v1",
+          "format": "BF16",
+          "initial_error": "0",
+          "observed_bound": "57194126504415601705516857926477453619903198357382299847169/803469022129495137770981046170581301261101496891396417650688",
+          "finite_max": "7/128",
+          "horizon": 3
+        },
+        {
+          "model": "contractive_scalar_v1",
+          "format": "BF16",
+          "initial_error": "1/2",
+          "observed_bound": "1/2",
+          "finite_max": "1/2",
+          "horizon": 3
+        },
+        {
+          "model": "neutral_scalar_v1",
+          "format": "BF16",
+          "initial_error": "0",
+          "observed_bound": "33773198168249702851396652178211956188431270985271352166913/200867255532373784442745261542645325315275374222849104412672",
+          "finite_max": "3/32",
+          "horizon": 3
+        },
+        {
+          "model": "neutral_scalar_v1",
+          "format": "BF16",
+          "initial_error": "1/2",
+          "observed_bound": "134206825934436595072769282949534618846068958096695904373249/200867255532373784442745261542645325315275374222849104412672",
+          "finite_max": "19/32",
+          "horizon": 3
+        },
+        {
+          "model": "amplifying_scalar_v1",
+          "format": "BF16",
+          "initial_error": "0",
+          "observed_bound": "40137157382315578637146785179111600139899260752874112223745/50216813883093446110686315385661331328818843555712276103168",
+          "finite_max": "7/32",
+          "horizon": 3
+        },
+        {
+          "model": "amplifying_scalar_v1",
+          "format": "BF16",
+          "initial_error": "1/2",
+          "observed_bound": "241004412914689363079892046721756925455174634975723216636417/50216813883093446110686315385661331328818843555712276103168",
+          "finite_max": "135/32",
+          "horizon": 3
+        },
+        {
+          "model": "contractive_scalar_v1",
+          "format": "FP32",
+          "initial_error": "0",
+          "observed_bound": "979892780239075126683086584575586956787000503562766920140694104963619855881739226117815542864557375489/17917957937422433684459538244547554224973163977877196279199912807710334969441287563047019946172856926208",
+          "finite_max": "7/128",
+          "horizon": 3
+        },
+        {
+          "model": "contractive_scalar_v1",
+          "format": "FP32",
+          "initial_error": "1/2",
+          "observed_bound": "1/2",
+          "finite_max": "1/2",
+          "horizon": 3
+        },
+        {
+          "model": "neutral_scalar_v1",
+          "format": "FP32",
+          "initial_error": "0",
+          "observed_bound": "419957145379136861255217341718176669462138159068962319240081759210874737003191898859252809533250076673/4479489484355608421114884561136888556243290994469299069799978201927583742360321890761754986543214231552",
+          "finite_max": "3/32",
+          "horizon": 3
+        },
+        {
+          "model": "neutral_scalar_v1",
+          "format": "FP32",
+          "initial_error": "1/2",
+          "observed_bound": "2659701887556941071812659622286620947583783656303611854140070860174666608183352844240130302804857192449/4479489484355608421114884561136888556243290994469299069799978201927583742360321890761754986543214231552",
+          "finite_max": "19/32",
+          "horizon": 3
+        },
+        {
+          "model": "amplifying_scalar_v1",
+          "format": "FP32",
+          "initial_error": "0",
+          "observed_bound": "244981847478120989822378093058470933841976536642345198679133795999360401352118293405251476017249255425/1119872371088902105278721140284222139060822748617324767449994550481895935590080472690438746635803557888",
+          "finite_max": "7/32",
+          "horizon": 3
+        },
+        {
+          "model": "amplifying_scalar_v1",
+          "format": "FP32",
+          "initial_error": "1/2",
+          "observed_bound": "4724471331833729410937262654195359490085267531111644268479111997926944143712440184167006462560463486977/1119872371088902105278721140284222139060822748617324767449994550481895935590080472690438746635803557888",
+          "finite_max": "135/32",
+          "horizon": 3
+        }
+      ],
+      "scope": "all three-valued input histories of length three and declared three-valued initial pairs; not full raw-state enumeration"
+    },
+    "control": {
+      "uniform_margin_certificates": 4,
+      "complete_guard_pair_cases": 324,
+      "seeded_margin_certificates": 32,
+      "seed": 20261115,
+      "refusals": [
+        {
+          "case": "BF16:non_strict_margin",
+          "type": "MarginRefused",
+          "reason": "Strict margin not established: equality or insufficient margin refused"
+        },
+        {
+          "case": "BF16:new_guard_domain_omitted",
+          "type": "MarginRefused",
+          "reason": "New actual input outside declared new domain"
+        },
+        {
+          "case": "BF16:negative_zero_guard_input",
+          "type": "MarginRefused",
+          "reason": "Actual guard execution refused: Negative zero input encoding is not canonical"
+        },
+        {
+          "case": "FP32:non_strict_margin",
+          "type": "MarginRefused",
+          "reason": "Strict margin not established: equality or insufficient margin refused"
+        },
+        {
+          "case": "FP32:new_guard_domain_omitted",
+          "type": "MarginRefused",
+          "reason": "New actual input outside declared new domain"
+        },
+        {
+          "case": "FP32:negative_zero_guard_input",
+          "type": "MarginRefused",
+          "reason": "Actual guard execution refused: Negative zero input encoding is not canonical"
+        }
+      ],
+      "witnesses": [
+        {
+          "format": "BF16",
+          "eta": "1/10889035741470030830827987437816582766592",
+          "half_map_actual_gap": "1/10889035741470030830827987437816582766592",
+          "shifted_map_input_gap": "1/32768",
+          "shifted_map_output_gap": "1/128",
+          "old_error": "1/256",
+          "new_error": "127/32768"
+        },
+        {
+          "format": "FP32",
+          "eta": "1/713623846352979940529142984724747568191373312",
+          "half_map_actual_gap": "1/713623846352979940529142984724747568191373312",
+          "shifted_map_input_gap": "1/140737488355328",
+          "shifted_map_output_gap": "1/8388608",
+          "old_error": "1/16777216",
+          "new_error": "8388607/140737488355328"
+        }
+      ],
+      "scope": "declared two-box pair relations; no surrounding program reachability inferred"
+    },
+    "receipts": {
+      "registered_receipts": 12,
+      "records": [
+        {
+          "format": "BF16",
+          "model": "two_layer_relu_v1",
+          "method": "tube",
+          "horizon": 1,
+          "initial_error": "0",
+          "bound": "952671238554171137730947744628181022151577311577857/23945242826029513411849172299223580994042798784118784"
+        },
+        {
+          "format": "BF16",
+          "model": "shared_relu_v1",
+          "method": "tube",
+          "horizon": 1,
+          "initial_error": "0",
+          "bound": "1423454557104728831347943912122602183199465525151489/23945242826029513411849172299223580994042798784118784"
+        },
+        {
+          "format": "BF16",
+          "model": "contractive_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "1/2"
+        },
+        {
+          "format": "BF16",
+          "model": "contractive_scalar_v1",
+          "method": "invariant",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "1/2"
+        },
+        {
+          "format": "BF16",
+          "model": "neutral_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "134206825934436595072769282949534618846068958096695904373249/200867255532373784442745261542645325315275374222849104412672"
+        },
+        {
+          "format": "BF16",
+          "model": "amplifying_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "241004412914689363079892046721756925455174634975723216636417/50216813883093446110686315385661331328818843555712276103168"
+        },
+        {
+          "format": "FP32",
+          "model": "two_layer_relu_v1",
+          "method": "tube",
+          "horizon": 1,
+          "initial_error": "0",
+          "bound": "29643467448905439896795118919544437566681720353990855698591764450430925045497857/1897137590064188545819787018382342682267975428761855001222473056385648716020711424"
+        },
+        {
+          "format": "FP32",
+          "model": "shared_relu_v1",
+          "method": "tube",
+          "horizon": 1,
+          "initial_error": "0",
+          "bound": "88928684971112814337974585958584100735822805996280572972180251915247732672954369/1897137590064188545819787018382342682267975428761855001222473056385648716020711424"
+        },
+        {
+          "format": "FP32",
+          "model": "contractive_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "1/2"
+        },
+        {
+          "format": "FP32",
+          "model": "contractive_scalar_v1",
+          "method": "invariant",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "1/2"
+        },
+        {
+          "format": "FP32",
+          "model": "neutral_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "2659701887556941071812659622286620947583783656303611854140070860174666608183352844240130302804857192449/4479489484355608421114884561136888556243290994469299069799978201927583742360321890761754986543214231552"
+        },
+        {
+          "format": "FP32",
+          "model": "amplifying_scalar_v1",
+          "method": "tube",
+          "horizon": 3,
+          "initial_error": "1/2",
+          "bound": "4724471331833729410937262654195359490085267531111644268479111997926944143712440184167006462560463486977/1119872371088902105278721140284222139060822748617324767449994550481895935590080472690438746635803557888"
+        }
+      ],
+      "expected_refusals": [
+        {
+          "case": "BF16:omitted_shared_call",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:sampled_domain",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:initial_relation",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_policy",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_schedule",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:incomplete_observation",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:false_BIT",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:false_authority",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:lowered_bound",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_horizon",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:false_domain_proof",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:changed_endpoint",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:budget_too_small",
+          "type": "PropagationRejected",
+          "reason": "Certified observed propagation bound exceeds budget"
+        },
+        {
+          "case": "BF16:stale_version",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:unknown_domain",
+          "type": "PropagationRejected",
+          "reason": "Unknown trusted propagation registry model"
+        },
+        {
+          "case": "BF16:B1_rejects_readonly_receipt",
+          "type": "UpdateRejected",
+          "reason": "Candidate commit rejected: Missing staged candidate"
+        },
+        {
+          "case": "BF16:missing_external_schedule",
+          "type": "PropagationRejected",
+          "reason": "Incomplete B1 external snapshot context"
+        },
+        {
+          "case": "BF16:changed_external_snapshot",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "BF16:same_box_is_not_same_initial_state",
+          "type": "PropagationRejected",
+          "reason": "Actual initial pair violates the declared initial relation"
+        },
+        {
+          "case": "FP32:omitted_shared_call",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:sampled_domain",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:initial_relation",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_policy",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_schedule",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:incomplete_observation",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:false_BIT",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:false_authority",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:lowered_bound",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_horizon",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:false_domain_proof",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:changed_endpoint",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:budget_too_small",
+          "type": "PropagationRejected",
+          "reason": "Certified observed propagation bound exceeds budget"
+        },
+        {
+          "case": "FP32:stale_version",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:unknown_domain",
+          "type": "PropagationRejected",
+          "reason": "Unknown trusted propagation registry model"
+        },
+        {
+          "case": "FP32:B1_rejects_readonly_receipt",
+          "type": "UpdateRejected",
+          "reason": "Candidate commit rejected: Missing staged candidate"
+        },
+        {
+          "case": "FP32:missing_external_schedule",
+          "type": "PropagationRejected",
+          "reason": "Incomplete B1 external snapshot context"
+        },
+        {
+          "case": "FP32:changed_external_snapshot",
+          "type": "PropagationRejected",
+          "reason": "Propagation evidence differs from complete canonical semantic recomputation"
+        },
+        {
+          "case": "FP32:same_box_is_not_same_initial_state",
+          "type": "PropagationRejected",
+          "reason": "Actual initial pair violates the declared initial relation"
+        }
+      ],
+      "full_nonzero_moment_B1_rollback_fixtures": 2,
+      "scope": "complete registered analytic domains; pure evidence, no live authorization"
+    },
+    "frozen_B1": {
+      "endpoint_pairs": 21,
+      "protected_call_checks": 84,
+      "all_actual_BIT_equal": true,
+      "all_exact_ALG_fail": true,
+      "FP32_Adam_accepted": 0,
+      "FP32_Adam_refused": 8,
+      "FP32_Adam_final_loss": "5/2",
+      "source_sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+      "records": [
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "0"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "BF16",
+          "exact_ones_residual": [
+            "1/512",
+            "-1/512"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        },
+        {
+          "format": "FP32",
+          "exact_ones_residual": [
+            "0",
+            "1/33554432"
+          ],
+          "protected_calls": 4
+        }
+      ],
+      "scope": "read-only raw endpoints; no optimizer generation or old-suite replay"
+    },
+    "adversaries": {
+      "expected_refusals": [
+        {
+          "case": "BF16:duplicate_call_label",
+          "type": "PropagationRefused",
+          "reason": "Call IDs must be nonempty and unique"
+        },
+        {
+          "case": "BF16:unreferenced_physical_bank",
+          "type": "PropagationRefused",
+          "reason": "Unreferenced or omitted physical banks are not admitted"
+        },
+        {
+          "case": "BF16:missing_shared_bank",
+          "type": "PropagationRefused",
+          "reason": "Named physical-bank dict required"
+        },
+        {
+          "case": "BF16:unsupported_hard_branch",
+          "type": "PropagationRefused",
+          "reason": "Unsupported nonlinearity"
+        },
+        {
+          "case": "BF16:negative_zero_endpoint",
+          "type": "BoundRefused",
+          "reason": "Negative zero input encoding is not canonical"
+        },
+        {
+          "case": "BF16:duplicate_difference_column",
+          "type": "PropagationRefused",
+          "reason": "Invalid differing-coordinate relation"
+        },
+        {
+          "case": "BF16:negative_initial_radius",
+          "type": "PropagationRefused",
+          "reason": "Initial difference bound must be nonnegative"
+        },
+        {
+          "case": "BF16:host_float_box",
+          "type": "PropagationRefused",
+          "reason": "Exact rational scalar required"
+        },
+        {
+          "case": "BF16:unsupported_horizon",
+          "type": "PropagationRefused",
+          "reason": "Unsupported reference horizon"
+        },
+        {
+          "case": "BF16:boolean_horizon",
+          "type": "PropagationRefused",
+          "reason": "Unsupported reference horizon"
+        },
+        {
+          "case": "BF16:illegal_external_input",
+          "type": "PropagationRefused",
+          "reason": "External input outside declared domain"
+        },
+        {
+          "case": "BF16:conservative_totality_refusal",
+          "type": "PropagationRefused",
+          "reason": "Joint domain/range propagation refused: Conservative box totality refused: accumulator range exceeds Fmax at row 0 column 1"
+        },
+        {
+          "case": "BF16:actual_overflow",
+          "type": "PropagationRefused",
+          "reason": "Actual graph execution could not be verified: Actual ordered execution is not total in the finite policy: BF16 RNE overflow"
+        },
+        {
+          "case": "FP32:duplicate_call_label",
+          "type": "PropagationRefused",
+          "reason": "Call IDs must be nonempty and unique"
+        },
+        {
+          "case": "FP32:unreferenced_physical_bank",
+          "type": "PropagationRefused",
+          "reason": "Unreferenced or omitted physical banks are not admitted"
+        },
+        {
+          "case": "FP32:missing_shared_bank",
+          "type": "PropagationRefused",
+          "reason": "Named physical-bank dict required"
+        },
+        {
+          "case": "FP32:unsupported_hard_branch",
+          "type": "PropagationRefused",
+          "reason": "Unsupported nonlinearity"
+        },
+        {
+          "case": "FP32:negative_zero_endpoint",
+          "type": "BoundRefused",
+          "reason": "Negative zero input encoding is not canonical"
+        },
+        {
+          "case": "FP32:duplicate_difference_column",
+          "type": "PropagationRefused",
+          "reason": "Invalid differing-coordinate relation"
+        },
+        {
+          "case": "FP32:negative_initial_radius",
+          "type": "PropagationRefused",
+          "reason": "Initial difference bound must be nonnegative"
+        },
+        {
+          "case": "FP32:host_float_box",
+          "type": "PropagationRefused",
+          "reason": "Exact rational scalar required"
+        },
+        {
+          "case": "FP32:unsupported_horizon",
+          "type": "PropagationRefused",
+          "reason": "Unsupported reference horizon"
+        },
+        {
+          "case": "FP32:boolean_horizon",
+          "type": "PropagationRefused",
+          "reason": "Unsupported reference horizon"
+        },
+        {
+          "case": "FP32:illegal_external_input",
+          "type": "PropagationRefused",
+          "reason": "External input outside declared domain"
+        },
+        {
+          "case": "FP32:conservative_totality_refusal",
+          "type": "PropagationRefused",
+          "reason": "Joint domain/range propagation refused: Conservative box totality refused: accumulator range exceeds Fmax at row 0 column 1"
+        },
+        {
+          "case": "FP32:actual_overflow",
+          "type": "PropagationRefused",
+          "reason": "Actual graph execution could not be verified: Actual ordered execution is not total in the finite policy: FP32 multiply overflow"
+        }
+      ],
+      "shared_call_witnesses": [
+        {
+          "format": "BF16",
+          "two_call_exact_and_actual_gap": "9/16",
+          "single_call_gap": "1/4",
+          "bound": "66590905646486735680668440015985064380861066710302473/95780971304118053647396689196894323976171195136475136"
+        },
+        {
+          "format": "FP32",
+          "two_call_exact_and_actual_gap": "9/16",
+          "single_call_gap": "1/4",
+          "bound": "4742852031984249401772923754302764069096041401619393887141345287338274281932980233/7588550360256754183279148073529370729071901715047420004889892225542594864082845696"
+        }
+      ],
+      "scope": "schema/domain/totality failures are distinct from proven trajectory violations"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false,
+    "p2_a3_root": "/workspace/p2_a3",
+    "p2_a4_root": "/workspace/p2_a4",
+    "p2_b1_root": "/workspace/p2_b1",
+    "prior_stage_suites_rerun": false,
+    "bounds": "Exact rational data and outward rational norm bounds; no SVD estimate is treated as certified.",
+    "p2_b2_root": "/workspace/p2_b2",
+    "B3_bounds": "Exact rational infinity-norm envelopes for fixed endpoints and fixed affine/ReLU/identity graphs."
+  },
+  "source_sha256": {
+    "verify_independent.py": "950e6ae33611494bc377b956b039dc353c437ba06f953a4a282d7166df5a7854",
+    "propagation_bounds.py": "48f22b8fe9e352b4277f2b406ee4b4818ca556d9b6fa7f3472de38a26bfb6c2d",
+    "propagation_certificate.py": "b755d54f91fa73c5f4241100e4a6442c3cd3963fe19d3e782343d99254fe1ecb",
+    "control_flow.py": "4cfdffaed067eecb3845dd56729921196c8ef65208642bfdeb4e1b3684be5e14",
+    "b3_runtime.py": "74c7dfcf0e4ffb50c57ef0104986bf15c6e32241f5a3950cdeb958039a07736b"
+  },
+  "producer_evidence_sha256": {
+    "propagation_results.json": "40a766c908c7599acec29b91d97b6014fb44827dbab1fcf9dd0327449ed6c0be",
+    "control_results.json": "4b5fe59bdfb9c203a65137562fd42364eb1ed7d8c6668016c614262335a45224",
+    "certificate_results.json": "1868306f819e34c8215a2d2e1ce2470ccedaa29087b290cb9e5e93b483c2229b"
+  },
+  "prior_stage_suites_rerun": false,
+  "prior_optimizer_trajectories_replayed": false,
+  "old_verifier_modules_imported_in_this_run": [],
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "scope": "independent finite algebra, RNE, intervals, trajectory and interface evidence; universal results remain handwritten proofs"
+}

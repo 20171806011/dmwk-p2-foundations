@@ -1,0 +1,154 @@
+{
+  "schema": "dmwk-p2-b1-completion-v1",
+  "stage": "P2-B1",
+  "status": "completed_with_explicit_scope_limits",
+  "recorded_utc": "2026-11-14T08:06:31.902964+00:00",
+  "authorization_boundary": "B1 delivery only, then coordinator review and B2 handoff. No additional user confirmation is requested.",
+  "seed": 20261114,
+  "independent_optimizer_subseed": 20261115,
+  "mathematics": {
+    "theorems": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6"
+    ],
+    "evidence": "Handwritten conditional proofs and independent review; not machine-checked proofs.",
+    "results": [
+      "Exact Frobenius projector GP onto a proved global working annihilator",
+      "Nullspace and low-rank coverage with metric and successive/cumulative rank distinctions",
+      "Exact optimizer closure conditions and explicit Adam/momentum/clip/decay failures",
+      "Actual endpoint ALG versus fixed-domain BIT distinction",
+      "Partial safe transaction, full optimizer-state rollback and conditional finite-event trace preservation",
+      "New complete structural reserve fixture with nonzero A response"
+    ],
+    "not_claimed": [
+      "Universal learning benefit",
+      "Nearest or total projection onto a floating safety set",
+      "Guaranteed optimizer progress after rejection",
+      "Finite endpoint rank-cap inheritance",
+      "Cryptographic request-origin authentication",
+      "Full P2 completion"
+    ]
+  },
+  "interfaces": {
+    "implementation": [
+      "constrained_updates.py",
+      "optimizer_kernel.py"
+    ],
+    "default_claim": "ALG_AND_BIT",
+    "other_explicit_claim": "BIT",
+    "old_snapshot_binding": "Weights, D state, ticks, weight version, optimizer moments/step and fixed configuration/contract",
+    "publication": "One immutable combined bank after all checks",
+    "rejection": "No change to weights, D state, version, ticks, moments or optimizer step",
+    "AI_state_policy": "AI requests retain the optimizer state",
+    "post_prepare_tick": "Invalidates the B1 candidate; preparation must be repeated"
+  },
+  "main_verification": {
+    "file": "verification_results.json",
+    "status": "passed",
+    "completed_sections": 2,
+    "section_checks": {
+      "constraints_and_regressions": 2400,
+      "optimization_experiments": 1013
+    },
+    "elapsed_seconds": 8.695691487999284,
+    "unexpected_failures": 0
+  },
+  "optimization": {
+    "run_count": 24,
+    "attempts": 192,
+    "accepted_safe_commits": 75,
+    "refused_safe_attempts": 21,
+    "accepted_nonzero_stored_updates": 61,
+    "refused_candidates_passing_registered_BIT_diagnostic": 21,
+    "paired_authorized_feedback_ticks": 96,
+    "complete_D_diagnostic_state_input_pairs": 1536,
+    "offline_applied_steps": 96
+  },
+  "observed_learning": {
+    "initial_A_output": [
+      "1",
+      "0"
+    ],
+    "target": [
+      "0",
+      "2"
+    ],
+    "initial_loss": "5/2",
+    "dense_certified_SGD_final_loss_both_formats": "5/131072",
+    "dense_certified_SGD_final_output": [
+      "1/256",
+      "255/128"
+    ],
+    "structural_certified_SGD_final_loss_both_formats": "0",
+    "scope": "Eight attempts in specified toy models; structural and dense parameterizations differ, so no performance ranking or general convergence claim."
+  },
+  "refusal_interpretation": "All 21 training refusals pass the registered BIT diagnostic but fail selected exact ALG after endpoint quantization; they are not counted as D corruption or accepted progress.",
+  "independent_verification": {
+    "file": "independent_results.json",
+    "status": "passed",
+    "exact_cases": 512,
+    "optimizer_proposals": 144,
+    "replayed_attempts": 192,
+    "complete_domain_contexts": 1536,
+    "rollback_refusals": 58,
+    "elapsed_seconds": 2.9748651509980846,
+    "method": "Direct constraints/minors and independent exact IEEE word rounding; independent reconstruction of optimizer proposals, endpoints, losses and state."
+  },
+  "reproduction": {
+    "driver_record": "driver_checks.json",
+    "main_file": "reproduction_results.json",
+    "independent_file": "independent_reproduction_results.json",
+    "cwd": "/tmp",
+    "both_non_timing_results_and_source_bindings_identical": true,
+    "standalone_components_match_aggregate": true,
+    "aggregate_optimized_modes_refused_before_sections": [
+      "-O",
+      "-OO"
+    ],
+    "scope": "Same environment and dependency tree; no clean-room or cross-platform claim."
+  },
+  "arithmetic": {
+    "exact": "Q with real-space proofs where declared",
+    "optimizer": "Rational SGD/momentum and separately specified host binary64 AdamW; Python pow/math.sqrt has no universal cross-platform rounding certification.",
+    "BF16": "Software RNE with gradual underflow and canonical arithmetic zero",
+    "FP32": "Actually executed local NumPy float32 scalar path audited against exact rational RNE",
+    "endpoint_quantization": "Exact rational sum rounded once; not a native BF16 optimizer implementation"
+  },
+  "prior_artifacts": {
+    "baseline": "dependency_baseline.json",
+    "checked_files": 413,
+    "all_unchanged": true,
+    "prior_stage_suites_rerun": false,
+    "repository_or_account_operations": false,
+    "excluded_directories": [
+      ".git",
+      "__pycache__",
+      ".venv",
+      "venv",
+      ".pytest_cache"
+    ]
+  },
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "unresolved": [
+    "GPU and native BF16",
+    "General concurrent writers and process-failure atomicity",
+    "Arbitrary compiler optimization or changed fusion/reduction policies",
+    "General global-domain/invariant discovery",
+    "Useful long-term learning and guaranteed accepted progress",
+    "Whole host-stack formal verification",
+    "Arbitrary A-to-D feedback",
+    "Cryptographic original-intent authentication"
+  ],
+  "next_stage": {
+    "name": "P2-B2",
+    "topic": "Single-layer perturbation bounds",
+    "handoff": "P2_B2_Handoff.md",
+    "started": false
+  },
+  "scope_boundary": "No B2 execution, no complete B4 long-term training or C-series certification."
+}

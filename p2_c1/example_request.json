@@ -1,0 +1,17 @@
+{
+  "source": {
+    "schema": "dmwk-p2-c1-bool-fsm-v1",
+    "state_ports": ["parity"],
+    "input_ports": ["bit"],
+    "output_ports": ["previous_parity"],
+    "initial_states": [[0]],
+    "next_state": [["xor", ["state", 0], ["input", 0]]],
+    "outputs": [["state", 0]]
+  },
+  "fmt": "BF16",
+  "budget": {
+    "d_row_budget": 2, "d_col_budget": 3, "a_rows": 2, "a_cols": 1,
+    "parameter_budget": 16, "call_budget": 7,
+    "min_A_response_dimension": 2, "required_update_rank": 1
+  }
+}

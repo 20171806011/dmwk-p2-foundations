@@ -1,0 +1,307 @@
+{
+  "schema": "dmwk-p2-a4-independent-review-v1",
+  "status": "passed",
+  "started_utc": "2026-11-14T07:27:03.015126+00:00",
+  "evidence_type": "Independent finite exact/rounding/endpoint checks, not universal machine proof",
+  "algebra": {
+    "binary_generator_matrices": 16,
+    "ternary_update_matrices_per_generator": 81,
+    "direct_annihilator_pairs": 1296,
+    "target_space_sweeps": 256,
+    "prescribed_binary_response_cases": 4096,
+    "seeded_rational_rectangular_cases": 40,
+    "seed": 20261114,
+    "method": "Determinant/minor independent row basis, direct constraint consistency, finite update/response spans",
+    "scope": "Finite exact checks; universal algebraic theorems remain handwritten"
+  },
+  "discrete": {
+    "families": [
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 16,
+        "BIT": 16,
+        "intersection": 16,
+        "raw_BIT_responses": 16,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "BF16",
+        "model": "duplicate_feedback_v1",
+        "alphabet": [
+          "0",
+          "1/10889035741470030830827987437816582766592",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 4,
+        "BIT": 16,
+        "intersection": 4,
+        "raw_BIT_responses": 16,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "BF16",
+        "model": "split_feedback_v1",
+        "alphabet": [
+          "0",
+          "1/10889035741470030830827987437816582766592",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 1,
+        "BIT": 2,
+        "intersection": 1,
+        "raw_BIT_responses": 2,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "BF16",
+        "model": "shared_axis_v1",
+        "alphabet": [
+          "0",
+          "1/10889035741470030830827987437816582766592",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 16,
+        "BIT": 16,
+        "intersection": 16,
+        "raw_BIT_responses": 16,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "alphabet": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "endpoints": 256,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "duplicate_feedback_v1",
+        "alphabet": [
+          "0",
+          "1/713623846352979940529142984724747568191373312",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 4,
+        "BIT": 16,
+        "intersection": 4,
+        "raw_BIT_responses": 16,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "split_feedback_v1",
+        "alphabet": [
+          "0",
+          "1/713623846352979940529142984724747568191373312",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 1,
+        "BIT": 2,
+        "intersection": 1,
+        "raw_BIT_responses": 2,
+        "every_endpoint_compared": true
+      },
+      {
+        "format": "FP32",
+        "model": "shared_axis_v1",
+        "alphabet": [
+          "0",
+          "1/713623846352979940529142984724747568191373312",
+          "1"
+        ],
+        "endpoints": 81,
+        "ALG": 1,
+        "BIT": 1,
+        "intersection": 1,
+        "raw_BIT_responses": 1,
+        "every_endpoint_compared": true
+      }
+    ],
+    "total_endpoint_comparisons": 2022,
+    "boundary_records": [
+      {
+        "format": "BF16",
+        "fixture": "full_format_and_transactions",
+        "full_format_ALG_endpoint_count_at_maximum": 1,
+        "proof_reason": "x+y=2*Fmax with x,y<=Fmax forces x=y=Fmax",
+        "actual_maximum_dot_word": "0x7f7f",
+        "live_trace_ticks": 8,
+        "refusals_preserved_snapshot": [
+          "stale_replay",
+          "omitted_sites",
+          "sample_domain",
+          "changed_policy",
+          "changed_schedule"
+        ],
+        "full_rank_BIT_not_ALG": true,
+        "ALG_not_BIT": true,
+        "ideal_null_commit_effective_residual": "-1",
+        "effective_commit_certificate_refused": true
+      },
+      {
+        "format": "FP32",
+        "fixture": "full_format_and_transactions",
+        "full_format_ALG_endpoint_count_at_maximum": 1,
+        "proof_reason": "x+y=2*Fmax with x,y<=Fmax forces x=y=Fmax",
+        "actual_maximum_dot_word": "0x7f7fffff",
+        "live_trace_ticks": 8,
+        "refusals_preserved_snapshot": [
+          "stale_replay",
+          "omitted_sites",
+          "sample_domain",
+          "changed_policy",
+          "changed_schedule"
+        ],
+        "full_rank_BIT_not_ALG": true,
+        "ALG_not_BIT": true,
+        "ideal_null_commit_effective_residual": "-1",
+        "effective_commit_certificate_refused": true
+      }
+    ],
+    "method": "Independent exact IEEE decoding, word-search RNE, direct null products and response images",
+    "scope": "Complete named candidate alphabets; theorem-only count for maximum endpoint fixture"
+  },
+  "structural": {
+    "binary_3x2_H_cases": 64,
+    "single_mask_row_enumerations": 512,
+    "two_row_mask_reports": 4096,
+    "formats": [
+      {
+        "format": "BF16",
+        "canonical_finite_words_theorem": 65279,
+        "reserved_pair_cardinality_theorem": 4261347841,
+        "boundary_endpoint_pairs_executed": 49,
+        "state_input_layout_cases": 392,
+        "A_e3_is_injective_on_checked_words": true,
+        "scope": "Full-format count proved separately; only listed edge pairs executed"
+      },
+      {
+        "format": "FP32",
+        "canonical_finite_words_theorem": 4278190079,
+        "reserved_pair_cardinality_theorem": 18302910352054026241,
+        "boundary_endpoint_pairs_executed": 49,
+        "state_input_layout_cases": 392,
+        "A_e3_is_injective_on_checked_words": true,
+        "scope": "Full-format count proved separately; only listed edge pairs executed"
+      }
+    ],
+    "read_scope": "D arithmetic excludes reserved entries after pure total admitted-bank validation; not entire Python instruction trace equality"
+  },
+  "elapsed_seconds": 12.67862760799835,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "source_sha256": {
+    "verify_review_checks.py": "e9e0d5ce119d8f32344509b6ad23564739b04cec80db520a5c31a1e639455805",
+    "capacity_algebra.py": "8310277402ece809764e6efea8b3267e1141ac31b551e046c02652fbebd4cbbb",
+    "capacity_discrete.py": "97cbe1f749295e851d2809ae5316a7b9d6261bda0956cfd525ae3c626bff34ee",
+    "structural_budget.py": "6131cc3ec4bbc34cd303fac15580985f5d62cbfebec300346950decb609be205",
+    "a4_runtime.py": "477855d2fc6dd1d0a4c38dd468ed788cb0bde25f0c915da8b3f5e20fac5d8a14"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false,
+    "A3_root": "/workspace/p2_a3",
+    "prior_stage_suites_rerun": false
+  },
+  "sampling": "Exact section has 40 seeded rational cases; other independent sections exhaust named small sets or declared deterministic boundaries"
+}

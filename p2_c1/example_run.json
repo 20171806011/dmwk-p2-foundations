@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "scope": "CLI and one parity trace; see primary complete-domain checks",
+  "fixed_example_source_sha256": "c61a5f4ed19fb9a911aa4d9f317d6205b884e98f27fe5c74c917fde19a1e68c2",
+  "fixed_artifact_sha256": "96c1b5fe90265576e969e13eb7489e67edb63220e2edb9b47abe33e81329b622",
+  "fixed_full_shape": [
+    4,
+    4
+  ],
+  "source_input_bits": [
+    1,
+    1,
+    0,
+    1
+  ],
+  "observed_old_output_and_next_state_bits": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "foreign_rebuild_byte_identical": true,
+  "automatic_choice_on_same_minima_without_output_shape_anchor": {
+    "layout": [
+      3,
+      5
+    ],
+    "dense_words": 15,
+    "structural_dimension": 2
+  }
+}

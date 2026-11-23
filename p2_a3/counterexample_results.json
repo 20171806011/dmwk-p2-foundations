@@ -1,0 +1,4924 @@
+{
+  "schema": "dmwk-p2-a3-counterexamples-v1",
+  "status": "passed",
+  "checks": 126,
+  "check_unit": "Explicit A3 counterexample assertions; imported arithmetic internal checks are not added",
+  "seed": 20261114,
+  "random_sampling": false,
+  "deterministic_format_cases": 16,
+  "counterexample_classes": 8,
+  "expected_refusals": 12,
+  "unexpected_failures": 0,
+  "records": [
+    {
+      "id": "A3-C1_commit_endpoint_difference",
+      "format": "BF16",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "256",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "ideal_delta": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "stored_new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "256",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "effective_delta": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "protected_activation": {
+        "shape": [
+          2,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "exact_effective_residual": {
+        "shape": [
+          2,
+          1
+        ],
+        "rows": [
+          [
+            "-1"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "executions": [
+        {
+          "old": {
+            "output_word_hex": "0x4380",
+            "exact_dot": "256",
+            "decoded_output": "256",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x4380",
+              "0x4380"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "256/63"
+          },
+          "new": {
+            "output_word_hex": "0x437f",
+            "exact_dot": "255",
+            "decoded_output": "255",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x4380",
+              "0x437f"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "257/63"
+          },
+          "effective_linear_change": "-1",
+          "observed_numeric_change": "-1",
+          "absolute_change_upper_bound": "1",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "BF16_commit_rounding",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site unit_pair"
+      },
+      "native_commit_additions_checked": false
+    },
+    {
+      "id": "A3-C2_basis_zero_but_legal_subnormal_nonzero",
+      "format": "BF16",
+      "legal_domain": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1/10889035741470030830827987437816582766592",
+          "1/10889035741470030830827987437816582766592",
+          "1/10889035741470030830827987437816582766592"
+        ]
+      ],
+      "global_span_rank": 1,
+      "old_weights": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "171/256",
+            "-171/512",
+            "-171/512"
+          ],
+          [
+            "-171/512",
+            "171/256",
+            "-171/512"
+          ],
+          [
+            "-171/512",
+            "-171/512",
+            "171/256"
+          ]
+        ]
+      },
+      "exact_null_on_entire_declared_span": true,
+      "basis_execution": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f2b",
+              "0x3eab",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "513/16000"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0xbeab",
+              "0x3eab",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "513/16000"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0xbeab",
+              "0xbf2b",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "513/16000"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "tiny_execution": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/10889035741470030830827987437816582766592",
+            "signed_error": "1/10889035741470030830827987437816582766592",
+            "local_absolute_error_bound": "1/10889035741470030830827987437816582766592",
+            "product_errors": [
+              "85/2787593149816327892691964784081045188247552",
+              "171/5575186299632655785383929568162090376495104",
+              "171/5575186299632655785383929568162090376495104"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x1",
+              "0x1",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/125",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/10889035741470030830827987437816582766592",
+          "absolute_change_upper_bound": "1/10889035741470030830827987437816582766592",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/10889035741470030830827987437816582766592",
+            "signed_error": "1/10889035741470030830827987437816582766592",
+            "local_absolute_error_bound": "1/10889035741470030830827987437816582766592",
+            "product_errors": [
+              "171/5575186299632655785383929568162090376495104",
+              "85/2787593149816327892691964784081045188247552",
+              "171/5575186299632655785383929568162090376495104"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x1",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/125",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/10889035741470030830827987437816582766592",
+          "absolute_change_upper_bound": "1/10889035741470030830827987437816582766592",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/125",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/10889035741470030830827987437816582766592",
+            "signed_error": "1/10889035741470030830827987437816582766592",
+            "local_absolute_error_bound": "1/10889035741470030830827987437816582766592",
+            "product_errors": [
+              "171/5575186299632655785383929568162090376495104",
+              "171/5575186299632655785383929568162090376495104",
+              "85/2787593149816327892691964784081045188247552"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 3,
+              "software_add": 3,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/125",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/10889035741470030830827987437816582766592",
+          "absolute_change_upper_bound": "1/10889035741470030830827987437816582766592",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "BF16_basis_only_probe",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site all_declared_inputs"
+      },
+      "domain_note": "Exactly two legal stored inputs; no assumed real-linear closure"
+    },
+    {
+      "id": "A3-C3_shared_call_site_omission",
+      "format": "BF16",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ]
+        ]
+      },
+      "site_1_activation": [
+        "1",
+        "0"
+      ],
+      "site_2_activation": [
+        "0",
+        "1"
+      ],
+      "local_rank": 1,
+      "merged_rank": 2,
+      "first_site": [
+        {
+          "old": {
+            "output_word_hex": "0x3f80",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f80",
+              "0x3f80"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "1/63"
+          },
+          "new": {
+            "output_word_hex": "0x3f80",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f80",
+              "0x3f80"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "1/63"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "second_site": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x3f80",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x3f80"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "1/63"
+          },
+          "new": {
+            "output_word_hex": "0x4000",
+            "exact_dot": "2",
+            "decoded_output": "2",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x4000"
+            ],
+            "audit": {
+              "native_multiply": 0,
+              "native_add": 0,
+              "software_multiply": 2,
+              "software_add": 2,
+              "exact_sums": 0,
+              "native_oracle_checks": 0,
+              "events": []
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/63",
+            "gamma_bound": "2/63"
+          },
+          "effective_linear_change": "1",
+          "observed_numeric_change": "1",
+          "absolute_change_upper_bound": "1",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "BF16_missing_shared_site",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site axis_1"
+      }
+    },
+    {
+      "id": "A3-C4_reachable_state_omission",
+      "format": "BF16",
+      "illustrative_transition": "q_next=1-row_weight*(q,0)",
+      "initial_state": "0",
+      "reference_invariant": [
+        "0",
+        "1"
+      ],
+      "old_row": [
+        "1",
+        "0"
+      ],
+      "patched_row": [
+        "2",
+        "0"
+      ],
+      "trace": [
+        {
+          "tick": 0,
+          "old_q_word": "0x0",
+          "patched_q_word": "0x0",
+          "old_output": "0",
+          "patched_output": "0",
+          "old_next_word": "0x3f80",
+          "patched_next_word": "0x3f80"
+        },
+        {
+          "tick": 1,
+          "old_q_word": "0x3f80",
+          "patched_q_word": "0x3f80",
+          "old_output": "1",
+          "patched_output": "2",
+          "old_next_word": "0x0",
+          "patched_next_word": "0xbf80"
+        }
+      ],
+      "extra_transition_arithmetic_audit": {
+        "native_multiply": 0,
+        "native_add": 0,
+        "software_multiply": 0,
+        "software_add": 4,
+        "exact_sums": 0,
+        "native_oracle_checks": 0,
+        "events": []
+      },
+      "separate_registered_model_refusal": {
+        "case": "BF16_reachable_boolean_domain_omission",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site state"
+      },
+      "scope": "Trace is a separate scalar recurrence; registry refusal checks the same unsafe first-row edit over its complete Boolean domain"
+    },
+    {
+      "id": "A3-C5_unmodeled_A_to_D_input_feedback",
+      "format": "BF16",
+      "D_old_weight": "1",
+      "D_new_weight": "1",
+      "D_effective_delta": "0",
+      "A_theta_before_after": [
+        "1",
+        "2"
+      ],
+      "D_input_rule": "h=A_output-1",
+      "old_input_word": "0x0",
+      "new_input_word": "0x3f80",
+      "D_output_before_after": [
+        "0",
+        "1"
+      ],
+      "input_preparation_audit": {
+        "native_multiply": 0,
+        "native_add": 0,
+        "software_multiply": 0,
+        "software_add": 2,
+        "exact_sums": 0,
+        "native_oracle_checks": 0,
+        "events": []
+      },
+      "failed_premise": "Same protected input at corresponding calls / no unmodeled A-to-D influence",
+      "scope": "Not an accepted update of the closed registered graph"
+    },
+    {
+      "id": "A3-C6_bias_omission",
+      "format": "BF16",
+      "delta_W": "0",
+      "delta_bias": "1",
+      "activation": "1",
+      "old_output_word": "0x3f80",
+      "new_output_word": "0x4000",
+      "augmented_residual": "1",
+      "bias_addition_audit": {
+        "native_multiply": 0,
+        "native_add": 0,
+        "software_multiply": 0,
+        "software_add": 2,
+        "exact_sums": 0,
+        "native_oracle_checks": 0,
+        "events": []
+      },
+      "scope": "Arithmetic witness; delivered protected registry has fixed bias and rejects changed model descriptors"
+    },
+    {
+      "id": "A3-C7_changed_reduction",
+      "format": "BF16",
+      "row": [
+        "256",
+        "1",
+        "-256",
+        "-1"
+      ],
+      "activation": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "ordered": {
+        "output_word_hex": "0xbf80",
+        "exact_dot": "0",
+        "decoded_output": "-1",
+        "signed_error": "-1",
+        "local_absolute_error_bound": "1",
+        "product_errors": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "addition_errors": [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        "accumulator_words_hex": [
+          "0x4380",
+          "0x4380",
+          "0x0",
+          "0xbf80"
+        ],
+        "audit": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 4,
+          "software_add": 4,
+          "exact_sums": 0,
+          "native_oracle_checks": 0,
+          "events": []
+        },
+        "relative_model_holds_for_every_performed_op": true,
+        "gamma_2n": "1/31",
+        "gamma_bound": "514/31"
+      },
+      "alternate_tree": "(p0+p2)+(p1+p3)",
+      "alternate_word": "0x0",
+      "alternate_audit": {
+        "native_multiply": 0,
+        "native_add": 0,
+        "software_multiply": 0,
+        "software_add": 3,
+        "exact_sums": 0,
+        "native_oracle_checks": 0,
+        "events": []
+      },
+      "arithmetic_policy_refusal": {
+        "case": "BF16_changed_reduction_policy",
+        "exception": "NumericalRejected",
+        "reason": "Uncertified reduction/FMA policy rejected"
+      }
+    },
+    {
+      "id": "A3-C8_fusion_policy_change",
+      "format": "BF16",
+      "x": "33/32",
+      "y": "31/32",
+      "c": "-1",
+      "separate": {
+        "output_word_hex": "0x0",
+        "exact_dot": "-1/1024",
+        "decoded_output": "0",
+        "signed_error": "1/1024",
+        "local_absolute_error_bound": "1/1024",
+        "product_errors": [
+          "1/1024",
+          "0"
+        ],
+        "addition_errors": [
+          "0",
+          "0"
+        ],
+        "accumulator_words_hex": [
+          "0x3f80",
+          "0x0"
+        ],
+        "audit": {
+          "native_multiply": 0,
+          "native_add": 0,
+          "software_multiply": 2,
+          "software_add": 2,
+          "exact_sums": 0,
+          "native_oracle_checks": 0,
+          "events": []
+        },
+        "relative_model_holds_for_every_performed_op": true,
+        "gamma_2n": "1/63",
+        "gamma_bound": "2047/64512"
+      },
+      "fused_reference_word": "0xba80",
+      "fused_reference_value": "-1/1024",
+      "fused_scope": "Exact rational expression rounded once in software; no native FMA execution",
+      "arithmetic_policy_refusal": {
+        "case": "BF16_changed_fma_policy",
+        "exception": "NumericalRejected",
+        "reason": "Uncertified reduction/FMA policy rejected"
+      }
+    },
+    {
+      "id": "A3-C1_commit_endpoint_difference",
+      "format": "FP32",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "16777216",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "ideal_delta": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "stored_new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "16777216",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "effective_delta": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "protected_activation": {
+        "shape": [
+          2,
+          1
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ]
+      },
+      "exact_effective_residual": {
+        "shape": [
+          2,
+          1
+        ],
+        "rows": [
+          [
+            "-1"
+          ],
+          [
+            "0"
+          ]
+        ]
+      },
+      "executions": [
+        {
+          "old": {
+            "output_word_hex": "0x4b800000",
+            "exact_dot": "16777216",
+            "decoded_output": "16777216",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x4b800000",
+              "0x4b800000"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1266679808,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679808,
+                  "normalized_result_raw": 1266679808,
+                  "status": "finite",
+                  "expected_raw": 1266679808
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1266679808,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679808,
+                  "normalized_result_raw": 1266679808,
+                  "status": "finite",
+                  "expected_raw": 1266679808
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1266679808,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679808,
+                  "normalized_result_raw": 1266679808,
+                  "status": "finite",
+                  "expected_raw": 1266679808
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "16777216/4194303"
+          },
+          "new": {
+            "output_word_hex": "0x4b7fffff",
+            "exact_dot": "16777215",
+            "decoded_output": "16777215",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x4b800000",
+              "0x4b7fffff"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1266679808,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679808,
+                  "normalized_result_raw": 1266679808,
+                  "status": "finite",
+                  "expected_raw": 1266679808
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1266679808,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679808,
+                  "normalized_result_raw": 1266679808,
+                  "status": "finite",
+                  "expected_raw": 1266679808
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3212836864,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3212836864,
+                  "normalized_result_raw": 3212836864,
+                  "status": "finite",
+                  "expected_raw": 3212836864
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1266679808,
+                  "right_raw": 3212836864,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1266679807,
+                  "normalized_result_raw": 1266679807,
+                  "status": "finite",
+                  "expected_raw": 1266679807
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "16777217/4194303"
+          },
+          "effective_linear_change": "-1",
+          "observed_numeric_change": "-1",
+          "absolute_change_upper_bound": "1",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "FP32_commit_rounding",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site unit_pair"
+      },
+      "native_commit_additions_checked": true
+    },
+    {
+      "id": "A3-C2_basis_zero_but_legal_subnormal_nonzero",
+      "format": "FP32",
+      "legal_domain": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1/713623846352979940529142984724747568191373312",
+          "1/713623846352979940529142984724747568191373312",
+          "1/713623846352979940529142984724747568191373312"
+        ]
+      ],
+      "global_span_rank": 1,
+      "old_weights": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          3,
+          3
+        ],
+        "rows": [
+          [
+            "11184811/16777216",
+            "-11184811/33554432",
+            "-11184811/33554432"
+          ],
+          [
+            "-11184811/33554432",
+            "11184811/16777216",
+            "-11184811/33554432"
+          ],
+          [
+            "-11184811/33554432",
+            "-11184811/33554432",
+            "11184811/16777216"
+          ]
+        ]
+      },
+      "exact_null_on_entire_declared_span": true,
+      "basis_execution": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f2aaaab",
+              "0x3eaaaaab",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1059760811,
+                  "normalized_result_raw": 1059760811,
+                  "status": "finite",
+                  "expected_raw": 1059760811
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1059760811,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1059760811,
+                  "normalized_result_raw": 1059760811,
+                  "status": "finite",
+                  "expected_raw": 1059760811
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1059760811,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1051372203,
+                  "normalized_result_raw": 1051372203,
+                  "status": "finite",
+                  "expected_raw": 1051372203
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1051372203,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "33554433/70368719011840"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0xbeaaaaab",
+              "0x3eaaaaab",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1059760811,
+                  "normalized_result_raw": 1059760811,
+                  "status": "finite",
+                  "expected_raw": 1059760811
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 3198855851,
+                  "right_raw": 1059760811,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1051372203,
+                  "normalized_result_raw": 1051372203,
+                  "status": "finite",
+                  "expected_raw": 1051372203
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1051372203,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "33554433/70368719011840"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0xbeaaaaab",
+              "0xbf2aaaab",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3198855851,
+                  "normalized_result_raw": 3198855851,
+                  "status": "finite",
+                  "expected_raw": 3198855851
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 3198855851,
+                  "right_raw": 3198855851,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 3207244459,
+                  "normalized_result_raw": 3207244459,
+                  "status": "finite",
+                  "expected_raw": 3207244459
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1059760811,
+                  "normalized_result_raw": 1059760811,
+                  "status": "finite",
+                  "expected_raw": 1059760811
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 3207244459,
+                  "right_raw": 1059760811,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "33554433/70368719011840"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "tiny_execution": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/713623846352979940529142984724747568191373312",
+            "signed_error": "1/713623846352979940529142984724747568191373312",
+            "local_absolute_error_bound": "1/713623846352979940529142984724747568191373312",
+            "product_errors": [
+              "5592405/11972621413014756705924586149611790497021399392059392",
+              "11184811/23945242826029513411849172299223580994042798784118784",
+              "11184811/23945242826029513411849172299223580994042798784118784"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x1",
+              "0x1",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/713623846352979940529142984724747568191373312",
+          "absolute_change_upper_bound": "1/713623846352979940529142984724747568191373312",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/713623846352979940529142984724747568191373312",
+            "signed_error": "1/713623846352979940529142984724747568191373312",
+            "local_absolute_error_bound": "1/713623846352979940529142984724747568191373312",
+            "product_errors": [
+              "11184811/23945242826029513411849172299223580994042798784118784",
+              "5592405/11972621413014756705924586149611790497021399392059392",
+              "11184811/23945242826029513411849172299223580994042798784118784"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x1",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/713623846352979940529142984724747568191373312",
+          "absolute_change_upper_bound": "1/713623846352979940529142984724747568191373312",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x1",
+            "exact_dot": "0",
+            "decoded_output": "1/713623846352979940529142984724747568191373312",
+            "signed_error": "1/713623846352979940529142984724747568191373312",
+            "local_absolute_error_bound": "1/713623846352979940529142984724747568191373312",
+            "product_errors": [
+              "11184811/23945242826029513411849172299223580994042798784118784",
+              "11184811/23945242826029513411849172299223580994042798784118784",
+              "5592405/11972621413014756705924586149611790497021399392059392"
+            ],
+            "addition_errors": [
+              "0",
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0",
+              "0x1"
+            ],
+            "audit": {
+              "native_multiply": 3,
+              "native_add": 3,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 6,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 3198855851,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 2147483648,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1059760811,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1,
+                  "normalized_result_raw": 1,
+                  "status": "finite",
+                  "expected_raw": 1
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": false,
+            "gamma_2n": "3/8388605",
+            "gamma_bound": null
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "1/713623846352979940529142984724747568191373312",
+          "absolute_change_upper_bound": "1/713623846352979940529142984724747568191373312",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "FP32_basis_only_probe",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site all_declared_inputs"
+      },
+      "domain_note": "Exactly two legal stored inputs; no assumed real-linear closure"
+    },
+    {
+      "id": "A3-C3_shared_call_site_omission",
+      "format": "FP32",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ]
+        ]
+      },
+      "site_1_activation": [
+        "1",
+        "0"
+      ],
+      "site_2_activation": [
+        "0",
+        "1"
+      ],
+      "local_rank": 1,
+      "merged_rank": 2,
+      "first_site": [
+        {
+          "old": {
+            "output_word_hex": "0x3f800000",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f800000",
+              "0x3f800000"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1065353216,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "1/4194303"
+          },
+          "new": {
+            "output_word_hex": "0x3f800000",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x3f800000",
+              "0x3f800000"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 1065353216,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "1/4194303"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1073741824,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "second_site": [
+        {
+          "old": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "new": {
+            "output_word_hex": "0x0",
+            "exact_dot": "0",
+            "decoded_output": "0",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x0"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "0"
+          },
+          "effective_linear_change": "0",
+          "observed_numeric_change": "0",
+          "absolute_change_upper_bound": "0",
+          "scope": "This stored input only; no global/bitwise authorization"
+        },
+        {
+          "old": {
+            "output_word_hex": "0x3f800000",
+            "exact_dot": "1",
+            "decoded_output": "1",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x3f800000"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1065353216,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1065353216,
+                  "normalized_result_raw": 1065353216,
+                  "status": "finite",
+                  "expected_raw": 1065353216
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "1/4194303"
+          },
+          "new": {
+            "output_word_hex": "0x40000000",
+            "exact_dot": "2",
+            "decoded_output": "2",
+            "signed_error": "0",
+            "local_absolute_error_bound": "0",
+            "product_errors": [
+              "0",
+              "0"
+            ],
+            "addition_errors": [
+              "0",
+              "0"
+            ],
+            "accumulator_words_hex": [
+              "0x0",
+              "0x40000000"
+            ],
+            "audit": {
+              "native_multiply": 2,
+              "native_add": 2,
+              "software_multiply": 0,
+              "software_add": 0,
+              "exact_sums": 0,
+              "native_oracle_checks": 4,
+              "events": [
+                {
+                  "operation": "multiply",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 0,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 0,
+                  "normalized_result_raw": 0,
+                  "status": "finite",
+                  "expected_raw": 0
+                },
+                {
+                  "operation": "multiply",
+                  "left_raw": 1073741824,
+                  "right_raw": 1065353216,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1073741824,
+                  "normalized_result_raw": 1073741824,
+                  "status": "finite",
+                  "expected_raw": 1073741824
+                },
+                {
+                  "operation": "add",
+                  "left_raw": 0,
+                  "right_raw": 1073741824,
+                  "left_dtype": "float32",
+                  "right_dtype": "float32",
+                  "result_dtype": "float32",
+                  "native_result_raw": 1073741824,
+                  "normalized_result_raw": 1073741824,
+                  "status": "finite",
+                  "expected_raw": 1073741824
+                }
+              ]
+            },
+            "relative_model_holds_for_every_performed_op": true,
+            "gamma_2n": "1/4194303",
+            "gamma_bound": "2/4194303"
+          },
+          "effective_linear_change": "1",
+          "observed_numeric_change": "1",
+          "absolute_change_upper_bound": "1",
+          "scope": "This stored input only; no global/bitwise authorization"
+        }
+      ],
+      "certificate_refusal": {
+        "case": "FP32_missing_shared_site",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site axis_1"
+      }
+    },
+    {
+      "id": "A3-C4_reachable_state_omission",
+      "format": "FP32",
+      "illustrative_transition": "q_next=1-row_weight*(q,0)",
+      "initial_state": "0",
+      "reference_invariant": [
+        "0",
+        "1"
+      ],
+      "old_row": [
+        "1",
+        "0"
+      ],
+      "patched_row": [
+        "2",
+        "0"
+      ],
+      "trace": [
+        {
+          "tick": 0,
+          "old_q_word": "0x0",
+          "patched_q_word": "0x0",
+          "old_output": "0",
+          "patched_output": "0",
+          "old_next_word": "0x3f800000",
+          "patched_next_word": "0x3f800000"
+        },
+        {
+          "tick": 1,
+          "old_q_word": "0x3f800000",
+          "patched_q_word": "0x3f800000",
+          "old_output": "1",
+          "patched_output": "2",
+          "old_next_word": "0x0",
+          "patched_next_word": "0xbf800000"
+        }
+      ],
+      "extra_transition_arithmetic_audit": {
+        "native_multiply": 0,
+        "native_add": 4,
+        "software_multiply": 0,
+        "software_add": 0,
+        "exact_sums": 0,
+        "native_oracle_checks": 4,
+        "events": [
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 0,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 1065353216,
+            "normalized_result_raw": 1065353216,
+            "status": "finite",
+            "expected_raw": 1065353216
+          },
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 0,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 1065353216,
+            "normalized_result_raw": 1065353216,
+            "status": "finite",
+            "expected_raw": 1065353216
+          },
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 3212836864,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 0,
+            "normalized_result_raw": 0,
+            "status": "finite",
+            "expected_raw": 0
+          },
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 3221225472,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 3212836864,
+            "normalized_result_raw": 3212836864,
+            "status": "finite",
+            "expected_raw": 3212836864
+          }
+        ]
+      },
+      "separate_registered_model_refusal": {
+        "case": "FP32_reachable_boolean_domain_omission",
+        "exception": "CertificateRejected",
+        "reason": "Complete-domain bitwise comparison failed at site state"
+      },
+      "scope": "Trace is a separate scalar recurrence; registry refusal checks the same unsafe first-row edit over its complete Boolean domain"
+    },
+    {
+      "id": "A3-C5_unmodeled_A_to_D_input_feedback",
+      "format": "FP32",
+      "D_old_weight": "1",
+      "D_new_weight": "1",
+      "D_effective_delta": "0",
+      "A_theta_before_after": [
+        "1",
+        "2"
+      ],
+      "D_input_rule": "h=A_output-1",
+      "old_input_word": "0x0",
+      "new_input_word": "0x3f800000",
+      "D_output_before_after": [
+        "0",
+        "1"
+      ],
+      "input_preparation_audit": {
+        "native_multiply": 0,
+        "native_add": 2,
+        "software_multiply": 0,
+        "software_add": 0,
+        "exact_sums": 0,
+        "native_oracle_checks": 2,
+        "events": [
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 3212836864,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 0,
+            "normalized_result_raw": 0,
+            "status": "finite",
+            "expected_raw": 0
+          },
+          {
+            "operation": "add",
+            "left_raw": 1073741824,
+            "right_raw": 3212836864,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 1065353216,
+            "normalized_result_raw": 1065353216,
+            "status": "finite",
+            "expected_raw": 1065353216
+          }
+        ]
+      },
+      "failed_premise": "Same protected input at corresponding calls / no unmodeled A-to-D influence",
+      "scope": "Not an accepted update of the closed registered graph"
+    },
+    {
+      "id": "A3-C6_bias_omission",
+      "format": "FP32",
+      "delta_W": "0",
+      "delta_bias": "1",
+      "activation": "1",
+      "old_output_word": "0x3f800000",
+      "new_output_word": "0x40000000",
+      "augmented_residual": "1",
+      "bias_addition_audit": {
+        "native_multiply": 0,
+        "native_add": 2,
+        "software_multiply": 0,
+        "software_add": 0,
+        "exact_sums": 0,
+        "native_oracle_checks": 2,
+        "events": [
+          {
+            "operation": "add",
+            "left_raw": 0,
+            "right_raw": 1065353216,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 1065353216,
+            "normalized_result_raw": 1065353216,
+            "status": "finite",
+            "expected_raw": 1065353216
+          },
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 1065353216,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 1073741824,
+            "normalized_result_raw": 1073741824,
+            "status": "finite",
+            "expected_raw": 1073741824
+          }
+        ]
+      },
+      "scope": "Arithmetic witness; delivered protected registry has fixed bias and rejects changed model descriptors"
+    },
+    {
+      "id": "A3-C7_changed_reduction",
+      "format": "FP32",
+      "row": [
+        "16777216",
+        "1",
+        "-16777216",
+        "-1"
+      ],
+      "activation": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "ordered": {
+        "output_word_hex": "0xbf800000",
+        "exact_dot": "0",
+        "decoded_output": "-1",
+        "signed_error": "-1",
+        "local_absolute_error_bound": "1",
+        "product_errors": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "addition_errors": [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        "accumulator_words_hex": [
+          "0x4b800000",
+          "0x4b800000",
+          "0x0",
+          "0xbf800000"
+        ],
+        "audit": {
+          "native_multiply": 4,
+          "native_add": 4,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 8,
+          "events": [
+            {
+              "operation": "multiply",
+              "left_raw": 1266679808,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1266679808,
+              "normalized_result_raw": 1266679808,
+              "status": "finite",
+              "expected_raw": 1266679808
+            },
+            {
+              "operation": "add",
+              "left_raw": 0,
+              "right_raw": 1266679808,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1266679808,
+              "normalized_result_raw": 1266679808,
+              "status": "finite",
+              "expected_raw": 1266679808
+            },
+            {
+              "operation": "multiply",
+              "left_raw": 1065353216,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1065353216,
+              "normalized_result_raw": 1065353216,
+              "status": "finite",
+              "expected_raw": 1065353216
+            },
+            {
+              "operation": "add",
+              "left_raw": 1266679808,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1266679808,
+              "normalized_result_raw": 1266679808,
+              "status": "finite",
+              "expected_raw": 1266679808
+            },
+            {
+              "operation": "multiply",
+              "left_raw": 3414163456,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 3414163456,
+              "normalized_result_raw": 3414163456,
+              "status": "finite",
+              "expected_raw": 3414163456
+            },
+            {
+              "operation": "add",
+              "left_raw": 1266679808,
+              "right_raw": 3414163456,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 0,
+              "normalized_result_raw": 0,
+              "status": "finite",
+              "expected_raw": 0
+            },
+            {
+              "operation": "multiply",
+              "left_raw": 3212836864,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 3212836864,
+              "normalized_result_raw": 3212836864,
+              "status": "finite",
+              "expected_raw": 3212836864
+            },
+            {
+              "operation": "add",
+              "left_raw": 0,
+              "right_raw": 3212836864,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 3212836864,
+              "normalized_result_raw": 3212836864,
+              "status": "finite",
+              "expected_raw": 3212836864
+            }
+          ]
+        },
+        "relative_model_holds_for_every_performed_op": true,
+        "gamma_2n": "1/2097151",
+        "gamma_bound": "33554434/2097151"
+      },
+      "alternate_tree": "(p0+p2)+(p1+p3)",
+      "alternate_word": "0x0",
+      "alternate_audit": {
+        "native_multiply": 0,
+        "native_add": 3,
+        "software_multiply": 0,
+        "software_add": 0,
+        "exact_sums": 0,
+        "native_oracle_checks": 3,
+        "events": [
+          {
+            "operation": "add",
+            "left_raw": 1266679808,
+            "right_raw": 3414163456,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 0,
+            "normalized_result_raw": 0,
+            "status": "finite",
+            "expected_raw": 0
+          },
+          {
+            "operation": "add",
+            "left_raw": 1065353216,
+            "right_raw": 3212836864,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 0,
+            "normalized_result_raw": 0,
+            "status": "finite",
+            "expected_raw": 0
+          },
+          {
+            "operation": "add",
+            "left_raw": 0,
+            "right_raw": 0,
+            "left_dtype": "float32",
+            "right_dtype": "float32",
+            "result_dtype": "float32",
+            "native_result_raw": 0,
+            "normalized_result_raw": 0,
+            "status": "finite",
+            "expected_raw": 0
+          }
+        ]
+      },
+      "arithmetic_policy_refusal": {
+        "case": "FP32_changed_reduction_policy",
+        "exception": "NumericalRejected",
+        "reason": "Uncertified reduction/FMA policy rejected"
+      }
+    },
+    {
+      "id": "A3-C8_fusion_policy_change",
+      "format": "FP32",
+      "x": "8193/8192",
+      "y": "8191/8192",
+      "c": "-1",
+      "separate": {
+        "output_word_hex": "0x0",
+        "exact_dot": "-1/67108864",
+        "decoded_output": "0",
+        "signed_error": "1/67108864",
+        "local_absolute_error_bound": "1/67108864",
+        "product_errors": [
+          "1/67108864",
+          "0"
+        ],
+        "addition_errors": [
+          "0",
+          "0"
+        ],
+        "accumulator_words_hex": [
+          "0x3f800000",
+          "0x0"
+        ],
+        "audit": {
+          "native_multiply": 2,
+          "native_add": 2,
+          "software_multiply": 0,
+          "software_add": 0,
+          "exact_sums": 0,
+          "native_oracle_checks": 4,
+          "events": [
+            {
+              "operation": "multiply",
+              "left_raw": 1065354240,
+              "right_raw": 1065351168,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1065353216,
+              "normalized_result_raw": 1065353216,
+              "status": "finite",
+              "expected_raw": 1065353216
+            },
+            {
+              "operation": "add",
+              "left_raw": 0,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 1065353216,
+              "normalized_result_raw": 1065353216,
+              "status": "finite",
+              "expected_raw": 1065353216
+            },
+            {
+              "operation": "multiply",
+              "left_raw": 3212836864,
+              "right_raw": 1065353216,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 3212836864,
+              "normalized_result_raw": 3212836864,
+              "status": "finite",
+              "expected_raw": 3212836864
+            },
+            {
+              "operation": "add",
+              "left_raw": 1065353216,
+              "right_raw": 3212836864,
+              "left_dtype": "float32",
+              "right_dtype": "float32",
+              "result_dtype": "float32",
+              "native_result_raw": 0,
+              "normalized_result_raw": 0,
+              "status": "finite",
+              "expected_raw": 0
+            }
+          ]
+        },
+        "relative_model_holds_for_every_performed_op": true,
+        "gamma_2n": "1/4194303",
+        "gamma_bound": "134217727/281474909601792"
+      },
+      "fused_reference_word": "0xb2800000",
+      "fused_reference_value": "-1/67108864",
+      "fused_scope": "Exact rational expression rounded once in software; no native FMA execution",
+      "arithmetic_policy_refusal": {
+        "case": "FP32_changed_fma_policy",
+        "exception": "NumericalRejected",
+        "reason": "Uncertified reduction/FMA policy rejected"
+      }
+    }
+  ],
+  "refusals": [
+    {
+      "case": "BF16_commit_rounding",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site unit_pair"
+    },
+    {
+      "case": "BF16_basis_only_probe",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site all_declared_inputs"
+    },
+    {
+      "case": "BF16_missing_shared_site",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site axis_1"
+    },
+    {
+      "case": "BF16_reachable_boolean_domain_omission",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site state"
+    },
+    {
+      "case": "BF16_changed_reduction_policy",
+      "exception": "NumericalRejected",
+      "reason": "Uncertified reduction/FMA policy rejected"
+    },
+    {
+      "case": "BF16_changed_fma_policy",
+      "exception": "NumericalRejected",
+      "reason": "Uncertified reduction/FMA policy rejected"
+    },
+    {
+      "case": "FP32_commit_rounding",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site unit_pair"
+    },
+    {
+      "case": "FP32_basis_only_probe",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site all_declared_inputs"
+    },
+    {
+      "case": "FP32_missing_shared_site",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site axis_1"
+    },
+    {
+      "case": "FP32_reachable_boolean_domain_omission",
+      "exception": "CertificateRejected",
+      "reason": "Complete-domain bitwise comparison failed at site state"
+    },
+    {
+      "case": "FP32_changed_reduction_policy",
+      "exception": "NumericalRejected",
+      "reason": "Uncertified reduction/FMA policy rejected"
+    },
+    {
+      "case": "FP32_changed_fma_policy",
+      "exception": "NumericalRejected",
+      "reason": "Uncertified reduction/FMA policy rejected"
+    }
+  ],
+  "extra_boundaries": [
+    {
+      "id": "A3-X1_full_rank_bitwise_equivalence_not_algebraic_null",
+      "format": "BF16",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "1/10889035741470030830827987437816582766592"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "global_generators": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "exact_rank": 2,
+      "exact_effective_residual": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "1/10889035741470030830827987437816582766592"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "accepted_certificate_sha256": "723dd55254080dda4aea0727986af56c3bca27b3f84e6678d06bf8800fa9f07a",
+      "certificate_payload_sha256": "6993c4862c489e138be1d22e5b7d6f664e5dc1eddc06fe3f0c0755f3a4e72d84",
+      "complete_certificate_call_cases": 4,
+      "complete_certificate_transition_cases": 4,
+      "certificate_records_algebraic_annihilation": false,
+      "A_input": [
+        "0",
+        "1"
+      ],
+      "A_before_words": [
+        "0x0",
+        "0x3f80"
+      ],
+      "A_after_words": [
+        "0x1",
+        "0x3f80"
+      ],
+      "protected_trace": [
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            0
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              16256,
+              0
+            ],
+            16256
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              16256,
+              0
+            ],
+            16256
+          ]
+        },
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              0,
+              0
+            ],
+            16256
+          ],
+          "patched_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              0,
+              0
+            ],
+            16256
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              16256,
+              0
+            ],
+            0
+          ],
+          "patched_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              16256,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              16256,
+              0
+            ],
+            16256
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              16256,
+              0
+            ],
+            16256
+          ]
+        },
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              0,
+              0
+            ],
+            16256
+          ],
+          "patched_observation": [
+            [
+              16256,
+              16256
+            ],
+            [
+              0,
+              0
+            ],
+            16256
+          ]
+        }
+      ],
+      "scope": "Complete registered finite-domain bitwise acceptance; not exact real-linear equality or A4 capacity classification"
+    },
+    {
+      "id": "A3-X1_full_rank_bitwise_equivalence_not_algebraic_null",
+      "format": "FP32",
+      "old_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "new_weights": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "1/713623846352979940529142984724747568191373312"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "global_generators": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      },
+      "exact_rank": 2,
+      "exact_effective_residual": {
+        "shape": [
+          2,
+          2
+        ],
+        "rows": [
+          [
+            "0",
+            "1/713623846352979940529142984724747568191373312"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "accepted_certificate_sha256": "890ecd13108d85c77c8443ab53dabcfa632c51561547bc66ff67b9bb630d278b",
+      "certificate_payload_sha256": "6a48119c953e5aeeca4056963d3ead5096fee87fe7092164ad9e7f76a577fd37",
+      "complete_certificate_call_cases": 4,
+      "complete_certificate_transition_cases": 4,
+      "certificate_records_algebraic_annihilation": false,
+      "A_input": [
+        "0",
+        "1"
+      ],
+      "A_before_words": [
+        "0x0",
+        "0x3f800000"
+      ],
+      "A_after_words": [
+        "0x1",
+        "0x3f800000"
+      ],
+      "protected_trace": [
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            0
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              1065353216,
+              0
+            ],
+            1065353216
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              1065353216,
+              0
+            ],
+            1065353216
+          ]
+        },
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              0,
+              0
+            ],
+            1065353216
+          ],
+          "patched_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              0,
+              0
+            ],
+            1065353216
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              1065353216,
+              0
+            ],
+            0
+          ],
+          "patched_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              1065353216,
+              0
+            ],
+            0
+          ]
+        },
+        {
+          "input": 1,
+          "reference_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              1065353216,
+              0
+            ],
+            1065353216
+          ],
+          "patched_observation": [
+            [
+              0,
+              0
+            ],
+            [
+              1065353216,
+              0
+            ],
+            1065353216
+          ]
+        },
+        {
+          "input": 0,
+          "reference_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              0,
+              0
+            ],
+            1065353216
+          ],
+          "patched_observation": [
+            [
+              1065353216,
+              1065353216
+            ],
+            [
+              0,
+              0
+            ],
+            1065353216
+          ]
+        }
+      ],
+      "scope": "Complete registered finite-domain bitwise acceptance; not exact real-linear equality or A4 capacity classification"
+    }
+  ],
+  "runtime_seconds": 0.09404684800028917,
+  "backend": {
+    "numpy_version": "2.3.5",
+    "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+    "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+    "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+    "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+    "fma": false,
+    "gpu": "not executed or certified"
+  },
+  "scope": "New A3 adversarial acceptance/refusal and pointwise arithmetic cases; no old verification suite rerun",
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "source_sha256": {
+    "verify_counterexample_cases.py": "f4a3cd437521befcbff6bef684ecaf67ea31e073acfcf1769885c7296de22fe1",
+    "certificate_kernel.py": "78bf6ed7bc92c5529b722fc29ffdb467bac808ffd00c9de7fed8e4af4d7a5a0c",
+    "a3_runtime.py": "ca1cc8a919b83bc8b8fa0192aa41320d61f1fe1fc49e6b627e5045120e3b3fd0"
+  }
+}

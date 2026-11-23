@@ -1,0 +1,671 @@
+{
+  "schema": "dmwk-p2-b1-final-integrity-v1",
+  "status": "passed",
+  "recorded_utc": "2026-11-14T08:07:24.596880+00:00",
+  "required_artifacts": [
+    "P2_B1_Plan.md",
+    "P2_B1_Mathematical_Checkpoint.md",
+    "P2_B1_Definitions.md",
+    "P2_B1_Theorems.md",
+    "B1_Interface.md",
+    "P2_B1_Counterexamples.md",
+    "P2_B1_Evidence_Map.md",
+    "P2_B1_Review.md",
+    "P2_B1_Report.md",
+    "P2_B1_Optimization_Experiment.md",
+    "P2_B1_Errata.md",
+    "README.md",
+    "P2_B2_Handoff.md",
+    "constrained_updates.py",
+    "optimizer_kernel.py",
+    "b1_runtime.py",
+    "verify_b1.py",
+    "verify_constraints.py",
+    "verify_training.py",
+    "verify_independent.py",
+    "requirements.txt",
+    "dependency_baseline.json",
+    "dependency_inspection.json",
+    "constraint_results.json",
+    "training_results.json",
+    "independent_results.json",
+    "verification_results.json",
+    "reproduction_results.json",
+    "independent_reproduction_results.json",
+    "driver_checks.json",
+    "completion_status.json",
+    "optimized_O_refusal.json",
+    "optimized_OO_refusal.json"
+  ],
+  "required_artifact_count": 33,
+  "prior_artifacts": {
+    "baseline": "dependency_baseline.json",
+    "checked_file_count": 413,
+    "contents_unchanged": true,
+    "nonexcluded_inventory_unchanged": true,
+    "roots": [
+      "dmwk-p1-foundations",
+      "p2_a1",
+      "p2_a2",
+      "p2_a3",
+      "p2_a4"
+    ],
+    "excluded_directories": [
+      ".git",
+      ".pytest_cache",
+      ".venv",
+      "__pycache__",
+      "venv"
+    ]
+  },
+  "source_result_bindings": [
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "b1_runtime.py",
+      "sha256": "c744a46a265729dbadb96786879adbe9c7d1e9d151a8f49e1cf84cbc8b730715"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "constrained_updates.py",
+      "sha256": "b5d12b8db73b61bdc13e3cf5e304ce8a60edb90f69241cdb059bed20cbceacb3"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "optimizer_kernel.py",
+      "sha256": "badc3d194b9caa1f3f57bdecc89c4d766a0522f99c2127a9288aecfff4a44424"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "verify_b1.py",
+      "sha256": "4e606417f6a717f539b8cb5e56864ad80da88bfab271e95e8100154ac3e2b524"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "verify_constraints.py",
+      "sha256": "d3e415d7481bf44cacd5d0221d1e9989d24ba8425ce0a4bb9b827203cf4eb8f7"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "verify_independent.py",
+      "sha256": "4f3f3dc3b2247e1f5128266b65c884d06e0356c1fcf2de1982d47edaa9ea0da3"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "verify_training.py",
+      "sha256": "2db5a0b67db83824ffd6d2f58032e746036cfe60205f7b1b391c467cbb2029c5"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "requirements.txt",
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "record": "verification_results.json",
+      "source_or_evidence": "dependency_baseline.json",
+      "sha256": "b8e9bb3af2643709751f796c213e999e59d91dece4686e113a1fc31b1a4fe1b4"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "b1_runtime.py",
+      "sha256": "c744a46a265729dbadb96786879adbe9c7d1e9d151a8f49e1cf84cbc8b730715"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "constrained_updates.py",
+      "sha256": "b5d12b8db73b61bdc13e3cf5e304ce8a60edb90f69241cdb059bed20cbceacb3"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "optimizer_kernel.py",
+      "sha256": "badc3d194b9caa1f3f57bdecc89c4d766a0522f99c2127a9288aecfff4a44424"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "verify_b1.py",
+      "sha256": "4e606417f6a717f539b8cb5e56864ad80da88bfab271e95e8100154ac3e2b524"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "verify_constraints.py",
+      "sha256": "d3e415d7481bf44cacd5d0221d1e9989d24ba8425ce0a4bb9b827203cf4eb8f7"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "verify_independent.py",
+      "sha256": "4f3f3dc3b2247e1f5128266b65c884d06e0356c1fcf2de1982d47edaa9ea0da3"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "verify_training.py",
+      "sha256": "2db5a0b67db83824ffd6d2f58032e746036cfe60205f7b1b391c467cbb2029c5"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "requirements.txt",
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "record": "reproduction_results.json",
+      "source_or_evidence": "dependency_baseline.json",
+      "sha256": "b8e9bb3af2643709751f796c213e999e59d91dece4686e113a1fc31b1a4fe1b4"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "verify_independent.py",
+      "sha256": "4f3f3dc3b2247e1f5128266b65c884d06e0356c1fcf2de1982d47edaa9ea0da3"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "constrained_updates.py",
+      "sha256": "b5d12b8db73b61bdc13e3cf5e304ce8a60edb90f69241cdb059bed20cbceacb3"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "optimizer_kernel.py",
+      "sha256": "badc3d194b9caa1f3f57bdecc89c4d766a0522f99c2127a9288aecfff4a44424"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "b1_runtime.py",
+      "sha256": "c744a46a265729dbadb96786879adbe9c7d1e9d151a8f49e1cf84cbc8b730715"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "verify_training.py",
+      "sha256": "2db5a0b67db83824ffd6d2f58032e746036cfe60205f7b1b391c467cbb2029c5"
+    },
+    {
+      "record": "independent_results.json",
+      "source_or_evidence": "training_results.json",
+      "sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "verify_independent.py",
+      "sha256": "4f3f3dc3b2247e1f5128266b65c884d06e0356c1fcf2de1982d47edaa9ea0da3"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "constrained_updates.py",
+      "sha256": "b5d12b8db73b61bdc13e3cf5e304ce8a60edb90f69241cdb059bed20cbceacb3"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "optimizer_kernel.py",
+      "sha256": "badc3d194b9caa1f3f57bdecc89c4d766a0522f99c2127a9288aecfff4a44424"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "b1_runtime.py",
+      "sha256": "c744a46a265729dbadb96786879adbe9c7d1e9d151a8f49e1cf84cbc8b730715"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "verify_training.py",
+      "sha256": "2db5a0b67db83824ffd6d2f58032e746036cfe60205f7b1b391c467cbb2029c5"
+    },
+    {
+      "record": "independent_reproduction_results.json",
+      "source_or_evidence": "training_results.json",
+      "sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1"
+    }
+  ],
+  "driver_hash_bindings_valid": true,
+  "independent_training_evidence_hash_valid": true,
+  "strict_json_files_checked": [
+    "completion_status.json",
+    "constraint_results.json",
+    "dependency_baseline.json",
+    "dependency_inspection.json",
+    "driver_checks.json",
+    "independent_reproduction_results.json",
+    "independent_results.json",
+    "optimized_OO_refusal.json",
+    "optimized_O_refusal.json",
+    "reproduction_results.json",
+    "training_results.json",
+    "verification_results.json"
+  ],
+  "english_markdown_files_checked": [
+    "B1_Interface.md",
+    "P2_B1_Counterexamples.md",
+    "P2_B1_Definitions.md",
+    "P2_B1_Errata.md",
+    "P2_B1_Evidence_Map.md",
+    "P2_B1_Mathematical_Checkpoint.md",
+    "P2_B1_Optimization_Experiment.md",
+    "P2_B1_Plan.md",
+    "P2_B1_Report.md",
+    "P2_B1_Review.md",
+    "P2_B1_Theorems.md",
+    "P2_B2_Handoff.md",
+    "README.md"
+  ],
+  "local_markdown_links_checked": [
+    {
+      "document": "P2_B1_Definitions.md",
+      "target": "P2_B1_Mathematical_Checkpoint.md"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "P2_B1_Theorems.md"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "P2_B1_Definitions.md"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "constraint_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "verify_constraints.py"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "training_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "verify_training.py"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "independent_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "verify_independent.py"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "verification_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "verify_b1.py"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "reproduction_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "independent_reproduction_results.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "P2_B1_Review.md"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "completion_status.json"
+    },
+    {
+      "document": "P2_B1_Evidence_Map.md",
+      "target": "final_integrity.json"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "P2_B1_Theorems.md"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "B1_Interface.md"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "P2_B1_Counterexamples.md"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "P2_B1_Optimization_Experiment.md"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "training_results.json"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "constraint_results.json"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "final_integrity.json"
+    },
+    {
+      "document": "P2_B1_Report.md",
+      "target": "P2_B2_Handoff.md"
+    },
+    {
+      "document": "P2_B1_Review.md",
+      "target": "independent_results.json"
+    },
+    {
+      "document": "P2_B1_Review.md",
+      "target": "verify_independent.py"
+    },
+    {
+      "document": "P2_B1_Theorems.md",
+      "target": "P2_B1_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B2_Handoff.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Theorems.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Evidence_Map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "README.md",
+      "target": "B1_Interface.md"
+    },
+    {
+      "document": "README.md",
+      "target": "constrained_updates.py"
+    },
+    {
+      "document": "README.md",
+      "target": "optimizer_kernel.py"
+    },
+    {
+      "document": "README.md",
+      "target": "requirements.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "dependency_baseline.json"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_constraints.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_training.py"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Plan.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Mathematical_Checkpoint.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Definitions.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Theorems.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Counterexamples.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Optimization_Experiment.md"
+    },
+    {
+      "document": "README.md",
+      "target": "B1_Interface.md"
+    },
+    {
+      "document": "README.md",
+      "target": "constrained_updates.py"
+    },
+    {
+      "document": "README.md",
+      "target": "optimizer_kernel.py"
+    },
+    {
+      "document": "README.md",
+      "target": "b1_runtime.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_b1.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_constraints.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_training.py"
+    },
+    {
+      "document": "README.md",
+      "target": "verify_independent.py"
+    },
+    {
+      "document": "README.md",
+      "target": "constraint_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "training_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Evidence_Map.md"
+    },
+    {
+      "document": "README.md",
+      "target": "independent_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "verification_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "reproduction_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "independent_reproduction_results.json"
+    },
+    {
+      "document": "README.md",
+      "target": "driver_checks.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Review.md"
+    },
+    {
+      "document": "README.md",
+      "target": "completion_status.json"
+    },
+    {
+      "document": "README.md",
+      "target": "final_integrity.json"
+    },
+    {
+      "document": "README.md",
+      "target": "dependency_baseline.json"
+    },
+    {
+      "document": "README.md",
+      "target": "dependency_inspection.json"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Errata.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B2_Handoff.md"
+    },
+    {
+      "document": "README.md",
+      "target": "P2_B1_Evidence_Map.md"
+    }
+  ],
+  "manifest": {
+    "B1_Interface.md": {
+      "sha256": "d3710a717ab88765588cf1f5681b1cbe0f9985266a0c298bb8353209cb1aa436",
+      "bytes": 7879
+    },
+    "P2_B1_Counterexamples.md": {
+      "sha256": "8b54f57a9b5d23bab30f475d60858d1719043b03a4e366bf046f28a514b576f0",
+      "bytes": 10567
+    },
+    "P2_B1_Definitions.md": {
+      "sha256": "9848e7676346778fdb6b0f60b616cf13d24a63b0edc05c3b0ff86b21456f18cb",
+      "bytes": 14182
+    },
+    "P2_B1_Errata.md": {
+      "sha256": "d627620db8db0d993048b82e0555834bd62f40fc561e090be9a97e9fdf6c0049",
+      "bytes": 2030
+    },
+    "P2_B1_Evidence_Map.md": {
+      "sha256": "877c51ade2cba698836f732ba266272667d1ec49d374f2213085107edeec13d1",
+      "bytes": 13643
+    },
+    "P2_B1_Mathematical_Checkpoint.md": {
+      "sha256": "fef042f5c87554ba6cb74cf46efa51af93024cf02d6c6920805a32a348a3647b",
+      "bytes": 4437
+    },
+    "P2_B1_Optimization_Experiment.md": {
+      "sha256": "04ad816b1d25d315fa273fc154d8084b936b904a18cba6e4b691379c781d2303",
+      "bytes": 12763
+    },
+    "P2_B1_Plan.md": {
+      "sha256": "1ea2a38f547ab4ce8f0b2efdef9cba8725ea38e40d30f1c9815f67ae9069c9d8",
+      "bytes": 8079
+    },
+    "P2_B1_Report.md": {
+      "sha256": "dae0ad1bd25c9afae4a41c150879a79bc85c2edee522b3dcac0ab3722310ade0",
+      "bytes": 18746
+    },
+    "P2_B1_Review.md": {
+      "sha256": "1feaf001c314db6a3718f207eb1a79b78add740f6c02ca0936dd56f132ba32ca",
+      "bytes": 14736
+    },
+    "P2_B1_Theorems.md": {
+      "sha256": "000cd8a130074a5a1b7d230c8b6076e02df9aebaca89c05f0cf8ef1f3b2ee387",
+      "bytes": 22125
+    },
+    "P2_B2_Handoff.md": {
+      "sha256": "bb9683afcd5b17875d0cd6078cc4a36d7779ff06d6ca5973d5927dbd50659267",
+      "bytes": 3240
+    },
+    "README.md": {
+      "sha256": "8177a60bef0bbd7dfe213a57e8ffa5c117b569e1dfb1d747c8c3011dcbe28784",
+      "bytes": 10473
+    },
+    "b1_runtime.py": {
+      "sha256": "c744a46a265729dbadb96786879adbe9c7d1e9d151a8f49e1cf84cbc8b730715",
+      "bytes": 2004
+    },
+    "completion_status.json": {
+      "sha256": "c7b3038116fab6e7ce6f7f46f96ffebafabff205f5c5cae3f3263eef6b1d9b03",
+      "bytes": 6028
+    },
+    "constrained_updates.py": {
+      "sha256": "b5d12b8db73b61bdc13e3cf5e304ce8a60edb90f69241cdb059bed20cbceacb3",
+      "bytes": 11223
+    },
+    "constraint_results.json": {
+      "sha256": "630a76c2528c4080175e02f237c56b25cef1111cfcb2ee3d7a0b8c2640a2f87b",
+      "bytes": 85537
+    },
+    "dependency_baseline.json": {
+      "sha256": "b8e9bb3af2643709751f796c213e999e59d91dece4686e113a1fc31b1a4fe1b4",
+      "bytes": 52369
+    },
+    "dependency_inspection.json": {
+      "sha256": "fb2103587e22fe74d643cebc87fd645b3e20ee1a396bb42053635f65455b1dfe",
+      "bytes": 431
+    },
+    "driver_checks.json": {
+      "sha256": "479a998e26411e623f90f452c15142d553bb16f692480c6f3b71d118a6d2e688",
+      "bytes": 7025
+    },
+    "independent_reproduction_results.json": {
+      "sha256": "bba7e3b748a96c7a7b8d4c6708fca35747be2e43cd6c87b561900fbeba7a2886",
+      "bytes": 15591
+    },
+    "independent_results.json": {
+      "sha256": "3169722b881aae3ff16f779f1fb4d4d21848b03a97d524e0a15a8d7b02f024c8",
+      "bytes": 15591
+    },
+    "optimized_OO_refusal.json": {
+      "sha256": "8dfba489d83d8252fc514f80c0aea73fb3ce9cca6fff73b4b70076ae6450abb1",
+      "bytes": 1574
+    },
+    "optimized_O_refusal.json": {
+      "sha256": "798bf600b957b3162d6a9489f4d2796af867ff03e2ebff801a1bae1f436987ae",
+      "bytes": 1574
+    },
+    "optimizer_kernel.py": {
+      "sha256": "badc3d194b9caa1f3f57bdecc89c4d766a0522f99c2127a9288aecfff4a44424",
+      "bytes": 19996
+    },
+    "reproduction_results.json": {
+      "sha256": "2446667b4d9c14d4571240e07f156f250ef726d2174d841f789d19ae5bb21976",
+      "bytes": 5846721
+    },
+    "requirements.txt": {
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "bytes": 13
+    },
+    "training_results.json": {
+      "sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+      "bytes": 4979107
+    },
+    "verification_results.json": {
+      "sha256": "cfe26f1ac4866a99cc14204cc8bb176a52b2dbfd639d42d9bd602a14b935ad61",
+      "bytes": 5846726
+    },
+    "verify_b1.py": {
+      "sha256": "4e606417f6a717f539b8cb5e56864ad80da88bfab271e95e8100154ac3e2b524",
+      "bytes": 5542
+    },
+    "verify_constraints.py": {
+      "sha256": "d3e415d7481bf44cacd5d0221d1e9989d24ba8425ce0a4bb9b827203cf4eb8f7",
+      "bytes": 21816
+    },
+    "verify_independent.py": {
+      "sha256": "4f3f3dc3b2247e1f5128266b65c884d06e0356c1fcf2de1982d47edaa9ea0da3",
+      "bytes": 36441
+    },
+    "verify_training.py": {
+      "sha256": "2db5a0b67db83824ffd6d2f58032e746036cfe60205f7b1b391c467cbb2029c5",
+      "bytes": 15736
+    }
+  },
+  "manifest_file_count": 33,
+  "self_hash_policy": "The manifest excludes itself to avoid recursive hashing and includes every other current B1 file.",
+  "scope": "Artifact identity and internal consistency, not a mathematical machine proof, origin authentication or backend certification. No prior-stage suite or publication/account operation was performed."
+}

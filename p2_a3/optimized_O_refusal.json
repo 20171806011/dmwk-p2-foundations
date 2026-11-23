@@ -1,0 +1,42 @@
+{
+  "schema": "dmwk-p2-a3-verification-v1",
+  "status": "failed",
+  "started_utc": "2026-11-14T06:53:53.824760+00:00",
+  "seed": 20261114,
+  "planned_sections": [
+    "exact_linear",
+    "pointwise_bounded",
+    "counterexamples",
+    "bitwise_certificates"
+  ],
+  "attempted_sections": [],
+  "sections": {},
+  "section_seconds": {},
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "P2_A4_started": false,
+  "failure": {
+    "phase": "preflight",
+    "type": "ValueError",
+    "message": "Verification must run without Python -O/-OO"
+  },
+  "completed_sections": 0,
+  "unexecuted_sections": [
+    "exact_linear",
+    "pointwise_bounded",
+    "counterexamples",
+    "bitwise_certificates"
+  ],
+  "completed_utc": "2026-11-14T06:53:53.824772+00:00",
+  "total_seconds": 1.675500243436545e-05,
+  "evidence_scope": {
+    "exact_linear": "Exact checks on finite matrices; universal basis/span theorem is separately proved by hand.",
+    "pointwise_bounded": "A posteriori absolute bounds for specified stored inputs/endpoints only; never commit permission.",
+    "counterexamples": "Explicit refutations of overbroad implications under specified arithmetic graphs.",
+    "bitwise_certificates": "Complete finite registered models; all-finite-time program consequence needs the separate closure/induction proof.",
+    "BF16": "Software RNE; no native BF16 certification.",
+    "FP32": "Local CPU scalar operations audited by exact rational RNE; no universal backend certificate.",
+    "excluded": "GPU, general concurrency, arbitrary compiler optimizations, full proof-assistant verification, general P2-C composition."
+  }
+}

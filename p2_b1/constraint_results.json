@@ -1,0 +1,3543 @@
+{
+  "schema": "dmwk-p2-b1-constraints-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 2400,
+  "unexpected_failures": 0,
+  "sections": {
+    "exact_and_optimizer": {
+      "status": "passed",
+      "checks": 2316,
+      "exhaustive_projection_pairs": 324,
+      "seeded_factor_cases": 64,
+      "named_factor_cases": 4,
+      "factor_records": [
+        {
+          "case": "zero",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 0,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "full",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "dependent",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "nonorthogonal_null_basis",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_0",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_1",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_2",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_3",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 3,
+          "null_update_rank": 3,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_4",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_5",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 1,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_6",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 2,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_7",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_8",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_9",
+          "shape": [
+            1,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_10",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_11",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 0,
+          "nullity": 4,
+          "null_coeff_rank": 3,
+          "null_update_rank": 3,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_12",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_13",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 0,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_14",
+          "shape": [
+            1,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_15",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_16",
+          "shape": [
+            1,
+            3
+          ],
+          "protected_rank": 2,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_17",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_18",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_19",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_20",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_21",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_22",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 1,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_23",
+          "shape": [
+            2,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_24",
+          "shape": [
+            3,
+            3
+          ],
+          "protected_rank": 2,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_25",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_26",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_27",
+          "shape": [
+            3,
+            4
+          ],
+          "protected_rank": 4,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_28",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_29",
+          "shape": [
+            3,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_30",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_31",
+          "shape": [
+            1,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_32",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_33",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_34",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_35",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_36",
+          "shape": [
+            1,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_37",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_38",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_39",
+          "shape": [
+            1,
+            2
+          ],
+          "protected_rank": 1,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_40",
+          "shape": [
+            3,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_41",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_42",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_43",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_44",
+          "shape": [
+            3,
+            2
+          ],
+          "protected_rank": 1,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_45",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_46",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 0,
+          "nullity": 4,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_47",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 2,
+          "nullity": 2,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_48",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_49",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_50",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 3,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_51",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 2,
+          "nullity": 2,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_52",
+          "shape": [
+            2,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_53",
+          "shape": [
+            2,
+            3
+          ],
+          "protected_rank": 0,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 2
+            }
+          ]
+        },
+        {
+          "case": "seeded_54",
+          "shape": [
+            2,
+            4
+          ],
+          "protected_rank": 1,
+          "nullity": 3,
+          "null_coeff_rank": 2,
+          "null_update_rank": 2,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_55",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_56",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 3,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_57",
+          "shape": [
+            1,
+            4
+          ],
+          "protected_rank": 4,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_58",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_59",
+          "shape": [
+            3,
+            2
+          ],
+          "protected_rank": 2,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_60",
+          "shape": [
+            1,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        },
+        {
+          "case": "seeded_61",
+          "shape": [
+            3,
+            1
+          ],
+          "protected_rank": 0,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_62",
+          "shape": [
+            3,
+            2
+          ],
+          "protected_rank": 1,
+          "nullity": 1,
+          "null_coeff_rank": 1,
+          "null_update_rank": 1,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 1
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 1
+            }
+          ]
+        },
+        {
+          "case": "seeded_63",
+          "shape": [
+            1,
+            1
+          ],
+          "protected_rank": 1,
+          "nullity": 0,
+          "null_coeff_rank": 0,
+          "null_update_rank": 0,
+          "low_rank_cases": [
+            {
+              "factor_rank_budget": 0,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 1,
+              "actual_rank": 0
+            },
+            {
+              "factor_rank_budget": 2,
+              "actual_rank": 0
+            }
+          ]
+        }
+      ],
+      "optimizer_counterexamples": [
+        {
+          "id": "B1-C1_Adam_after_gradient_projection",
+          "H": {
+            "shape": [
+              3,
+              1
+            ],
+            "rows": [
+              [
+                "1"
+              ],
+              [
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ]
+          },
+          "raw_gradient": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "3",
+                "0",
+                "0"
+              ]
+            ]
+          },
+          "projected_gradient": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "2",
+                "-1",
+                "-1"
+              ]
+            ]
+          },
+          "gradient_only_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-6004799503160661/9007199254740992",
+                "1/2",
+                "1/2"
+              ]
+            ]
+          },
+          "gradient_only_exact_row_sum": [
+            "3002399751580331/9007199254740992"
+          ],
+          "final_projected_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-1/2",
+                "1/4",
+                "1/4"
+              ]
+            ]
+          },
+          "config": {
+            "kind": "adamw",
+            "clip_mode": "none",
+            "learning_rate": [
+              1,
+              1
+            ],
+            "momentum": [
+              9,
+              10
+            ],
+            "beta1": [
+              1,
+              2
+            ],
+            "beta2": [
+              1,
+              2
+            ],
+            "epsilon": [
+              1,
+              1
+            ],
+            "weight_decay": [
+              0,
+              1
+            ],
+            "clip_bound": null
+          },
+          "audit": {
+            "optimizer": "adamw",
+            "proposal_arithmetic": "finite host binary64 ordered Adam with Python pow/math.sqrt, exact Fraction decoding; no universal RNE pow/sqrt certification",
+            "decay_arithmetic": "exact rational decoupled increment",
+            "order": [
+              "moments",
+              "parameter_step",
+              "decoupled_decay",
+              "increment_clip"
+            ],
+            "clip": {
+              "mode": "none"
+            },
+            "authorizes_endpoint": false,
+            "restriction": "gradient_only",
+            "original_gradient": {
+              "shape": [
+                1,
+                3
+              ],
+              "rows": [
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  [
+                    0,
+                    1
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              ]
+            },
+            "optimizer_gradient": {
+              "shape": [
+                1,
+                3
+              ],
+              "rows": [
+                [
+                  [
+                    2,
+                    1
+                  ],
+                  [
+                    -1,
+                    1
+                  ],
+                  [
+                    -1,
+                    1
+                  ]
+                ]
+              ]
+            },
+            "final_increment": {
+              "shape": [
+                1,
+                3
+              ],
+              "rows": [
+                [
+                  [
+                    -6004799503160661,
+                    9007199254740992
+                  ],
+                  [
+                    1,
+                    2
+                  ],
+                  [
+                    1,
+                    2
+                  ]
+                ]
+              ]
+            }
+          },
+          "ideal_normalized_direction_sum": "-1/3",
+          "scope": "Actual finite host binary64 Adam proposal decoded exactly; protected BF16/FP32 execution is a separate layer"
+        },
+        {
+          "id": "B1-C2_off_space_momentum",
+          "old_m": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "1",
+                "0",
+                "0"
+              ]
+            ]
+          },
+          "raw_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-3/2",
+                "1/2",
+                "1/2"
+              ]
+            ]
+          },
+          "next_m": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "3/2",
+                "-1/2",
+                "-1/2"
+              ]
+            ]
+          },
+          "final_projected_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-4/3",
+                "2/3",
+                "2/3"
+              ]
+            ]
+          },
+          "scope": "Final update projection repairs this increment; it does not assert that stored moments are in the protected annihilator"
+        },
+        {
+          "id": "B1-C3_decay_after_gradient_projection",
+          "weights": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "1",
+                "0",
+                "0"
+              ]
+            ]
+          },
+          "gradient_only_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-9/4",
+                "1",
+                "1"
+              ]
+            ]
+          },
+          "leak": "-1/4",
+          "final_projected_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "-13/6",
+                "13/12",
+                "13/12"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "B1-C4_coordinate_clip_vs_common_scale",
+          "coordinate_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "1",
+                "-1",
+                "-1"
+              ]
+            ]
+          },
+          "coordinate_audit": {
+            "mode": "element",
+            "arithmetic": "exact rational coordinate clipping"
+          },
+          "common_scalar_increment": {
+            "shape": [
+              1,
+              3
+            ],
+            "rows": [
+              [
+                "7354347395230783/9007199254740992",
+                "-7354347395230783/18014398509481984",
+                "-7354347395230783/18014398509481984"
+              ]
+            ]
+          },
+          "global_audit": {
+            "mode": "global_norm",
+            "host_norm_hex": "0x1.3988e1409212ep+1",
+            "common_scalar": [
+              7354347395230783,
+              18014398509481984
+            ],
+            "arithmetic": "host binary64 norm, exact common rational scaling"
+          },
+          "scope": "Exact common-rational scaling preserves annihilation; host norm estimate is not an exact norm-threshold certificate"
+        }
+      ],
+      "rank_counterexample": {
+        "id": "B1-C0_step_and_adapter_rank",
+        "each_increment_rank": 1,
+        "cumulative_rank": 2,
+        "old_adapter_rank": 1,
+        "new_adapter_rank": 1,
+        "adapter_difference_rank": 2,
+        "scope": "Exact algebra, V={0}; no claim that a per-step rank budget bounds accumulated rank"
+      },
+      "scope": "Exact rational constraints and explicitly finite binary64 optimizer proposals; no live authority"
+    },
+    "numerical_and_domain": {
+      "status": "passed",
+      "checks": 38,
+      "records": [
+        {
+          "id": "B1-C12_quantized_projector",
+          "format": "BF16",
+          "H": {
+            "shape": [
+              2,
+              1
+            ],
+            "rows": [
+              [
+                "1"
+              ],
+              [
+                "3"
+              ]
+            ]
+          },
+          "exact_projector": {
+            "shape": [
+              2,
+              2
+            ],
+            "rows": [
+              [
+                "9/10",
+                "-3/10"
+              ],
+              [
+                "-3/10",
+                "1/10"
+              ]
+            ]
+          },
+          "quantized_projector_words": [
+            [
+              16230,
+              48794
+            ],
+            [
+              48794,
+              15821
+            ]
+          ],
+          "exact_residual_after_quantization": {
+            "shape": [
+              2,
+              1
+            ],
+            "rows": [
+              [
+                "-1/256"
+              ],
+              [
+                "-1/2048"
+              ]
+            ]
+          },
+          "scope": "Independent coefficient rounding of an exact projector is only a proposal and carries no endpoint authorization"
+        },
+        {
+          "id": "B1-C5_commit_endpoint_rounding",
+          "format": "BF16",
+          "old_words": [
+            [
+              17280,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "new_words": [
+            [
+              17280,
+              49024
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "ideal_increment": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "actual_effective_difference": [
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "exact_and_executed_protected_change": [
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "id": "B1-C6_ALG_not_BIT",
+          "format": "BF16",
+          "candidate_words": [
+            [
+              16171,
+              48811,
+              48811
+            ],
+            [
+              48811,
+              16171,
+              48811
+            ],
+            [
+              48811,
+              48811,
+              16171
+            ]
+          ],
+          "exact_null_on_both_inputs": true,
+          "basis_output_words": [
+            0,
+            0,
+            0
+          ],
+          "tiny_output_words": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "B1-C7_full_rank_BIT_not_ALG",
+          "format": "BF16",
+          "candidate_words": [
+            [
+              16256,
+              1
+            ],
+            [
+              0,
+              16256
+            ]
+          ],
+          "protected_rank": 2,
+          "exact_ALG": false,
+          "registered_BIT": true,
+          "A_e2_old_words": [
+            0,
+            16256
+          ],
+          "A_e2_new_words": [
+            1,
+            16256
+          ]
+        },
+        {
+          "id": "B1-C8_BIT_rank_exceeds_complement",
+          "format": "BF16",
+          "candidate_words": [
+            [
+              16256,
+              1
+            ],
+            [
+              1,
+              16256
+            ]
+          ],
+          "protected_rank": 1,
+          "complement_dimension": 1,
+          "effective_rank": 2,
+          "scope": "BIT edit, not an exact annihilator or an authorized algebraic rank-k increment"
+        },
+        {
+          "id": "B1-C9_saturated_storage",
+          "format": "BF16",
+          "old_words": [
+            [
+              32639,
+              32639
+            ],
+            [
+              32639,
+              32639
+            ]
+          ],
+          "input_words": [
+            16128,
+            16128
+          ],
+          "abstract_ALG_dimension": 2,
+          "proved_full_format_ALG_endpoint_count": 1,
+          "proof": "Finite endpoint entries <=Fmax; fixed row sum2Fmax forces every entry equalFmax.",
+          "scope": "Extremal mathematical proof with one finite execution probe, not whole-format enumeration"
+        },
+        {
+          "id": "B1-C10_samples_and_shared_sites",
+          "format": "BF16",
+          "sampled_input": [
+            16256,
+            0
+          ],
+          "omitted_legal_input": [
+            0,
+            16256
+          ],
+          "sample_passes": true,
+          "global_BIT": false
+        },
+        {
+          "id": "B1-C12_quantized_projector",
+          "format": "FP32",
+          "H": {
+            "shape": [
+              2,
+              1
+            ],
+            "rows": [
+              [
+                "1"
+              ],
+              [
+                "3"
+              ]
+            ]
+          },
+          "exact_projector": {
+            "shape": [
+              2,
+              2
+            ],
+            "rows": [
+              [
+                "9/10",
+                "-3/10"
+              ],
+              [
+                "-3/10",
+                "1/10"
+              ]
+            ]
+          },
+          "quantized_projector_words": [
+            [
+              1063675494,
+              3197737370
+            ],
+            [
+              3197737370,
+              1036831949
+            ]
+          ],
+          "exact_residual_after_quantization": {
+            "shape": [
+              2,
+              1
+            ],
+            "rows": [
+              [
+                "-1/16777216"
+              ],
+              [
+                "-1/134217728"
+              ]
+            ]
+          },
+          "scope": "Independent coefficient rounding of an exact projector is only a proposal and carries no endpoint authorization"
+        },
+        {
+          "id": "B1-C5_commit_endpoint_rounding",
+          "format": "FP32",
+          "old_words": [
+            [
+              1266679808,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "new_words": [
+            [
+              1266679808,
+              3212836864
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "ideal_increment": [
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "actual_effective_difference": [
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "exact_and_executed_protected_change": [
+            "-1",
+            "0"
+          ]
+        },
+        {
+          "id": "B1-C6_ALG_not_BIT",
+          "format": "FP32",
+          "candidate_words": [
+            [
+              1059760811,
+              3198855851,
+              3198855851
+            ],
+            [
+              3198855851,
+              1059760811,
+              3198855851
+            ],
+            [
+              3198855851,
+              3198855851,
+              1059760811
+            ]
+          ],
+          "exact_null_on_both_inputs": true,
+          "basis_output_words": [
+            0,
+            0,
+            0
+          ],
+          "tiny_output_words": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "B1-C7_full_rank_BIT_not_ALG",
+          "format": "FP32",
+          "candidate_words": [
+            [
+              1065353216,
+              1
+            ],
+            [
+              0,
+              1065353216
+            ]
+          ],
+          "protected_rank": 2,
+          "exact_ALG": false,
+          "registered_BIT": true,
+          "A_e2_old_words": [
+            0,
+            1065353216
+          ],
+          "A_e2_new_words": [
+            1,
+            1065353216
+          ]
+        },
+        {
+          "id": "B1-C8_BIT_rank_exceeds_complement",
+          "format": "FP32",
+          "candidate_words": [
+            [
+              1065353216,
+              1
+            ],
+            [
+              1,
+              1065353216
+            ]
+          ],
+          "protected_rank": 1,
+          "complement_dimension": 1,
+          "effective_rank": 2,
+          "scope": "BIT edit, not an exact annihilator or an authorized algebraic rank-k increment"
+        },
+        {
+          "id": "B1-C9_saturated_storage",
+          "format": "FP32",
+          "old_words": [
+            [
+              2139095039,
+              2139095039
+            ],
+            [
+              2139095039,
+              2139095039
+            ]
+          ],
+          "input_words": [
+            1056964608,
+            1056964608
+          ],
+          "abstract_ALG_dimension": 2,
+          "proved_full_format_ALG_endpoint_count": 1,
+          "proof": "Finite endpoint entries <=Fmax; fixed row sum2Fmax forces every entry equalFmax.",
+          "scope": "Extremal mathematical proof with one finite execution probe, not whole-format enumeration"
+        },
+        {
+          "id": "B1-C10_samples_and_shared_sites",
+          "format": "FP32",
+          "sampled_input": [
+            1065353216,
+            0
+          ],
+          "omitted_legal_input": [
+            0,
+            1065353216
+          ],
+          "sample_passes": true,
+          "global_BIT": false
+        },
+        {
+          "id": "B1-C11_target_compatibility_and_silence",
+          "H": {
+            "shape": [
+              2,
+              1
+            ],
+            "rows": [
+              [
+                "1"
+              ],
+              [
+                "0"
+              ]
+            ]
+          },
+          "targets": {
+            "shape": [
+              2,
+              2
+            ],
+            "rows": [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ]
+          },
+          "compatible": {
+            "contract": "abstract_exact_capacity_only",
+            "input_dimension": 2,
+            "output_dimension": 1,
+            "protected_rank": 1,
+            "complement_dimension": 1,
+            "unrestricted_update_space_dimension": 1,
+            "maximum_individual_update_rank": 1,
+            "generator_rank_cap": null,
+            "maximum_rank_under_cap": 1,
+            "rank_cap_is_not_a_linear_space_dimension": true,
+            "protection_generators": {
+              "shape": [
+                2,
+                1
+              ],
+              "rows": [
+                [
+                  "1"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            "global_provenance_verified": false,
+            "stored_endpoint_feasibility_verified": false,
+            "authorizes_bitwise_commit": false,
+            "scope": "Exact rational construction and real extension on the supplied span only",
+            "target_generators": {
+              "shape": [
+                2,
+                2
+              ],
+              "rows": [
+                [
+                  "1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            "target_count": 2,
+            "target_quotient_rank": 1,
+            "unrestricted_response_image_dimension": 1,
+            "target_silent_update_space_dimension": 0,
+            "maximum_target_response_rank": 1,
+            "nonzero_target_response_exists": true,
+            "nonzero_target_silent_update_exists": false,
+            "requested_response": {
+              "shape": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "0",
+                  "2"
+                ]
+              ]
+            },
+            "response_rank": 1,
+            "quotient_coordinates": {
+              "shape": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            "selected_target_columns": [
+              1
+            ],
+            "relation_kernel_basis": {
+              "shape": [
+                2,
+                1
+              ],
+              "rows": [
+                [
+                  "1"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            "unconstrained_response_feasible": true,
+            "minimum_required_update_rank": 1,
+            "status": "feasible_exact_response",
+            "constructed_update": {
+              "shape": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "0",
+                  "2"
+                ]
+              ]
+            },
+            "constructed_update_rank": 1,
+            "candidate_generation": "G=Delta; Delta P_perp=Delta in exact algebra",
+            "endpoint_or_bitwise_feasibility": "Not implied by this abstract construction"
+          },
+          "incompatible": {
+            "contract": "abstract_exact_capacity_only",
+            "input_dimension": 2,
+            "output_dimension": 1,
+            "protected_rank": 1,
+            "complement_dimension": 1,
+            "unrestricted_update_space_dimension": 1,
+            "maximum_individual_update_rank": 1,
+            "generator_rank_cap": null,
+            "maximum_rank_under_cap": 1,
+            "rank_cap_is_not_a_linear_space_dimension": true,
+            "protection_generators": {
+              "shape": [
+                2,
+                1
+              ],
+              "rows": [
+                [
+                  "1"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            "global_provenance_verified": false,
+            "stored_endpoint_feasibility_verified": false,
+            "authorizes_bitwise_commit": false,
+            "scope": "Exact rational construction and real extension on the supplied span only",
+            "target_generators": {
+              "shape": [
+                2,
+                2
+              ],
+              "rows": [
+                [
+                  "1",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            "target_count": 2,
+            "target_quotient_rank": 1,
+            "unrestricted_response_image_dimension": 1,
+            "target_silent_update_space_dimension": 0,
+            "maximum_target_response_rank": 1,
+            "nonzero_target_response_exists": true,
+            "nonzero_target_silent_update_exists": false,
+            "requested_response": {
+              "shape": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "1",
+                  "2"
+                ]
+              ]
+            },
+            "response_rank": 1,
+            "quotient_coordinates": {
+              "shape": [
+                1,
+                2
+              ],
+              "rows": [
+                [
+                  "0",
+                  "1"
+                ]
+              ]
+            },
+            "selected_target_columns": [
+              1
+            ],
+            "relation_kernel_basis": {
+              "shape": [
+                2,
+                1
+              ],
+              "rows": [
+                [
+                  "1"
+                ],
+                [
+                  "0"
+                ]
+              ]
+            },
+            "status": "infeasible_target_relations",
+            "unconstrained_response_feasible": false,
+            "minimum_required_update_rank": null,
+            "impossibility_witness": {
+              "alpha": {
+                "shape": [
+                  2,
+                  1
+                ],
+                "rows": [
+                  [
+                    "1"
+                  ],
+                  [
+                    "0"
+                  ]
+                ]
+              },
+              "X_alpha": {
+                "shape": [
+                  2,
+                  1
+                ],
+                "rows": [
+                  [
+                    "1"
+                  ],
+                  [
+                    "0"
+                  ]
+                ]
+              },
+              "R_alpha": {
+                "shape": [
+                  1,
+                  1
+                ],
+                "rows": [
+                  [
+                    "1"
+                  ]
+                ]
+              },
+              "meaning": "X alpha lies in protected V but requested R alpha is nonzero"
+            }
+          },
+          "safe_nonzero_update": {
+            "shape": [
+              1,
+              2
+            ],
+            "rows": [
+              [
+                "0",
+                "1"
+              ]
+            ]
+          },
+          "silent_target": [
+            1,
+            0
+          ],
+          "responding_target": [
+            0,
+            1
+          ]
+        }
+      ],
+      "expected_refusals": 8,
+      "refusals": [
+        {
+          "format": "BF16",
+          "case": "effective_commit_leak",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "BF16",
+          "case": "thirds_subnormal",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "BF16",
+          "case": "axis_exposes_tiny_edit",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "BF16",
+          "case": "missing_shared_site",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "FP32",
+          "case": "effective_commit_leak",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "FP32",
+          "case": "thirds_subnormal",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "FP32",
+          "case": "axis_exposes_tiny_edit",
+          "error_type": "CertificateRejected"
+        },
+        {
+          "format": "FP32",
+          "case": "missing_shared_site",
+          "error_type": "CertificateRejected"
+        }
+      ],
+      "scope": "Deterministic BF16 software and audited local FP32 probes; A3 implementation helpers only, no old verifier"
+    },
+    "transactions": {
+      "status": "passed",
+      "checks": 46,
+      "records": [
+        {
+          "format": "BF16",
+          "initial_snapshot": {
+            "model_id": "duplicate_feedback_v1",
+            "format": "BF16",
+            "claim": "ALG_AND_BIT",
+            "config": {
+              "kind": "momentum",
+              "clip_mode": "none",
+              "learning_rate": [
+                1,
+                1
+              ],
+              "momentum": [
+                1,
+                2
+              ],
+              "beta1": [
+                9,
+                10
+              ],
+              "beta2": [
+                999,
+                1000
+              ],
+              "epsilon": [
+                1,
+                100000000
+              ],
+              "weight_decay": [
+                0,
+                1
+              ],
+              "clip_bound": null
+            },
+            "weights": [
+              [
+                16256,
+                0
+              ],
+              [
+                0,
+                16256
+              ]
+            ],
+            "q_word": 0,
+            "ticks": 0,
+            "weight_version": 0,
+            "optimizer_state": {
+              "step": 0,
+              "m": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              "v": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              }
+            },
+            "schedule": "p2-b1-trusted-serial-full-snapshot-combined-publication-v1"
+          },
+          "after_optimizer_commit": {
+            "model_id": "duplicate_feedback_v1",
+            "format": "BF16",
+            "claim": "ALG_AND_BIT",
+            "config": {
+              "kind": "momentum",
+              "clip_mode": "none",
+              "learning_rate": [
+                1,
+                1
+              ],
+              "momentum": [
+                1,
+                2
+              ],
+              "beta1": [
+                9,
+                10
+              ],
+              "beta2": [
+                999,
+                1000
+              ],
+              "epsilon": [
+                1,
+                100000000
+              ],
+              "weight_decay": [
+                0,
+                1
+              ],
+              "clip_bound": null
+            },
+            "weights": [
+              [
+                0,
+                16256
+              ],
+              [
+                16256,
+                0
+              ]
+            ],
+            "q_word": 0,
+            "ticks": 0,
+            "weight_version": 1,
+            "optimizer_state": {
+              "step": 1,
+              "m": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      -1,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              "v": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              }
+            },
+            "schedule": "p2-b1-trusted-serial-full-snapshot-combined-publication-v1"
+          },
+          "tick_invalidates_full_snapshot_candidate": true,
+          "tampering_fields": [
+            "graph",
+            "numerical_policy",
+            "schedule",
+            "model_id",
+            "weight_version",
+            "optimizer_state",
+            "config",
+            "request",
+            "candidate_words"
+          ],
+          "BIT_accepts_nonALG_tiny_endpoint": true,
+          "joint_claim_refuses_same_endpoint": true,
+          "scope": "New B1 combined publication; full optimizer moments/step included in each rollback comparison"
+        },
+        {
+          "format": "FP32",
+          "initial_snapshot": {
+            "model_id": "duplicate_feedback_v1",
+            "format": "FP32",
+            "claim": "ALG_AND_BIT",
+            "config": {
+              "kind": "momentum",
+              "clip_mode": "none",
+              "learning_rate": [
+                1,
+                1
+              ],
+              "momentum": [
+                1,
+                2
+              ],
+              "beta1": [
+                9,
+                10
+              ],
+              "beta2": [
+                999,
+                1000
+              ],
+              "epsilon": [
+                1,
+                100000000
+              ],
+              "weight_decay": [
+                0,
+                1
+              ],
+              "clip_bound": null
+            },
+            "weights": [
+              [
+                1065353216,
+                0
+              ],
+              [
+                0,
+                1065353216
+              ]
+            ],
+            "q_word": 0,
+            "ticks": 0,
+            "weight_version": 0,
+            "optimizer_state": {
+              "step": 0,
+              "m": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              "v": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              }
+            },
+            "schedule": "p2-b1-trusted-serial-full-snapshot-combined-publication-v1"
+          },
+          "after_optimizer_commit": {
+            "model_id": "duplicate_feedback_v1",
+            "format": "FP32",
+            "claim": "ALG_AND_BIT",
+            "config": {
+              "kind": "momentum",
+              "clip_mode": "none",
+              "learning_rate": [
+                1,
+                1
+              ],
+              "momentum": [
+                1,
+                2
+              ],
+              "beta1": [
+                9,
+                10
+              ],
+              "beta2": [
+                999,
+                1000
+              ],
+              "epsilon": [
+                1,
+                100000000
+              ],
+              "weight_decay": [
+                0,
+                1
+              ],
+              "clip_bound": null
+            },
+            "weights": [
+              [
+                0,
+                1065353216
+              ],
+              [
+                1065353216,
+                0
+              ]
+            ],
+            "q_word": 0,
+            "ticks": 0,
+            "weight_version": 1,
+            "optimizer_state": {
+              "step": 1,
+              "m": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      -1,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      -1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ]
+                ]
+              },
+              "v": {
+                "shape": [
+                  2,
+                  2
+                ],
+                "rows": [
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  [
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ]
+                ]
+              }
+            },
+            "schedule": "p2-b1-trusted-serial-full-snapshot-combined-publication-v1"
+          },
+          "tick_invalidates_full_snapshot_candidate": true,
+          "tampering_fields": [
+            "graph",
+            "numerical_policy",
+            "schedule",
+            "model_id",
+            "weight_version",
+            "optimizer_state",
+            "config",
+            "request",
+            "candidate_words"
+          ],
+          "BIT_accepts_nonALG_tiny_endpoint": true,
+          "joint_claim_refuses_same_endpoint": true,
+          "scope": "New B1 combined publication; full optimizer moments/step included in each rollback comparison"
+        }
+      ],
+      "expected_refusals": 32,
+      "refusals": [
+        {
+          "format": "BF16",
+          "case": "replay_after_commit",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "state_tick_after_prepare",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "unsafe_AI_endpoint",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "unknown_restriction",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "wrong_gradient_shape",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "noncanonical_packet",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_graph",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_numerical_policy",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_schedule",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_model_id",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_weight_version",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_optimizer_state",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_config",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_request",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "tampered_candidate_words",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "BF16",
+          "case": "joint_claim_refuses_BIT_nonALG_endpoint",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "replay_after_commit",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "state_tick_after_prepare",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "unsafe_AI_endpoint",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "unknown_restriction",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "wrong_gradient_shape",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "noncanonical_packet",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_graph",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_numerical_policy",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_schedule",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_model_id",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_weight_version",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_optimizer_state",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_config",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_request",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "tampered_candidate_words",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        },
+        {
+          "format": "FP32",
+          "case": "joint_claim_refuses_BIT_nonALG_endpoint",
+          "error_type": "UpdateRejected",
+          "whole_weight_optimizer_protected_snapshot_unchanged": true
+        }
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "A2_root": "/workspace/p2_a2",
+    "P1_root": "/workspace/dmwk-p1-foundations",
+    "arithmetic": {
+      "numpy_version": "2.3.5",
+      "BF16": "software Fraction RNE multiply/add; exact Fraction accumulator",
+      "FP32": "CPU NumPy scalar multiply/add, dtype=float32, every result audited by rational RNE",
+      "FP32_exactacc_final_round": "software rational RNE (hybrid backend)",
+      "rounding": "nearest, ties to even; gradual underflow; every arithmetic zero becomes +0",
+      "fma": false,
+      "gpu": "not executed or certified"
+    },
+    "previous_stage_suites_rerun": false,
+    "A3_root": "/workspace/p2_a3",
+    "A4_root": "/workspace/p2_a4",
+    "prior_stage_suites_rerun": false,
+    "optimizer_proposals": "Separately specified by B1; protected arithmetic metadata does not certify host optimizer operations."
+  },
+  "elapsed_seconds": 0.9509710599995742,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "prior_stage_suites_rerun": false,
+  "scope": "Finite exact, host-optimizer and fixed-execution adversarial checks; universal proofs separate"
+}

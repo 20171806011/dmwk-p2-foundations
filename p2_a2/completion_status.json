@@ -1,0 +1,72 @@
+{
+  "schema": "dmwk-p2-a2-completion-v1",
+  "completed_utc": "2026-11-14T05:38:08.509892+00:00",
+  "stage": "P2-A2",
+  "status": "complete_with_explicit_conditional_boundaries",
+  "scope": "Current A2 only; coordinator handoff",
+  "required_deliverables": [
+    "P2_A2_Plan.md",
+    "P2_A2_Definitions.md",
+    "P2_A2_Theorems.md",
+    "P2_A2_Numerical_Analysis.md",
+    "P2_A2_Counterexamples.md",
+    "exact_projection.py",
+    "numerical_projection.py",
+    "safe_update.py",
+    "verify_projection.py",
+    "verify_review_checks.py",
+    "verification_results.json",
+    "P2_A2_Evidence_Map.md",
+    "P2_A2_Report.md"
+  ],
+  "all_required_deliverables_exist": true,
+  "theorems": {
+    "T1": "Handwritten proof of exact rational orthogonal projector existence/uniqueness and real extension; independently reviewed",
+    "T2": "Handwritten proof of complete annihilator parameterization, d(d-r) dimension, rank bounds and response construction; independently reviewed",
+    "T3": "Handwritten conditional perturbation decomposition/bounds; pointwise exact-rational implementation certificates, not uniform bitwise safety",
+    "T4": "Handwritten all-finite-time induction for fixed sparse structural trusted API; nonzero stored theta 1 to 2 changes A output while protecting D"
+  },
+  "actual_check_counts": {
+    "exact_explicit_checks": 3377,
+    "numerical_explicit_checks": 256,
+    "structural_outer_checks": 135773,
+    "independent_exhaustive_binary_3x3": 512,
+    "units_not_aggregated": true
+  },
+  "main_status": "passed",
+  "independent_status": "passed",
+  "foreign_cwd_reproduction": "passed; every non-timing field identical",
+  "fixed_seed": 20261114,
+  "SMT_queries": 0,
+  "proof_assistant_checked": false,
+  "preservation": {
+    "baseline_files_checked": 20,
+    "all_unchanged": true,
+    "original_request_sha256": "991a758893900542f4001050d87c54053fa38b785a0dbafd419a4f8f79de8510",
+    "prior_stage_suites_rerun": false
+  },
+  "uncertified": [
+    "GPU",
+    "native BF16",
+    "complete compiler and library refinement",
+    "alternative dense/reassociated/FMA execution",
+    "concurrent or hostile private-runtime updates",
+    "universal projected-patch safety",
+    "global numerical bound without global input/error premises"
+  ],
+  "open_questions": [
+    "Larger useful executable-safe update families",
+    "Scalable global activation certificates",
+    "Finite-format capacity under real storage/commit constraints",
+    "Uniform input-family and long-horizon numerical guarantees",
+    "Backend/compiler refinement"
+  ],
+  "continuation": {
+    "P2_A3_started": false,
+    "handoff": "P2_A3_Handoff.md",
+    "next_actor": "coordinator review and continuation",
+    "new_user_confirmation_needed_for_existing_research_authorization": false
+  },
+  "publication_performed": false,
+  "prior_repository_actions": false
+}

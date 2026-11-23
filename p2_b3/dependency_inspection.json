@@ -1,0 +1,22 @@
+{
+  "schema": "dmwk-p2-b3-dependency-inspection-v1",
+  "status": "passed",
+  "B2_manifest_entries_verified": 34,
+  "B2_manifest_sha256": "b9089b64e72556cc9c62b4fa349782e4ce37f1783cacbdc7af19462e1a1e9e4e",
+  "B2_main_status": "passed",
+  "B2_independent_status": "passed",
+  "B2_completion": "completed_scoped_delivery",
+  "B2_previous_entries_verified": 447,
+  "new_baseline_prior_file_count": 699,
+  "new_baseline_scope": "Adds original loose P1 directories, publication worktree and root P1 summaries to the predecessor baseline",
+  "B1_facts": {
+    "joint_refusals": 21,
+    "all_remain_BIT_equal_on_original_registered_domains": true,
+    "all_fail_exact_ALG": true,
+    "FP32_dense_AdamW_accepted": 0,
+    "FP32_dense_AdamW_refused": 8,
+    "FP32_dense_AdamW_final_loss": "5/2"
+  },
+  "previous_suites_rerun": false,
+  "publication_operations": false
+}

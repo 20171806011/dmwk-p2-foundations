@@ -1,0 +1,25 @@
+{
+  "stage": "P2-A1",
+  "status": "completed_with_explicit_scope_and_open_boundaries",
+  "completed_utc": "2026-11-14T04:48:29.450931+00:00",
+  "scope": "Deterministic activation sets, exact spans and certified superspaces; no weight-patch implementation",
+  "plan_saved_before_work": true,
+  "main_verification": "passed",
+  "main_checks": 2533,
+  "independent_binary_matrix_cases": 512,
+  "foreign_cwd_reproduction": "passed; identical stage records and source hashes",
+  "SMT_queries_executed": 0,
+  "machine_checked_full_proofs": false,
+  "p1_dependency_files_unchanged": true,
+  "p1_suites_rerun": false,
+  "publication_actions": false,
+  "P2_A2_started": false,
+  "next_action": "Stop and wait for user direction. Do not automatically enter P2-A2.",
+  "open_boundaries": [
+    "Large-program scalable invariant discovery",
+    "Faithfulness of arbitrary input monitors, callbacks and call instrumentation",
+    "Joint transposed sharing beyond the direct-call reference",
+    "FP-bitwise safety of future modifications",
+    "GPU, native BF16, concurrent backend and full Lean/Coq certification"
+  ]
+}

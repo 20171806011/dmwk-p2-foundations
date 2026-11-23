@@ -1,0 +1,25 @@
+{
+  "scope": "Validation in the exported P2 repository used a different working directory from the original studies.",
+  "research_files_with_verified_hashes": 326,
+  "P1_dependency_files_with_verified_hashes": 4,
+  "example_rebuild": {
+    "status": "passed",
+    "D_gate_sites": 7,
+    "matrix_shape": [
+      4,
+      4
+    ],
+    "editable_cells": 2,
+    "all_artifact_fields_match_except_for_relocated_implementation_paths": true,
+    "implementation_content_hashes_match": true
+  },
+  "independent_verifier": {
+    "status": "passed",
+    "checks": 212851,
+    "expected_refusals": 95,
+    "unexpected_failures": 0,
+    "runtime_seconds": 19.148052480999922,
+    "source_hashes_match_archived_run": true,
+    "scope": "C1 independent scientific verifier. The original full-workspace baseline remains archived separately."
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "dmwk-p2-b1-driver-checks-v1",
+  "status": "passed",
+  "recorded_utc": "2026-11-14T08:03:56.907850+00:00",
+  "primary": {
+    "file": "verification_results.json",
+    "sha256": "cfe26f1ac4866a99cc14204cc8bb176a52b2dbfd639d42d9bd602a14b935ad61",
+    "cwd": "/workspace/p2_b1",
+    "elapsed_seconds": 8.695691487999284,
+    "completed_sections": 2
+  },
+  "foreign_cwd_reproduction": {
+    "file": "reproduction_results.json",
+    "sha256": "2446667b4d9c14d4571240e07f156f250ef726d2174d841f789d19ae5bb21976",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/p2_b1/verify_b1.py",
+      "--output",
+      "/workspace/p2_b1/reproduction_results.json"
+    ],
+    "cwd": "/tmp",
+    "elapsed_seconds": 8.822424967998813,
+    "completed_sections": 2,
+    "non_timing_identical_including_sources": true
+  },
+  "independent_primary": {
+    "file": "independent_results.json",
+    "sha256": "3169722b881aae3ff16f779f1fb4d4d21848b03a97d524e0a15a8d7b02f024c8",
+    "elapsed_seconds": 2.9748651509980846
+  },
+  "independent_foreign_cwd_reproduction": {
+    "file": "independent_reproduction_results.json",
+    "sha256": "bba7e3b748a96c7a7b8d4c6708fca35747be2e43cd6c87b561900fbeba7a2886",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/p2_b1/verify_independent.py",
+      "--output",
+      "/workspace/p2_b1/independent_reproduction_results.json"
+    ],
+    "cwd": "/tmp",
+    "elapsed_seconds": 2.8204072270018514,
+    "non_timing_identical_including_sources": true
+  },
+  "comparison_policy": {
+    "omitted_key_rule": "Keys containing seconds, or exactly started_utc/completed_utc; compare every other result, count, source hash and metadata field recursively.",
+    "actual_omitted_paths": [
+      "/completed_utc",
+      "/elapsed_seconds",
+      "/runs/0/runtime_seconds",
+      "/runs/1/runtime_seconds",
+      "/runs/10/runtime_seconds",
+      "/runs/11/runtime_seconds",
+      "/runs/12/runtime_seconds",
+      "/runs/13/runtime_seconds",
+      "/runs/14/runtime_seconds",
+      "/runs/15/runtime_seconds",
+      "/runs/16/runtime_seconds",
+      "/runs/17/runtime_seconds",
+      "/runs/18/runtime_seconds",
+      "/runs/19/runtime_seconds",
+      "/runs/2/runtime_seconds",
+      "/runs/20/runtime_seconds",
+      "/runs/21/runtime_seconds",
+      "/runs/22/runtime_seconds",
+      "/runs/23/runtime_seconds",
+      "/runs/3/runtime_seconds",
+      "/runs/4/runtime_seconds",
+      "/runs/5/runtime_seconds",
+      "/runs/6/runtime_seconds",
+      "/runs/7/runtime_seconds",
+      "/runs/8/runtime_seconds",
+      "/runs/9/runtime_seconds",
+      "/runtime_seconds",
+      "/section_seconds",
+      "/sections/constraints_and_regressions/elapsed_seconds",
+      "/sections/optimization_experiments/runs/0/runtime_seconds",
+      "/sections/optimization_experiments/runs/1/runtime_seconds",
+      "/sections/optimization_experiments/runs/10/runtime_seconds",
+      "/sections/optimization_experiments/runs/11/runtime_seconds",
+      "/sections/optimization_experiments/runs/12/runtime_seconds",
+      "/sections/optimization_experiments/runs/13/runtime_seconds",
+      "/sections/optimization_experiments/runs/14/runtime_seconds",
+      "/sections/optimization_experiments/runs/15/runtime_seconds",
+      "/sections/optimization_experiments/runs/16/runtime_seconds",
+      "/sections/optimization_experiments/runs/17/runtime_seconds",
+      "/sections/optimization_experiments/runs/18/runtime_seconds",
+      "/sections/optimization_experiments/runs/19/runtime_seconds",
+      "/sections/optimization_experiments/runs/2/runtime_seconds",
+      "/sections/optimization_experiments/runs/20/runtime_seconds",
+      "/sections/optimization_experiments/runs/21/runtime_seconds",
+      "/sections/optimization_experiments/runs/22/runtime_seconds",
+      "/sections/optimization_experiments/runs/23/runtime_seconds",
+      "/sections/optimization_experiments/runs/3/runtime_seconds",
+      "/sections/optimization_experiments/runs/4/runtime_seconds",
+      "/sections/optimization_experiments/runs/5/runtime_seconds",
+      "/sections/optimization_experiments/runs/6/runtime_seconds",
+      "/sections/optimization_experiments/runs/7/runtime_seconds",
+      "/sections/optimization_experiments/runs/8/runtime_seconds",
+      "/sections/optimization_experiments/runs/9/runtime_seconds",
+      "/sections/optimization_experiments/runtime_seconds",
+      "/started_utc",
+      "/total_seconds"
+    ]
+  },
+  "component_comparisons": {
+    "constraints_and_regressions": {
+      "file": "constraint_results.json",
+      "sha256": "630a76c2528c4080175e02f237c56b25cef1111cfcb2ee3d7a0b8c2640a2f87b",
+      "non_timing_matches_aggregate": true,
+      "checks": 2400
+    },
+    "optimization_experiments": {
+      "file": "training_results.json",
+      "sha256": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+      "non_timing_matches_aggregate": true,
+      "checks": 1013
+    }
+  },
+  "optimized_mode_refusals": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/workspace/p2_b1/verify_b1.py",
+        "--output",
+        "/workspace/p2_b1/optimized_O_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 1,
+      "output": "optimized_O_refusal.json",
+      "sha256": "798bf600b957b3162d6a9489f4d2796af867ff03e2ebff801a1bae1f436987ae",
+      "status": "expected_preflight_refusal",
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "stderr_empty": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/p2_b1/verify_b1.py",
+        "--output",
+        "/workspace/p2_b1/optimized_OO_refusal.json"
+      ],
+      "cwd": "/tmp",
+      "exit_code": 1,
+      "output": "optimized_OO_refusal.json",
+      "sha256": "8dfba489d83d8252fc514f80c0aea73fb3ce9cca6fff73b4b70076ae6450abb1",
+      "status": "expected_preflight_refusal",
+      "failure": {
+        "phase": "preflight",
+        "type": "ValueError",
+        "message": "Run verification without -O/-OO"
+      },
+      "attempted_sections": [],
+      "stderr_empty": true
+    }
+  ],
+  "primary_evidence_unchanged_after_driver_checks": {
+    "verification_results.json": "cfe26f1ac4866a99cc14204cc8bb176a52b2dbfd639d42d9bd602a14b935ad61",
+    "independent_results.json": "3169722b881aae3ff16f779f1fb4d4d21848b03a97d524e0a15a8d7b02f024c8",
+    "training_results.json": "b417741ab974752d7858c978bc75197f3199312e9bdf118c232dcbd8cef7cfb1",
+    "constraint_results.json": "630a76c2528c4080175e02f237c56b25cef1111cfcb2ee3d7a0b8c2640a2f87b"
+  },
+  "elapsed_seconds": 0.5150382190004166,
+  "scope": "Foreign working directory within the same environment/dependency tree, not a clean-room installation or cross-backend certificate. Refusal checks concern the aggregate entry point."
+}

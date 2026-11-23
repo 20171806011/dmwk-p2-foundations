@@ -1,0 +1,672 @@
+{
+  "status": "passed",
+  "schema": "c1-geometric-comparison-v1",
+  "seed": 20261114,
+  "checks": 28,
+  "expected_refusals": 4,
+  "unexpected_failures": 0,
+  "cases": [
+    {
+      "source_sha256": "6ef6f1903322d0e589a9a5da5f4078dd3a8c5baa15f2a1bff4bc3951a2681be6",
+      "artifact_sha256": "8aa735bc97ab8625fe1f287fa6f7ec181c1d54fdf41a411eb5f6604b45b7d00d",
+      "graph_sha256": "9687152e76c8be345620f94422673e44eeed75f9937994d727edc098e5efd206",
+      "policy": "c1-sparse-fixed-views-separate-rne-canonical-zero-gradual-underflow-v1",
+      "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+      "old_words": [
+        [
+          16256,
+          16256,
+          49024,
+          0
+        ],
+        [
+          49024,
+          0,
+          16256,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "candidate_words": [
+        [
+          16384,
+          0,
+          49024,
+          0
+        ],
+        [
+          49024,
+          0,
+          16256,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "domain": {
+        "A_input_words": [
+          [
+            0
+          ],
+          [
+            16256
+          ]
+        ],
+        "A_to_D_feedback": false,
+        "D_input_domain": "every canonical Boolean input tuple",
+        "D_state_invariant": "every canonical Boolean state tuple",
+        "canonical_bit_words": [
+          0,
+          16256
+        ],
+        "initial_state_words": [
+          [
+            0
+          ],
+          [
+            16256
+          ]
+        ],
+        "input_count": 1,
+        "output_count": 1,
+        "source_domains_owned_by_closed_frontend": true,
+        "state_count": 1
+      },
+      "format": "BF16",
+      "state_input_contexts": 4,
+      "original_call_observations": 8,
+      "envelope_rank": 1,
+      "per_site_rank": {
+        "d_gate_0000": 1,
+        "d_gate_0001": 1
+      },
+      "envelope_generators": [
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "decoded_effective_delta": [
+        [
+          "1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "actual_update_rank": 1,
+      "exact_annihilation_on_original_envelope": true,
+      "complete_observations_bitwise_equal": true,
+      "counterexamples": [],
+      "paired_trace_sha256": "15dd769893219f98f9a07b2fda2947bf02bc977fe3c2fbc234b6f5d2ce4f97bb",
+      "authorizes_commit": false,
+      "case": "coupled_integer"
+    },
+    {
+      "source_sha256": "6ef6f1903322d0e589a9a5da5f4078dd3a8c5baa15f2a1bff4bc3951a2681be6",
+      "artifact_sha256": "8aa735bc97ab8625fe1f287fa6f7ec181c1d54fdf41a411eb5f6604b45b7d00d",
+      "graph_sha256": "9687152e76c8be345620f94422673e44eeed75f9937994d727edc098e5efd206",
+      "policy": "c1-sparse-fixed-views-separate-rne-canonical-zero-gradual-underflow-v1",
+      "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+      "old_words": [
+        [
+          16256,
+          16256,
+          49024,
+          0
+        ],
+        [
+          49024,
+          0,
+          16256,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "candidate_words": [
+        [
+          17280,
+          16256,
+          50048,
+          0
+        ],
+        [
+          49024,
+          0,
+          16256,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "domain": {
+        "A_input_words": [
+          [
+            0
+          ],
+          [
+            16256
+          ]
+        ],
+        "A_to_D_feedback": false,
+        "D_input_domain": "every canonical Boolean input tuple",
+        "D_state_invariant": "every canonical Boolean state tuple",
+        "canonical_bit_words": [
+          0,
+          16256
+        ],
+        "initial_state_words": [
+          [
+            0
+          ],
+          [
+            16256
+          ]
+        ],
+        "input_count": 1,
+        "output_count": 1,
+        "source_domains_owned_by_closed_frontend": true,
+        "state_count": 1
+      },
+      "format": "BF16",
+      "state_input_contexts": 4,
+      "original_call_observations": 8,
+      "envelope_rank": 1,
+      "per_site_rank": {
+        "d_gate_0000": 1,
+        "d_gate_0001": 1
+      },
+      "envelope_generators": [
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "decoded_effective_delta": [
+        [
+          "255",
+          "0",
+          "-255",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "actual_update_rank": 1,
+      "exact_annihilation_on_original_envelope": true,
+      "complete_observations_bitwise_equal": false,
+      "counterexamples": [
+        {
+          "state": [
+            0
+          ],
+          "input": [
+            0
+          ],
+          "old_outputs": [
+            16256
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            16256
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            0
+          ],
+          "input": [
+            16256
+          ],
+          "old_outputs": [
+            16256
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            16256
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            16256
+          ],
+          "input": [
+            0
+          ],
+          "old_outputs": [
+            16256
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            16256
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            16256
+          ],
+          "input": [
+            16256
+          ],
+          "old_outputs": [
+            16256
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            16256
+          ],
+          "new_next": [
+            0
+          ]
+        }
+      ],
+      "paired_trace_sha256": "878eca0f4e9ec87ecf856cc984aa774f40f6af0f72f0ca8205b0db1227c77662",
+      "authorizes_commit": false,
+      "case": "midpoint_cancellation"
+    },
+    {
+      "source_sha256": "6ef6f1903322d0e589a9a5da5f4078dd3a8c5baa15f2a1bff4bc3951a2681be6",
+      "artifact_sha256": "2d22b787e0411ee6587ec4716f4915e68fe597066e520691f0e50ca168a56928",
+      "graph_sha256": "9687152e76c8be345620f94422673e44eeed75f9937994d727edc098e5efd206",
+      "policy": "c1-sparse-fixed-views-separate-rne-canonical-zero-gradual-underflow-v1",
+      "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+      "old_words": [
+        [
+          1065353216,
+          1065353216,
+          3212836864,
+          0
+        ],
+        [
+          3212836864,
+          0,
+          1065353216,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "candidate_words": [
+        [
+          1073741824,
+          0,
+          3212836864,
+          0
+        ],
+        [
+          3212836864,
+          0,
+          1065353216,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "domain": {
+        "A_input_words": [
+          [
+            0
+          ],
+          [
+            1065353216
+          ]
+        ],
+        "A_to_D_feedback": false,
+        "D_input_domain": "every canonical Boolean input tuple",
+        "D_state_invariant": "every canonical Boolean state tuple",
+        "canonical_bit_words": [
+          0,
+          1065353216
+        ],
+        "initial_state_words": [
+          [
+            0
+          ],
+          [
+            1065353216
+          ]
+        ],
+        "input_count": 1,
+        "output_count": 1,
+        "source_domains_owned_by_closed_frontend": true,
+        "state_count": 1
+      },
+      "format": "FP32",
+      "state_input_contexts": 4,
+      "original_call_observations": 8,
+      "envelope_rank": 1,
+      "per_site_rank": {
+        "d_gate_0000": 1,
+        "d_gate_0001": 1
+      },
+      "envelope_generators": [
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "decoded_effective_delta": [
+        [
+          "1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "actual_update_rank": 1,
+      "exact_annihilation_on_original_envelope": true,
+      "complete_observations_bitwise_equal": true,
+      "counterexamples": [],
+      "paired_trace_sha256": "4880e328b55808027b40ef8af4c323636b2007b29a8222b33490165f0351332f",
+      "authorizes_commit": false,
+      "case": "coupled_integer"
+    },
+    {
+      "source_sha256": "6ef6f1903322d0e589a9a5da5f4078dd3a8c5baa15f2a1bff4bc3951a2681be6",
+      "artifact_sha256": "2d22b787e0411ee6587ec4716f4915e68fe597066e520691f0e50ca168a56928",
+      "graph_sha256": "9687152e76c8be345620f94422673e44eeed75f9937994d727edc098e5efd206",
+      "policy": "c1-sparse-fixed-views-separate-rne-canonical-zero-gradual-underflow-v1",
+      "schedule": "c1-ordered-eager-graph-old-state-snapshot-synchronous-commit-v1",
+      "old_words": [
+        [
+          1065353216,
+          1065353216,
+          3212836864,
+          0
+        ],
+        [
+          3212836864,
+          0,
+          1065353216,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "candidate_words": [
+        [
+          1266679808,
+          1065353216,
+          3414163456,
+          0
+        ],
+        [
+          3212836864,
+          0,
+          1065353216,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "domain": {
+        "A_input_words": [
+          [
+            0
+          ],
+          [
+            1065353216
+          ]
+        ],
+        "A_to_D_feedback": false,
+        "D_input_domain": "every canonical Boolean input tuple",
+        "D_state_invariant": "every canonical Boolean state tuple",
+        "canonical_bit_words": [
+          0,
+          1065353216
+        ],
+        "initial_state_words": [
+          [
+            0
+          ],
+          [
+            1065353216
+          ]
+        ],
+        "input_count": 1,
+        "output_count": 1,
+        "source_domains_owned_by_closed_frontend": true,
+        "state_count": 1
+      },
+      "format": "FP32",
+      "state_input_contexts": 4,
+      "original_call_observations": 8,
+      "envelope_rank": 1,
+      "per_site_rank": {
+        "d_gate_0000": 1,
+        "d_gate_0001": 1
+      },
+      "envelope_generators": [
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "decoded_effective_delta": [
+        [
+          "16777215",
+          "0",
+          "-16777215",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "actual_update_rank": 1,
+      "exact_annihilation_on_original_envelope": true,
+      "complete_observations_bitwise_equal": false,
+      "counterexamples": [
+        {
+          "state": [
+            0
+          ],
+          "input": [
+            0
+          ],
+          "old_outputs": [
+            1065353216
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            1065353216
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            0
+          ],
+          "input": [
+            1065353216
+          ],
+          "old_outputs": [
+            1065353216
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            1065353216
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            1065353216
+          ],
+          "input": [
+            0
+          ],
+          "old_outputs": [
+            1065353216
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            1065353216
+          ],
+          "new_next": [
+            0
+          ]
+        },
+        {
+          "state": [
+            1065353216
+          ],
+          "input": [
+            1065353216
+          ],
+          "old_outputs": [
+            1065353216
+          ],
+          "new_outputs": [
+            0
+          ],
+          "old_next": [
+            1065353216
+          ],
+          "new_next": [
+            0
+          ]
+        }
+      ],
+      "paired_trace_sha256": "f3fe6dcdc7fb233916f8d166cca41beded52d9b2a779de19c059f265c2431aa2",
+      "authorizes_commit": false,
+      "case": "midpoint_cancellation"
+    }
+  ],
+  "refusals": [
+    {
+      "format": "BF16",
+      "case": "coupled_integer",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed"
+    },
+    {
+      "format": "BF16",
+      "case": "midpoint_cancellation",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed"
+    },
+    {
+      "format": "FP32",
+      "case": "coupled_integer",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed"
+    },
+    {
+      "format": "FP32",
+      "case": "midpoint_cancellation",
+      "reason": "Preparation refused without publication: Immutable D/cross-region weight cell changed"
+    }
+  ],
+  "elapsed_seconds": 0.23024472899999182,
+  "scope": "Complete two-call constant-AND fixture, fixed graphs and own-wire replay. Read-only."
+}

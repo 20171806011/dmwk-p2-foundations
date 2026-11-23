@@ -1,0 +1,2346 @@
+{
+  "schema": "dmwk-p2-a3-linear-checks-v1",
+  "status": "passed",
+  "seed": 20261114,
+  "checks": 39590,
+  "unexpected_failures": 0,
+  "expected_rejections": 12,
+  "runtime_seconds": 0.743816065001738,
+  "exhaustive": {
+    "generator_shape": [
+      2,
+      2
+    ],
+    "generator_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "generator_matrices": 81,
+    "update_shape": [
+      2,
+      2
+    ],
+    "update_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "update_matrices": 81,
+    "fixed_old_weights": {
+      "shape": [
+        2,
+        2
+      ],
+      "rows": [
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "5",
+          "7"
+        ]
+      ]
+    },
+    "endpoint_pairs": 6561,
+    "annihilating_pairs": 417,
+    "rank_histogram": {
+      "0": 1,
+      "1": 32,
+      "2": 48
+    },
+    "finite_coefficient_vectors_per_pair": 9,
+    "checks_per_pair": 6,
+    "scope": "All stated small matrices; finite coefficient probes do not prove the universal theorem"
+  },
+  "seeded_rectangular_affine_cases": [
+    {
+      "index": 0,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 4,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 1,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 5,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 5,
+      "affine_annihilates": false
+    },
+    {
+      "index": 2,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 3,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 4,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 5,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 5,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 6,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 7,
+      "weight_shape": [
+        2,
+        2
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 8,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 9,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 10,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 11,
+      "weight_shape": [
+        2,
+        2
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 12,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 4,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 13,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 3,
+      "rank": 3,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 14,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 2,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 15,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 16,
+      "weight_shape": [
+        2,
+        2
+      ],
+      "generator_columns": 3,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 17,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 18,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 19,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 5,
+      "rank": 3,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 20,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 21,
+      "weight_shape": [
+        2,
+        2
+      ],
+      "generator_columns": 5,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 22,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 23,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 24,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 3,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 25,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 26,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 27,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 5,
+      "rank": 4,
+      "annihilates": true,
+      "augmented_rank": 5,
+      "affine_annihilates": false
+    },
+    {
+      "index": 28,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 2,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 29,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 30,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 4,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 31,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 32,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 33,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 34,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 35,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 2,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 36,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 3,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 37,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 38,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 5,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 5,
+      "affine_annihilates": false
+    },
+    {
+      "index": 39,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 40,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 3,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 41,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 5,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 42,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 4,
+      "rank": 3,
+      "annihilates": true,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 43,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 44,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 5,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 45,
+      "weight_shape": [
+        1,
+        4
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 46,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 47,
+      "weight_shape": [
+        1,
+        4
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 48,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 4,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 49,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 4,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 50,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 4,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 51,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 3,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 52,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 4,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 53,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 54,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 3,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 55,
+      "weight_shape": [
+        1,
+        4
+      ],
+      "generator_columns": 4,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 56,
+      "weight_shape": [
+        2,
+        2
+      ],
+      "generator_columns": 4,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 57,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "generator_columns": 4,
+      "rank": 3,
+      "annihilates": true,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 58,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 2,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 59,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 4,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 60,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 61,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 5,
+      "rank": 4,
+      "annihilates": false,
+      "augmented_rank": 5,
+      "affine_annihilates": false
+    },
+    {
+      "index": 62,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 5,
+      "rank": 3,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 63,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 64,
+      "weight_shape": [
+        2,
+        1
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 65,
+      "weight_shape": [
+        3,
+        1
+      ],
+      "generator_columns": 2,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 66,
+      "weight_shape": [
+        1,
+        4
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 67,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 5,
+      "rank": 3,
+      "annihilates": false,
+      "augmented_rank": 4,
+      "affine_annihilates": false
+    },
+    {
+      "index": 68,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 3,
+      "rank": 3,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 69,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 70,
+      "weight_shape": [
+        3,
+        4
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 71,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 72,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 73,
+      "weight_shape": [
+        2,
+        3
+      ],
+      "generator_columns": 0,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 0,
+      "affine_annihilates": true
+    },
+    {
+      "index": 74,
+      "weight_shape": [
+        2,
+        4
+      ],
+      "generator_columns": 1,
+      "rank": 1,
+      "annihilates": false,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 75,
+      "weight_shape": [
+        3,
+        3
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": true,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 76,
+      "weight_shape": [
+        1,
+        2
+      ],
+      "generator_columns": 5,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 3,
+      "affine_annihilates": false
+    },
+    {
+      "index": 77,
+      "weight_shape": [
+        1,
+        3
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    },
+    {
+      "index": 78,
+      "weight_shape": [
+        1,
+        1
+      ],
+      "generator_columns": 1,
+      "rank": 0,
+      "annihilates": true,
+      "augmented_rank": 1,
+      "affine_annihilates": false
+    },
+    {
+      "index": 79,
+      "weight_shape": [
+        3,
+        2
+      ],
+      "generator_columns": 2,
+      "rank": 2,
+      "annihilates": false,
+      "augmented_rank": 2,
+      "affine_annihilates": false
+    }
+  ],
+  "named_cases": [
+    {
+      "name": "empty",
+      "report": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 0,
+        "protected_rank": 0,
+        "complement_dimension": 2,
+        "algebraic_update_space_dimension": 4,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    },
+    {
+      "name": "full",
+      "report": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "annihilates_generators": false,
+        "annihilates_basis": false,
+        "annihilates_supplied_span": false,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 2,
+        "protected_rank": 2,
+        "complement_dimension": 0,
+        "algebraic_update_space_dimension": 0,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    },
+    {
+      "name": "partial",
+      "report": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 1,
+        "protected_rank": 1,
+        "complement_dimension": 1,
+        "algebraic_update_space_dimension": 2,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    },
+    {
+      "name": "zero_repeated",
+      "report": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            0
+          ],
+          "rows": [
+            [],
+            []
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 2,
+        "protected_rank": 0,
+        "complement_dimension": 2,
+        "algebraic_update_space_dimension": 4,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    },
+    {
+      "name": "dependent_repeated",
+      "report": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            4
+          ],
+          "rows": [
+            [
+              "1",
+              "2",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            4
+          ],
+          "rows": [
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 4,
+        "protected_rank": 1,
+        "complement_dimension": 1,
+        "algebraic_update_space_dimension": 2,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    }
+  ],
+  "fixed_nonzero_bias_case": {
+    "contract": "exact_algebra_only",
+    "old_weights": {
+      "shape": [
+        2,
+        3
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "3"
+        ],
+        [
+          "0",
+          "0",
+          "-2"
+        ]
+      ]
+    },
+    "new_weights": {
+      "shape": [
+        2,
+        3
+      ],
+      "rows": [
+        [
+          "0",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "-1",
+          "-2"
+        ]
+      ]
+    },
+    "effective_difference": {
+      "shape": [
+        2,
+        3
+      ],
+      "rows": [
+        [
+          "0",
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ]
+    },
+    "generators": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "basis": {
+      "shape": [
+        3,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ]
+    },
+    "generator_residual": {
+      "shape": [
+        2,
+        1
+      ],
+      "rows": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    "basis_residual": {
+      "shape": [
+        2,
+        1
+      ],
+      "rows": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    "annihilates_generators": true,
+    "annihilates_basis": true,
+    "annihilates_supplied_span": true,
+    "input_dimension": 3,
+    "output_dimension": 2,
+    "generator_columns": 1,
+    "protected_rank": 1,
+    "complement_dimension": 2,
+    "algebraic_update_space_dimension": 4,
+    "global_domain_provenance_verified": false,
+    "authorizes_bitwise_commit": false,
+    "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+    "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+    "bias_contract": "Joint affine block; final column stores the exact bias endpoint",
+    "generator_role": "Homogenization of supplied actual activation columns, not an arbitrary input-span basis",
+    "unaugmented_activations": {
+      "shape": [
+        2,
+        1
+      ],
+      "rows": [
+        [
+          "1"
+        ],
+        [
+          "0"
+        ]
+      ]
+    },
+    "unaugmented_linear_rank": 1,
+    "physical_input_dimension": 2,
+    "output_meaning": "Same exact affine output at the supplied activations and any h whose (h,1) lies in their augmented span"
+  },
+  "counterexamples": {
+    "shared_site_omission": {
+      "local": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 1,
+        "protected_rank": 1,
+        "complement_dimension": 1,
+        "algebraic_update_space_dimension": 2,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      },
+      "merged": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        },
+        "annihilates_generators": false,
+        "annihilates_basis": false,
+        "annihilates_supplied_span": false,
+        "input_dimension": 2,
+        "output_dimension": 2,
+        "generator_columns": 2,
+        "protected_rank": 2,
+        "complement_dimension": 0,
+        "algebraic_update_space_dimension": 0,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Fixed identical bias, omitted from the exact difference",
+        "generator_role": "Generators of the proposed protected linear input span",
+        "output_meaning": "Same exact linear/identical-bias output at each unchanged input in this span"
+      }
+    },
+    "sample_only": {
+      "observed_activation": [
+        1,
+        0
+      ],
+      "omitted_legal_activation": [
+        0,
+        1
+      ],
+      "sample_passes": true,
+      "complete_domain_fails": true
+    },
+    "affine_basis_compression": {
+      "full_actual_activations": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        },
+        "annihilates_generators": false,
+        "annihilates_basis": false,
+        "annihilates_supplied_span": false,
+        "input_dimension": 2,
+        "output_dimension": 1,
+        "generator_columns": 2,
+        "protected_rank": 2,
+        "complement_dimension": 0,
+        "algebraic_update_space_dimension": 0,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Joint affine block; final column stores the exact bias endpoint",
+        "generator_role": "Homogenization of supplied actual activation columns, not an arbitrary input-span basis",
+        "unaugmented_activations": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "1"
+            ]
+          ]
+        },
+        "unaugmented_linear_rank": 1,
+        "physical_input_dimension": 1,
+        "output_meaning": "Same exact affine output at the supplied activations and any h whose (h,1) lies in their augmented span"
+      },
+      "compressed_unaugmented_basis": {
+        "contract": "exact_algebra_only",
+        "old_weights": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "new_weights": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "-1"
+            ]
+          ]
+        },
+        "effective_difference": {
+          "shape": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "1",
+              "-1"
+            ]
+          ]
+        },
+        "generators": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "1"
+            ]
+          ]
+        },
+        "basis": {
+          "shape": [
+            2,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ],
+            [
+              "1"
+            ]
+          ]
+        },
+        "generator_residual": {
+          "shape": [
+            1,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ]
+          ]
+        },
+        "basis_residual": {
+          "shape": [
+            1,
+            1
+          ],
+          "rows": [
+            [
+              "0"
+            ]
+          ]
+        },
+        "annihilates_generators": true,
+        "annihilates_basis": true,
+        "annihilates_supplied_span": true,
+        "input_dimension": 2,
+        "output_dimension": 1,
+        "generator_columns": 1,
+        "protected_rank": 1,
+        "complement_dimension": 1,
+        "algebraic_update_space_dimension": 1,
+        "global_domain_provenance_verified": false,
+        "authorizes_bitwise_commit": false,
+        "scalar_semantics": "Exact rational arithmetic; corresponding real-linear extension",
+        "scope": "Supplied generator span only; global coverage and floating execution require separate premises",
+        "bias_contract": "Joint affine block; final column stores the exact bias endpoint",
+        "generator_role": "Homogenization of supplied actual activation columns, not an arbitrary input-span basis",
+        "unaugmented_activations": {
+          "shape": [
+            1,
+            1
+          ],
+          "rows": [
+            [
+              "1"
+            ]
+          ]
+        },
+        "unaugmented_linear_rank": 1,
+        "physical_input_dimension": 1,
+        "output_meaning": "Same exact affine output at the supplied activations and any h whose (h,1) lies in their augmented span"
+      }
+    },
+    "changed_inputs": {
+      "zero_endpoint_difference": true,
+      "old_input": [
+        0,
+        0
+      ],
+      "new_input": [
+        1,
+        0
+      ],
+      "outputs_differ": true
+    }
+  },
+  "rejections": [
+    "wrong endpoint shape",
+    "empty output rows",
+    "wrong generator dimension",
+    "site dimension mismatch",
+    "missing empty-family dimension",
+    "bool dimension",
+    "float bias",
+    "bias list",
+    "wrong bias length",
+    "wrong affine activation dimension",
+    "unaugmented one-column affine block",
+    "float exact matrix"
+  ],
+  "scope": "Exact rational diagnostics only; not global-domain provenance, floating safety, or a live-update authorization",
+  "SMT_queries": 0,
+  "prior_stage_suites_rerun": false
+}

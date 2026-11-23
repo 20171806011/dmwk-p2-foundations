@@ -1,0 +1,12 @@
+{
+  "schema": "dmwk-p2-b1-dependency-inspection-v1",
+  "status": "passed",
+  "A4_manifest_entries_verified": 35,
+  "A4_prior_entries_verified": 377,
+  "A4_main_status": "passed",
+  "A4_completed_sections": 4,
+  "baseline_prior_files": 413,
+  "prior_suites_rerun": false,
+  "publication_operations": false,
+  "method": "Read-only document/interface inspection and hash verification; this is not reexecution of prior experiments."
+}

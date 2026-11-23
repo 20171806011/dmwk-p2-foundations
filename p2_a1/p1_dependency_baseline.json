@@ -1,0 +1,9 @@
+{
+  "purpose": "Read-only dependency provenance for P2-A1; no P1 suite rerun or publication review",
+  "root_relation": "../dmwk-p1-foundations",
+  "files": {
+    "p1_a4/compiler.py": "aab5fd2e6fe82c7ea548e2d1776b8781906d343d8d54c96e81007acb7feb804b",
+    "p1_b2/canonicalize.py": "3f0d9e86e80d3206cc2d43aecd677e981a6a3f36b1f17d35d4569a9dcf5d687a",
+    "p1_c3/execution.py": "8644fa96d2c72b51efa6c4b94cf502dca6f3782140cb23d636d05d3f65f6aede"
+  }
+}
